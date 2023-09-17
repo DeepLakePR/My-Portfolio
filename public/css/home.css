@@ -1,0 +1,146 @@
+/* Header Section Content Apresentation */
+section.section-apresentation{
+    position: relative;
+    z-index: 999;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    background-color: rgb(54, 68, 107);
+    -webkit-box-shadow: 0px 20px 22px 0px rgba(0,0,0,0.6);
+    -moz-box-shadow: 0px 20px 22px 0px rgba(0,0,0,0.6);
+    box-shadow: 0px 20px 22px 0px rgba(0,0,0,0.6);
+}
+
+/* Apresentation > Text */
+.section-apresentation .apresentation-text{
+    padding: 70px 0;
+    color: white;
+}
+
+.apresentation-text h2, .apresentation-text p{
+    text-shadow: 0px 7px 8px rgba(0,0,0,0.6);
+}
+
+.apresentation-text h2{
+    font-size: 34px;
+}
+
+.apresentation-text p{
+    font-size: 25px;
+    font-weight: 275;
+}
+
+.apresentation-text span{
+    color: #6bddec;
+    /* 
+    #FF9000 
+    #98eaf5
+    */
+}
+
+.apresentation-text p span{
+    font-weight: 400;
+}
+
+/* Apresentation > Social Media */
+.section-apresentation .apresentation-social_media{
+    padding: 20px 10px;
+}
+
+.section-apresentation .apresentation-social_media a{
+    color: white;
+    font-size: 40px;
+    transition: color 0.25s ease-in-out;
+}
+
+.section-apresentation .apresentation-social_media a:hover{
+    color: #929292;
+}
+
+/* Apresentation > Image */
+.section-apresentation .image img{
+    max-width: 300px;
+    border-radius: 50%;
+    -webkit-box-shadow: 0px 13px 17px 0px rgba(0,0,0,0.6);
+    -moz-box-shadow: 0px 13px 17px 0px rgba(0,0,0,0.6);
+    box-shadow: 0px 13px 17px 0px rgba(0,0,0,0.6);
+}
+
+/*******************/
+/* End-To-End Applications */
+section.end-to-end-applications{
+    width: 100%;
+    height: 450px;
+    margin-top: -25px;
+}
+
+.end-to-end-applications_bg, 
+.end-to-end-applications_bg .app-bg_image, 
+.end-to-end-applications_bg .app-bg_opacity{
+    width: 100%;
+    height: 100%;
+}
+
+.end-to-end-applications_bg .app-bg_image{
+    object-fit: cover;
+    background-image: url('../assets/bg.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.end-to-end-applications_bg .app-bg_opacity{
+    background-color: rgba(0,0,0,0.4);
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+section.end-to-end-applications h2{
+    font-weight: 100;
+    font-size: 39px;
+}
+
+section.end-to-end-applications h2 span{
+    font-size: 45px;
+    font-weight: 300;
+    color: #4195da;
+}
+
+/* About Me */
+section.about-me{
+    background: rgb(50, 63, 104);
+}
+
+section.about-me .about-me_image{
+    width: 20%;
+}
+
+.about-me_image img{
+    max-width: 400px;
+    height: 100%;
+}
+
+section.about-me .container{
+    display: flex;
+    align-items: center;
+}
+
+section.about-me .about-me_text{
+    max-width: 700px;
+    text-align: left;
+    color: white;
+}
+
+.about-me_text h2{
+    font-size: 28px;
+    margin-bottom: 15px;
+    display: inline-block;
+    padding-right: 80px;
+    border-bottom: 2px solid white;
+}
+
+.about-me_text p{
+    font-weight: 275;
+    letter-spacing: 1px;
+}

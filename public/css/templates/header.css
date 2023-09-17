@@ -1,0 +1,84 @@
+/* Header */
+header{
+    background-color: #202020;
+}
+
+/* Container */
+header .container{
+    align-items: center;
+}
+
+/* Header Logo */
+header .header-logo{
+    color: white;
+    align-items: center;
+}
+
+header .header-logo i{
+    font-size: 35px;
+    margin-right: 10px;
+}
+
+header .header-logo h2{
+    font-size: 28px;
+}
+
+/* Header Navigation */
+header .header-navigation li{
+    margin: 0 10px;
+    transition: all 0.25s ease-in-out;
+}
+
+header .header-navigation li a{
+    color: white;
+    font-size: 17px;
+    transition: all 0.25s ease-in-out;
+    position: relative;
+}
+
+header li.navigation-selected a{
+    color: #cccccc;
+}
+
+header .header-navigation li a,
+header .header-navigation li a:after,
+header .header-navigation li a:before {
+    transition: all .5s;
+    border-radius: 5px;
+}
+
+header .header-navigation li a:after{
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: #cccccc;
+    margin: 0 auto;
+}
+
+/* Header Navigation Animations */
+header .header-navigation li:not(.navigation-selected) a:after{
+    width: 0px;
+}
+
+header .header-navigation li a:hover{
+    color: #cccccc;
+}
+
+header .header-navigation li:not(.navigation-selected) a:hover:after{
+    animation: fill 0.65s forwards;
+    -webkit-animation: fill 0.65s forwards;
+    -moz-animation: fill 0.65s forwards;
+}
+
+@keyframes fill{
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 100%;
+    }
+}

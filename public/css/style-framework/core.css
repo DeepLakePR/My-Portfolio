@@ -1,0 +1,172 @@
+/* Custom Font */
+@import url('https://fonts.cdnfonts.com/css/argentum-sans?styles=28995,28998,28988,28991,28993,28984');
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Argentum Sans', sans-serif;
+}
+
+/* HTML, Body */
+html,
+body {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    overflow: overlay;
+}
+
+/***********************/
+/* Custom Scrollbar */
+::-webkit-scrollbar{
+    background: transparent;
+    width: 12px;
+    position: absolute !important;
+    top: 0;
+    left: 0;
+}
+
+::-webkit-scrollbar-button{
+    width: 0;
+    height: 0;
+}
+
+::-webkit-scrollbar-thumb{
+    border-radius: 12px;
+    background-color: #1d1d1d;
+}
+
+::-webkit-scrollbar-track {
+    background: #383838;
+}
+
+/***********************/
+
+/* DEV Test */
+div.DEV_test {
+    width: 100%;
+    height: 250px;
+    background: red;
+}
+
+/* Container */
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+
+/* Width, Height, Margin, Padding */
+.w33 {
+    width: 33.3%;
+}
+
+.w40 {
+    width: 40%;
+}
+
+.w50 {
+    width: 50%;
+}
+
+.w60 {
+    width: 60%;
+}
+
+.w100 {
+    width: 100%;
+}
+
+.marg10 {
+    margin: 10px;
+}
+
+.marg20 {
+    margin: 20px;
+}
+
+.pad10 {
+    padding: 10px;
+}
+
+.pad20 {
+    padding: 20px;
+}
+
+.pad30 {
+    padding: 30px;
+}
+
+.pad40 {
+    padding: 40px;
+}
+
+/* Header */
+.header-transparent {
+    background: transparent !important;
+}
+
+/* Navigation & ul, li */
+.navigation li {
+    color: white;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Flex */
+.flex {
+    display: flex;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Positions */
+.pos-relative {
+    position: relative;
+}
+
+.center-element {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+}
+
+/* Texts */
+.title-text {
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    text-shadow: 0px 8px 9px rgba(0, 0, 0, 0.6);
+}
+
+/* ahref */
+a {
+    text-decoration: none;
+}
+
+/* Button */
+.button {
+    border: 0;
+    cursor: pointer;
+}
+
+/* Hr */
+.hr-vertical {
+    height: 80px;
+    width: 2px;
+    color: #646464;
+}

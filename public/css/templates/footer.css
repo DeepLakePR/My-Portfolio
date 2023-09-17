@@ -1,0 +1,62 @@
+/* Footer */
+footer{
+    background-color: #272727;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-weight: 275;
+}
+
+/*******************/
+/* Footer Framework */
+footer a{
+    transition: color 0.25s ease-in-out;
+}
+
+footer .footer-navigation li a:hover, .footer-social_media a:hover{
+    color: #929292;
+}
+
+/*******************/
+
+/* Footer Row Divs */
+footer .footer-row-divs{
+    align-items: center;
+}
+
+/* Navigation */
+footer .footer-navigation li{
+    text-align: left;
+}
+
+footer .footer-navigation li a{
+    color: white;
+}
+
+/* Social Media */
+footer .footer-social_media a{
+    color: white;
+    font-size: 25px;
+    margin: 0 1px;
+}
+
+/* Actions */
+footer .footer-actions button{
+    border-radius: 50%;
+    background-color: #363636;
+    color: white;
+    transition: background-color 0.25s ease-in-out;
+}
+
+footer .footer-actions button i{
+    font-size: 15px;
+}
+
+footer .footer-actions button:hover{
+    background-color: #2e2e2e;
+}
+
+/* SubFooter */
+footer .footer-subfooter{
+    background-color: #202020;
+}
