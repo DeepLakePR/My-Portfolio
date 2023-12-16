@@ -57,7 +57,7 @@ section.section-apresentation{
 }
 
 /* Apresentation > Image */
-.section-apresentation .image img{
+.section-apresentation .apresentation-image img{
     max-width: 300px;
     border-radius: 50%;
     -webkit-box-shadow: 0px 13px 17px 0px rgba(0,0,0,0.6);
@@ -97,19 +97,20 @@ section.end-to-end-applications{
 }
 
 section.end-to-end-applications h2{
-    font-weight: 100;
+    font-weight: 200;
     font-size: 39px;
 }
 
 section.end-to-end-applications h2 span{
     font-size: 45px;
-    font-weight: 300;
+    font-weight: 400;
     color: #4195da;
 }
 
 /* About Me */
 section.about-me{
     background: rgb(50, 63, 104);
+    overflow: hidden;
 }
 
 section.about-me .about-me_image{
@@ -143,4 +144,274 @@ section.about-me .about-me_text{
 .about-me_text p{
     font-weight: 275;
     letter-spacing: 1px;
+}
+
+/* Section Created Projects */
+section.projects{
+    background: #222222;
+}
+
+section.projects .container > h2{
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.projects-wrapper{
+    background: #202020;
+    border-radius: 12px;
+    border: 25px solid #262626;
+    box-shadow: 0px 15px 20px 0px rgba(0,0,0,0.6);
+    -webkit-box-shadow: 0px 15px 20px 0px rgba(0,0,0,0.6);
+    -moz-box-shadow: 0px 15px 20px 0px rgba(0,0,0,0.6);
+    overflow: hidden;
+    max-height: 1125px;
+    transition: all 1.25s linear;
+}
+
+.projects-single{
+    width: 100%;
+    height: 300px;
+    color: white;
+}
+
+.projects-single:nth-child(+n+4){
+    display: none;
+}
+
+.projects-single .projects-single-image{
+    max-width: 45%;
+    border-radius: 8px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.projects-single-image img{
+    width: 100%;
+    height: 100%;    
+    transition: all 0.5s ease-in-out;
+}
+
+.projects-single-image:hover img{
+    transform: scale(1.085);
+}
+
+.projects-single-text{
+    height: 100%;
+    max-width: 55%;
+    padding: 8px 20px !important;
+    position: relative;
+}
+
+.projects-single-text h2{
+    margin-bottom: 5px;
+}
+
+.projects-single-text p{
+    font-weight: 275;
+}
+
+.projects-single-text a{
+    color: white;
+    background: rgb(50, 63, 104);
+    padding: 9px 16px;
+    border-radius: 8px;
+    transition: all 0.25s ease-in-out;
+    position: absolute;
+    left: 20px;
+    bottom: 8px;
+}
+
+.projects-single-text a:hover{
+    background: rgb(38, 47, 78);
+    color: #ccc;
+}
+
+.projects-single:nth-child(even) .projects-single-text{
+    order: 1;
+}
+
+.projects-single:nth-child(even) .projects-single-image{
+    order: 2;
+}
+
+.projects-wrapper .projects-more-button{
+    text-align: center;
+    width: 100%;
+    color: white;
+    padding: 20px 20px;
+    padding-bottom: 10px;
+}
+
+.projects-more-button h3{
+    margin-bottom: 15px;
+    font-weight: 300;
+}
+
+.projects-more-button i{
+    padding: 13px;
+    background: #363636;
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.25s ease-in-out;
+}
+
+.projects-more-button i:hover{
+    color: #ccc;
+    background: #242424;
+}
+
+/* Knowledge Technologies Projects */
+section.technologies{
+    padding-top: 30px;
+    background: rgb(50, 63, 104);
+}
+
+section.technologies > h2{
+    text-align: center;
+    color: white;
+    font-size: 30px;
+}
+
+section.technologies .container{
+    padding-top: 0px;
+}
+
+/* Technologies > Single */
+.technologies-single-container{
+    padding-left: 0px;
+    padding-right: 30px;
+}
+
+.technologies-single-box{
+    width: 100%;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.technologies-single-box-title, .technologies-single-box-nivel{
+    align-items: center;
+    justify-content: center;
+}
+
+.technologies-single-box-title i{
+    font-size: xx-large;
+    margin-left: -15px;
+    margin-right: 15px;
+}
+
+.technologies-single-box-title h2{
+    font-size: 25px;
+    font-weight: 275;
+}
+
+.technologies-single-box-nivel{
+    margin-top: 10px;
+    background: #2b2b2b;
+    border-radius: 8px;
+}
+
+.technologies-single-box-nivel p{
+    font-weight: 275;
+}
+
+.tech-single-box-nivel-custom_line{
+    width: 20%;
+    height: 8px;
+    background: white;
+    border-radius: 8px;
+    margin: 2px 10px 0 10px;
+}
+
+/* Technologies > Dynamic Image */
+.technologies-dynamic-image{
+    margin-top: 40px;
+    align-items: center;
+    justify-content: center;
+    max-height: 650px;
+    background: #222222;
+    border-radius: 15px;
+    box-shadow: 0px 15px 20px 0px rgba(0,0,0,0.6);
+    -webkit-box-shadow: 0px 15px 20px 0px rgba(0,0,0,0.6);
+    -moz-box-shadow: 0px 15px 20px 0px rgba(0,0,0,0.6);
+}
+
+.technologies-dynamic-image i{
+    font-size: 300px;
+    color: white;
+    width: 100%;
+}
+
+/* Contact Form */
+section.contact-form{
+    background: #222222;
+    color: white;
+}
+
+section.contact-form .container > h2{
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 25px;
+}
+
+section.contact-form form{
+    align-items: center;
+}
+
+section.contact-form .contact-form-group{
+    width: 50%;
+    margin-bottom: 15px;
+}
+
+.contact-form-group label{
+    margin-bottom: 4px;
+    font-size: 16px;
+    font-weight: 275;
+}
+
+.contact-form-group input, .contact-form-group textarea{
+    padding: 7px 12px;
+    border-radius: 3px;
+    border: 0;
+    background: #181818;
+    color: white;
+    transition: all 0.2s ease-in-out;
+    outline: none;
+    border: 0 solid #0f0f0f;
+    font-size: 15px;
+}
+
+.contact-form-group input::placeholder, textarea::placeholder{
+    color: rgba(194, 194, 194, 0.7);
+}
+
+.contact-form-group textarea{
+    resize: none;
+    height: 135px;
+    min-height: 135px;
+    max-height: 135px;
+}
+
+.contact-form-group input:focus, textarea:focus{
+    outline: none;
+    border: 3px solid #0f0f0f;
+}
+
+section.contact-form form input[type="submit"]{
+    background: rgb(18, 18, 18);
+    border: 0;
+    border-radius: 4px;
+    padding: 5px 30px;
+    color: white;
+    font-weight: 275;
+    font-size: 17px;
+    cursor: pointer;
+    transition: all 0.25s ease-in-out;
+}
+
+section.contact-form form input[type="submit"]:hover{
+    background: rgb(2, 2, 2);
+    color: #ccc;
 }

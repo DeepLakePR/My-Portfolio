@@ -1,12 +1,14 @@
 /* Custom Font */
 @import url('https://fonts.cdnfonts.com/css/argentum-sans?styles=28995,28998,28988,28991,28993,28984');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;700&family=Roboto:wght@100;300;400;700&display=swap');
 
 /* Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Argentum Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    /*font-family: 'Montserrat', sans-serif;*/
 }
 
 /* HTML, Body */
@@ -93,6 +95,10 @@ div.DEV_test {
     padding: 10px;
 }
 
+.pad15 {
+    padding: 15px;
+}
+
 .pad20 {
     padding: 20px;
 }
@@ -103,6 +109,10 @@ div.DEV_test {
 
 .pad40 {
     padding: 40px;
+}
+
+.pad50 {
+    padding: 50px;
 }
 
 /* Header */
@@ -146,6 +156,10 @@ ul {
 }
 
 /* Texts */
+.text-center{
+    text-align: center;
+}
+
 .title-text {
     color: white;
     font-size: 30px;

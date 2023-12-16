@@ -6,14 +6,14 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<!-- Frameworks CSS -->
-	<link href="public/css/style-framework/core.css" rel="stylesheet" />
+	<link href="/public/css/style-framework/core.css" rel="stylesheet" />
 
 	<!-- Home Page CSS -->
-	<link href="public/css/home.css" rel="stylesheet" />
+	<link href="/public/css/home.css" rel="stylesheet" />
 
 	<!-- Templates CSS -->
-	<link href="public/css/templates/header.css" rel="stylesheet" />
-	<link href="public/css/templates/footer.css" rel="stylesheet" />
+	<link href="/public/css/templates/header.css" rel="stylesheet" />
+	<link href="/public/css/templates/footer.css" rel="stylesheet" />
 
 	<title>Gui Dev</title>
 
@@ -21,22 +21,22 @@
 
 <body>
 
-
-
 	<!-- Header -->
-	<header class="pad30"> <!-- class header-transparent -->
+	<header class="pad10 testheader"> <!-- class header-transparent -->
 		<div class="container flex">
 
 			<div class="header-logo w50 flex">
-				<i class="fa-solid fa-code"></i> <h2>Gui Dev</h2>
+				<a href="/">
+					<img src="/public/assets/logo.png" alt="Guilherme Fortunato Machado Portfólio" title="Guilherme Fortunato Machado Portfólio">
+				</a>
 			</div> <!-- Logo -->
 
 			<nav class="header-navigation navigation w50">
 				<ul class="flex">
 					<li class="navigation-selected"><a href="/">Home</a></li>
-					<li><a href="projetos/">Projetos Criados</a></li>
-					<li><a href="conhecimento/">Meu Conhecimento</a></li>
-					<li><a href="contato/">Contato</a></li>
+					<li><a href="/projetos/">Projetos Criados</a></li>
+					<li><a href="/conhecimento/">Meu Conhecimento</a></li>
+					<li><a href="/contato/">Contato</a></li>
 				</ul>
 			</nav> <!-- Desktop Navigation -->
 
@@ -65,13 +65,14 @@
 				</div>
 			</div> <!-- Apresentation -->
 
-			<div class="image w40">
+			<div class="apresentation-image w40">
 				<img src="public/assets/bg_gui_photo.png" alt="Guilherme Fortunato Desenvolvedor" title="Guilherme Fortunato Desenvolvedor" />
 			</div> <!-- Gui Image -->
 
 		</div> <!-- Container -->
 	</section> <!-- Apresentation -->
 
+	<!-- End To End Applications Section -->
 	<section class="end-to-end-applications pos-relative">
 
 		<div class="end-to-end-applications_bg pos-relative">
@@ -81,7 +82,7 @@
 
 		<div class="container">
 
-			<h2 class="w100 center-element title-text">
+			<h2 class="w100 center-element title-text" id="end-to-end-applications-text-animation">
 				Aplicações criadas e desenvolvidas de<br />
 				<span>Ponta a Ponta</span>
 			</h2>
@@ -89,7 +90,8 @@
 		</div>
 	</section> <!-- End To End Applications -->
 
-	<section class="about-me flex">
+	<!-- About Me Section -->
+	<section class="about-me flex"> <!-- About Me -->
 		
 		<div class="about-me_image w50">
 			<img src="public/assets/bg_gui_photo_2.jpeg" />
@@ -118,26 +120,354 @@
 		</div> <!-- Container -->
 	</section> <!-- About Me -->
 
-	<section class="projects">
-		<div class="container p30">
+	<!-- Projects Section -->
+	<section class="projects"> <!-- Projects -->
+		<div class="container pad40">
+			
+			<h2>Projetos Criados</h2>
 
-			<div class="projects-wrapper flex-column p20">
+			<div class="projects-wrapper flex-column pad30">
 
-				<div class="project-single flex p20">
+				<div class="projects-single flex pad20">
+
+					<div class="projects-single-image">
+						<img src="https://media.macphun.com/img/uploads/macphun/blog/2063/_1.jpeg?q=75&w=1710&h=906&resize=cover" alt="Project Image" title="Project Image" />
+					</div>
+
+					<div class="projects-single-text pad20">
+
+						<h2>Project Title</h2>
+						<p>Qui qui minim nulla excepteur. Ut ut cillum nisi irure dolor eu. Proident esse adipisicing consectetur tempor. Veniam aliqua nisi esse dolore Lorem anim elit. Dolor aliqua ullamco duis fugiat elit pariatur aliqua culpa. Cupidatat magna laboris laborum et nostrud culpa non minim fugiat non. Ullamco minim ad aliquip excepteur fugiat enim in amet.</p>
+
+						<a href="/#project_url">Saiba Mais</a>
+
+					</div>
+
+				</div> <!-- Projects Single -->
+
+				<div class="projects-single flex pad20">
 					
-				</div> <!-- Project Single -->
+					<div class="projects-single-image">
+						<img src="https://media.macphun.com/img/uploads/macphun/blog/2063/_1.jpeg?q=75&w=1710&h=906&resize=cover" alt="Project Image" title="Project Image" />
+					</div>
+
+					<div class="projects-single-text pad20">
+
+						<h2>Project Title</h2>
+						<p>Pariatur dolore qui fugiat consequat in irure. Duis dolor exercitation id deserunt nisi cillum duis officia nostrud elit quis. Aliqua proident ea amet cillum.</p>
+
+						<a href="/#project_url">Saiba Mais</a>
+
+					</div>
+
+				</div> <!-- Projects Single -->
+
+				<div class="projects-single flex pad20">
+					
+					<div class="projects-single-image">
+						<img src="https://media.macphun.com/img/uploads/macphun/blog/2063/_1.jpeg?q=75&w=1710&h=906&resize=cover" alt="Project Image" title="Project Image" />
+					</div>
+					
+					<div class="projects-single-text pad20">
+
+						<h2>Project Title</h2>
+						<p>Consectetur do non aute pariatur et irure ex do culpa. In reprehenderit excepteur ut consectetur laboris enim aliquip. Duis velit nostrud fugiat voluptate mollit tempor laboris sunt non labore et sint adipisicing. Et quis aliqua mollit qui ea pariatur fugiat et. Culpa ipsum anim adipisicing nisi excepteur. Officia mollit labore reprehenderit mollit. Occaecat ullamco minim culpa proident.</p>
+
+						<a href="/#project_url">Saiba Mais</a>
+						
+					</div>
+
+				</div> <!-- Projects Single -->
+
+				<div class="projects-single flex pad20">
+
+					<div class="projects-single-image">
+						<img src="https://media.macphun.com/img/uploads/macphun/blog/2063/_1.jpeg?q=75&w=1710&h=906&resize=cover" alt="Project Image" title="Project Image" />
+					</div>
+
+					<div class="projects-single-text pad20">
+
+						<h2>Project Title</h2>
+						<p>Qui qui minim nulla excepteur. Ut ut cillum nisi irure dolor eu. Proident esse adipisicing consectetur tempor. Veniam aliqua nisi esse dolore Lorem anim elit. Dolor aliqua ullamco duis fugiat elit pariatur aliqua culpa. Cupidatat magna laboris laborum et nostrud culpa non minim fugiat non. Ullamco minim ad aliquip excepteur fugiat enim in amet.</p>
+
+						<a href="/#project_url">Saiba Mais</a>
+
+					</div>
+
+				</div> <!-- Projects Single -->
+
+				<div class="projects-single flex pad20">
+					
+					<div class="projects-single-image">
+						<img src="https://media.macphun.com/img/uploads/macphun/blog/2063/_1.jpeg?q=75&w=1710&h=906&resize=cover" alt="Project Image" title="Project Image" />
+					</div>
+
+					<div class="projects-single-text pad20">
+
+						<h2>Project Title</h2>
+						<p>Pariatur dolore qui fugiat consequat in irure. Duis dolor exercitation id deserunt nisi cillum duis officia nostrud elit quis. Aliqua proident ea amet cillum.</p>
+
+						<a href="/#project_url">Saiba Mais</a>
+
+					</div>
+
+				</div> <!-- Projects Single -->
+
+				<div class="projects-single flex pad20">
+					
+					<div class="projects-single-image">
+						<img src="https://media.macphun.com/img/uploads/macphun/blog/2063/_1.jpeg?q=75&w=1710&h=906&resize=cover" alt="Project Image" title="Project Image" />
+					</div>
+					
+					<div class="projects-single-text pad20">
+
+						<h2>Project Title</h2>
+						<p>Consectetur do non aute pariatur et irure ex do culpa. In reprehenderit excepteur ut consectetur laboris enim aliquip. Duis velit nostrud fugiat voluptate mollit tempor laboris sunt non labore et sint adipisicing. Et quis aliqua mollit qui ea pariatur fugiat et. Culpa ipsum anim adipisicing nisi excepteur. Officia mollit labore reprehenderit mollit. Occaecat ullamco minim culpa proident.</p>
+
+						<a href="/#project_url">Saiba Mais</a>
+						
+					</div>
+
+				</div> <!-- Projects Single -->
+
+				<div class="projects-more-button">
+					<h3>Mais Projetos</h3>
+
+					<i id="script_projects-more-button" class="fa-solid fa-chevron-down"></i>
+				</div>
 
 			</div> <!-- Projects Wrapper -->
 
 		</div> <!-- Container -->
 	</section> <!-- Projects -->
 
+	<!-- Technologies Section -->
+	<section class="technologies pad20"> <!-- Technologies -->
+
+		<h2>Meu Conhecimento</h2>
+
+		<div class="container flex pad20">
+
+			<div class="technologies-single-container w50 flex-column pad20">
+				
+				<div class="technologies-single-box pad10">
+					<div class="technologies-single-box-title flex">
+						<i class="fa-brands fa-html5"></i>
+						<h2>HTML 5</h2>
+					</div> <!-- Technologies Single Box Title -->
+
+					<div class="technologies-single-box-nivel flex pad15">
+
+						<p>Iniciante</p>
+
+						<div class="tech-single-box-nivel-custom_line"></div>
+
+						<p>Intermediário</p>
+
+						<div class="tech-single-box-nivel-custom_line"></div>
+
+						<p>Experiente</p>
+
+					</div> <!-- Technologies Single Box Nivel -->
+				</div> <!-- Technologies Single Box -->
+
+				<div class="technologies-single-box pad10">
+					<div class="technologies-single-box-title flex">
+						<i class="fa-brands fa-css3"></i>
+						<h2>CSS 3</h2>
+					</div> <!-- Technologies Single Box Title -->
+
+					<div class="technologies-single-box-nivel flex pad15">
+
+						<p>Iniciante</p>
+
+						<div class="tech-single-box-nivel-custom_line"></div>
+
+						<p>Intermediário</p>
+
+						<div class="tech-single-box-nivel-custom_line"></div>
+
+						<p>Experiente</p>
+
+					</div> <!-- Technologies Single Box Nivel -->
+				</div> <!-- Technologies Single Box -->
+
+				<div class="technologies-single-box pad10">
+					<div class="technologies-single-box-title flex">
+						<i class="fa-brands fa-square-js"></i>
+						<h2>JavaScript</h2>
+					</div> <!-- Technologies Single Box Title -->
+
+					<div class="technologies-single-box-nivel flex pad15">
+
+						<p>Iniciante</p>
+
+						<div class="tech-single-box-nivel-custom_line"></div>
+
+						<p>Intermediário</p>
+
+						<div class="tech-single-box-nivel-custom_line"></div>
+
+						<p>Experiente</p>
+
+					</div> <!-- Technologies Single Box Nivel -->
+				</div> <!-- Technologies Single Box -->
+
+				<div class="technologies-single-box pad10">
+					<div class="technologies-single-box-title flex">
+						<i class="fa-brands fa-react"></i>
+						<h2>React JS</h2>
+					</div> <!-- Technologies Single Box Title -->
+
+					<div class="technologies-single-box-nivel flex pad15">
+
+						<p>Iniciante</p>
+
+						<div class="tech-single-box-nivel-custom_line"></div>
+
+						<p>Intermediário</p>
+
+						<div class="tech-single-box-nivel-custom_line"></div>
+
+						<p>Experiente</p>
+
+					</div> <!-- Technologies Single Box Nivel -->
+				</div> <!-- Technologies Single Box -->
+
+				<div class="technologies-single-box pad10">
+					<div class="technologies-single-box-title flex">
+						<i class="fa-brands fa-react"></i>
+						<h2>React Native</h2>
+					</div> <!-- Technologies Single Box Title -->
+
+					<div class="technologies-single-box-nivel flex pad15">
+
+						<p>Iniciante</p>
+
+						<div class="tech-single-box-nivel-custom_line"></div>
+
+						<p>Intermediário</p>
+
+						<div class="tech-single-box-nivel-custom_line"></div>
+
+						<p>Experiente</p>
+
+					</div> <!-- Technologies Single Box Nivel -->
+				</div> <!-- Technologies Single Box -->
+
+				<div class="technologies-single-box pad10">
+					<div class="technologies-single-box-title flex">
+						<i class="fa-brands fa-php"></i>
+						<h2>PHP</h2>
+					</div> <!-- Technologies Single Box Title -->
+
+					<div class="technologies-single-box-nivel flex pad15">
+
+						<p>Iniciante</p>
+
+						<div class="tech-single-box-nivel-custom_line"></div>
+
+						<p>Intermediário</p>
+
+						<div class="tech-single-box-nivel-custom_line"></div>
+
+						<p>Experiente</p>
+
+					</div> <!-- Technologies Single Box Nivel -->
+				</div> <!-- Technologies Single Box -->
+
+				<div class="technologies-single-box pad10">
+					<div class="technologies-single-box-title flex">
+						<i class="fa-solid fa-database" style="font-size: 28px;"></i>
+						<h2>MySQL</h2>
+					</div> <!-- Technologies Single Box Title -->
+
+					<div class="technologies-single-box-nivel flex pad15">
+
+						<p>Iniciante</p>
+
+						<div class="tech-single-box-nivel-custom_line"></div>
+
+						<p>Intermediário</p>
+
+						<div class="tech-single-box-nivel-custom_line"></div>
+
+						<p>Experiente</p>
+
+					</div> <!-- Technologies Single Box Nivel -->
+				</div> <!-- Technologies Single Box -->
+
+				<div class="technologies-single-box pad10">
+					<div class="technologies-single-box-title flex">
+						<i class="fa-solid fa-database" style="font-size: 28px;"></i>
+						<h2>MongoDB</h2>
+					</div> <!-- Technologies Single Box Title -->
+
+					<div class="technologies-single-box-nivel flex pad15">
+
+						<p>Iniciante</p>
+
+						<div class="tech-single-box-nivel-custom_line"></div>
+
+						<p>Intermediário</p>
+
+						<div class="tech-single-box-nivel-custom_line"></div>
+
+						<p>Experiente</p>
+
+					</div> <!-- Technologies Single Box Nivel -->
+				</div> <!-- Technologies Single Box -->
+
+			</div> <!-- Technologies Single Container -->
+
+			<div class="technologies-dynamic-image flex w50 pad40">
+				<i id="technologies-dynamic-image-element" class="text-center fa-brands fa-html5"></i>
+			</div> <!-- Technologies Dynamic Images-->
+
+		</div> <!-- Container -->
+	</section> <!-- Technologies -->
+
+	<!-- Contact Form Section -->
+	<section class="contact-form"> <!-- Contact Form -->
+		<div class="container pad20 flex-column">
+
+			<h2>Entre em Contato</h2>
+
+			<form method="post" class="flex-column">
+
+				<div class="contact-form-group flex-column">
+					<label>*Nome Completo</label>
+					<input type="text" name="contact-form_POST_name" required />
+				</div>
+
+				<div class="contact-form-group flex-column">
+					<label>*E-mail</label>
+					<input type="email" name="contact-form_POST_email" required />
+				</div>
+
+				<div class="contact-form-group flex-column">
+					<label>(Opcional) Telefone</label>
+					<input type="tel" name="contact-form_POST_telephone" />
+				</div>
+
+				<div class="contact-form-group flex-column">
+					<label>*Mensagem</label>
+					<textarea name="contact-form_POST_message" required></textarea>
+				</div>
+
+				<input type="submit" name="contact-form-send" value="Enviar" />
+
+			</form> <!-- Form -->
+
+		</div> <!-- Container -->
+	</section> <!-- Contact Form -->
+
 	<!--
 
-		Nexts Sections:
-		Section Created Projects
-		Section My Knowledge At Technologies
-		Section Formulario Contact
+		TODO:
+		+ Make the "more button" system to make a animation when clicking in the button
+		+ Button more technologies in section knowledgements
+		+ Change the Lorem ipsum texts to real texts
 
 	-->
 
@@ -151,9 +481,9 @@
 					<nav>
 						<ul>
 							<li><a href="/">Home</a></li>
-							<li><a href="projetos/">Projetos Criados</a></li>
-							<li><a href="conhecimento/">Meu Conhecimento</a></li>
-							<li><a href="contato/">Contato</a></li>
+							<li><a href="/projetos/">Projetos Criados</a></li>
+							<li><a href="/conhecimento/">Meu Conhecimento</a></li>
+							<li><a href="/contato/">Contato</a></li>
 						</ul>
 					</nav>
 				</div> <!-- Desktop Navigation -->
@@ -191,7 +521,10 @@
 	<script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
 	<script src="https://kit.fontawesome.com/c092b4e18e.js" crossorigin="anonymous"></script>
 
-	<script src="public/js/footer-functions.js"></script>
+	<script src="/public/js/footer-functions.js"></script>
+
+	<script src="https://unpkg.com/scrollreveal"></script>
+	<script src="/public/js/home.js"></script>
 
 </body>
 
