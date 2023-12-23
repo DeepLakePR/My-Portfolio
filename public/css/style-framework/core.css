@@ -71,8 +71,16 @@ div.DEV_test {
     width: 40%;
 }
 
+.w45 {
+    width: 45%;
+}
+
 .w50 {
     width: 50%;
+}
+
+.w55 {
+    width: 55%;
 }
 
 .w60 {
@@ -172,6 +180,11 @@ a {
     text-decoration: none;
 }
 
+a.ahref-disabled{
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+
 /* Button */
 .button {
     border: 0;
@@ -183,4 +196,58 @@ a {
     height: 80px;
     width: 2px;
     color: #646464;
+}
+
+/******************************************************/
+/******************************************************/
+/******************************************************/
+/********* Responsive *********/
+/* Notebooks */
+@media screen and (max-width: 1024px){
+
+    /* Width, Height, Margin, Padding */
+    .w40, .w60{
+        width: 50%;
+    }
+
+}
+
+/* Tablets */
+@media screen and (max-width: 768px){
+
+    /* Width, Height, Margin, Padding */
+    .w40, .w50, .w60{
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Flex */
+    .flex, .flex-column{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    /* Positions */
+    .center-element{
+        position: relative;
+        text-align: center;
+        width: 100%;
+        transform: none;
+        -o-transform: none;
+        -ms-transform: none;
+        -moz-transform: none;
+        -webkit-transform: none;
+    }
+
+}
+
+/* Mobile */
+@media screen and (max-width: 480px){
+
+    /* Width, Height, Margin, Padding */
+    .w33, .w40, .w50, .w60{
+        width: 100%;
+        text-align: center;
+    }
+    
 }

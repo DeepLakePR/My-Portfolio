@@ -2,8 +2,8 @@
 section.section-apresentation{
     position: relative;
     z-index: 999;
-    border-bottom-left-radius: 25px;
-    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
     background-color: rgb(54, 68, 107);
     -webkit-box-shadow: 0px 20px 22px 0px rgba(0,0,0,0.6);
     -moz-box-shadow: 0px 20px 22px 0px rgba(0,0,0,0.6);
@@ -57,6 +57,10 @@ section.section-apresentation{
 }
 
 /* Apresentation > Image */
+.section-apresentation .apresentation-image{
+    padding-left: 50px;
+}
+
 .section-apresentation .apresentation-image img{
     max-width: 300px;
     border-radius: 50%;
@@ -70,7 +74,7 @@ section.section-apresentation{
 section.end-to-end-applications{
     width: 100%;
     height: 450px;
-    margin-top: -25px;
+    margin-top: -40px;
 }
 
 .end-to-end-applications_bg, 
@@ -181,15 +185,19 @@ section.projects .container > h2{
 }
 
 .projects-single .projects-single-image{
-    max-width: 45%;
+    width: 45%;
+    height: 100%;
     border-radius: 8px;
     cursor: pointer;
     overflow: hidden;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .projects-single-image img{
-    width: 100%;
-    height: 100%;    
+    height: 100%;
     transition: all 0.5s ease-in-out;
 }
 
@@ -223,7 +231,7 @@ section.projects .container > h2{
     bottom: 8px;
 }
 
-.projects-single-text a:hover{
+.projects-single-text a:not(.ahref-disabled):hover{
     background: rgb(38, 47, 78);
     color: #ccc;
 }
@@ -350,12 +358,23 @@ section.contact-form{
     color: white;
 }
 
+section.contact-form .container{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
 section.contact-form .container > h2{
     text-align: center;
     font-size: 32px;
-    margin-bottom: 25px;
 }
 
+section.contact-form .container > h2 a{
+    color: #6bddec;
+    text-decoration: underline;
+    text-decoration-color: #6bddec;
+}
+
+/**********DEPRECATED****************
 section.contact-form form{
     align-items: center;
 }
@@ -415,3 +434,7 @@ section.contact-form form input[type="submit"]:hover{
     background: rgb(2, 2, 2);
     color: #ccc;
 }
+*/
+
+/**********************************/
+/****** Responsive ******/

@@ -1,4 +1,6 @@
 $(function(){
+    
+    // Variables
 
     ////////////////
     // Reveal Animations
@@ -32,7 +34,7 @@ $(function(){
     ScrollReveal().reveal('.projects-more-button', {...normalReveal, reset: false});
 
     /* Technologies */
-    ScrollReveal().reveal('.technologies-single-box', {...normalReveal, duration: 2500});
+    ScrollReveal().reveal('.technologies-single-box', {...normalReveal, duration: 1500, reset: false});
 
     ////////////////
     // Projects Functions
@@ -48,6 +50,9 @@ $(function(){
 
         for(let i = ShowingProjects; i < ShowingProjects + 3; i++){
             $(ProjectsSingle[i]).css('display', 'flex');
+
+            ScrollReveal().clean($(ProjectsSingle[i]));
+            ScrollReveal().reveal($(ProjectsSingle[i]));
 
         }
 
@@ -119,6 +124,5 @@ $(function(){
         )
 
     }
-
 
 })

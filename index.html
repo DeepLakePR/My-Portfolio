@@ -22,21 +22,21 @@
 <body>
 
 	<!-- Header -->
-	<header class="pad10 testheader"> <!-- class header-transparent -->
+	<header class="pad10 testheader" id="js-scroll-home-top"> <!-- class header-transparent -->
 		<div class="container flex">
 
 			<div class="header-logo w50 flex">
 				<a href="/">
-					<img src="/public/assets/logo.png" alt="Guilherme Fortunato Machado Portfólio" title="Guilherme Fortunato Machado Portfólio">
+					<img src="/public/assets/logo.png" alt="Guilherme Fortunato Machado Portfólio" title="Guilherme Fortunato Machado Portfólio" loading="lazy" />
 				</a>
 			</div> <!-- Logo -->
 
 			<nav class="header-navigation navigation w50">
 				<ul class="flex">
-					<li class="navigation-selected"><a href="/">Home</a></li>
-					<li><a href="/projetos/">Projetos Criados</a></li>
-					<li><a href="/conhecimento/">Meu Conhecimento</a></li>
-					<li><a href="/contato/">Contato</a></li>
+					<li class="navigation-selected"><a href="#home" js-scrolltarget="js-scroll-home-top">Home</a></li>
+					<li><a href="#projetos-criados" js-scrolltarget="js-scroll-projects-text">Projetos Criados</a></li>
+					<li><a href="#conhecimento" js-scrolltarget="js-scroll-knowledge-text">Meu Conhecimento</a></li>
+					<li><a href="#contato" js-scrolltarget="js-scroll-contact-text">Contato</a></li>
 				</ul>
 			</nav> <!-- Desktop Navigation -->
 
@@ -62,11 +62,15 @@
 						<i class="fa-brands fa-github"></i>
 					</a>
 
+					<a href="mailto:guilhermefortunato2008@gmail.com?subject=Vamos%20Falar%20Sobre%20Negócios&body=Olá%20Guilherme..." target="_blank">
+						<i class="fa-solid fa-envelope"></i>
+					</a>
+
 				</div>
 			</div> <!-- Apresentation -->
 
 			<div class="apresentation-image w40">
-				<img src="public/assets/bg_gui_photo.png" alt="Guilherme Fortunato Desenvolvedor" title="Guilherme Fortunato Desenvolvedor" />
+				<img src="public/assets/bg_gui_photo.png" alt="Guilherme Fortunato Desenvolvedor" title="Guilherme Fortunato Desenvolvedor" loading="lazy" />
 			</div> <!-- Gui Image -->
 
 		</div> <!-- Container -->
@@ -94,7 +98,7 @@
 	<section class="about-me flex"> <!-- About Me -->
 		
 		<div class="about-me_image w50">
-			<img src="public/assets/bg_gui_photo_2.jpeg" />
+			<img src="public/assets/bg_gui_photo_2.jpeg" loading="lazy" />
 		</div> <!-- About Me Image -->
 
 		<div class="container pad20">
@@ -103,17 +107,12 @@
 				<h2>Sobre Mim</h2>
 
 				<p>
-					Deserunt dolor esse tempor do aute ipsum tempor. Esse anim dolor aliquip Lorem duis aliquip anim elit. 
-					Laboris irure ad ut ex deserunt dolor laboris velit. Amet duis cupidatat occaecat voluptate esse ut Lorem 
-					occaecat nisi cupidatat. Do consectetur sit commodo velit excepteur consectetur laborum aute dolor commodo
-					qui ipsum excepteur cupidatat. Id sunt excepteur ea elit aliqua pariatur exercitation cupidatat ullamco 
-					tempor non ea culpa. Tempor nisi dolore deserunt labore eu ut eu voluptate pariatur est pariatur.
-					Deserunt dolor esse tempor do aute ipsum tempor. Esse anim dolor aliquip Lorem duis aliquip anim elit. 
-					Laboris irure ad ut ex deserunt dolor laboris velit. Amet duis cupidatat occaecat voluptate esse ut Lorem 
-					occaecat nisi cupidatat. Do consectetur sit commodo velit excepteur consectetur laborum aute dolor commodo
-					qui ipsum excepteur cupidatat. Id sunt excepteur ea elit aliqua pariatur exercitation cupidatat ullamco 
-					tempor non ea culpa. Tempor nisi dolore deserunt labore eu ut eu voluptate pariatur est pariatur.
+					Olá, meu nome é Guilherme Fortunato Machado, atualmente tenho 16 anos e moro no Paraná, desde os 10 anos tive contato com programação e desenvolvimento de jogos, aos 12 anos criei meu primeiro site, extremamente simples, mas era um site, hoje tenho certificados como Desenvolvedor de Games, Desenvolvedor Web e Programador de Aplicativos, tenho conhecimento em linguagens como PHP, JavaScript e Lua como linguagem de programação para games, também estou aprendendo Python e futuramente Ruby, mas isso não vem ao caso agora. Tenho conhecimento em tecnologias como React JS, React Native, NodeJS, Frameworks Front-End como Bootstrap, Materialize e SASS, e em banco de dados o que eu tenho mais conhecimento é o MySQL, mas também conheço um pouco de MongoDB.
+					<br/>
+					<br/>
+					Sou um garoto sonhador que constantemente está evoluindo e aprendendo, eu sou humano como todo mundo, então com certeza vou falhar. Bem-vindo(a) ao meu portfólio.
 				</p>
+				
 
 			</div> <!-- About Me Text -->
 			
@@ -124,20 +123,42 @@
 	<section class="projects"> <!-- Projects -->
 		<div class="container pad40">
 			
-			<h2>Projetos Criados</h2>
+			<h2 id="js-scroll-projects-text">Projetos Criados</h2>
 
 			<div class="projects-wrapper flex-column pad30">
 
 				<div class="projects-single flex pad20">
 
-					<div class="projects-single-image">
-						<img src="https://media.macphun.com/img/uploads/macphun/blog/2063/_1.jpeg?q=75&w=1710&h=906&resize=cover" alt="Project Image" title="Project Image" />
+					<div class="projects-single-image w45">
+						<img src="/public/assets/projects-images/prime-assessoria-imobiliaria.jpg" alt="Project Image" title="Project Image" loading="lazy" />
 					</div>
 
-					<div class="projects-single-text pad20">
+					<div class="projects-single-text w55 pad20">
 
-						<h2>Project Title</h2>
-						<p>Qui qui minim nulla excepteur. Ut ut cillum nisi irure dolor eu. Proident esse adipisicing consectetur tempor. Veniam aliqua nisi esse dolore Lorem anim elit. Dolor aliqua ullamco duis fugiat elit pariatur aliqua culpa. Cupidatat magna laboris laborum et nostrud culpa non minim fugiat non. Ullamco minim ad aliquip excepteur fugiat enim in amet.</p>
+						<h2>Prime Assessoria Imobiliária</h2>
+						<p>
+							Desenvolvido um site Corporativo, com sistema de painel de controle para os funcionários, geração de relatórios em PDF e salvamento de documentos no banco de dados.
+							As tecnologias usadas foram Front-End (HTML5, CSS3, JavaScript), Bootstrap, PHP e Banco de Dados MySQL
+						</p>
+
+						<a href="https://www.caixaaquiprime.com.br/inicio/">Saiba Mais</a>
+
+					</div>
+
+				</div> <!-- Projects Single -->
+
+				<div class="projects-single flex pad20">
+					
+					<div class="projects-single-image w45">
+						<img src="/public/assets/projects-images/ibca-church-app.png" alt="Project Image" title="Project Image" loading="lazy" />
+					</div>
+
+					<div class="projects-single-text w55 pad20">
+
+						<h2>IBCA Church App</h2>
+						<p>
+							Criado um aplicativo para a minha igreja, usando React Native e a plataforma do Expo para exportação do aplicativo para IOS & Android.
+						</p>
 
 						<a href="/#project_url">Saiba Mais</a>
 
@@ -147,33 +168,16 @@
 
 				<div class="projects-single flex pad20">
 					
-					<div class="projects-single-image">
-						<img src="https://media.macphun.com/img/uploads/macphun/blog/2063/_1.jpeg?q=75&w=1710&h=906&resize=cover" alt="Project Image" title="Project Image" />
-					</div>
-
-					<div class="projects-single-text pad20">
-
-						<h2>Project Title</h2>
-						<p>Pariatur dolore qui fugiat consequat in irure. Duis dolor exercitation id deserunt nisi cillum duis officia nostrud elit quis. Aliqua proident ea amet cillum.</p>
-
-						<a href="/#project_url">Saiba Mais</a>
-
-					</div>
-
-				</div> <!-- Projects Single -->
-
-				<div class="projects-single flex pad20">
-					
-					<div class="projects-single-image">
-						<img src="https://media.macphun.com/img/uploads/macphun/blog/2063/_1.jpeg?q=75&w=1710&h=906&resize=cover" alt="Project Image" title="Project Image" />
+					<div class="projects-single-image w45">
+						<img src="https://i.pinimg.com/736x/41/82/a9/4182a9dd330c6442c4a1fbc78274d838.jpg" alt="Project Image" title="Project Image" loading="lazy" />
 					</div>
 					
-					<div class="projects-single-text pad20">
+					<div class="projects-single-text w55 pad20">
 
-						<h2>Project Title</h2>
-						<p>Consectetur do non aute pariatur et irure ex do culpa. In reprehenderit excepteur ut consectetur laboris enim aliquip. Duis velit nostrud fugiat voluptate mollit tempor laboris sunt non labore et sint adipisicing. Et quis aliqua mollit qui ea pariatur fugiat et. Culpa ipsum anim adipisicing nisi excepteur. Officia mollit labore reprehenderit mollit. Occaecat ullamco minim culpa proident.</p>
+						<h2>Em Breve</h2>
+						<p>&lt;/&gt;...</p>
 
-						<a href="/#project_url">Saiba Mais</a>
+						<a class="ahref-disabled" href="/#project_url">Saiba Mais</a>
 						
 					</div>
 
@@ -181,33 +185,16 @@
 
 				<div class="projects-single flex pad20">
 
-					<div class="projects-single-image">
-						<img src="https://media.macphun.com/img/uploads/macphun/blog/2063/_1.jpeg?q=75&w=1710&h=906&resize=cover" alt="Project Image" title="Project Image" />
+					<div class="projects-single-image w45">
+						<img src="https://i.pinimg.com/736x/41/82/a9/4182a9dd330c6442c4a1fbc78274d838.jpg" alt="Project Image" title="Project Image" loading="lazy" />
 					</div>
 
-					<div class="projects-single-text pad20">
+					<div class="projects-single-text w55 pad20">
 
-						<h2>Project Title</h2>
-						<p>Qui qui minim nulla excepteur. Ut ut cillum nisi irure dolor eu. Proident esse adipisicing consectetur tempor. Veniam aliqua nisi esse dolore Lorem anim elit. Dolor aliqua ullamco duis fugiat elit pariatur aliqua culpa. Cupidatat magna laboris laborum et nostrud culpa non minim fugiat non. Ullamco minim ad aliquip excepteur fugiat enim in amet.</p>
+						<h2>Em Breve</h2>
+						<p>&lt;/&gt;...</p>
 
-						<a href="/#project_url">Saiba Mais</a>
-
-					</div>
-
-				</div> <!-- Projects Single -->
-
-				<div class="projects-single flex pad20">
-					
-					<div class="projects-single-image">
-						<img src="https://media.macphun.com/img/uploads/macphun/blog/2063/_1.jpeg?q=75&w=1710&h=906&resize=cover" alt="Project Image" title="Project Image" />
-					</div>
-
-					<div class="projects-single-text pad20">
-
-						<h2>Project Title</h2>
-						<p>Pariatur dolore qui fugiat consequat in irure. Duis dolor exercitation id deserunt nisi cillum duis officia nostrud elit quis. Aliqua proident ea amet cillum.</p>
-
-						<a href="/#project_url">Saiba Mais</a>
+						<a class="ahref-disabled" href="/#project_url">Saiba Mais</a>
 
 					</div>
 
@@ -215,16 +202,33 @@
 
 				<div class="projects-single flex pad20">
 					
-					<div class="projects-single-image">
-						<img src="https://media.macphun.com/img/uploads/macphun/blog/2063/_1.jpeg?q=75&w=1710&h=906&resize=cover" alt="Project Image" title="Project Image" />
+					<div class="projects-single-image w45">
+						<img src="https://i.pinimg.com/736x/41/82/a9/4182a9dd330c6442c4a1fbc78274d838.jpg" alt="Project Image" title="Project Image" loading="lazy" />
+					</div>
+
+					<div class="projects-single-text w55 pad20">
+
+						<h2>Em Breve</h2>
+						<p>&lt;/&gt;...</p>
+
+						<a class="ahref-disabled" href="/#project_url">Saiba Mais</a>
+
+					</div>
+
+				</div> <!-- Projects Single -->
+
+				<div class="projects-single flex pad20">
+					
+					<div class="projects-single-image w45">
+						<img src="https://i.pinimg.com/736x/41/82/a9/4182a9dd330c6442c4a1fbc78274d838.jpg" alt="Project Image" title="Project Image" loading="lazy" />
 					</div>
 					
-					<div class="projects-single-text pad20">
+					<div class="projects-single-text w55 pad20">
 
-						<h2>Project Title</h2>
-						<p>Consectetur do non aute pariatur et irure ex do culpa. In reprehenderit excepteur ut consectetur laboris enim aliquip. Duis velit nostrud fugiat voluptate mollit tempor laboris sunt non labore et sint adipisicing. Et quis aliqua mollit qui ea pariatur fugiat et. Culpa ipsum anim adipisicing nisi excepteur. Officia mollit labore reprehenderit mollit. Occaecat ullamco minim culpa proident.</p>
+						<h2>Em Breve</h2>
+						<p>&lt;/&gt;...</p>
 
-						<a href="/#project_url">Saiba Mais</a>
+						<a class="ahref-disabled" href="/#project_url">Saiba Mais</a>
 						
 					</div>
 
@@ -244,7 +248,7 @@
 	<!-- Technologies Section -->
 	<section class="technologies pad20"> <!-- Technologies -->
 
-		<h2>Meu Conhecimento</h2>
+		<h2 id="js-scroll-knowledge-text">Meu Conhecimento</h2>
 
 		<div class="container flex pad20">
 
@@ -429,11 +433,11 @@
 
 	<!-- Contact Form Section -->
 	<section class="contact-form"> <!-- Contact Form -->
-		<div class="container pad20 flex-column">
+		<div class="container pad50 flex-column">
 
-			<h2>Entre em Contato</h2>
-
-			<form method="post" class="flex-column">
+			<h2 id="js-scroll-contact-text">Quer negociar?<br/>Me mande um e-mail e<br/><a href="mailto:guilhermefortunato2008@gmail.com?subject=Vamos%20Falar%20Sobre%20Negócios&body=Olá%20Guilherme...">Entre Em Contato Comigo.</a></h2>
+			
+			<!--<form method="post" class="flex-column">
 
 				<div class="contact-form-group flex-column">
 					<label>*Nome Completo</label>
@@ -457,7 +461,7 @@
 
 				<input type="submit" name="contact-form-send" value="Enviar" />
 
-			</form> <!-- Form -->
+			</form> Form -->
 
 		</div> <!-- Container -->
 	</section> <!-- Contact Form -->
@@ -465,8 +469,6 @@
 	<!--
 
 		TODO:
-		+ Make the "more button" system to make a animation when clicking in the button
-		+ Button more technologies in section knowledgements
 		+ Change the Lorem ipsum texts to real texts
 
 	-->
@@ -480,10 +482,10 @@
 				<div class="footer-navigation navigation flex-column w33 marg20">
 					<nav>
 						<ul>
-							<li><a href="/">Home</a></li>
-							<li><a href="/projetos/">Projetos Criados</a></li>
-							<li><a href="/conhecimento/">Meu Conhecimento</a></li>
-							<li><a href="/contato/">Contato</a></li>
+							<li><a href="#home" js-scrolltarget="js-scroll-home-top">Home</a></li>
+							<li><a href="#projetos-criados" js-scrolltarget="js-scroll-projects-text">Projetos Criados</a></li>
+							<li><a href="#conhecimento" js-scrolltarget="js-scroll-knowledge-text">Meu Conhecimento</a></li>
+							<li><a href="#contato" js-scrolltarget="js-scroll-contact-text">Contato</a></li>
 						</ul>
 					</nav>
 				</div> <!-- Desktop Navigation -->
@@ -521,6 +523,7 @@
 	<script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
 	<script src="https://kit.fontawesome.com/c092b4e18e.js" crossorigin="anonymous"></script>
 
+	<script src="/public/js/header-functions.js"></script>
 	<script src="/public/js/footer-functions.js"></script>
 
 	<script src="https://unpkg.com/scrollreveal"></script>

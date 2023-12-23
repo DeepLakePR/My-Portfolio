@@ -60,3 +60,25 @@ footer .footer-actions button:hover{
 footer .footer-subfooter{
     background-color: #202020;
 }
+
+/*********************/
+/***** Responsive *****/
+/* Tablets & Mobile */
+@media screen and (max-width: 768px){
+
+    footer .footer-row-divs > div{
+        width: 80%;
+    }
+
+    /* Navigation */
+    footer .footer-navigation li{
+        text-align: center;
+    }
+
+    /* Change The HR to Horizontal */
+    .hr-vertical{
+        height: 2px;
+        width: 50%;
+    }
+
+}

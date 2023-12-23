@@ -91,3 +91,30 @@ header .header-navigation li:not(.navigation-selected) a:hover:after{
         width: 100%;
     }
 }
+
+/*********************/
+/***** Responsive *****/
+/* Notebooks */
+@media screen and (max-width: 1084px){
+
+    header .header-navigation ul{
+        flex-wrap: wrap;
+    }
+
+    header .header-navigation li{
+        width: 50%;
+        margin: 0;
+        margin-top: 5px;
+        text-align: center;
+    }
+
+}
+
+/* Tablets */
+@media screen and (max-width: 768px){
+
+    header .header-navigation li{
+        width: 100%;
+    }
+
+}
