@@ -1,6 +1,10 @@
 /* Header */
 header{
     background-color: #202020;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    padding: 5px;
 }
 
 /* Container */
@@ -18,17 +22,6 @@ header .header-logo{
     width: 225px;
     height: 100px;
 }
-
-/*
-header .header-logo i{
-    font-size: 35px;
-    margin-right: 10px;
-}
-
-header .header-logo h2{
-    font-size: 28px;
-}
-*/
 
 /* Header Navigation */
 header .header-navigation li{

@@ -6,13 +6,13 @@ $(function(){
     // Reveal Animations
     var normalReveal = { 
         duration: 5000, 
-        reset: true,
+        reset: false,
         mobile: false
     };
 
     var AnimatedReveal = {
         duration: 4000,
-        reset: true,
+        reset: false,
         distance: '100%',
         origin: 'bottom',
         opacity: 0
@@ -29,12 +29,12 @@ $(function(){
     ScrollReveal().reveal('.about-me_text > p', {...AnimatedReveal, duration: 4500, origin: 'right'});
 
     /* Projects */
-    ScrollReveal().reveal('.projects-single-text', {...normalReveal, duration: 3000, reset: false});
-    ScrollReveal().reveal('.projects-single-image', {...normalReveal, reset: false});
-    ScrollReveal().reveal('.projects-more-button', {...normalReveal, reset: false});
+    ScrollReveal().reveal('.projects-single-text', {...normalReveal, duration: 3000});
+    ScrollReveal().reveal('.projects-single-image', {...normalReveal});
+    ScrollReveal().reveal('.projects-more-button', {...normalReveal});
 
     /* Technologies */
-    ScrollReveal().reveal('.technologies-single-box', {...normalReveal, duration: 1500, reset: false});
+    ScrollReveal().reveal('.technologies-single-box', {...normalReveal, duration: 1500, afterReveal: technologiesSingleBoxAnimation });
 
     ////////////////
     // Projects Functions
@@ -123,6 +123,67 @@ $(function(){
             5000
         )
 
+    }
+
+    //////
+    var ElementPnivelColor = '#5fc6d4'; 
+
+    function technologiesSingleBoxAnimation(element){
+
+        let CurrentTechBoxNivel = $(element).find('.tech-single-box-nivel-current').append("<div class='tech-single-box-nivel-current-fill'></div>");
+
+        let CurrentTechBoxNivelAnimation = $(CurrentTechBoxNivel).find('.tech-single-box-nivel-current-fill');
+
+        let TechSingleBoxNivel = $(element).find('.technologies-single-box-nivel');
+        let TechSingleCustomLine = $(element).find('.tech-single-box-nivel-custom_line');
+
+        if($(TechSingleCustomLine[0]).hasClass('tech-single-box-nivel-current')){
+            techAddAbsolutePositionLine(CurrentTechBoxNivelAnimation)
+
+            CurrentTechBoxNivelAnimation.animate({'width': '100%'}, 1, ()=>{
+
+                setTimeout(()=>{
+                    let ElementP = TechSingleBoxNivel.find('p')[1];
+                    $(ElementP).css('color', ElementPnivelColor).css('font-weight', '600');
+                }, 1500);
+
+            });
+
+        }else if($(TechSingleCustomLine[1]).hasClass('tech-single-box-nivel-current')){
+            $(TechSingleCustomLine[0]).append("<div class='tech-single-box-nivel-current-fill'></div>");
+
+            let CurrentFill = $(TechSingleCustomLine[0]).find('.tech-single-box-nivel-current-fill')
+
+            techAddAbsolutePositionLine(CurrentFill)
+
+            CurrentFill.animate({'width': '100%'}, 1, ()=>{
+
+                setTimeout(()=>{
+                    techAddAbsolutePositionLine(CurrentTechBoxNivelAnimation)
+    
+                    CurrentTechBoxNivelAnimation.animate({'width': '100%'}, 1, ()=>{
+
+                        setTimeout(()=>{
+                            let ElementP = TechSingleBoxNivel.find('p')[2];
+                            $(ElementP).css('color', ElementPnivelColor).css('font-weight', '600');
+                        }, 1500);
+
+                    });
+                }, 1500)
+
+            });
+
+        }else{
+            let ElementP = TechSingleBoxNivel.find('p')[0];
+            $(ElementP).css('color', ElementPnivelColor).css('font-weight', '600');
+
+        }
+    }
+
+    function techAddAbsolutePositionLine(element){
+        console.log(element);
+        element.css('position', 'absolute').css('top', '0').css('left', '0').css('height', '100%').css('width', '0').css('background', '#465891').css('border-radius', '8px').css('transition', 'width 2s ease');
+        
     }
 
 })

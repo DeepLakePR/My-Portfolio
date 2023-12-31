@@ -1,7 +1,8 @@
 /* Header Section Content Apresentation */
 section.section-apresentation{
+    padding-top: 115px;
     position: relative;
-    z-index: 999;
+    z-index: 500;
     border-bottom-left-radius: 40px;
     border-bottom-right-radius: 40px;
     background-color: rgb(54, 68, 107);
@@ -86,7 +87,7 @@ section.end-to-end-applications{
 
 .end-to-end-applications_bg .app-bg_image{
     object-fit: cover;
-    background-image: url('../assets/bg.jpg');
+    background-image: url('../assets/end-to-end-applications-bg.jpg');
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
@@ -103,6 +104,7 @@ section.end-to-end-applications{
 section.end-to-end-applications h2{
     font-weight: 200;
     font-size: 39px;
+    text-shadow: 0px 7px 8px rgba(0,0,0,0.6);
 }
 
 section.end-to-end-applications h2 span{
@@ -323,14 +325,16 @@ section.technologies .container{
 
 .technologies-single-box-nivel p{
     font-weight: 275;
+    transition: color 0.25s ease;
 }
 
 .tech-single-box-nivel-custom_line{
     width: 20%;
     height: 8px;
-    background: white;
+    background: rgb(255, 255, 255);
     border-radius: 8px;
     margin: 2px 10px 0 10px;
+    position: relative;
 }
 
 /* Technologies > Dynamic Image */
@@ -354,87 +358,49 @@ section.technologies .container{
 
 /* Contact Form */
 section.contact-form{
-    background: #222222;
+    max-width: 100%;
     color: white;
 }
 
 section.contact-form .container{
+    max-width: 100%;
     padding-top: 100px;
     padding-bottom: 100px;
+    background-image: url('/public/assets/andrew2.jpg');
+    background-position: center;
+    background-size: 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+section.contact-form .container .contact-form-bg_opacity{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: rgba(34, 34, 34, 0.4);
 }
 
 section.contact-form .container > h2{
     text-align: center;
     font-size: 32px;
+    z-index: 2;
+    text-shadow: 0px 7px 8px rgba(0,0,0,0.6);
 }
 
 section.contact-form .container > h2 a{
-    color: #6bddec;
     text-decoration: underline;
     text-decoration-color: #6bddec;
+    color: #6bddec;
+    transition: color 0.35s ease-in-out;
 }
 
-/**********DEPRECATED****************
-section.contact-form form{
-    align-items: center;
+section.contact-form .container > h2 a:hover{
+    color: #50a9b4;
 }
-
-section.contact-form .contact-form-group{
-    width: 50%;
-    margin-bottom: 15px;
-}
-
-.contact-form-group label{
-    margin-bottom: 4px;
-    font-size: 16px;
-    font-weight: 275;
-}
-
-.contact-form-group input, .contact-form-group textarea{
-    padding: 7px 12px;
-    border-radius: 3px;
-    border: 0;
-    background: #181818;
-    color: white;
-    transition: all 0.2s ease-in-out;
-    outline: none;
-    border: 0 solid #0f0f0f;
-    font-size: 15px;
-}
-
-.contact-form-group input::placeholder, textarea::placeholder{
-    color: rgba(194, 194, 194, 0.7);
-}
-
-.contact-form-group textarea{
-    resize: none;
-    height: 135px;
-    min-height: 135px;
-    max-height: 135px;
-}
-
-.contact-form-group input:focus, textarea:focus{
-    outline: none;
-    border: 3px solid #0f0f0f;
-}
-
-section.contact-form form input[type="submit"]{
-    background: rgb(18, 18, 18);
-    border: 0;
-    border-radius: 4px;
-    padding: 5px 30px;
-    color: white;
-    font-weight: 275;
-    font-size: 17px;
-    cursor: pointer;
-    transition: all 0.25s ease-in-out;
-}
-
-section.contact-form form input[type="submit"]:hover{
-    background: rgb(2, 2, 2);
-    color: #ccc;
-}
-*/
 
 /**********************************/
 /****** Responsive ******/
