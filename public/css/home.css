@@ -357,12 +357,12 @@ section.technologies .container{
 }
 
 /* Contact Form */
-section.contact-form{
+section.contact{
     max-width: 100%;
     color: white;
 }
 
-section.contact-form .container{
+section.contact .container{
     max-width: 100%;
     padding-top: 100px;
     padding-bottom: 100px;
@@ -374,7 +374,7 @@ section.contact-form .container{
     position: relative;
 }
 
-section.contact-form .container .contact-form-bg_opacity{
+section.contact .container .contact-bg_opacity{
     position: absolute;
     top: 0;
     left: 0;
@@ -384,21 +384,21 @@ section.contact-form .container .contact-form-bg_opacity{
     background-color: rgba(34, 34, 34, 0.4);
 }
 
-section.contact-form .container > h2{
+section.contact .container > h2{
     text-align: center;
     font-size: 32px;
     z-index: 2;
     text-shadow: 0px 7px 8px rgba(0,0,0,0.6);
 }
 
-section.contact-form .container > h2 a{
+section.contact .container > h2 a{
     text-decoration: underline;
     text-decoration-color: #6bddec;
     color: #6bddec;
     transition: color 0.35s ease-in-out;
 }
 
-section.contact-form .container > h2 a:hover{
+section.contact .container > h2 a:hover{
     color: #50a9b4;
 }
 
