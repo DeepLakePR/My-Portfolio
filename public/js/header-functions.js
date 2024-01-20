@@ -19,6 +19,11 @@ $(()=>{
         let ButtonTarget = $(e.target).attr("js-scrolltarget");
         let ElementTarget = $("#" + ButtonTarget);
 
+        if(ButtonTarget == 'js-scroll-contact-text'){
+            ElementTarget = ElementTarget.parent();
+
+        }
+        
         // Scroll
         scrollTo({ 'top': ElementTarget.position().top - 20, 'behavior': 'smooth' });
     }

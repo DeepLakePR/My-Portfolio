@@ -366,9 +366,9 @@ section.contact .container{
     max-width: 100%;
     padding-top: 100px;
     padding-bottom: 100px;
-    background-image: url('/public/assets/andrew2.jpg');
+    background-image: url('/public/assets/bg1.jpg');
     background-position: center;
-    background-size: 100%;
+    background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
     position: relative;
@@ -381,7 +381,7 @@ section.contact .container .contact-bg_opacity{
     width: 100%;
     height: 100%;
     z-index: 1;
-    background-color: rgba(34, 34, 34, 0.4);
+    background-color: rgba(34, 34, 34, 0.45);
 }
 
 section.contact .container > h2{
