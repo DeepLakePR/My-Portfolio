@@ -1,10 +1,11 @@
 /* Header */
 header{
-    background-color: var(--background-secondary);
+    background-color: var(--header-background);
     position: fixed;
     width: 100%;
     z-index: 1000;
     padding: 5px;
+    box-shadow: var(--header-shadow);
 }
 
 /* Container */
@@ -16,6 +17,7 @@ header .container{
 header .header-logo{
     color: var(--global-default-color);
     align-items: center;
+    filter: brightness(var(--header-logo-color));
 }
 
 .header-logo img{
@@ -39,7 +41,7 @@ header .header-navigation li a{
 }
 
 header li.navigation-selected a{
-    color: var(--global-default-secondary-color);
+    color: var(--header-navigation-color);
 }
 
 header .header-navigation li a,
@@ -56,7 +58,7 @@ header .header-navigation li a:after{
     left: 0;
     right: 0;
     height: 2px;
-    background: var(--global-default-secondary-color);
+    background: var(--header-navigation-color);
     margin: 0 auto;
 }
 
@@ -66,7 +68,7 @@ header .header-navigation li:not(.navigation-selected) a:after{
 }
 
 header .header-navigation li a:hover{
-    color: var(--global-default-secondary-color);
+    color: var(--header-navigation-color);
 }
 
 header .header-navigation li:not(.navigation-selected) a:hover:after{

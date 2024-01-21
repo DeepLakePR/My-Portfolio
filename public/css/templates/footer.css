@@ -4,7 +4,7 @@ footer{
     width: 100%;
     text-align: center;
     color: var(--global-default-color);;
-    font-weight: 275;
+    font-weight: var(--footer-font-weight);
 }
 
 /*******************/
@@ -53,12 +53,12 @@ footer .footer-actions button i{
 }
 
 footer .footer-actions button:hover{
-    background-color: var(--footer-background-content);
+    background-color: var(--footer-secondary-hover);
 }
 
 /* SubFooter */
 footer .footer-subfooter{
-    background-color: var(--background-secondary);
+    background-color: var(--subfooter-background);
 }
 
 /*********************/

@@ -20,8 +20,20 @@ $(()=>{
         let ButtonTarget = $(e.target).attr("js-scrolltarget");
         let ElementTarget = $("#" + ButtonTarget);
 
-        if(ButtonTarget == 'js-scroll-contact-text'){
+        let offsetDebug = 20;
+
+        if(ButtonTarget == 'js-scroll-knowledge-text' || ButtonTarget == 'js-scroll-contact-text'){
             ElementTarget = ElementTarget.parent();
+
+            if(ButtonTarget == 'js-scroll-knowledge-text'){
+                offsetDebug = 100;
+            
+            }
+
+        }
+
+        if(ButtonTarget == 'js-scroll-projects-text'){
+            offsetDebug = 130;
 
         }
 
@@ -29,7 +41,7 @@ $(()=>{
         $(`.header-navigation a[js-scrolltarget=${ButtonTarget}]`).parent().addClass('navigation-selected');
         
         // Scroll
-        scrollTo({ 'top': ElementTarget.position().top - 20, 'behavior': 'smooth' });
+        scrollTo({ 'top': ElementTarget.position().top - offsetDebug, 'behavior': 'smooth' });
     }
 
 })

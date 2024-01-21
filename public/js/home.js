@@ -125,9 +125,7 @@ $(function(){
 
     }
 
-    //////
-    var ElementPnivelColor = '#6bddec'; 
-
+    ////////////////////////////////////////////////////////////////////////
     function technologiesSingleBoxAnimation(element){
 
         let CurrentTechBoxNivel = $(element).find('.tech-single-box-nivel-current').append("<div class='tech-single-box-nivel-current-fill'></div>");
@@ -143,8 +141,8 @@ $(function(){
             CurrentTechBoxNivelAnimation.animate({'width': '100%'}, 1, ()=>{
 
                 setTimeout(()=>{
-                    let ElementP = TechSingleBoxNivel.find('p')[1];
-                    $(ElementP).css('color', ElementPnivelColor).css('font-weight', '600');
+                    $(TechSingleBoxNivel.find('p')[1]).addClass('tech-single-box-nivel-current-text');
+
                 }, 1500);
 
             });
@@ -164,8 +162,8 @@ $(function(){
                     CurrentTechBoxNivelAnimation.animate({'width': '100%'}, 1, ()=>{
 
                         setTimeout(()=>{
-                            let ElementP = TechSingleBoxNivel.find('p')[2];
-                            $(ElementP).css('color', ElementPnivelColor).css('font-weight', '600');
+                            $(TechSingleBoxNivel.find('p')[2]).addClass('tech-single-box-nivel-current-text');;
+
                         }, 1500);
 
                     });
@@ -174,15 +172,15 @@ $(function(){
             });
 
         }else{
-            let ElementP = TechSingleBoxNivel.find('p')[0];
-            $(ElementP).css('color', ElementPnivelColor).css('font-weight', '600');
+            $(TechSingleBoxNivel.find('p')[0]).addClass('tech-single-box-nivel-current-text');;
 
         }
+
     }
 
     function techAddAbsolutePositionLine(element){
-        //console.log(element);
-        element.css('position', 'absolute').css('top', '0').css('left', '0').css('height', '100%').css('width', '0').css('background', '#6dd5e3').css('border-radius', '8px').css('transition', 'width 2s ease');
+        element.css('position', 'absolute').css('top', '0').css('left', '0').css('height', '100%').css('width', '0').css('border-radius', '8px').css('transition', 'width 2s ease');
+        element.addClass('tech-single-box-nivel-current');
         
     }
 

@@ -1,9 +1,15 @@
+/*********************************/
 /* Default: Dark Theme*/
 :root{
+
+    /* Framework */
+    --css-framework-hr-color: rgb(224, 224, 224);
 
     /* Global */
     --global-default-color: white;
     --global-default-secondary-color: #ccc;
+
+    --global-shadow-background-color: rgba(0,0,0,0.45);
     --global-shadow-color: rgba(0,0,0,0.6);
     --global-shadow-secondary-color: rgba(0,0,0,0.5);
     --global-shadow-tertiary-color: rgba(0,0,0,0.4);
@@ -11,23 +17,35 @@
 
     --global-highlight-color: #6bddec;
     --global-secondary-highlight-color: #4195da;
+    --global-tertiary-highlight-color: #66dae9;
 
     /* Header */
+    --header-background: #1f1f1f;
+    --header-primary-color: #ffffff;
+    --header-navigation-color: #dbd8d8;
+    --header-shadow: 0px 5px 7px 0px rgba(0, 0, 0, 0.1);;
+
+    --header-logo-color: 1;
 
     /* Sections */
     --section-background-custom: rgb(54, 68, 107);
     --section-background-custom-two: rgb(50, 63, 104);
 
+    --section-text-font-weight: 275;
+    --section-text-secondary-font-weight: 300;
+
     --section-button-hover-color: rgb(38, 47, 78);
     --section-button-secondary-hover-color: #929292;
     --section-button-tertiary-hover-color: #50a9b4;
 
-    --background-primary: #202020;
-    --background-secondary: #222222;
+    --section-technologies-animation-color: rgb(107, 221, 236);
+
+    --background-primary: #252525;
+    --background-secondary: #292929;
     --background-tertiary: #242424;
     --background-quarter: #363636;
     --background-five: #2b2b2b;
-    --background-six: #262626;
+    --background-six: #2c2c2c;
     
     --background-black: black;
 
@@ -35,11 +53,70 @@
     --footer-background: #272727;
     --footer-background-content: #2e2e2e;
     --footer-hover-color: #929292;
+    --footer-secondary-hover: #3f3f3f;
+    --footer-font-weight: 300;
 
+    --subfooter-background: #212121;
+    
 }
 
+/*********************************/
 /* Light Theme */
-.light-theme{
-    --section-background: rgb(54, 68, 107);
-    --section-background-two: rgb(50, 63, 104);
+.framework-light-theme{
+
+    /* Framework */
+    --css-framework-hr-color: #818181;
+
+    /* Global */
+    --global-default-color: black;
+    --global-default-secondary-color: #383838;
+
+    --global-shadow-background-color: rgba(0,0,0,0.45);
+    --global-shadow-color: rgba(0,0,0,0.3);
+    --global-shadow-secondary-color: rgba(0,0,0,0.35);
+    --global-shadow-tertiary-color: rgba(0,0,0,0.4);
+    --global-shadow-quarter-color: rgba(34, 34, 34, 0.45);
+
+    --global-highlight-color: #2385d6;
+    --global-secondary-highlight-color: #3880bb;
+    --global-tertiary-highlight-color: #66dae9;
+
+    /* Header */
+    --header-background: #dadada;
+    --header-primary-color: #2b2b2b;
+    --header-navigation-color: #616161;
+    --header-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.1);
+
+    --header-logo-color: 0;
+
+    /* Sections */
+    --section-background-custom: rgb(212, 212, 212);
+    --section-background-custom-two: rgb(207, 207, 207);
+
+    --section-text-font-weight: 300;
+    --section-text-secondary-font-weight: 400;
+
+    --section-button-hover-color: rgb(180, 180, 180);
+    --section-button-secondary-hover-color: #979797;
+    --section-button-tertiary-hover-color: #57a3ad;
+
+    --section-technologies-animation-color: #2385d6; 
+
+    --background-primary: rgb(233, 233, 233);
+    --background-secondary: #dadada;
+    --background-tertiary: #c5c5c5;
+    --background-quarter: #d4d4d4;
+    --background-five: #c5c9cc;
+    --background-six: #e2e1e1;
+    --background-seven:rgb(190, 190, 190);
+    
+    --background-black: black;
+
+    /* Footer */
+    --footer-background: #cecdcd;
+    --footer-hover-color: #808080;
+    --footer-secondary-hover: #999999;
+    --footer-font-weight: 400;
+    --subfooter-background: #dadada;
+
 }

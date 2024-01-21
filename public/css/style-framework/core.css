@@ -192,10 +192,14 @@ a.ahref-disabled{
 }
 
 /* Hr */
+hr{
+    border: 0;
+}
+
 .hr-vertical {
     height: 80px;
     width: 2px;
-    color: #646464;
+    background: var(--css-framework-hr-color);
 }
 
 /******************************************************/
