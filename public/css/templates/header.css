@@ -26,6 +26,10 @@ header .header-logo{
 }
 
 /* Header Navigation */
+header .header-navigation{
+    justify-content: flex-end;
+}
+
 header .header-navigation li{
     margin: 0 10px;
     transition: all 0.25s ease-in-out;

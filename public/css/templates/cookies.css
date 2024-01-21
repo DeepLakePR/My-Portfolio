@@ -1,0 +1,102 @@
+/* Cookies Privacy Wrapper */
+div.cookies-privay-wrapper{
+    opacity: 0;
+    display: block !important;
+    position: fixed;
+    inset: 15px;
+    top: initial;
+    background: var(--cookies-background);
+    border-radius: 10px;
+    max-width: 35%;
+    z-index: 999;
+    box-shadow: var(--cookies-shadow);
+}
+
+/* Container */
+div.cookies-privay-wrapper .container{
+    color: var(--global-default-color);
+    align-items: center;
+    padding: 12px 8px;
+}
+
+/* Cookies Icon */
+div.cookies-privay-wrapper .cookies-wrapper-icon i{
+    font-size: 30px;
+    color: var(--cookies-color);
+}
+
+/* Cookies Text */
+div.cookies-privay-wrapper .cookies-wrapper-text{
+    margin: 10px 0;
+}
+
+/* Cookies Action Buttons */
+div.cookies-privay-wrapper .cookies-wrapper-actions{
+    align-items: center;
+    justify-content: center;
+}
+
+div.cookies-privay-wrapper .cookies-wrapper-actions button{
+    padding: 7px 15px;
+    color: var(--cookies-secondary-color);
+    border-radius: 8px;
+    text-align: center;
+    font-size: 16px;
+    border: 0;
+    background: var(--cookies-button);
+    cursor: pointer;
+    box-shadow: var(--cookies-secondary-shadow);
+    transition: all 0.2s ease-in-out;
+    margin-right: 15px;
+}
+
+div.cookies-privay-wrapper .cookies-wrapper-actions button:hover{
+    color: var(--cookies-hover-text);
+    background: var(--cookies-hover);
+}
+
+div.cookies-privay-wrapper .cookies-wrapper-actions a{
+    color: var(--cookies-color);
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: underline;
+    transition: color 0.2s ease-in-out;
+}
+
+div.cookies-privay-wrapper .cookies-wrapper-actions a:hover{
+    color: var(--cookies-secondary-hover);
+}
+
+/************************/
+/* Responsive Cookies Wrapper */
+/* Notebooks */
+@media screen and (max-width: 1024px){
+
+    
+
+}
+
+/* Tablets */
+@media screen and (max-width: 768px){
+
+    /* Cookies Wrapper */
+    div.cookies-privay-wrapper{    
+        max-width: 100%;
+        inset: 7px;
+        top: initial;
+    }
+
+    /* Action Buttons */
+    div.cookies-privay-wrapper .cookies-wrapper-actions{
+        flex-wrap: nowrap;
+        flex-direction: row;
+    }
+
+}
+
+/* Mobile */
+@media screen and (max-width: 480px){
+
+    
+
+}
