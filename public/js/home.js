@@ -126,7 +126,7 @@ $(function(){
     }
 
     //////
-    var ElementPnivelColor = '#5fc6d4'; 
+    var ElementPnivelColor = '#6bddec'; 
 
     function technologiesSingleBoxAnimation(element){
 
@@ -182,7 +182,7 @@ $(function(){
 
     function techAddAbsolutePositionLine(element){
         //console.log(element);
-        element.css('position', 'absolute').css('top', '0').css('left', '0').css('height', '100%').css('width', '0').css('background', '#465891').css('border-radius', '8px').css('transition', 'width 2s ease');
+        element.css('position', 'absolute').css('top', '0').css('left', '0').css('height', '100%').css('width', '0').css('background', '#6dd5e3').css('border-radius', '8px').css('transition', 'width 2s ease');
         
     }
 

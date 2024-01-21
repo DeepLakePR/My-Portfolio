@@ -1,6 +1,6 @@
 /* Header */
 header{
-    background-color: #202020;
+    background-color: var(--background-secondary);
     position: fixed;
     width: 100%;
     z-index: 1000;
@@ -14,7 +14,7 @@ header .container{
 
 /* Header Logo */
 header .header-logo{
-    color: white;
+    color: var(--global-default-color);
     align-items: center;
 }
 
@@ -30,7 +30,7 @@ header .header-navigation li{
 }
 
 header .header-navigation li a{
-    color: white;
+    color: var(--global-default-color);
     font-size: 18px;
     font-family: 'Argentum Sans', sans-serif;
     font-weight: 300;
@@ -39,7 +39,7 @@ header .header-navigation li a{
 }
 
 header li.navigation-selected a{
-    color: #cccccc;
+    color: var(--global-default-secondary-color);
 }
 
 header .header-navigation li a,
@@ -56,7 +56,7 @@ header .header-navigation li a:after{
     left: 0;
     right: 0;
     height: 2px;
-    background: #cccccc;
+    background: var(--global-default-secondary-color);
     margin: 0 auto;
 }
 
@@ -66,7 +66,7 @@ header .header-navigation li:not(.navigation-selected) a:after{
 }
 
 header .header-navigation li a:hover{
-    color: #cccccc;
+    color: var(--global-default-secondary-color);
 }
 
 header .header-navigation li:not(.navigation-selected) a:hover:after{

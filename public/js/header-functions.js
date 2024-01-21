@@ -8,6 +8,7 @@ $(()=>{
 
     HeaderNavigationButtons.click((e) =>{
         ScrollTarget(e);
+
     });
 
     FooterNavigationButtons.click((e) =>{
@@ -23,6 +24,9 @@ $(()=>{
             ElementTarget = ElementTarget.parent();
 
         }
+
+        HeaderNavigationButtons.parent().removeClass('navigation-selected');
+        $(`.header-navigation a[js-scrolltarget=${ButtonTarget}]`).parent().addClass('navigation-selected');
         
         // Scroll
         scrollTo({ 'top': ElementTarget.position().top - 20, 'behavior': 'smooth' });

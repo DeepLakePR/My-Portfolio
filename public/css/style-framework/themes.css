@@ -1,0 +1,45 @@
+/* Default: Dark Theme*/
+:root{
+
+    /* Global */
+    --global-default-color: white;
+    --global-default-secondary-color: #ccc;
+    --global-shadow-color: rgba(0,0,0,0.6);
+    --global-shadow-secondary-color: rgba(0,0,0,0.5);
+    --global-shadow-tertiary-color: rgba(0,0,0,0.4);
+    --global-shadow-quarter-color: rgba(34, 34, 34, 0.45);
+
+    --global-highlight-color: #6bddec;
+    --global-secondary-highlight-color: #4195da;
+
+    /* Header */
+
+    /* Sections */
+    --section-background-custom: rgb(54, 68, 107);
+    --section-background-custom-two: rgb(50, 63, 104);
+
+    --section-button-hover-color: rgb(38, 47, 78);
+    --section-button-secondary-hover-color: #929292;
+    --section-button-tertiary-hover-color: #50a9b4;
+
+    --background-primary: #202020;
+    --background-secondary: #222222;
+    --background-tertiary: #242424;
+    --background-quarter: #363636;
+    --background-five: #2b2b2b;
+    --background-six: #262626;
+    
+    --background-black: black;
+
+    /* Footer */
+    --footer-background: #272727;
+    --footer-background-content: #2e2e2e;
+    --footer-hover-color: #929292;
+
+}
+
+/* Light Theme */
+.light-theme{
+    --section-background: rgb(54, 68, 107);
+    --section-background-two: rgb(50, 63, 104);
+}

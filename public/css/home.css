@@ -5,20 +5,18 @@ section.section-apresentation{
     z-index: 500;
     border-bottom-left-radius: 40px;
     border-bottom-right-radius: 40px;
-    background-color: rgb(54, 68, 107);
-    -webkit-box-shadow: 0px 20px 22px 0px rgba(0,0,0,0.6);
-    -moz-box-shadow: 0px 20px 22px 0px rgba(0,0,0,0.6);
-    box-shadow: 0px 20px 22px 0px rgba(0,0,0,0.6);
+    background-color: var(--section-background-custom);
+    box-shadow: 0px 20px 22px 0px var(--global-shadow-color);
 }
 
 /* Apresentation > Text */
 .section-apresentation .apresentation-text{
     padding: 70px 0;
-    color: white;
+    color: var(--global-default-color);
 }
 
 .apresentation-text h2, .apresentation-text p{
-    text-shadow: 0px 7px 8px rgba(0,0,0,0.6);
+    text-shadow: 0px 7px 8px var(--global-shadow-color);
 }
 
 .apresentation-text h2{
@@ -31,7 +29,7 @@ section.section-apresentation{
 }
 
 .apresentation-text span{
-    color: #6bddec;
+    color: var(--global-highlight-color);
     /* 
     #FF9000 
     #98eaf5
@@ -48,26 +46,33 @@ section.section-apresentation{
 }
 
 .section-apresentation .apresentation-social_media a{
-    color: white;
+    color: var(--global-default-color);
     font-size: 40px;
     transition: color 0.25s ease-in-out;
 }
 
 .section-apresentation .apresentation-social_media a:hover{
-    color: #929292;
+    color: var(--section-button-secondary-hover-color);
 }
 
 /* Apresentation > Image */
 .section-apresentation .apresentation-image{
-    padding-left: 50px;
+    align-items: center;
+    justify-content: center;
 }
 
 .section-apresentation .apresentation-image img{
     max-width: 300px;
     border-radius: 50%;
-    -webkit-box-shadow: 0px 13px 17px 0px rgba(0,0,0,0.6);
-    -moz-box-shadow: 0px 13px 17px 0px rgba(0,0,0,0.6);
-    box-shadow: 0px 13px 17px 0px rgba(0,0,0,0.6);
+    box-shadow: 0px 13px 17px 0px var(--global-shadow-color);
+}
+
+.section-apresentation .apresentation-image h3{
+    margin-top: 15px;
+    font-size: 25px;
+    font-weight: 600;
+    color: var(--global-highlight-color);
+    text-shadow: 0px 5px 5px var(--global-shadow-secondary-color);
 }
 
 /*******************/
@@ -95,7 +100,7 @@ section.end-to-end-applications{
 }
 
 .end-to-end-applications_bg .app-bg_opacity{
-    background-color: rgba(0,0,0,0.4);
+    background-color: var(--global-shadow-tertiary-color);
     position: absolute;
     left: 0;
     top: 0;
@@ -104,18 +109,18 @@ section.end-to-end-applications{
 section.end-to-end-applications h2{
     font-weight: 200;
     font-size: 39px;
-    text-shadow: 0px 7px 8px rgba(0,0,0,0.6);
+    text-shadow: 0px 7px 8px var(--global-shadow-color);
 }
 
 section.end-to-end-applications h2 span{
     font-size: 45px;
     font-weight: 400;
-    color: #4195da;
+    color: var(--global-secondary-highlight-color);
 }
 
 /* About Me */
 section.about-me{
-    background: rgb(50, 63, 104);
+    background: var(--section-background-custom-two);
     overflow: hidden;
 }
 
@@ -136,7 +141,7 @@ section.about-me .container{
 section.about-me .about-me_text{
     max-width: 700px;
     text-align: left;
-    color: white;
+    color: var(--global-default-color);
 }
 
 .about-me_text h2{
@@ -144,7 +149,7 @@ section.about-me .about-me_text{
     margin-bottom: 15px;
     display: inline-block;
     padding-right: 80px;
-    border-bottom: 2px solid white;
+    border-bottom: 2px solid var(--global-default-color);
 }
 
 .about-me_text p{
@@ -154,23 +159,21 @@ section.about-me .about-me_text{
 
 /* Section Created Projects */
 section.projects{
-    background: #222222;
+    background: var(--background-secondary);
 }
 
 section.projects .container > h2{
     font-size: 30px;
-    color: white;
+    color: var(--global-default-color);
     text-align: center;
     padding-bottom: 40px;
 }
 
 .projects-wrapper{
-    background: #202020;
+    background: var(--background-primary);
     border-radius: 12px;
-    border: 25px solid #262626;
-    box-shadow: 0px 15px 20px 0px rgba(0,0,0,0.6);
-    -webkit-box-shadow: 0px 15px 20px 0px rgba(0,0,0,0.6);
-    -moz-box-shadow: 0px 15px 20px 0px rgba(0,0,0,0.6);
+    border: 25px solid var(--background-six);
+    box-shadow: 0px 15px 20px 0px var(--global-shadow-color);
     overflow: hidden;
     max-height: 1125px;
     transition: all 1.25s linear;
@@ -179,7 +182,7 @@ section.projects .container > h2{
 .projects-single{
     width: 100%;
     height: 300px;
-    color: white;
+    color: var(--global-default-color);
 }
 
 .projects-single:nth-child(+n+4){
@@ -192,7 +195,7 @@ section.projects .container > h2{
     border-radius: 8px;
     cursor: pointer;
     overflow: hidden;
-    background-color: black;
+    background-color: var(--background-black);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -204,7 +207,7 @@ section.projects .container > h2{
 }
 
 .projects-single-image:hover img{
-    transform: scale(1.085);
+    transform: scale(1.07);
 }
 
 .projects-single-text{
@@ -223,8 +226,8 @@ section.projects .container > h2{
 }
 
 .projects-single-text a{
-    color: white;
-    background: rgb(50, 63, 104);
+    color: var(--global-default-color);
+    background: var(--section-background-custom-two);
     padding: 9px 16px;
     border-radius: 8px;
     transition: all 0.25s ease-in-out;
@@ -234,8 +237,8 @@ section.projects .container > h2{
 }
 
 .projects-single-text a:not(.ahref-disabled):hover{
-    background: rgb(38, 47, 78);
-    color: #ccc;
+    background: var(--section-button-hover-color);
+    color: var(--global-default-secondary-color);
 }
 
 .projects-single:nth-child(even) .projects-single-text{
@@ -249,7 +252,7 @@ section.projects .container > h2{
 .projects-wrapper .projects-more-button{
     text-align: center;
     width: 100%;
-    color: white;
+    color: var(--global-default-color);
     padding: 20px 20px;
     padding-bottom: 10px;
 }
@@ -261,7 +264,7 @@ section.projects .container > h2{
 
 .projects-more-button i{
     padding: 13px;
-    background: #363636;
+    background: var(--background-quarter);
     border-radius: 50%;
     font-size: 20px;
     cursor: pointer;
@@ -269,19 +272,19 @@ section.projects .container > h2{
 }
 
 .projects-more-button i:hover{
-    color: #ccc;
-    background: #242424;
+    color: var(--global-default-secondary-color);
+    background: var(--background-quarter);
 }
 
 /* Knowledge Technologies Projects */
 section.technologies{
     padding-top: 30px;
-    background: rgb(50, 63, 104);
+    background: var(--section-background-custom-two);
 }
 
 section.technologies > h2{
     text-align: center;
-    color: white;
+    color: var(--global-default-color);
     font-size: 30px;
 }
 
@@ -297,7 +300,7 @@ section.technologies .container{
 
 .technologies-single-box{
     width: 100%;
-    color: white;
+    color: var(--global-default-color);
     margin-bottom: 10px;
 }
 
@@ -319,7 +322,7 @@ section.technologies .container{
 
 .technologies-single-box-nivel{
     margin-top: 10px;
-    background: #2b2b2b;
+    background: var(--background-five);
     border-radius: 8px;
 }
 
@@ -331,7 +334,7 @@ section.technologies .container{
 .tech-single-box-nivel-custom_line{
     width: 20%;
     height: 8px;
-    background: rgb(255, 255, 255);
+    background: var(--global-default-color); /* Text color = Background Color for this element */
     border-radius: 8px;
     margin: 2px 10px 0 10px;
     position: relative;
@@ -343,30 +346,28 @@ section.technologies .container{
     align-items: center;
     justify-content: center;
     max-height: 650px;
-    background: #222222;
+    background: var(--background-secondary);
     border-radius: 15px;
-    box-shadow: 0px 15px 20px 0px rgba(0,0,0,0.6);
-    -webkit-box-shadow: 0px 15px 20px 0px rgba(0,0,0,0.6);
-    -moz-box-shadow: 0px 15px 20px 0px rgba(0,0,0,0.6);
+    box-shadow: 0px 15px 20px 0px var(--global-shadow-color);
 }
 
 .technologies-dynamic-image i{
     font-size: 300px;
-    color: white;
+    color: var(--global-default-color);
     width: 100%;
 }
 
 /* Contact Form */
 section.contact{
     max-width: 100%;
-    color: white;
+    color: var(--global-default-color);
 }
 
 section.contact .container{
     max-width: 100%;
     padding-top: 100px;
     padding-bottom: 100px;
-    background-image: url('/public/assets/bg1.jpg');
+    background-image: url('/public/assets/contact-bg.jpg');
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
@@ -381,25 +382,25 @@ section.contact .container .contact-bg_opacity{
     width: 100%;
     height: 100%;
     z-index: 1;
-    background-color: rgba(34, 34, 34, 0.45);
+    background-color: var(--global-shadow-quarter-color);
 }
 
 section.contact .container > h2{
     text-align: center;
     font-size: 32px;
     z-index: 2;
-    text-shadow: 0px 7px 8px rgba(0,0,0,0.6);
+    text-shadow: 0px 7px 8px var(--global-shadow-color);
 }
 
 section.contact .container > h2 a{
     text-decoration: underline;
-    text-decoration-color: #6bddec;
-    color: #6bddec;
+    text-decoration-color: var(--global-highlight-color);
+    color: var(--global-highlight-color);
     transition: color 0.35s ease-in-out;
 }
 
 section.contact .container > h2 a:hover{
-    color: #50a9b4;
+    color: var(--section-button-tertiary-hover-color);
 }
 
 /**********************************/

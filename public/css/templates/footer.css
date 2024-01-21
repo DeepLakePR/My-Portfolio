@@ -1,9 +1,9 @@
 /* Footer */
 footer{
-    background-color: #272727;
+    background-color: var(--footer-background);
     width: 100%;
     text-align: center;
-    color: white;
+    color: var(--global-default-color);;
     font-weight: 275;
 }
 
@@ -14,7 +14,7 @@ footer a{
 }
 
 footer .footer-navigation li a:hover, .footer-social_media a:hover{
-    color: #929292;
+    color: var(--footer-hover-color);
 }
 
 /*******************/
@@ -30,12 +30,12 @@ footer .footer-navigation li{
 }
 
 footer .footer-navigation li a{
-    color: white;
+    color: var(--global-default-color);
 }
 
 /* Social Media */
 footer .footer-social_media a{
-    color: white;
+    color: var(--global-default-color);;
     font-size: 25px;
     margin: 0 1px;
 }
@@ -43,8 +43,8 @@ footer .footer-social_media a{
 /* Actions */
 footer .footer-actions button{
     border-radius: 50%;
-    background-color: #363636;
-    color: white;
+    background-color: var(--background-quarter);
+    color: var(--global-default-color);;
     transition: background-color 0.25s ease-in-out;
 }
 
@@ -53,12 +53,12 @@ footer .footer-actions button i{
 }
 
 footer .footer-actions button:hover{
-    background-color: #2e2e2e;
+    background-color: var(--footer-background-content);
 }
 
 /* SubFooter */
 footer .footer-subfooter{
-    background-color: #202020;
+    background-color: var(--background-secondary);
 }
 
 /*********************/
