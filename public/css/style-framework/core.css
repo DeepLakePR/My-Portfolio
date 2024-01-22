@@ -8,6 +8,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
+    transition: all 0.6s linear;
     /*font-family: 'Montserrat', sans-serif;*/
 }
 
@@ -63,6 +64,10 @@ div.DEV_test {
 }
 
 /* Width, Height, Margin, Padding */
+.w10{
+    width: 10%;
+}
+
 .w20{
     width: 20%;
 }
@@ -228,7 +233,7 @@ hr{
 @media screen and (max-width: 768px){
 
     /* Width, Height, Margin, Padding */
-    .w20, .w40, .w50, .w60, .w80{
+    .w10, .w20, .w40, .w50, .w60, .w80{
         width: 100%;
         text-align: center;
     }
@@ -257,7 +262,7 @@ hr{
 @media screen and (max-width: 480px){
 
     /* Width, Height, Margin, Padding */
-    .w20, .w33, .w40, .w50, .w60{
+    .w10, .w20, .w33, .w40, .w50, .w60{
         width: 100%;
         text-align: center;
     }

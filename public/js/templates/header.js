@@ -22,6 +22,16 @@ $(()=>{
 
         let offsetDebug = 20;
 
+        if(ButtonTarget == 'js-scroll-about-me-text'){
+            offsetDebug = 160;
+            
+        }
+
+        if(ButtonTarget == 'js-scroll-projects-text'){
+            offsetDebug = 130;
+
+        }
+
         if(ButtonTarget == 'js-scroll-knowledge-text' || ButtonTarget == 'js-scroll-contact-text'){
             ElementTarget = ElementTarget.parent();
 
@@ -32,16 +42,99 @@ $(()=>{
 
         }
 
-        if(ButtonTarget == 'js-scroll-projects-text'){
-            offsetDebug = 130;
-
-        }
-
         HeaderNavigationButtons.parent().removeClass('navigation-selected');
         $(`.header-navigation a[js-scrolltarget=${ButtonTarget}]`).parent().addClass('navigation-selected');
         
         // Scroll
         scrollTo({ 'top': ElementTarget.position().top - offsetDebug, 'behavior': 'smooth' });
+    }
+
+    ////////////////////////////////
+    ////// Header Options Themes
+    // Variables
+    const HeaderOptions = $('header .header-options');
+    const ThemeButton = HeaderOptions.find('button#theme-changer');
+
+    const LightThemeBtn = ThemeButton.find('#header-opt-light-theme');
+    const DarkThemeBtn = ThemeButton.find('#header-opt-dark-theme');
+
+    var CurrentTheme = 'dark';
+    var ThemeClass = 'framework-light-theme';
+
+    var Debugger = false;
+
+    // Function
+    ThemeButton.click((e)=>{
+
+        if(Debugger == false){
+
+            Debugger = true;
+
+            if(CurrentTheme == 'dark'){
+                ThemeButtonAnimation(DarkThemeBtn, LightThemeBtn, 'light-theme');
+                CurrentTheme = 'light';
+
+            }else if(CurrentTheme == 'light'){
+                ThemeButtonAnimation(LightThemeBtn, DarkThemeBtn, 'dark-theme');
+                CurrentTheme = 'dark';
+
+            }
+
+            setTimeout(()=>{
+                Debugger = false;
+
+            }, 1100);
+
+        }
+
+    });
+
+    // Animate Function
+    function ThemeButtonAnimation(HideIcon, ShowingIcon, ThemeToSetCookie){
+
+        //////////// Hidding Icon
+        HideIcon.animate({
+            top: '50px', 
+            opacity: 0,
+            'font-size': '0px'
+        }, 1000, ()=>{
+            HideIcon.css('display', 'none').css('top', '50%').css('left', '50%').css('transform', 'translate(-50%, -50%)');
+
+        });
+
+        //////////// Showing Icon
+        ShowingIcon.css('bottom', '-70px').css('display', 'block').css('opacity', '0').css('font-size', '0')
+
+        ShowingIcon.animate({
+            bottom: '0', 
+            opacity: 1,
+            'font-size': '19px'
+        }, 1000);
+
+        $('body').toggleClass(ThemeClass);
+
+        Cookies.set("CookiesCurrentTheme", ThemeToSetCookie, {
+            expires: 90,
+            
+        });
+
+
+    }
+
+    // Get Theme Cookie
+    var CookiesCurrentTheme = Cookies.get("CookiesCurrentTheme");
+
+    if(CookiesCurrentTheme == "light-theme"){
+        CurrentTheme = 'light';
+        LightThemeBtn.css('display', 'block');
+        
+        $('body').addClass(ThemeClass);
+        
+        //////
+    }else if(CookiesCurrentTheme == "dark-theme" || CookiesCurrentTheme == undefined || CookiesCurrentTheme == null){
+        CurrentTheme = 'dark';
+        DarkThemeBtn.css('display', 'block');
+
     }
 
 })

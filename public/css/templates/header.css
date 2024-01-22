@@ -91,6 +91,36 @@ header .header-navigation li:not(.navigation-selected) a:hover:after{
     }
 }
 
+/* Header Options Themes */
+header .header-options{
+    padding-left: 30px;
+}
+
+header .header-options button{
+    padding: 16px 12px;
+    border-radius: 20px;
+    font-size: 19px;
+    background: #383838;
+    color: #dddddd;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0px 7px 7px 0px var(--global-shadow-color);
+    text-align: center;
+}
+
+header .header-options button:hover{
+    background: #2c2c2c;
+    color: #929292;
+}
+
+header .header-options button i{
+    transition: all 0.2s linear;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
 /*********************/
 /***** Responsive *****/
 /* Notebooks */
