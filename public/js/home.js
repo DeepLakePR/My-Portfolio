@@ -35,6 +35,7 @@ $(function(){
 
     /* Technologies */
     ScrollReveal().reveal('.technologies-single-box', {...normalReveal, duration: 1500, afterReveal: technologiesSingleBoxAnimation });
+    ScrollReveal().reveal('#knowledge-modal-toggle', {...normalReveal, duration: 1500 });
 
     ////////////////
     // Projects Functions
@@ -183,5 +184,38 @@ $(function(){
         element.addClass('tech-single-box-nivel-current');
         
     }
+
+    ////////////////////////////////////////////////////////////////////////
+    //// Modals
+    const ButtonModalToggle = $('#modal-toggle');
+
+    var CurrentModal;
+
+    ButtonModalToggle.click((e)=>{
+
+        if($(e.currentTarget).attr('modal-target')){
+
+            let ModalTarget = $(e.currentTarget).attr('modal-target');
+
+            CurrentModal = $(ModalTarget).fadeIn();
+
+        }
+
+        
+
+    })
+
+    $(document).click((e)=>{
+        
+        e.stopPropagation();
+
+        if($(e.target).is(CurrentModal)){
+            CurrentModal.fadeOut(300, ()=>{
+                CurrentModal.css('display', 'none');
+        
+            });
+        }
+
+    })
 
 })

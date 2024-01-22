@@ -352,10 +352,43 @@ section.technologies .container{
 .tech-single-box-nivel-custom_line{
     width: 20%;
     height: 8px;
-    background: white; /* Text color = Background Color for this element */
+    background: white;
     border-radius: 8px;
     margin: 2px 10px 0 10px;
     position: relative;
+}
+
+/* Technologies More Button */
+.technologies-more-button, .technologies-more-button button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.technologies-more-button{
+    margin-top: 10px;
+}
+
+.technologies-more-button button{
+    padding-top: 3px;
+    padding-bottom: 3px;
+    background: var(--background-quarter);
+    color: var(--global-default-color);
+    text-align: center;
+    border-radius: 8px;
+    transition: all 0.25s ease-in-out;
+    line-height: 36px;
+    box-shadow: 0px 5px 9px 0px var(--global-shadow-color);
+}
+
+.technologies-more-button button i{
+    margin-left: 5px;
+    transition: all 0.25s ease-in-out !important;
+}
+
+.technologies-more-button button:hover{
+    background: var(--section-button-quarter-hover-color);
+    color: var(--section-button-text-hover-color);
 }
 
 /* Technologies > Dynamic Image */
@@ -422,6 +455,32 @@ section.contact .container > h2 a{
 section.contact .container > h2 a:hover{
     color: var(--section-button-tertiary-hover-color);
 }
+
+/**********************************/
+/****** Modals ******/
+body .modal{
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 9999;
+}
+
+.modal .container{
+    justify-content: center;
+    height: 100%;
+    color: var(--global-default-color);
+    background: var(--background-primary);
+    border-radius: 12px;
+    border: 18px solid var(--background-six);
+    box-shadow: 0px 15px 20px 0px var(--global-shadow-color);
+    text-align: center;
+}
+
+/* Knowledge Modal */
+
 
 /**********************************/
 /****** Responsive ******/

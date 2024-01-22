@@ -38,13 +38,19 @@ body {
     height: 0;
 }
 
-::-webkit-scrollbar-thumb{
-    border-radius: 12px;
-    background-color: #1d1d1d;
-}
+
 
 ::-webkit-scrollbar-track {
-    background: #383838;
+    background: var(--background-scrollbar-track);
+}
+
+::-webkit-scrollbar-thumb{
+    border-radius: 12px;
+    background-color: var(--background-scrollbar-thumb);
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background: var(--background-scrollbar-thumb-hover);
 }
 
 /***********************/
@@ -143,7 +149,7 @@ div.DEV_test {
 
 /* Navigation & ul, li */
 .navigation li {
-    color: white;
+    color: var(--global-default-color);
 }
 
 ul {
