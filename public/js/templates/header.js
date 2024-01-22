@@ -24,7 +24,7 @@ $(()=>{
 
         if(ButtonTarget == 'js-scroll-about-me-text'){
             offsetDebug = 160;
-            
+
         }
 
         if(ButtonTarget == 'js-scroll-projects-text'){
@@ -103,7 +103,7 @@ $(()=>{
         });
 
         //////////// Showing Icon
-        ShowingIcon.css('bottom', '-70px').css('display', 'block').css('opacity', '0').css('font-size', '0')
+        ShowingIcon.css('bottom', '-80px').css('display', 'block').css('opacity', '0').css('font-size', '0');
 
         ShowingIcon.animate({
             bottom: '0', 
