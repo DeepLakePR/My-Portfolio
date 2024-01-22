@@ -189,6 +189,8 @@ $(function(){
     //// Modals
     const ButtonModalToggle = $('#modal-toggle');
 
+    const ButtonCloseModal = $('.modal .modal-close');
+
     var CurrentModal;
 
     ButtonModalToggle.click((e)=>{
@@ -210,12 +212,21 @@ $(function(){
         e.stopPropagation();
 
         if($(e.target).is(CurrentModal)){
-            CurrentModal.fadeOut(300, ()=>{
-                CurrentModal.css('display', 'none');
-        
-            });
+            CloseModal();
+            
         }
 
     })
+
+    ButtonCloseModal.click(CloseModal)
+
+    function CloseModal(){
+
+        CurrentModal.fadeOut(300, ()=>{
+            CurrentModal.css('display', 'none');
+    
+        });
+
+    }
 
 })

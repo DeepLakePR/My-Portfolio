@@ -8,6 +8,7 @@
     --background-scrollbar-thumb-hover: #0f0f0f;
 
     --css-framework-hr-color: rgb(224, 224, 224);
+    --css-framework-hr-custom-color: var(var(--css-framework-hr-color));
 
     /* Global */
     --global-default-color: white;
@@ -78,7 +79,10 @@
     --footer-font-weight: 300;
 
     --subfooter-background: #212121;
-    
+
+    /* Modals */
+    --modal-knowledge-courses: #252525;
+
 }
 
 /*********************************/
@@ -90,7 +94,8 @@
     --background-scrollbar-thumb: #949494;
     --background-scrollbar-thumb-hover: #707070;
 
-    --css-framework-hr-color: #818181;
+    --css-framework-hr-color: #ebe8e8;
+    --css-framework-hr-custom-color: #949494;
 
     /* Global */
     --global-default-color: black;
@@ -159,5 +164,8 @@
     --footer-secondary-hover: #999999;
     --footer-font-weight: 400;
     --subfooter-background: #dadada;
+
+    /* Modals */
+    --modal-knowledge-courses:#dcdedf;
 
 }

@@ -106,6 +106,10 @@ div.DEV_test {
     width: 80%;
 }
 
+.w85{
+    width: 85%;
+}
+
 .w100 {
     width: 100%;
 }
@@ -215,6 +219,12 @@ hr{
     border: 0;
 }
 
+.hr-horizontal {
+    height: 1px;
+    width: 80%;
+    background: var(--css-framework-hr-color);
+}
+
 .hr-vertical {
     height: 80px;
     width: 2px;
@@ -239,7 +249,7 @@ hr{
 @media screen and (max-width: 768px){
 
     /* Width, Height, Margin, Padding */
-    .w10, .w20, .w40, .w50, .w60, .w80{
+    .w10, .w20, .w40, .w50, .w60, .w80, .w85{
         width: 100%;
         text-align: center;
     }
