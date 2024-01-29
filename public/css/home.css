@@ -48,10 +48,14 @@ section.section-apresentation{
 .section-apresentation .apresentation-social_media a{
     color: var(--global-default-color);
     font-size: 40px;
+    transition: none;
+}
+
+.section-apresentation .apresentation-social_media a i{
     transition: color 0.25s ease-in-out;
 }
 
-.section-apresentation .apresentation-social_media a:hover{
+.section-apresentation .apresentation-social_media a i:hover{
     color: var(--section-button-secondary-hover-color);
 }
 

@@ -1,3 +1,7 @@
+:root{
+    --footer-link-transition: color 0.25s ease-in-out;
+}
+
 /* Footer */
 footer{
     background-color: var(--footer-background);
@@ -10,7 +14,7 @@ footer{
 /*******************/
 /* Footer Framework */
 footer a{
-    transition: color 0.25s ease-in-out;
+    transition: var(--footer-link-transition);
 }
 
 footer .footer-navigation li a:hover, .footer-social_media a:hover{
@@ -38,6 +42,12 @@ footer .footer-social_media a{
     color: var(--global-default-color);;
     font-size: 25px;
     margin: 0 1px;
+    transition: none;
+}
+
+footer .footer-social_media a i{
+    transition: none;
+    transition: var(--footer-link-transition);
 }
 
 /* Actions */
