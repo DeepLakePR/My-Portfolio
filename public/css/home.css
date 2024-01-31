@@ -525,7 +525,7 @@ body .modal{
 /* Knowledge Modal */
 .modal .modal-knowledge-subtitle{
     width: 100%;
-    font-size: 20px;
+    font-size: 22px;
     font-weight: var(--section-text-secondary-font-weight);
 }
 
@@ -533,13 +533,14 @@ body .modal{
     width: 100%;
     padding: 5px;
     flex-wrap: wrap;
+    justify-content: flex-start;
 }
 
 .modal .modal-knowledge-box-single{
-    width: 32%;
+    width: 31.8%;
     min-height: 380px;
     max-height: 400px;
-    margin: 7px 7px;
+    margin: 8px;
     max-width: 33.3%;
     background: var(--background-five);
     border-radius: 9px;
@@ -558,23 +559,107 @@ body .modal{
 .modal .modal-knowledge-box-single img{
     width: 100%;
     height: 100%;
-    transform: scale(1.03);
+    transform: scale(1);
+    object-fit: cover;
 }
 
 .modal .modal-knowledge-box-single .modal-knowledge-box-single-text{
+    height: 55%;
     padding: 10px;
+    position: relative;
 }
 
-.modal .modal-knowledge-box-single-text h3{
+.modal .modal-knowledge-box-single-text h3, .modal .modal-knowledge-custom-box-single-text h3{
     font-size: 17px;
 }
 
-.modal .modal-knowledge-box-single-text hr{
+.modal .modal-knowledge-box-single-text hr, .modal .modal-knowledge-custom-box-single-text hr{
     margin: 7px 0;
 }
 
-.modal .modal-knowledge-box-single-text p{
+.modal .modal-knowledge-box-single-text p, .modal .modal-knowledge-custom-box-single-text p{
     font-size: 15px;
+}
+
+.modal .modal-knowledge-box-single-text a{
+    color: var(--global-default-secondary-color);
+    text-decoration: underline;
+    position: absolute;
+    bottom: 12px;
+    left: 12px;
+    transition: none;
+    transition: all 0.2s linear;
+}
+
+.modal .modal-knowledge-box-single-text a:hover{
+    color: var(--section-button-text-hover-color);
+}
+
+/* Knowledge Modal Custom Background Box (Certificates) */
+.modal .modal-knowledge-certificates .modal-knowledge-box-single{
+    background: var(--background-quarter);
+}
+
+/* Knowledge Modal Custom Box Single (Idioms) */
+.modal .modal-knowledge-custom-box-single{
+    height: 190px;
+    margin: 14px 8px;
+    background: var(--background-five);
+    border-radius: 9px;
+    box-shadow: 0px 15px 20px 0px var(--global-shadow-color);
+    text-align: left;
+    overflow: hidden;
+}
+
+.modal .modal-knowledge-custom-box-single-image{
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.modal .modal-knowledge-custom-box-single img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.modal .modal-knowledge-custom-box-single .modal-knowledge-custom-box-single-text{
+    height: 100%;
+    padding: 10px;
+}
+
+/* Knowledge Modal Idioms Custom Nivel */
+.modal .modal-knowledge-idioms-nivel{
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal .modal-knowledge-idioms-nivel p{
+    margin: 0 10px;
+    font-size: 17px;
+}
+
+.modal .modal-knowledge-idioms-nivel p.modal-knowledge-idioms-nivel-fill{
+    color: var(--section-technologies-animation-color);
+    font-weight: 600;
+}
+
+.modal .modal-knowledge-idioms-nivel .modal-knowledge-idioms-nivel-custom_line{
+    border-radius: 8px;
+    width: 21%;
+    height: 9px;
+    margin: 0 5px;
+    background: white;
+}
+
+.modal .modal-knowledge-idioms-nivel div.modal-knowledge-idioms-nivel-fill{
+    background: var(--section-technologies-animation-color);
+}
+
+.modal .modal-knowledge-idioms-nivel div.modal-knowledge-idioms-nivel-midfill{
+    background: linear-gradient(90deg, var(--section-technologies-animation-color) 50%, white 50%);
 }
 
 /**********************************/

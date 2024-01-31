@@ -35,7 +35,7 @@ $(function(){
 
     /* Technologies */
     ScrollReveal().reveal('.technologies-single-box', {...normalReveal, duration: 1500, afterReveal: technologiesSingleBoxAnimation });
-    ScrollReveal().reveal('#knowledge-modal-toggle', {...normalReveal, duration: 1500 });
+    ScrollReveal().reveal('button.knowledge-modal-toggle', {...normalReveal, duration: 2500 });
 
     ////////////////
     // Projects Functions
@@ -193,6 +193,7 @@ $(function(){
 
     var CurrentModal;
 
+    /* Open Modal */
     ButtonModalToggle.click((e)=>{
 
         if($(e.currentTarget).attr('modal-target')){
@@ -200,13 +201,13 @@ $(function(){
             let ModalTarget = $(e.currentTarget).attr('modal-target');
 
             CurrentModal = $(ModalTarget).fadeIn();
+            $('body').toggleClass('modal-prevent-scroll');
 
         }
 
-        
-
     })
 
+    /* Close Modal Body Propagation */
     $(document).click((e)=>{
         
         e.stopPropagation();
@@ -218,9 +219,13 @@ $(function(){
 
     })
 
+    /* Close Modal Button */
     ButtonCloseModal.click(CloseModal)
 
+    /* Close Modal Function */
     function CloseModal(){
+
+        $('body').toggleClass('modal-prevent-scroll');
 
         CurrentModal.fadeOut(300, ()=>{
             CurrentModal.css('display', 'none');

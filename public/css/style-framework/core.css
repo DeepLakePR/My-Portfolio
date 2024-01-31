@@ -53,6 +53,11 @@ body {
     background: var(--background-scrollbar-thumb-hover);
 }
 
+/* Modal Prevent Scroll */
+.modal-prevent-scroll{
+    overflow: hidden;
+}
+
 /***********************/
 
 /* DEV Test */
@@ -78,8 +83,16 @@ div.DEV_test {
     width: 20%;
 }
 
+.w30 {
+    width: 30%;
+}
+
 .w33 {
     width: 33.3%;
+}
+
+.w35 {
+    width: 35%;
 }
 
 .w40 {
@@ -100,6 +113,14 @@ div.DEV_test {
 
 .w60 {
     width: 60%;
+}
+
+.w65{
+    width: 65%;
+}
+
+.w70{
+    width: 70%;
 }
 
 .w80{
@@ -239,7 +260,7 @@ hr{
 @media screen and (max-width: 1024px){
 
     /* Width, Height, Margin, Padding */
-    .w40, .w60{
+    .w30, .w35, .w40, .w60, .w65, .w70{
         width: 50%;
     }
 
@@ -249,7 +270,7 @@ hr{
 @media screen and (max-width: 768px){
 
     /* Width, Height, Margin, Padding */
-    .w10, .w20, .w40, .w50, .w60, .w80, .w85{
+    .w10, .w20, .w30, .w33, .w35, .w40, .w50, .w60, .w65, .w70, .w80, .w85{
         width: 100%;
         text-align: center;
     }
@@ -278,7 +299,7 @@ hr{
 @media screen and (max-width: 480px){
 
     /* Width, Height, Margin, Padding */
-    .w10, .w20, .w33, .w40, .w50, .w60{
+    .w10, .w20, .w30, .w33, .w35, .w40, .w50, .w60, .w65, .w70{
         width: 100%;
         text-align: center;
     }
