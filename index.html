@@ -117,16 +117,21 @@
 	<!-- About Me Section -->
 	<section class="about-me flex"> <!-- About Me -->
 
-		<div class="about-me_image w50">
-			<img src="public/assets/gui-photo-2-bg.jpeg" loading="lazy" />
-		</div> <!-- About Me Image -->
+		
 
-		<div class="container pad20">
+		<div class="container">
 
-			<div class="about-me_text">
+			<div class="about-me_image">
+
+				<img src="public/assets/gui-photo-2-bg.jpeg" loading="lazy" />
+
+			</div> <!-- About Me Image -->
+
+			<div class="about-me_text pad20">
+
 				<h2 id="js-scroll-about-me-text">Sobre Mim</h2>
 
-				<p>
+				<p style="max-width: 700px;">
 					Olá, meu nome é Guilherme Fortunato Machado, atualmente tenho <b>16 anos</b> e moro no Paraná, desde
 					os 9 anos tive contato com programação e desenvolvimento de jogos, aos 12 anos criei meu primeiro
 					site, fiz o <b>Curso Fullstack da Danki Code</b> e hoje tenho certificados como <b>Desenvolvedor de
@@ -138,7 +143,6 @@
 					em banco de dados o que eu tenho mais conhecimento é o <b>MySQL</b>, mas também conheço um pouco de
 					<b>MongoDB</b>.
 				</p>
-
 
 			</div> <!-- About Me Text -->
 
@@ -154,7 +158,9 @@
 
 			<div class="projects-wrapper flex-column pad30">
 
-				<div class="projects-single flex pad20">
+				<div class="projects-single flex pad20"
+					data-project-info-title="Prime Assessoria Imobiliária"
+				>
 
 					<div class="projects-single-image w45">
 						<img src="/public/assets/projects-images/prime_assessoria_desktop.jpg" alt="Project Image"
@@ -171,7 +177,7 @@
 								de Dados MySQL</b>.
 						</p>
 
-						<a href="#">Saiba Mais</a>
+						<a href="#project-info" class="modal-toggle" modal-target="#project-info-modal">Saiba Mais</a>
 
 					</div>
 
@@ -192,7 +198,7 @@
 							para exportação do aplicativo para <b>IOS & Android</b>.
 						</p>
 
-						<a href="#">Saiba Mais</a>
+						<a href="#project-info" class="modal-toggle" modal-target="#project-info-modal">Saiba Mais</a>
 
 					</div>
 
@@ -207,12 +213,12 @@
 
 					<div class="projects-single-text w55 pad20">
 
-						<h2>Meu Portfólio - 2024</h2>
+						<h2>Meu Portfólio - 2023</h2>
 						<p>O site que você está vendo agora foi desenvolvido com o puro <b>Front-End</b> e também com
 							framework CSS próprio, <b>criei um framework CSS básico, estilo bootstrap</b>, mas que
 							funciona e que economiza muitas linhas de código CSS.</p>
 
-						<a href="#">Saiba Mais</a>
+						<a href="#project-info" class="modal-toggle" modal-target="#project-info-modal">Saiba Mais</a>
 
 					</div>
 
@@ -231,7 +237,25 @@
 						<p>Um clone bem básico e bem genérico do Instagram de 2019, desenvolvido em <b>React</b> e
 							hospedado na plataforma do Google <b>Firebase</b>.</p>
 
-						<a href="#">Saiba Mais</a>
+						<a href="#project-info" class="modal-toggle" modal-target="#project-info-modal">Saiba Mais</a>
+
+					</div>
+
+				</div> <!-- Projects Single -->
+				
+				<div class="projects-single flex pad20">
+
+					<div class="projects-single-image w45">
+						<img src="/public/assets/projects-images/dentista-odontologia.png"
+							alt="Project Image" title="Project Image" loading="lazy" />
+					</div>
+
+					<div class="projects-single-text w55 pad20">
+
+						<h2>Dentista/Odontologia - 2023</h2>
+						<p>Um site mostrando o trabalho de uma odontologia, criado com <b>Vanilla HTML 5 & CSS 3</b>.</p>
+
+						<a href="#project-info" class="modal-toggle" modal-target="#project-info-modal">Saiba Mais</a>
 
 					</div>
 
@@ -249,25 +273,7 @@
 						<h2>Concessionária Veículos Especiais - 2023</h2>
 						<p>Desenvolvido um site para concessionárias usando <b>PHP e Front-End</b>, pode ser facilmente adaptado e vendido para outras concessionárias.</p>
 
-						<a href="#">Saiba Mais</a>
-
-					</div>
-
-				</div> <!-- Projects Single -->
-
-				<div class="projects-single flex pad20">
-
-					<div class="projects-single-image w45">
-						<img src="https://i.pinimg.com/736x/41/82/a9/4182a9dd330c6442c4a1fbc78274d838.jpg"
-							alt="Project Image" title="Project Image" loading="lazy" />
-					</div>
-
-					<div class="projects-single-text w55 pad20">
-
-						<h2>Em Breve</h2>
-						<p>&lt;/&gt;...</p>
-
-						<a class="ahref-disabled" href="#">Saiba Mais</a>
+						<a href="#project-info" class="modal-toggle" modal-target="#project-info-modal">Saiba Mais</a>
 
 					</div>
 
@@ -387,7 +393,7 @@
 
 						<p>Iniciante</p>
 
-						<div class="tech-single-box-nivel-custom_line tech-single-box-nivel-current"></div>
+						<div class="tech-single-box-nivel-custom_line"></div>
 
 						<p>Intermediário</p>
 
@@ -517,6 +523,17 @@
 
 	<!------------------------>
 	<!-- Modals -->
+	<div class="modal w100 pad10" id="project-info-modal">
+		<div class="container flex-column w85 pos-relative">
+
+			<button class="button modal-close"><i class="fa-solid fa-x"></i></button>
+
+			<h2 class="modal-title w100 text-center">Projeto ${PROJECT_NAME}</h2>
+
+			<hr class="hr-custom" />
+
+		</div> <!-- Modal Project Info Container -->
+	</div> <!-- Project Info Modal -->
 
 	<!-- Knowledge Modal-->
 	<div class="modal w100 pad10" id="knowledge-modal">
@@ -1064,7 +1081,6 @@
 		TODO:
 		+ Modals:
 			- Modal Sobre Mais Projeto
-			- Modal Sobre mais Meu Conhecimento (Certificações, Linguas que sei falar e Cursos que fiz (Danki Code e Alura))
 		+ Responsive Website
 		+ Fix Bug in Technologies Dynamic Image
 

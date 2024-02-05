@@ -27,7 +27,7 @@ body {
 /* Custom Scrollbar */
 ::-webkit-scrollbar{
     background: transparent;
-    width: 12px;
+    width: 10px;
     position: absolute !important;
     top: 0;
     left: 0;

@@ -187,7 +187,7 @@ $(function(){
 
     ////////////////////////////////////////////////////////////////////////
     //// Modals
-    const ButtonModalToggle = $('#modal-toggle');
+    const ButtonModalToggle = $('a.modal-toggle, #modal-toggle');
 
     const ButtonCloseModal = $('.modal .modal-close');
 
@@ -203,10 +203,16 @@ $(function(){
             CurrentModal = $(ModalTarget).fadeIn();
             $('body').toggleClass('modal-prevent-scroll');
 
+            if(ModalTarget == '#project-info-modal'){
+                ProjectInfoModalInit($(e.currentTarget));
+
+            }
+
         }
 
     })
 
+    ////////////////////////////////
     /* Close Modal Body Propagation */
     $(document).click((e)=>{
         
@@ -231,6 +237,36 @@ $(function(){
             CurrentModal.css('display', 'none');
     
         });
+
+    }
+
+    ////// Modals -> Project Info Modal
+    const ModalProjectInfo = $('div#project-info-modal');
+    const ModalProjectInfoTitle = ModalProjectInfo.find('h2.modal-title');
+
+    // Project Info Modal -> Init
+    function ProjectInfoModalInit(ModalButtonCaller){
+
+        // Project Info Div
+        let ProjectInfoDiv = $(ModalButtonCaller).parent().parent();
+
+        console.log(ProjectInfoDiv);
+
+        if(ProjectInfoDiv.hasClass('projects-single')){
+
+            //// Project Info
+            let ProjectInfoTitle = ProjectInfoDiv.data('project-info-title');
+            let ProjectInfoDescription = ProjectInfoDiv.data('project-info-description');
+
+            let ProjectInfoImage = ProjectInfoDiv.data('project-info-image') != 'null' ? ProjectInfoDiv.data('project-info-image') : ProjectInfoDiv.find('.projects-single-image img');
+
+            //// Modal
+            ModalProjectInfoTitle.text(`Projeto ${ProjectInfoTitle}`);
+
+        }else{
+            CloseModal();
+            
+        }
 
     }
 
