@@ -25,7 +25,7 @@ body {
 
 /***********************/
 /* Custom Scrollbar */
-::-webkit-scrollbar{
+::-webkit-scrollbar {
     background: transparent;
     width: 10px;
     position: absolute !important;
@@ -33,7 +33,7 @@ body {
     left: 0;
 }
 
-::-webkit-scrollbar-button{
+::-webkit-scrollbar-button {
     width: 0;
     height: 0;
 }
@@ -44,17 +44,17 @@ body {
     background: var(--background-scrollbar-track);
 }
 
-::-webkit-scrollbar-thumb{
+::-webkit-scrollbar-thumb {
     border-radius: 12px;
     background-color: var(--background-scrollbar-thumb);
 }
 
-::-webkit-scrollbar-thumb:hover{
+::-webkit-scrollbar-thumb:hover {
     background: var(--background-scrollbar-thumb-hover);
 }
 
 /* Modal Prevent Scroll */
-.modal-prevent-scroll{
+.modal-prevent-scroll {
     overflow: hidden;
 }
 
@@ -75,11 +75,11 @@ div.DEV_test {
 }
 
 /* Width, Height, Margin, Padding */
-.w10{
+.w10 {
     width: 10%;
 }
 
-.w20{
+.w20 {
     width: 20%;
 }
 
@@ -115,19 +115,19 @@ div.DEV_test {
     width: 60%;
 }
 
-.w65{
+.w65 {
     width: 65%;
 }
 
-.w70{
+.w70 {
     width: 70%;
 }
 
-.w80{
+.w80 {
     width: 80%;
 }
 
-.w85{
+.w85 {
     width: 85%;
 }
 
@@ -196,6 +196,10 @@ ul {
     position: relative;
 }
 
+.pos-absolute {
+    position: absolute;
+}
+
 .center-element {
     position: absolute;
     top: 50%;
@@ -208,7 +212,7 @@ ul {
 }
 
 /* Texts */
-.text-center{
+.text-center {
     text-align: center;
 }
 
@@ -224,7 +228,7 @@ a {
     text-decoration: none;
 }
 
-a.ahref-disabled{
+a.ahref-disabled {
     cursor: not-allowed;
     opacity: 0.5;
 }
@@ -236,7 +240,7 @@ a.ahref-disabled{
 }
 
 /* Hr */
-hr{
+hr {
     border: 0;
 }
 
@@ -257,32 +261,49 @@ hr{
 /******************************************************/
 /********* Responsive *********/
 /* Notebooks */
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 1024px) {
 
     /* Width, Height, Margin, Padding */
-    .w30, .w35, .w40, .w60, .w65, .w70{
+    .w30,
+    .w35,
+    .w40,
+    .w60,
+    .w65,
+    .w70 {
         width: 50%;
     }
 
 }
 
 /* Tablets */
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768px) {
 
     /* Width, Height, Margin, Padding */
-    .w10, .w20, .w30, .w33, .w35, .w40, .w50, .w60, .w65, .w70, .w80, .w85{
+    .w10,
+    .w20,
+    .w30,
+    .w33,
+    .w35,
+    .w40,
+    .w50,
+    .w60,
+    .w65,
+    .w70,
+    .w80,
+    .w85 {
         width: 100%;
         text-align: center;
     }
 
     /* Flex */
-    .flex, .flex-column{
+    .flex,
+    .flex-column {
         flex-direction: column;
         flex-wrap: wrap;
     }
 
     /* Positions */
-    .center-element{
+    .center-element {
         position: relative;
         text-align: center;
         width: 100%;
@@ -296,12 +317,21 @@ hr{
 }
 
 /* Mobile */
-@media screen and (max-width: 480px){
+@media screen and (max-width: 480px) {
 
     /* Width, Height, Margin, Padding */
-    .w10, .w20, .w30, .w33, .w35, .w40, .w50, .w60, .w65, .w70{
+    .w10,
+    .w20,
+    .w30,
+    .w33,
+    .w35,
+    .w40,
+    .w50,
+    .w60,
+    .w65,
+    .w70 {
         width: 100%;
         text-align: center;
     }
-    
+
 }

@@ -235,6 +235,11 @@ $(function(){
 
         CurrentModal.fadeOut(300, ()=>{
             CurrentModal.css('display', 'none');
+
+            if(CurrentModal.attr('id') == 'project-info-modal'){
+                ProjectInfoModalReset();
+
+            }
     
         });
 
@@ -242,7 +247,18 @@ $(function(){
 
     ////// Modals -> Project Info Modal
     const ModalProjectInfo = $('div#project-info-modal');
+
     const ModalProjectInfoTitle = ModalProjectInfo.find('h2.modal-title');
+
+    const ModalProjectInfoImage = ModalProjectInfo.find('img.project-info-modal-image');
+
+    const ModalProjectInfoTags = ModalProjectInfo.find('h2.project-info-modal-text-tags');
+    const ModalProjectInfoDescription = ModalProjectInfo.find('p.project-info-modal-text-description');
+
+    const ModalProjectInfoTechnologiesDiv = ModalProjectInfo.find('div.project-info-modal-technologies');
+
+    const ModalProjectInfoDeployButton = ModalProjectInfo.find('a.project-info-modal-button-deployed');
+    const ModalProjectInfoRepositoryButton = ModalProjectInfo.find('a.project-info-modal-button-repository');
 
     // Project Info Modal -> Init
     function ProjectInfoModalInit(ModalButtonCaller){
@@ -250,23 +266,76 @@ $(function(){
         // Project Info Div
         let ProjectInfoDiv = $(ModalButtonCaller).parent().parent();
 
-        console.log(ProjectInfoDiv);
-
         if(ProjectInfoDiv.hasClass('projects-single')){
 
             //// Project Info
             let ProjectInfoTitle = ProjectInfoDiv.data('project-info-title');
+
+            let ProjectInfoImage = ProjectInfoDiv.data('project-info-image') != 'null' ? ProjectInfoDiv.data('project-info-image') : ProjectInfoDiv.find('.projects-single-image img').attr('src');
+            
+            let ProjectInfoTags = ProjectInfoDiv.data('project-info-tags');
             let ProjectInfoDescription = ProjectInfoDiv.data('project-info-description');
 
-            let ProjectInfoImage = ProjectInfoDiv.data('project-info-image') != 'null' ? ProjectInfoDiv.data('project-info-image') : ProjectInfoDiv.find('.projects-single-image img');
+            let ProjectInfoTechnologies = ProjectInfoDiv.data('project-info-technologies');
+
+            let ProjectInfoDeployLink = ProjectInfoDiv.data('project-info-deploy-link');
+            let ProjectInfoRepositoryLink = ProjectInfoDiv.data('project-info-repository-link');
 
             //// Modal
+            // Modal -> Title
             ModalProjectInfoTitle.text(`Projeto ${ProjectInfoTitle}`);
+
+            // Modal -> Image
+            ModalProjectInfoImage.attr('src', ProjectInfoImage);
+
+            // Modal -> Text
+            ModalProjectInfoTags.text(ProjectInfoTags);
+            ModalProjectInfoDescription.html(ProjectInfoDescription);
+        
+            // Modal -> Technologies Create
+            if(ProjectInfoTechnologies !== undefined && ProjectInfoTechnologies !== null) {
+                
+                    ProjectInfoTechnologies.split('|').map((tag)=>{
+
+                    ModalProjectInfoTechnologiesDiv.append(`
+                        <i class="${tag}"></i>
+                    `);
+
+                })
+
+            }
+            
+            // Modal -> Buttons
+            ProjectInfoDeployLink !== null ? ModalProjectInfoDeployButton.removeClass('ahref-disabled').attr('href', ProjectInfoDeployLink) : ''
+
+            ProjectInfoRepositoryLink !== null ? ModalProjectInfoRepositoryButton.removeClass('ahref-disabled').attr('href', ProjectInfoRepositoryLink) :
+            ''
 
         }else{
             CloseModal();
             
         }
+
+    }
+
+    // Project Info Modal -> Reset
+    function ProjectInfoModalReset(){
+
+        ModalProjectInfoTitle.text('Projeto ${PROJECT_TITLE}');
+
+        // Modal -> Image
+        ModalProjectInfoImage.attr('src', '/public/assets/logo-2.png');
+
+        // Modal -> Text
+        ModalProjectInfoTags.text('${PROJECT_TAGS}');
+        ModalProjectInfoDescription.text('${PROJECT_DESCRIPTION}');
+    
+        // Modal -> Technologies Create
+        ModalProjectInfoTechnologiesDiv.empty();
+    
+        // Modal -> Buttons
+        ModalProjectInfoDeployButton.addClass('ahref-disabled').attr('href', '#project-info-deployed');
+        ModalProjectInfoRepositoryButton.addClass('ahref-disabled').attr('href', '#project-info-repository');
 
     }
 

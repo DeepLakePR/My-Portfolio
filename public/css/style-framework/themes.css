@@ -81,6 +81,12 @@
     --subfooter-background: #212121;
 
     /* Modals */
+    --modal-project-info-button-background: rgb(51, 70, 131);
+    --modal-project-info-button-color: #e0e0e0;
+
+    --modal-project-info-button-background-hover: rgb(38, 52, 97);
+    --modal-project-info-button-color-hover: #9c9c9c;
+
     --modal-knowledge-courses: #252525;
 
 }
@@ -166,6 +172,8 @@
     --subfooter-background: #dadada;
 
     /* Modals */
+    --modal-project-info-button-color: #e9e9e9;
+
     --modal-knowledge-courses:#dcdedf;
 
 }

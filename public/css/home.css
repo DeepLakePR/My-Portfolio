@@ -412,7 +412,7 @@ section.technologies .container{
     width: 100%;
 }
 
-/* Contact Form */
+/* Contact */
 section.contact{
     margin-top: -30px;
     max-width: 100%;
@@ -522,6 +522,91 @@ body .modal{
     margin: 10px 0;
 }
 
+/****************************/
+/* Project Info Modal */
+#project-info-modal .modal-title{
+    margin-bottom: 20px;
+}
+
+.modal .project-info-modal-content{
+    height: 100%;
+    flex-wrap: wrap;
+}
+
+/* Project Info Divs */
+.modal .project-info-modal-content .project-info-modal-div{
+    color: var(--global-default-color);
+}
+
+/* Project Info Image */
+.modal .project-info-modal-image img{
+    max-width: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Project Info Text */
+.modal .project-info-modal-text{
+    padding-left: 13px;
+    text-align: left;
+}
+
+.modal .project-info-modal-text h2{
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.modal .project-info-modal-text p{
+    padding-bottom: 5px;
+    max-width: 80%;
+    font-weight: var(--section-text-secondary-font-weight);
+    border-bottom: 1px solid var(--css-framework-hr-custom-color);
+}
+
+/* Project Info Technologies */
+.modal .project-info-modal-technologies{
+    align-items: flex-end;
+    justify-content: center;
+    height: 40%;
+}
+
+.modal .project-info-modal-technologies i{
+    padding: 5px;
+    font-size: 32px;
+    border-top: 1.5px solid var(--css-framework-hr-custom-color);
+    transition: none;
+    transition: 0.3s linear;
+}
+
+.modal .project-info-modal-technologies i:hover{
+    color: var(--section-button-secondary-hover-color);
+}
+
+/* Project Info Footer */
+.modal .project-info-modal-footer-buttons{
+    align-items: flex-end;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+.modal .project-info-modal-footer-buttons a{
+    border-radius: 7px;
+    padding: 5px 15px;
+    font-size: 17px;
+    margin: 0 4px;
+    background: var(--modal-project-info-button-background);
+    color: var(--modal-project-info-button-color);
+    transition: none;
+    transition: all 0.25s ease-in-out;
+}
+
+.modal .project-info-modal-footer-buttons a:not(.ahref-disabled):hover{
+    background: var(--modal-project-info-button-background-hover);
+    color: var(--modal-project-info-button-color-hover);
+}
+
+/****************************/
 /* Knowledge Modal */
 .modal .modal-knowledge-subtitle{
     width: 100%;

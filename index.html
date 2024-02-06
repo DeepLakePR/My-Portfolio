@@ -117,15 +117,13 @@
 	<!-- About Me Section -->
 	<section class="about-me flex"> <!-- About Me -->
 
-		
+		<div class="about-me_image">
+
+			<img src="public/assets/gui-photo-2-bg.jpeg" loading="lazy" />
+
+		</div> <!-- About Me Image -->
 
 		<div class="container">
-
-			<div class="about-me_image">
-
-				<img src="public/assets/gui-photo-2-bg.jpeg" loading="lazy" />
-
-			</div> <!-- About Me Image -->
 
 			<div class="about-me_text pad20">
 
@@ -159,12 +157,31 @@
 			<div class="projects-wrapper flex-column pad30">
 
 				<div class="projects-single flex pad20"
+
 					data-project-info-title="Prime Assessoria Imobiliária"
+
+					data-project-info-image="/public/assets/projects-images/prime_assessoria_desktop_2.jpg"
+
+					data-project-info-tags="Website - Dashboard - Geração de PDF"
+					data-project-info-description="Testing <b>bold text</b> hello world!"
+
+					data-project-info-technologies="
+						fa-brands fa-html5|
+						fa-brands fa-css3|
+						fa-brands fa-square-js|
+						fa-brands fa-bootstrap|
+						fa-brands fa-php|
+						fa-solid fa-database
+					"
+
+					data-project-info-deploy-link="https://www.caixaaquiprime.com.br/inicio/"
+					data-project-info-repository-link="null"
+
 				>
 
 					<div class="projects-single-image w45">
-						<img src="/public/assets/projects-images/prime_assessoria_desktop.jpg" alt="Project Image"
-							title="Project Image" loading="lazy" />
+						<img src="/public/assets/projects-images/prime_assessoria_desktop.jpg" 
+						alt="Project Image" title="Project Image" loading="lazy" />
 					</div>
 
 					<div class="projects-single-text w55 pad20">
@@ -186,8 +203,8 @@
 				<div class="projects-single flex pad20">
 
 					<div class="projects-single-image w45">
-						<img src="/public/assets/projects-images/ibca-church-app.png" alt="Project Image"
-							title="Project Image" loading="lazy" />
+						<img src="/public/assets/projects-images/ibca_church_app.png" 
+						alt="Project Image" title="Project Image" loading="lazy" />
 					</div>
 
 					<div class="projects-single-text w55 pad20">
@@ -207,8 +224,8 @@
 				<div class="projects-single flex pad20">
 
 					<div class="projects-single-image w45">
-						<img src="/public/assets/projects-images/portfolio_desktop.jpg" alt="Project Image"
-							title="Project Image" loading="lazy" />
+						<img src="/public/assets/projects-images/portfolio_desktop.jpg" 
+						alt="Project Image" title="Project Image" loading="lazy" />
 					</div>
 
 					<div class="projects-single-text w55 pad20">
@@ -227,8 +244,8 @@
 				<div class="projects-single flex pad20">
 
 					<div class="projects-single-image w45">
-						<img src="/public/assets/projects-images/instagram_clone_desktop.jpg" alt="Project Image"
-							title="Project Image" loading="lazy" />
+						<img src="/public/assets/projects-images/instagram_clone_desktop.jpg" 
+						alt="Project Image" title="Project Image" loading="lazy" />
 					</div>
 
 					<div class="projects-single-text w55 pad20">
@@ -246,8 +263,8 @@
 				<div class="projects-single flex pad20">
 
 					<div class="projects-single-image w45">
-						<img src="/public/assets/projects-images/dentista-odontologia.png"
-							alt="Project Image" title="Project Image" loading="lazy" />
+						<img src="/public/assets/projects-images/dentista_odontologia_desktop.png"
+						alt="Project Image" title="Project Image" loading="lazy" />
 					</div>
 
 					<div class="projects-single-text w55 pad20">
@@ -265,7 +282,7 @@
 
 					<div class="projects-single-image w45">
 						<img src="/public/assets/projects-images/concessionaria_desktop.jpg"
-							alt="Project Image" title="Project Image" loading="lazy" />
+						alt="Project Image" title="Project Image" loading="lazy" />
 					</div>
 
 					<div class="projects-single-text w55 pad20">
@@ -528,9 +545,54 @@
 
 			<button class="button modal-close"><i class="fa-solid fa-x"></i></button>
 
-			<h2 class="modal-title w100 text-center">Projeto ${PROJECT_NAME}</h2>
+			<h2 class="modal-title w100 text-center">Projeto ${PROJECT_TITLE}</h2>
 
-			<hr class="hr-custom" />
+			<div class="project-info-modal-content w100 flex pad10">
+
+
+				<div class="project-info-modal-image project-info-modal-div w35">
+
+					<img src="/public/assets/logo-2.png" 
+					alt="Project Image" title="Project Image" loading="lazy" 
+					class="project-info-modal-image"/>
+
+				</div> <!-- Project Info Image -->
+
+
+				<div class="project-info-modal-text project-info-modal-div w65 flex-column ">
+
+					<h2 class="project-info-modal-text-tags">${PROJECT_TAGS}</h2>
+					<p class="project-info-modal-text-description">${PROJECT_DESCRIPTION}</p>
+
+				</div> <!-- Project Info Text -->
+
+
+				<div class="project-info-modal-technologies project-info-modal-div w100 flex">
+
+					<!--
+					<i class="fa-brands fa-html5"></i>
+					<i class="fa-brands fa-css3"></i>
+					<i class="fa-brands fa-square-js"></i>
+					<i class="fa-brands fa-php"></i>
+					-->
+
+				</div> <!-- Project Info Technologies -->
+
+
+				<div class="project-info-modal-footer-buttons project-info-modal-div w100 flex">
+
+					<a href="#project-info-deployed" target="_blank" class="project-info-modal-button project-info-modal-button-deployed ahref-disabled">
+						Projeto no Ar
+					</a>
+					
+					<a href="#project-info-repository" target="_blank" class="project-info-modal-button project-info-modal-button-repository ahref-disabled">
+						Projeto no Github
+					</a>
+
+				</div> <!-- Project Info Footer -->
+			
+
+			</div> <!-- Project Info Modal Content -->
 
 		</div> <!-- Modal Project Info Container -->
 	</div> <!-- Project Info Modal -->
