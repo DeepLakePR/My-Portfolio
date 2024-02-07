@@ -81,44 +81,42 @@ $(function(){
         'fa-brands fa-php',
         'fa-solid fa-database'
     ]
-    var CurrentIClass = 0;
-    var LastIClass;
-
-    let Interval;
+    var CurrentIClass = 1;
+    var LastIClass = null;
 
     var DynamicImageElement = $('#technologies-dynamic-image-element');
+    DynamicImageElement.hide();
 
     changeTechnologiesImage();
 
     function changeTechnologiesImage(){
 
-        clearInterval(Interval);
+        setInterval(()=>{
 
-        if(LastIClass == null){
-            DynamicImageElement.fadeOut(0);
-        }
+            // Fade In
+            DynamicImageElement.fadeIn(2500, ()=>{
 
-        Interval = setInterval(()=>{
+                // Fade Out
+                DynamicImageElement.fadeOut(2500, ()=>{
 
-            DynamicImageElement.removeClass(LastIClass ? LastIClass : '');
+                    // Check The Current IClassList
+                    if(CurrentIClass >= IClassList.length){
+                        CurrentIClass = 0;
 
-            if(CurrentIClass >= IClassList.length){
-                
-                CurrentIClass = 0;
+                    }
+                    
+                    DynamicImageElement.removeClass();
 
-                changeTechnologiesImage();
+                    // Add Class
+                    DynamicImageElement.addClass(IClassList[CurrentIClass]);
+                    
+                    // Variables Set
+                    CurrentIClass++;
+                    LastIClass = IClassList[CurrentIClass];
 
-            }
-
-            DynamicImageElement.addClass(IClassList[CurrentIClass]);
-            
-            DynamicImageElement.fadeIn(1900, ()=>{
-                DynamicImageElement.fadeOut(1900);
+                });
 
             });
-
-            LastIClass = IClassList[CurrentIClass];
-            CurrentIClass++;
 
         },
             5000
@@ -271,7 +269,7 @@ $(function(){
             //// Project Info
             let ProjectInfoTitle = ProjectInfoDiv.data('project-info-title');
 
-            let ProjectInfoImage = ProjectInfoDiv.data('project-info-image') != 'null' ? ProjectInfoDiv.data('project-info-image') : ProjectInfoDiv.find('.projects-single-image img').attr('src');
+            let ProjectInfoImage = ProjectInfoDiv.data('project-info-image') !== null ? ProjectInfoDiv.data('project-info-image') : ProjectInfoDiv.find('.projects-single-image img').attr('src');
             
             let ProjectInfoTags = ProjectInfoDiv.data('project-info-tags');
             let ProjectInfoDescription = ProjectInfoDiv.data('project-info-description');
@@ -287,6 +285,11 @@ $(function(){
 
             // Modal -> Image
             ModalProjectInfoImage.attr('src', ProjectInfoImage);
+
+            if(ProjectInfoTitle == 'IBCA Church App'){
+                ModalProjectInfoImage.parent().css('background', 'black').css('border-radius', '8px').css('overflow', 'hidden');
+                ModalProjectInfoImage.css('transform', 'scale(1.6)').css('object-fit', 'contain');
+            }
 
             // Modal -> Text
             ModalProjectInfoTags.text(ProjectInfoTags);
@@ -306,10 +309,9 @@ $(function(){
             }
             
             // Modal -> Buttons
-            ProjectInfoDeployLink !== null ? ModalProjectInfoDeployButton.removeClass('ahref-disabled').attr('href', ProjectInfoDeployLink) : ''
+            ProjectInfoDeployLink !== null && ProjectInfoDeployLink !== undefined ? ModalProjectInfoDeployButton.removeClass('ahref-disabled').attr('href', ProjectInfoDeployLink).attr('target', '_blank') : ''
 
-            ProjectInfoRepositoryLink !== null ? ModalProjectInfoRepositoryButton.removeClass('ahref-disabled').attr('href', ProjectInfoRepositoryLink) :
-            ''
+            ProjectInfoRepositoryLink !== null && ProjectInfoRepositoryLink !== undefined ? ModalProjectInfoRepositoryButton.removeClass('ahref-disabled').attr('href', ProjectInfoRepositoryLink).attr('target', '_blank') : ''
 
         }else{
             CloseModal();
@@ -334,8 +336,8 @@ $(function(){
         ModalProjectInfoTechnologiesDiv.empty();
     
         // Modal -> Buttons
-        ModalProjectInfoDeployButton.addClass('ahref-disabled').attr('href', '#project-info-deployed');
-        ModalProjectInfoRepositoryButton.addClass('ahref-disabled').attr('href', '#project-info-repository');
+        ModalProjectInfoDeployButton.addClass('ahref-disabled').attr('href', '#project-info-deployed').attr('target', '_self');
+        ModalProjectInfoRepositoryButton.addClass('ahref-disabled').attr('href', '#project-info-repository').attr('target', '_self');
 
     }
 

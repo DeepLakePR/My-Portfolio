@@ -126,15 +126,7 @@ section.end-to-end-applications h2 span{
 section.about-me{
     background: var(--section-background-custom-two);
     overflow: hidden;
-}
-
-section.about-me .about-me_image{
-    width: 20%;
-}
-
-.about-me_image img{
-    max-width: 400px;
-    height: 100%;
+    max-height: 390px;
 }
 
 section.about-me .container{
@@ -142,6 +134,19 @@ section.about-me .container{
     align-items: center;
 }
 
+/* About Me -> Image */
+section.about-me .about-me_image{
+    width: 40%;
+    margin-left: -50px;
+    margin-right: 50px;
+}
+
+.about-me_image img{
+    max-width: 400px;
+    height: 100%;
+}
+
+/* About Me -> Text */
 section.about-me .about-me_text{
     max-width: 700px;
     text-align: left;
@@ -404,12 +409,15 @@ section.technologies .container{
     background: var(--background-secondary);
     border-radius: 15px;
     box-shadow: 0px 15px 20px 0px var(--global-shadow-color);
+    transition: none;
 }
 
 .technologies-dynamic-image i{
     font-size: 300px;
     color: var(--global-default-color);
     width: 100%;
+    transition: none;
+    text-align: center;
 }
 
 /* Contact */
@@ -538,9 +546,15 @@ body .modal{
     color: var(--global-default-color);
 }
 
+/* Max Height */
+.modal .project-info-modal-image, .modal .project-info-modal-text{
+    max-height: 30%;
+}
+
 /* Project Info Image */
 .modal .project-info-modal-image img{
-    max-width: 100%;
+    width: 100%;
+    max-height: 100%;
     object-fit: cover;
     border-radius: 8px;
 }
@@ -559,7 +573,7 @@ body .modal{
 
 .modal .project-info-modal-text p{
     padding-bottom: 5px;
-    max-width: 80%;
+    max-width: 95%;
     font-weight: var(--section-text-secondary-font-weight);
     border-bottom: 1px solid var(--css-framework-hr-custom-color);
 }
@@ -573,7 +587,7 @@ body .modal{
 
 .modal .project-info-modal-technologies i{
     padding: 5px;
-    font-size: 32px;
+    font-size: 35px;
     border-top: 1.5px solid var(--css-framework-hr-custom-color);
     transition: none;
     transition: 0.3s linear;
@@ -749,3 +763,99 @@ body .modal{
 
 /**********************************/
 /****** Responsive ******/
+/* Notebooks */
+@media screen and (max-width: 1024px) {
+
+    
+
+}
+
+/* Tablets */
+@media screen and (max-width: 768px) {
+
+    /* Section Apresentation */
+    section.section-apresentation{
+        padding-top: 225px;
+    }
+
+    /* Apresentation > Text */
+    .section-apresentation .apresentation-text{
+        padding-bottom: 30px;
+    }
+
+    /* Apresentation > Image */
+    .section-apresentation .apresentation-image img{
+        max-width: 240px;
+    }
+
+    /* End-To-End Applications */
+    section.end-to-end-applications h2{
+        position: absolute;
+        top: 50%;
+        left: 0;
+        font-size: 28px;
+    }
+
+    section.end-to-end-applications h2 span{
+        font-size: 30px;
+    }
+
+    /* About Me */
+    section.about-me{
+        max-height: none;
+    }
+
+    section.about-me .container{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    /* About Me -> Image */
+    section.about-me .about-me_image{
+        margin: 0;
+        width: auto;
+    }
+
+    section.about-me .about-me_image img{
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+    }
+
+    /* About Me -> Text */
+    section.about-me .about-me_text{
+        text-align: center;
+        padding-bottom: 30px;
+    }
+
+    section.about-me .about-me_text h2{
+        padding: 0 80px;
+    }
+
+    /* Technologies > Single */
+    .technologies-single-container{
+        padding: 0;
+    }
+
+    /* Technologies > Single > Button */
+    .technologies-more-button button{
+        width: 100%;
+    }
+
+    /* Technologies > Dynamic Image */
+    .technologies-dynamic-image{
+        display: none;
+    }
+
+    /* Contact */
+    section.contact .container > h2{
+        font-size: 28px;
+    }
+
+}
+
+/* Mobile */
+@media screen and (max-width: 480px) {
+
+    
+
+}

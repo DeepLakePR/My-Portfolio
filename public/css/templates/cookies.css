@@ -10,6 +10,7 @@ div.cookies-privay-wrapper{
     max-width: 35%;
     z-index: 999;
     box-shadow: var(--cookies-shadow);
+    transition: none;
 }
 
 /* Container */

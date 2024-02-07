@@ -162,8 +162,17 @@ header .header-options button:hover #header-opt-dark-theme{
 /* Tablets */
 @media screen and (max-width: 768px){
 
+    /* Header Navigation */
     header .header-navigation li{
         width: 100%;
+    }
+
+    /* Header Options */
+    header .header-options{
+        padding: 0;
+        width: 20%;
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
 
 }
