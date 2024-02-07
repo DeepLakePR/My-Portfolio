@@ -306,7 +306,7 @@ section.technologies .container{
     padding-top: 0px;
 }
 
-/* Technologies > Single */
+/* Technologies > Single Container */
 .technologies-single-container{
     padding-left: 0px;
     padding-right: 30px;
@@ -322,7 +322,7 @@ section.technologies .container{
     background: var(--section-technologies-animation-color);
 }
 
-/****/
+/** Technologies Single Box **/
 .technologies-single-box{
     width: 100%;
     color: var(--global-default-color);
@@ -808,6 +808,7 @@ body .modal{
     section.about-me .container{
         flex-direction: column;
         justify-content: center;
+        padding: 0;
     }
 
     /* About Me -> Image */
@@ -831,14 +832,99 @@ body .modal{
         padding: 0 80px;
     }
 
-    /* Technologies > Single */
+    /* Projects */
+    section.projects .container{
+        padding: 15px;
+    }
+
+    /* Projects -> Wrapper */
+    .projects-wrapper{
+        padding: 0;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        max-height: 1510px;
+    }
+
+    /* Project -> Single */
+    .projects-single{
+        height: auto;
+        padding: 8px;
+        margin-bottom: 30px;
+    }
+    
+    /* Project -> Single -> Image */
+    .projects-single .projects-single-image{
+        width: 100%;
+        height: 150px;
+    }
+
+    .projects-single .projects-single-image img{
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    /* Project -> Single -> Text */
+    .projects-single-text{
+        width: 100%;
+        max-width: none;
+        height: auto;
+    }
+    
+    .projects-single-text p{
+        margin-bottom: 20px;
+    }
+
+    .projects-single-text a{
+        position: static;
+    }
+
+    .projects-single .projects-single-image{
+        order: unset !important;
+    }
+    
+    .projects-single .projects-single-text{
+        order: unset !important;
+    }
+
+    /* Knowledge Technologies Projects */
+    section.technologies{
+        padding: 5px;
+        padding-bottom: 40px;
+    }
+
+    section.technologies .container{
+        padding: 0;
+    }
+
+    section.technologies > h2{
+        margin-bottom: 20px;
+    }
+
+    .technologies-single-box-title i{
+        margin: 0;
+        text-align: center;
+    }
+
+    /* Technologies > Single Container */
     .technologies-single-container{
         padding: 0;
     }
 
-    /* Technologies > Single > Button */
+    /* Technologies > Single */
+    .technologies-single-box-nivel{
+        flex-direction: row;
+        flex-wrap: nowrap;
+        font-size: 15px;
+    }
+
+    .tech-single-box-nivel-custom_line{
+        margin: 0 8px;
+    }
+
+    /* Technologies > Modal Button */
     .technologies-more-button button{
-        width: 100%;
+        width: 90%;
+        padding-bottom: 10px;
     }
 
     /* Technologies > Dynamic Image */
