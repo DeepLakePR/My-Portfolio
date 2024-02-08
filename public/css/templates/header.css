@@ -146,8 +146,10 @@ header .header-options button:hover #header-opt-dark-theme{
 /* Notebooks */
 @media screen and (max-width: 1084px){
 
+    /* Header Navigation */
     header .header-navigation ul{
         flex-wrap: wrap;
+        justify-content: flex-end;
     }
 
     header .header-navigation li{
@@ -155,6 +157,21 @@ header .header-options button:hover #header-opt-dark-theme{
         margin: 0;
         margin-top: 5px;
         text-align: center;
+    }
+
+    /* Header Options */
+    header .header-options button{
+        width: 100%;
+    }
+
+}
+
+/* Custom Responsive */
+@media screen and (max-width: 820px){
+
+    /* Header Navigation */
+    header .header-navigation li{
+        width: 42%;
     }
 
 }

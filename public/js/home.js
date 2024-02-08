@@ -7,7 +7,6 @@ $(function(){
     var normalReveal = { 
         duration: 5000, 
         reset: false,
-        mobile: false
     };
 
     var AnimatedReveal = {

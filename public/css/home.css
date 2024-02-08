@@ -184,7 +184,7 @@ section.projects .container > h2{
     border: 25px solid var(--background-six);
     box-shadow: 0px 15px 20px 0px var(--global-shadow-color);
     overflow: hidden;
-    max-height: 1125px;
+    max-height: 1200px;
     transition: all 1.25s linear;
 }
 
@@ -622,17 +622,17 @@ body .modal{
 
 /****************************/
 /* Knowledge Modal */
-.modal .modal-knowledge-subtitle{
-    width: 100%;
-    font-size: 22px;
-    font-weight: var(--section-text-secondary-font-weight);
-}
-
 .modal .modal-knowledge{
     width: 100%;
     padding: 5px;
     flex-wrap: wrap;
     justify-content: flex-start;
+}
+
+.modal .modal-knowledge-subtitle{
+    width: 100%;
+    font-size: 22px;
+    font-weight: var(--section-text-secondary-font-weight);
 }
 
 .modal .modal-knowledge-box-single{
@@ -766,16 +766,85 @@ body .modal{
 /* Notebooks */
 @media screen and (max-width: 1024px) {
 
-    
+    /* About Me */
+    section.about-me{
+        max-height: none;
+    }
+
+    /* About Me -> Image */
+    section.about-me .about-me_image{
+        width: 42%;
+        height: 100%;
+    }
+
+    section.about-me .about-me_image img{
+        max-width: 100%;
+        object-fit: cover;
+    }
+
+    /* About Me -> Text */
+    section.about-me .about-me_text{
+        padding: 15px 0;
+    }
+
+    section.about-me .about-me_text h2{
+        font-size: 20px;
+    }
+
+    section.about-me .about-me_text p{
+        font-size: 16px;
+        max-width: none;
+    }
+
+    /* Projects -> Wrapper */
+    .projects-wrapper{
+        padding: 3px;
+    }
+
+    /* Project -> Single */
+    .projects-single{
+        height: 375px;
+    }
+
+    /* Project -> Single -> Image */
+    .projects-single .projects-single-image{
+        height: 100%;
+    }
+
+    .projects-single .projects-single-image img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    /* Technologies > Single */
+    .technologies-single-box-nivel{
+        font-size: 16px;
+    }
+
+    .tech-single-box-nivel-custom_line{
+        margin: 0 4px;
+        margin-top: 3px;
+    }
+
+    /* Technologies > Dynamic Image */
+    .technologies-dynamic-image{
+        max-height: none;
+        height: 400px;
+    }
 
 }
 
 /* Tablets */
 @media screen and (max-width: 768px) {
 
-    /* Section Apresentation */
+    /* Apresentation */
     section.section-apresentation{
         padding-top: 225px;
+    }
+
+    section.section-apresentation .container{
+        padding: 20px;
     }
 
     /* Apresentation > Text */
@@ -814,10 +883,12 @@ body .modal{
     /* About Me -> Image */
     section.about-me .about-me_image{
         margin: 0;
-        width: auto;
+        margin-bottom: 10px;
+        width: 100%;
     }
 
     section.about-me .about-me_image img{
+        max-width: 100%;
         border-bottom-left-radius: 8px;
         border-bottom-right-radius: 8px;
     }
@@ -825,11 +896,20 @@ body .modal{
     /* About Me -> Text */
     section.about-me .about-me_text{
         text-align: center;
-        padding-bottom: 30px;
+        padding-bottom: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 
     section.about-me .about-me_text h2{
         padding: 0 80px;
+    }
+
+    section.about-me .about-me_text p{
+        width: 95%;
+        max-width: none;
     }
 
     /* Projects */
@@ -842,25 +922,29 @@ body .modal{
         padding: 0;
         flex-direction: column;
         flex-wrap: nowrap;
-        max-height: 1510px;
+        max-height: 1780px;
     }
 
     /* Project -> Single */
     .projects-single{
         height: auto;
         padding: 8px;
-        margin-bottom: 30px;
+        padding-bottom: 30px;
+        margin-bottom: 5px;
+        border-bottom: 2px solid var(--global-default-color);
     }
     
     /* Project -> Single -> Image */
     .projects-single .projects-single-image{
         width: 100%;
         height: 150px;
+        margin-bottom: 5px;
     }
 
     .projects-single .projects-single-image img{
-        max-width: 100%;
-        max-height: 100%;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
 
     /* Project -> Single -> Text */
@@ -918,7 +1002,7 @@ body .modal{
     }
 
     .tech-single-box-nivel-custom_line{
-        margin: 0 8px;
+        margin: 0 5px;
         margin-top: 3px;
     }
 
@@ -938,11 +1022,115 @@ body .modal{
         font-size: 28px;
     }
 
+    /****************************/
+    /* Modals */
+    
+    /* Knowledge Modal */
+    div.modal#knowledge-modal .container{
+        flex-wrap: nowrap;
+    }
+
+    .modal .modal-knowledge{
+        width: 100%;
+        padding: 5px;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+
+    .modal .modal-knowledge-subtitle{
+        font-size: 20px;
+    }
+
+    .modal .modal-knowledge-box-single{
+        width: 90%;
+        max-width: none;
+        text-align: center;
+    }
+
+    .modal .modal-knowledge-box-single-text a{
+        width: 100%;
+        text-align: center;
+        left: 0;
+    }
+
+    /* Knowledge Custom Box */
+    .modal .modal-knowledge-custom-box-single{
+        height: auto;
+        flex-wrap: nowrap;
+    }
+
+    .modal .modal-knowledge-custom-box-single-image{
+        height: 100%;
+    }
+
+    .modal .modal-knowledge-custom-box-single .modal-knowledge-custom-box-single-text{
+        flex-wrap: nowrap;
+    }
+
+    .modal-knowledge-custom-box-single-text .hr-horizontal{
+        width: 100%;
+    }
+
+    .modal .modal-knowledge-idioms-nivel{
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
 }
 
 /* Mobile */
 @media screen and (max-width: 480px) {
 
+    /* Apresentation */
+    section.section-apresentation{
+        padding-top: 250px;
+    }
+
+    section.section-apresentation .container{
+        padding: 8px;
+    }
+
+    /* Apresentation > Image */
+    .section-apresentation .apresentation-image img{
+        max-width: 100%;
+    }
     
+
+    /* End-To-End Applications */
+    section.end-to-end-applications h2{
+        top: 42%;
+    }
+
+    /* About Me > Text */
+    section.about-me .about-me_text{
+        padding: 0;
+        padding-bottom: 30px;
+    }
+
+    /* Project > Single > Text */
+    .projects-single-text{
+        padding: 2px !important;
+    }
+
+    /* Project > Single > Text > Title */
+    .projects-single-text h2{
+        font-size: 18px;
+    }
+    
+    /* Project > Single > Text > Description */
+    .projects-single-text p{
+        font-size: 15px;
+    }
+
+    /* Technologies > Single */
+    .technologies-single-box-nivel{
+        font-size: 12px;
+    }
+
+    .tech-single-box-nivel-custom_line{
+        margin: 0 3px;
+        margin-top: 3px;
+    }
 
 }
