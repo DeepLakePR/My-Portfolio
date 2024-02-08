@@ -839,10 +839,6 @@ body .modal{
 @media screen and (max-width: 768px) {
 
     /* Apresentation */
-    section.section-apresentation{
-        padding-top: 225px;
-    }
-
     section.section-apresentation .container{
         padding: 20px;
     }
@@ -1083,10 +1079,6 @@ body .modal{
 @media screen and (max-width: 480px) {
 
     /* Apresentation */
-    section.section-apresentation{
-        padding-top: 250px;
-    }
-
     section.section-apresentation .container{
         padding: 8px;
     }

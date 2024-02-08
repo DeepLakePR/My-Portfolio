@@ -137,4 +137,30 @@ $(()=>{
 
     }
 
+    ////////////////////////////////
+    ////// Header Options Expand Button
+    // Variables
+    const ExpandHeaderButton = $('header .header-options button#mobile-header-expand-button');
+    const HeaderNavigationDiv = $('header .header-navigation');
+
+    var isExpanded = false;
+
+    ExpandHeaderButton.click((e)=>{
+
+        if(isExpanded){
+            HeaderNavigationDiv.css('max-height', '0px');
+            ExpandHeaderButton.find('i').removeClass().addClass('fa-solid fa-chevron-down');
+
+            isExpanded = false;
+        
+        }else{
+            HeaderNavigationDiv.css('max-height', '150px');
+            ExpandHeaderButton.find('i').removeClass().addClass('fa-solid fa-chevron-up');
+
+            isExpanded = true;
+
+        }
+
+    });
+
 })

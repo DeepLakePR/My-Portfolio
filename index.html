@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
 	<!-- Frameworks CSS -->
 	<link href="/public/css/style-framework/core.css" rel="stylesheet" />
@@ -47,12 +47,16 @@
 				</ul>
 			</nav> <!-- Navigation -->
 
-			<div class="header-options w10 flex">
+			<div class="header-options w10 flex pos-relative">
 
 				<button id="theme-changer" class="pos-relative button w50">
 					<i id="header-opt-light-theme" class="fa-solid fa-sun"></i>
 					<i id="header-opt-dark-theme" class="fa-solid fa-moon"></i>
-				</button>
+				</button> <!-- Themes Button -->
+
+				<button id="mobile-header-expand-button" class="pos-absolute button">
+					<i class="fa-solid fa-chevron-down"></i>
+				</button> <!-- Expand Header Button -->
 
 			</div> <!-- Options -->
 
