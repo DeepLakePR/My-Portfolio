@@ -247,7 +247,7 @@ $(function(){
 
     const ModalProjectInfoTitle = ModalProjectInfo.find('h2.modal-title');
 
-    const ModalProjectInfoImage = ModalProjectInfo.find('img.project-info-modal-image');
+    const ModalProjectInfoImage = ModalProjectInfo.find('img.project-info-modal-image-img');
 
     const ModalProjectInfoTags = ModalProjectInfo.find('h2.project-info-modal-text-tags');
     const ModalProjectInfoDescription = ModalProjectInfo.find('p.project-info-modal-text-description');

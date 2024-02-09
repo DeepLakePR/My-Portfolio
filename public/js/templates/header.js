@@ -53,23 +53,51 @@ $(()=>{
     ////// Header Options Hide & Show Animation on Scroll
     const HeaderOptions = $('header .header-options');
 
-    var lastScrollTop = 0;
+    function MobileHeaderExpand(){
 
-    $(window).on('scroll', ()=>{
-        
-        let ScrollTop = window.scrollY || document.documentElement.scrollTop;
+        const MobileMediaQuery = window.matchMedia('(max-width: 768px)');
 
-        if(ScrollTop > lastScrollTop){
-            HeaderOptions.css('max-height', '0px').css('overflow', 'hidden');
+        if(MobileMediaQuery.matches){
+            isMediaQueryMatches = true;
+
+            var lastScrollTop = 0;
+
+            $(window).on('scroll', ()=>{
+                
+                if(isMediaQueryMatches){
+
+                    let ScrollTop = window.scrollY || document.documentElement.scrollTop;
+
+                    if(ScrollTop > lastScrollTop){
+                        HeaderOptions.css('max-height', '0px').css('overflow', 'hidden');
+
+                    }else{
+                        HeaderOptions.css('max-height', '75px').css('overflow', 'visible');
+
+                    }
+
+                    lastScrollTop = ScrollTop;
+
+                }else{
+                    $(window).unbind('scroll');
+
+                }
+
+            });
 
         }else{
+            isMediaQueryMatches = false;
             HeaderOptions.css('max-height', '75px').css('overflow', 'visible');
 
         }
 
-        lastScrollTop = ScrollTop;
+    }
 
-    });
+    MobileHeaderExpand();
+
+    $(window).on('resize', ()=>{
+        MobileHeaderExpand();
+    })
 
     ////////////////////////////////
     ////// Header Options Themes
