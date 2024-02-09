@@ -1120,6 +1120,10 @@ body .modal{
         align-items: center;
     }
 
+    .modal .project-info-modal-content .project-info-modal-image, .modal .project-info-modal-content .project-info-modal-text{
+        width: 100%;
+    }
+
     .modal .project-info-modal-content .project-info-modal-image{
         max-height: 20%;
         margin-bottom: 10px;

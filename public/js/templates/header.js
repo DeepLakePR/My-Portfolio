@@ -6,6 +6,8 @@ $(()=>{
     var HeaderNavigationButtons = $("nav.header-navigation ul li a");
     var FooterNavigationButtons = $("div.footer-navigation nav ul li a");
 
+    var isHeaderNavigationScrolling = false;
+
     HeaderNavigationButtons.click((e) =>{
         ScrollTarget(e);
 
@@ -47,6 +49,13 @@ $(()=>{
         // Scroll
         scrollTo({ 'top': ElementTarget.position().top - offsetDebug, 'behavior': 'smooth' });
 
+        isHeaderNavigationScrolling = true;
+
+        setTimeout(()=>{
+            isHeaderNavigationScrolling = false;
+
+        }, 1000);
+
     }
 
     ////////////////////////////////
@@ -66,17 +75,21 @@ $(()=>{
                 
                 if(isMediaQueryMatches){
 
-                    let ScrollTop = window.scrollY || document.documentElement.scrollTop;
+                    if(!isHeaderNavigationScrolling){
 
-                    if(ScrollTop > lastScrollTop){
-                        HeaderOptions.css('max-height', '0px').css('overflow', 'hidden');
+                        let ScrollTop = window.scrollY || document.documentElement.scrollTop;
 
-                    }else{
-                        HeaderOptions.css('max-height', '75px').css('overflow', 'visible');
+                        if(ScrollTop > lastScrollTop){
+                            HeaderOptions.css('max-height', '0px').css('overflow', 'hidden').css('padding-bottom', '0px');
+
+                        }else{
+                            HeaderOptions.css('max-height', '75px').css('overflow', 'visible').css('padding-bottom', '11px');
+
+                        }
+
+                        lastScrollTop = ScrollTop;
 
                     }
-
-                    lastScrollTop = ScrollTop;
 
                 }else{
                     $(window).unbind('scroll');
