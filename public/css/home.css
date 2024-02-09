@@ -849,6 +849,10 @@ body .modal{
     }
 
     /* Apresentation > Image */
+    .section-apresentation .apresentation-image{
+        padding-bottom: 20px;
+    }
+
     .section-apresentation .apresentation-image img{
         max-width: 240px;
     }
@@ -1020,6 +1024,9 @@ body .modal{
 
     /****************************/
     /* Modals */
+    .modal .modal-title{
+        font-size: 22px;
+    }
     
     /* Knowledge Modal */
     div.modal#knowledge-modal .container{
@@ -1085,7 +1092,7 @@ body .modal{
 
     /* Apresentation > Image */
     .section-apresentation .apresentation-image img{
-        max-width: 100%;
+        max-width: 80%;
     }
     
 
@@ -1117,12 +1124,39 @@ body .modal{
 
     /* Technologies > Single */
     .technologies-single-box-nivel{
-        font-size: 12px;
+        font-size: 14px;
     }
 
     .tech-single-box-nivel-custom_line{
-        margin: 0 3px;
+        margin: 0 5px;
         margin-top: 3px;
+    }
+
+    /* Contact */
+    section.contact .container{
+        padding: 15px; 
+        padding-top: 135px;
+        padding-bottom: 125px;
+    }
+
+    /***************************/
+    /* Knowledge Modal */
+    .modal .modal-knowledge-idioms-nivel{
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    .modal .modal-knowledge-idioms-nivel p{
+        margin: 10px 0;
+    }
+
+    .modal .modal-knowledge-idioms-nivel .modal-knowledge-idioms-nivel-custom_line{
+        width: 12px;
+        height: 50px;
+    }
+
+    .modal .modal-knowledge-idioms-nivel div.modal-knowledge-idioms-nivel-midfill{
+        background: linear-gradient(180deg, var(--section-technologies-animation-color) 50%, white 50%);
     }
 
 }

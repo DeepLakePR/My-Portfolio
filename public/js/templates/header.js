@@ -20,25 +20,24 @@ $(()=>{
         let ButtonTarget = $(e.target).attr("js-scrolltarget");
         let ElementTarget = $("#" + ButtonTarget);
 
-        let offsetDebug = 20;
+        let offsetDebug = 190;
 
-        if(ButtonTarget == 'js-scroll-about-me-text'){
-            offsetDebug = 160;
-
-        }
-
-        if(ButtonTarget == 'js-scroll-projects-text'){
-            offsetDebug = 130;
+        /*
+        if(ButtonTarget == 'js-scroll-about-me-text' || ButtonTarget == 'js-scroll-projects-text'){
+            offsetDebug = 190;
 
         }
+        */
 
         if(ButtonTarget == 'js-scroll-knowledge-text' || ButtonTarget == 'js-scroll-contact-text'){
             ElementTarget = ElementTarget.parent();
 
+            /*
             if(ButtonTarget == 'js-scroll-knowledge-text'){
-                offsetDebug = 100;
+                offsetDebug = 190;
             
             }
+            */
 
         }
 
@@ -47,12 +46,34 @@ $(()=>{
         
         // Scroll
         scrollTo({ 'top': ElementTarget.position().top - offsetDebug, 'behavior': 'smooth' });
+
     }
+
+    ////////////////////////////////
+    ////// Header Options Hide & Show Animation on Scroll
+    const HeaderOptions = $('header .header-options');
+
+    var lastScrollTop = 0;
+
+    $(window).on('scroll', ()=>{
+        
+        let ScrollTop = window.scrollY || document.documentElement.scrollTop;
+
+        if(ScrollTop > lastScrollTop){
+            HeaderOptions.css('max-height', '0px').css('overflow', 'hidden');
+
+        }else{
+            HeaderOptions.css('max-height', '75px').css('overflow', 'visible');
+
+        }
+
+        lastScrollTop = ScrollTop;
+
+    });
 
     ////////////////////////////////
     ////// Header Options Themes
     // Variables
-    const HeaderOptions = $('header .header-options');
     const ThemeButton = HeaderOptions.find('button#theme-changer');
 
     const LightThemeBtn = ThemeButton.find('#header-opt-light-theme');
@@ -148,13 +169,13 @@ $(()=>{
     ExpandHeaderButton.click((e)=>{
 
         if(isExpanded){
-            HeaderNavigationDiv.css('max-height', '0px');
+            HeaderNavigationDiv.css('max-height', '0px').css('padding-bottom', '0px');
             ExpandHeaderButton.find('i').removeClass().addClass('fa-solid fa-chevron-down');
 
             isExpanded = false;
         
         }else{
-            HeaderNavigationDiv.css('max-height', '150px');
+            HeaderNavigationDiv.css('max-height', '150px').css('padding-bottom', '10px');
             ExpandHeaderButton.find('i').removeClass().addClass('fa-solid fa-chevron-up');
 
             isExpanded = true;
