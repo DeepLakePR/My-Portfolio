@@ -142,6 +142,13 @@ $(()=>{
 
             }
 
+            isHeaderNavigationScrolling = true;
+
+            setTimeout(()=>{
+                isHeaderNavigationScrolling = false;
+
+            }, 1000);
+
             setTimeout(()=>{
                 Debugger = false;
 

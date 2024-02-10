@@ -890,6 +890,16 @@ body .modal{
 }
 
 /* Custom Responsive */
+@media screen and (max-width: 925px){
+
+    /* Technologies Dynamic Image */
+    .technologies-dynamic-image i{
+        font-size: 250px;
+    }
+
+}
+
+/* Custom Responsive */
 @media screen and (max-width: 887px){
 
     /* Knowledge Modal */
@@ -905,6 +915,16 @@ body .modal{
     /* Project Info Modal */
     .modal .project-info-modal-technologies{
         padding-top: 45%;
+    }
+
+}
+
+/* Custom Responsive */
+@media screen and (max-width: 800px){
+
+    /* Technologies Dynamic Image */
+    .technologies-dynamic-image i{
+        font-size: 210px;
     }
 
 }
@@ -1265,6 +1285,54 @@ body .modal{
         padding: 15px; 
         padding-top: 135px;
         padding-bottom: 125px;
+    }
+
+}
+
+/* Custom Responsive */
+@media screen and (max-width: 380px) and (max-height: 670px){
+
+    /* Project Info Modal */
+    .modal .modal-title{
+        font-size: 19px;
+    }
+
+    .modal .project-info-modal-content .project-info-modal-text{
+        margin-bottom: 10%;
+    }
+
+    .modal .project-info-modal-content .project-info-modal-technologies{
+        padding-top: 100%;
+        padding-bottom: 20%;
+    }
+
+}
+
+/* Custom Responsive */
+@media screen and (max-width: 290px) {
+
+    /* Technologies/Knowledge */
+    .technologies-single-box-nivel{
+        overflow-x: auto;
+        
+    }
+
+    .technologies-single-box-nivel::-webkit-scrollbar{
+        height: 8px;
+    }
+
+}
+
+/* Custom Responsive */
+@media screen and (max-width: 250px) {
+
+    /* Knowledge Technologies Projects */
+    section.technologies > h2{
+        font-size: 18px;
+    }
+
+    .technologies-single-box-nivel{
+        padding-left: 110px;
     }
 
 }
