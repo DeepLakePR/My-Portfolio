@@ -61,6 +61,8 @@ $(()=>{
     ////////////////////////////////
     ////// Header Options Hide & Show Animation on Scroll
     const HeaderOptions = $('header .header-options');
+    var HeaderHideScrollingDebugger = false;
+    var TopOffset = 35;
 
     function MobileHeaderExpand(){
 
@@ -77,17 +79,35 @@ $(()=>{
 
                     if(!isHeaderNavigationScrolling){
 
-                        let ScrollTop = window.scrollY || document.documentElement.scrollTop;
+                        if(!HeaderHideScrollingDebugger){
 
-                        if(ScrollTop > lastScrollTop){
-                            HeaderOptions.css('max-height', '0px').css('overflow', 'hidden').css('padding-bottom', '0px');
+                            let ScrollTop = window.scrollY || document.documentElement.scrollTop;
+                            ScrollTop = ScrollTop - TopOffset;
 
-                        }else{
-                            HeaderOptions.css('max-height', '75px').css('overflow', 'visible').css('padding-bottom', '11px');
+                            if(ScrollTop > lastScrollTop){
+                                HeaderOptions.css('max-height', '0px')
+                                .css('overflow', 'hidden')
+                                .css('padding-bottom', '0px')
+                                .css('margin', '0px');
+                                
+                            }else{
+                                HeaderOptions.css('max-height', '75px')
+                                .css('overflow', 'visible')
+                                .css('padding-bottom', '11px')
+                                .css('margin', '10px 0');;
+
+                            }
+
+                            lastScrollTop = ScrollTop;
+                            HeaderHideScrollingDebugger = true
+
+                            setTimeout(()=>{
+                                HeaderHideScrollingDebugger = false;
+
+                            }, 1000);
+
 
                         }
-
-                        lastScrollTop = ScrollTop;
 
                     }
 
