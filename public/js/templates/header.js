@@ -85,10 +85,10 @@ $(()=>{
                             ScrollTop = ScrollTop - TopOffset;
 
                             if(ScrollTop > lastScrollTop){
-                                HeaderOptions.css('max-height', '0px')
+                                HeaderOptions.css('max-height', '0')
                                 .css('overflow', 'hidden')
-                                .css('padding-bottom', '0px')
-                                .css('margin', '0px');
+                                .css('padding-bottom', '0')
+                                .css('margin', '0');
                                 
                             }else{
                                 HeaderOptions.css('max-height', '75px')
