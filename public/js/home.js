@@ -326,6 +326,8 @@ $(function(){
 
         // Modal -> Image
         ModalProjectInfoImage.attr('src', '/public/assets/logo-2.png');
+        ModalProjectInfoImage.css('transform', 'scale(1)').css('object-fit', 'cover');
+        ModalProjectInfoImage.parent().css('background', 'transparent').css('border-radius', '8px').css('overflow', 'visible');
 
         // Modal -> Text
         ModalProjectInfoTags.text('${PROJECT_TAGS}');

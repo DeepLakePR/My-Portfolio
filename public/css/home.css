@@ -1152,10 +1152,15 @@ body .modal{
     .modal .project-info-modal-text{
         flex-direction: column !important;
         padding: 0;
+        max-height: none;
+    }
+
+    .modal .project-info-modal-text p{
+        border: 0;
     }
 
     .modal .project-info-modal-technologies{
-        padding-top: 30%;
+        padding-top: 0;
     }
 
     /* Knowledge Modal */
@@ -1285,6 +1290,16 @@ body .modal{
         padding: 15px; 
         padding-top: 135px;
         padding-bottom: 125px;
+    }
+
+    /* Project Info Modal */
+    #project-info-modal .modal-title{
+        font-size: 19px;
+        padding-right: 20px;
+    }
+
+    .modal .project-info-modal-technologies{
+        margin: 15% 0;
     }
 
 }
