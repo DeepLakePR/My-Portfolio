@@ -55,7 +55,7 @@ section.section-apresentation{
     transition: color 0.25s ease-in-out;
 }
 
-.section-apresentation .apresentation-social_media a i:hover{
+.section-apresentation .apresentation-social_media a:hover i{
     color: var(--section-button-secondary-hover-color);
 }
 
@@ -403,6 +403,7 @@ section.technologies .container{
 /* Technologies > Dynamic Image */
 .technologies-dynamic-image{
     margin-top: 40px;
+    margin-left: 40px;
     align-items: center;
     justify-content: center;
     max-height: 650px;

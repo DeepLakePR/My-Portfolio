@@ -17,7 +17,7 @@ footer a{
     transition: var(--footer-link-transition);
 }
 
-footer .footer-navigation li a:hover, .footer-social_media a:hover{
+footer .footer-navigation li a:hover, .footer-social_media a:hover i{
     color: var(--footer-hover-color);
 }
 
