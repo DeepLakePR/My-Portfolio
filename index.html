@@ -7,7 +7,7 @@
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-LD0D8J3BT4"></script>
 	<script>
 		window.dataLayer = window.dataLayer || [];
-		function gtag(){dataLayer.push(arguments);}
+		function gtag() { dataLayer.push(arguments); }
 		gtag('js', new Date());
 
 		gtag('config', 'G-LD0D8J3BT4');
@@ -43,14 +43,16 @@
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="https://guifm.dev/" />
 	<meta property="og:title" content="Guilherme Developer" />
-	<meta property="og:description" content="Venha conhecer meu portfólio e saber quem eu sou e com o que eu trabalho." />
+	<meta property="og:description"
+		content="Venha conhecer meu portfólio e saber quem eu sou e com o que eu trabalho." />
 	<meta property="og:image" content="https://guifm.dev/public/assets/seo/og-image.jpg" />
 
 	<!-- Twitter -->
 	<meta property="twitter:card" content="summary_large_image" />
 	<meta property="twitter:url" content="https://guifm.dev/" />
 	<meta property="twitter:title" content="Guilherme Developer" />
-	<meta property="twitter:description" content="Venha conhecer meu portfólio e saber quem eu sou e com o que eu trabalho." />
+	<meta property="twitter:description"
+		content="Venha conhecer meu portfólio e saber quem eu sou e com o que eu trabalho." />
 	<meta property="twitter:image" content="https://guifm.dev/public/assets/seo/og-image.jpg" />
 
 </head>
@@ -79,6 +81,58 @@
 			</nav> <!-- Navigation -->
 
 			<div class="header-options w10 flex pos-relative">
+
+				<!--
+				<select>
+
+					<option value="en-US"><img src="/public/assets/languages-icons/en-US.jpeg" alt="Guilherme Fortunato Developer English USA" title="Guilherme Fortunato Developer English USA" loading="lazy" />
+					</option>
+
+					<option value="es-ES"><img src="/public/assets/languages-icons/es-ES.jpeg" alt="Guilherme Fortunato Español ES" title="Guilherme Fortunato Developer Español ES" loading="lazy" />
+					</option>
+
+					<option value="pt-BR"><img src="/public/assets/languages-icons/pt-BR.jpeg" alt="Guilherme Fortunato Developer Português BR" title="Guilherme Fortunato Developer Português BR" loading="lazy" />
+					</option>
+
+					<option value="zh-HK"><img src="/public/assets/languages-icons/zh-HK.jpeg" alt="Guilherme Fortunato Developer 國語 HK" title="Guilherme Fortunato Developer 國語 HK" loading="lazy" />
+					</option>
+
+				</select>
+				-->
+
+				<div class="languages-selector">
+
+					<button class="languages-select-button button" aria-labelledby="select button"
+						aria-haspopup="listbox" aria-expanded="false" aria-controls="select-dropdown">
+
+						<span class="languages-selected-language">
+							<img src="/public/assets/languages-icons/pt-BR.jpeg" alt="Guilherme Fortunato Developer Português BR" title="Guilherme Fortunato Developer Português BR" loading="lazy" />
+						</span>
+						<span class="languages-select-arrow"></span>
+
+					</button>
+
+					<ul class="languages-select-dropdown">
+
+						<li language="en-US">
+							<img src="/public/assets/languages-icons/en-US.jpeg" alt="Guilherme Fortunato Developer English USA" title="Guilherme Fortunato Developer English USA" loading="lazy" />
+						</li>
+
+						<li language="es-ES">
+							<img src="/public/assets/languages-icons/es-ES.jpeg" alt="Guilherme Fortunato Español ES" title="Guilherme Fortunato Developer Español ES" loading="lazy" />
+						</li>
+
+						<li language="pt-BR">
+							<img src="/public/assets/languages-icons/pt-BR.jpeg" alt="Guilherme Fortunato Developer Português BR" title="Guilherme Fortunato Developer Português BR" loading="lazy" />
+						</li>
+
+						<li language="zh-HK">
+							<img src="/public/assets/languages-icons/zh-HK.jpeg" alt="Guilherme Fortunato Developer 國語 HK" title="Guilherme Fortunato Developer 國語 HK" loading="lazy" />
+						</li>
+
+					</ul>
+					
+				</div> <!-- Languages Button -->
 
 				<button id="theme-changer" class="pos-relative button w50">
 					<i id="header-opt-light-theme" class="fa-solid fa-sun"></i>
@@ -157,7 +211,7 @@
 			<div class="about-me_image">
 
 				<img src="public/assets/gui-photo-3-bg.jpg" loading="lazy" />
-	
+
 			</div> <!-- About Me Image -->
 
 			<div class="about-me_text pad20">
@@ -172,7 +226,8 @@
 					<b>PHP, JavaScript e Lua</b> como linguagem de programação para games. <b>Tenho interesse em
 						trabalhos ou freelances na área Fullstack ou Mobile</b>, e também estou aprendendo Python e
 					futuramente Ruby, mas isso não vem ao caso agora. Tenho conhecimento em tecnologias como <b>React
-						JS, React Native e um pouco de NodeJS</b>, Frameworks Front-End como <b>Bootstrap, Materialize e SASS</b>, e
+						JS, React Native e um pouco de NodeJS</b>, Frameworks Front-End como <b>Bootstrap, Materialize e
+						SASS</b>, e
 					em banco de dados o que eu tenho mais conhecimento é o <b>MySQL</b>, mas também conheço um pouco de
 					<b>MongoDB</b>.
 				</p>
@@ -191,34 +246,24 @@
 
 			<div class="projects-wrapper flex-column pad30">
 
-				<div class="projects-single flex pad20"
-
-					data-project-info-title="Prime Assessoria Imobiliária"
-
+				<div class="projects-single flex pad20" data-project-info-title="Prime Assessoria Imobiliária"
 					data-project-info-image="/public/assets/projects-images/prime_assessoria_desktop_2.jpg"
-
 					data-project-info-tags="Website - Dashboard - Geração de PDF"
 					data-project-info-description="Desenvolvido um site complexo com <b>Painel de Controle</b> e entre outras funcionalidades que agilizaram em até <b>100%</b> os processos e resultados da empresa, as principais tecnologias e bibliotecas utilizadas foram <b>Front-End</b> usando <b>JQuery e Bootstrap</b> como bibliotecas, <b>Back-End</b> usando <b>FPDF (Gerador de PDF) e PHPMailer (Envia E-mails)</b> como bibliotecas e <b>Banco de Dados MySQL</b> para armazenar todas as informações de clientes, processos e etc.
 					<br/>
-					Também foi desenvolvido um <b>Sistema de Backup</b> para o Banco de Dados por segurança caso tenha algum problema que afete os dados."
-
-					data-project-info-technologies="
+					Também foi desenvolvido um <b>Sistema de Backup</b> para o Banco de Dados por segurança caso tenha algum problema que afete os dados." data-project-info-technologies="
 						fa-brands fa-html5|
 						fa-brands fa-css3|
 						fa-brands fa-square-js|
 						fa-brands fa-bootstrap|
 						fa-brands fa-php|
 						fa-solid fa-database
-					"
-
-					data-project-info-deploy-link="https://www.caixaaquiprime.com.br/inicio/"
-					data-project-info-repository-link="null"
-
-				>
+					" data-project-info-deploy-link="https://www.caixaaquiprime.com.br/inicio/"
+					data-project-info-repository-link="null">
 
 					<div class="projects-single-image w45">
-						<img src="/public/assets/projects-images/prime_assessoria_desktop.jpg" 
-						alt="Project Image" title="Project Image" loading="lazy" />
+						<img src="/public/assets/projects-images/prime_assessoria_desktop.jpg" alt="Project Image"
+							title="Project Image" loading="lazy" />
 					</div>
 
 					<div class="projects-single-text w55 pad20">
@@ -237,28 +282,18 @@
 
 				</div> <!-- Projects Single -->
 
-				<div class="projects-single flex pad20"
-				
-					data-project-info-title="IBCA Church App"
-
+				<div class="projects-single flex pad20" data-project-info-title="IBCA Church App"
 					data-project-info-image="null"
-
 					data-project-info-tags="Aplicativo - Controle de Informações - Datas e Anotações Dinâmicas"
 					data-project-info-description="Um aplicativo criado para a igreja em que frequento, desenvolvido principalmente para ter como anotação as datas e eventos da igreja, também podendo se registrar membros que estão participando do <b>Grupo de Jovens</b> da igreja, desenvolvido tudo em <b>React Native</b> utilizando a plataforma do <b>Expo</b> para se exportar o aplicativo para <b>Android e IOS</b>."
-
 					data-project-info-technologies="
 						fa-brands fa-square-js|
 						fa-brands fa-react
-					"
-
-					data-project-info-deploy-link="null"
-					data-project-info-repository-link="null"
-				
-				>
+					" data-project-info-deploy-link="null" data-project-info-repository-link="null">
 
 					<div class="projects-single-image w45">
-						<img src="/public/assets/projects-images/ibca_church_app.png" 
-						alt="Project Image" title="Project Image" loading="lazy" />
+						<img src="/public/assets/projects-images/ibca_church_app.png" alt="Project Image"
+							title="Project Image" loading="lazy" />
 					</div>
 
 					<div class="projects-single-text w55 pad20">
@@ -275,29 +310,20 @@
 
 				</div> <!-- Projects Single -->
 
-				<div class="projects-single flex pad20"
-				
-					data-project-info-title="Meu Portfólio"
-
+				<div class="projects-single flex pad20" data-project-info-title="Meu Portfólio"
 					data-project-info-image="/public/assets/projects-images/portfolio_desktop_2.jpg"
-
 					data-project-info-tags="Website - Animações - Modal Dinâmica"
 					data-project-info-description="Este é o projeto em que você está atualmente, desenvolvido usando <b>Vanilla HTML5 e CSS3</b> e usando <b>JQuery</b> para se facilitar a parte do <b>Javascript</b>, também foi criado um tipo de '<b>Framework</b>' CSS próprio e 100% original e junto com isso foi criado os <b>Temas</b>. Usado a biblioteca <b>Scroll Reveal</b> para se fazer a maioria das animações que estão no portfólio."
-
 					data-project-info-technologies="
 						fa-brands fa-html5|
 						fa-brands fa-css3|
 						fa-brands fa-square-js
-					"
-
-					data-project-info-deploy-link="https://guifm.dev/"
-					data-project-info-repository-link="https://github.com/DeepLakePR/My-Portfolio"
-
-				>
+					" data-project-info-deploy-link="https://guifm.dev/"
+					data-project-info-repository-link="https://github.com/DeepLakePR/My-Portfolio">
 
 					<div class="projects-single-image w45">
-						<img src="/public/assets/projects-images/portfolio_desktop.jpg" 
-						alt="Project Image" title="Project Image" loading="lazy" />
+						<img src="/public/assets/projects-images/portfolio_desktop.jpg" alt="Project Image"
+							title="Project Image" loading="lazy" />
 					</div>
 
 					<div class="projects-single-text w55 pad20">
@@ -313,28 +339,18 @@
 
 				</div> <!-- Projects Single -->
 
-				<div class="projects-single flex pad20"
-				
-					data-project-info-title="Instagram Clone"
-
+				<div class="projects-single flex pad20" data-project-info-title="Instagram Clone"
 					data-project-info-image="/public/assets/projects-images/instagram_clone_desktop_2.jpg"
-
 					data-project-info-tags="Website - React JS - Posts - Criação de Contas"
 					data-project-info-description="Um projeto que veio do curso de <b>Javascript</b> em que eu estava fazendo na <b>Danki Code</b>, algo bem simples mas que funciona e que já está a anos no ar."
-
 					data-project-info-technologies="
 						fa-brands fa-square-js|
 						fa-brands fa-react
-					"
-
-					data-project-info-deploy-link="https://instagram-clone-54b87.web.app/"
-					data-project-info-repository-link="null"
-					
-				>
+					" data-project-info-deploy-link="https://instagram-clone-54b87.web.app/" data-project-info-repository-link="null">
 
 					<div class="projects-single-image w45">
-						<img src="/public/assets/projects-images/instagram_clone_desktop.jpg" 
-						alt="Project Image" title="Project Image" loading="lazy" />
+						<img src="/public/assets/projects-images/instagram_clone_desktop.jpg" alt="Project Image"
+							title="Project Image" loading="lazy" />
 					</div>
 
 					<div class="projects-single-text w55 pad20">
@@ -348,35 +364,27 @@
 					</div>
 
 				</div> <!-- Projects Single -->
-				
-				<div class="projects-single flex pad20"
-				
-					data-project-info-title="Odontologia"
 
+				<div class="projects-single flex pad20" data-project-info-title="Odontologia"
 					data-project-info-image="/public/assets/projects-images/dentista_odontologia_desktop_2.png"
-
 					data-project-info-tags="Website - Estático"
 					data-project-info-description="Outro projeto que também foi desenvolvido e veio do curso de <b>Front-End Webmaster</b> da <b>Danki Code</b> mas que também pode ser facilmente adaptado e criado novas variações do site que podem ser vendidas para <b>Odontologias</b>, criado usando <b>Vanilla HTML5 e CSS3</b>."
-
 					data-project-info-technologies="
 						fa-brands fa-html5|
 						fa-brands fa-css3
-					"
-
-					data-project-info-deploy-link="null"
-					data-project-info-repository-link="https://github.com/DeepLakePR/Projeto_10_Dentista_2"
-				
-				>
+					" data-project-info-deploy-link="null"
+					data-project-info-repository-link="https://github.com/DeepLakePR/Projeto_10_Dentista_2">
 
 					<div class="projects-single-image w45">
-						<img src="/public/assets/projects-images/dentista_odontologia_desktop.png"
-						alt="Project Image" title="Project Image" loading="lazy" />
+						<img src="/public/assets/projects-images/dentista_odontologia_desktop.png" alt="Project Image"
+							title="Project Image" loading="lazy" />
 					</div>
 
 					<div class="projects-single-text w55 pad20">
 
 						<h2>Dentista/Odontologia - 2023</h2>
-						<p>Um site mostrando o trabalho de uma odontologia, criado com <b>Vanilla HTML 5 & CSS 3</b>.</p>
+						<p>Um site mostrando o trabalho de uma odontologia, criado com <b>Vanilla HTML 5 & CSS 3</b>.
+						</p>
 
 						<a href="#project-info" class="modal-toggle" modal-target="#project-info-modal">Saiba Mais</a>
 
@@ -384,36 +392,28 @@
 
 				</div> <!-- Projects Single -->
 
-				<div class="projects-single flex pad20"
-				
-					data-project-info-title="Concessionária de Carros Especiais"
-
+				<div class="projects-single flex pad20" data-project-info-title="Concessionária de Carros Especiais"
 					data-project-info-image="/public/assets/projects-images/concessionaria_desktop_2.jpg"
-
 					data-project-info-tags="Website - Multi-Páginas - Carregamento Dinâmico de Páginas"
 					data-project-info-description="Esse projeto foi tirado do curso de <b>Back-End</b> da <b>Danki Code</b>, um projeto um pouco mais complexo que pegou o site desenvolvido no curso de <b>Front-End</b> onde foi melhorado e implantando o <b>PHP</b>."
-
 					data-project-info-technologies="
 						fa-brands fa-html5|
 						fa-brands fa-css3|
 						fa-brands fa-square-js|
 						fa-brands fa-php
-					"
-
-					data-project-info-deploy-link="null"
-					data-project-info-repository-link="https://github.com/DeepLakePR/Projeto_06_Concessionaria_PHP"
-
-				>
+					" data-project-info-deploy-link="null"
+					data-project-info-repository-link="https://github.com/DeepLakePR/Projeto_06_Concessionaria_PHP">
 
 					<div class="projects-single-image w45">
-						<img src="/public/assets/projects-images/concessionaria_desktop.jpg"
-						alt="Project Image" title="Project Image" loading="lazy" />
+						<img src="/public/assets/projects-images/concessionaria_desktop.jpg" alt="Project Image"
+							title="Project Image" loading="lazy" />
 					</div>
 
 					<div class="projects-single-text w55 pad20">
 
 						<h2>Concessionária Veículos Especiais - 2023</h2>
-						<p>Desenvolvido um site para concessionárias usando <b>PHP e Front-End</b>, pode ser facilmente adaptado e vendido para outras concessionárias.</p>
+						<p>Desenvolvido um site para concessionárias usando <b>PHP e Front-End</b>, pode ser facilmente
+							adaptado e vendido para outras concessionárias.</p>
 
 						<a href="#project-info" class="modal-toggle" modal-target="#project-info-modal">Saiba Mais</a>
 
@@ -610,11 +610,12 @@
 				</div> <!-- Technologies Single Box -->
 
 				<div class="technologies-more-button">
-					<button class="button flex pad10 knowledge-modal-toggle" id="modal-toggle" modal-target="#knowledge-modal">
+					<button class="button flex pad10 knowledge-modal-toggle" id="modal-toggle"
+						modal-target="#knowledge-modal">
 						Mais Sobre Meu Conhecimento
 						<i class="fa-solid fa-plus"></i>
 					</button>
-				</div> 
+				</div>
 
 			</div> <!-- Technologies Single Container -->
 
@@ -679,9 +680,8 @@
 
 				<div class="project-info-modal-image project-info-modal-div w35">
 
-					<img src="/public/assets/logo-2.png" 
-					alt="Project Image" title="Project Image" loading="lazy" 
-					class="project-info-modal-image-img"/>
+					<img src="/public/assets/logo-2.png" alt="Project Image" title="Project Image" loading="lazy"
+						class="project-info-modal-image-img" />
 
 				</div> <!-- Project Info Image -->
 
@@ -700,16 +700,18 @@
 
 				<div class="project-info-modal-footer-buttons project-info-modal-div w100 flex">
 
-					<a href="#project-info-deployed" target="_self" class="project-info-modal-button project-info-modal-button-deployed ahref-disabled">
+					<a href="#project-info-deployed" target="_self"
+						class="project-info-modal-button project-info-modal-button-deployed ahref-disabled">
 						Projeto no Ar
 					</a>
-					
-					<a href="#project-info-repository" target="_self" class="project-info-modal-button project-info-modal-button-repository ahref-disabled">
+
+					<a href="#project-info-repository" target="_self"
+						class="project-info-modal-button project-info-modal-button-repository ahref-disabled">
 						Repositório no Github
 					</a>
 
 				</div> <!-- Project Info Footer -->
-			
+
 
 			</div> <!-- Project Info Modal Content -->
 
@@ -734,7 +736,8 @@
 
 					<div class="modal-knowledge-box-single-image">
 
-						<img src="https://danki.thecode.com.br/wp-content/uploads/2023/02/cover-1200x675-1.png" alt="Gui Dev Danki Code Course" title="Gui Dev Danki Code Course" loading="lazy" />
+						<img src="https://danki.thecode.com.br/wp-content/uploads/2023/02/cover-1200x675-1.png"
+							alt="Gui Dev Danki Code Course" title="Gui Dev Danki Code Course" loading="lazy" />
 
 					</div> <!-- Image -->
 
@@ -744,7 +747,9 @@
 
 						<hr class="hr-horizontal" />
 
-						<p>Pacote FullStack Master da Danki Code onde dentro dele possuem <b>mais de 25 cursos</b> te preparando pra ser um verdadeiro desenvolvedor web, grande parte do meu conhecimento web veio de lá.</p>
+						<p>Pacote FullStack Master da Danki Code onde dentro dele possuem <b>mais de 25 cursos</b> te
+							preparando pra ser um verdadeiro desenvolvedor web, grande parte do meu conhecimento web
+							veio de lá.</p>
 
 					</div> <!-- Text -->
 
@@ -755,7 +760,8 @@
 
 					<div class="modal-knowledge-box-single-image">
 
-						<img src="https://www.alura.com.br/assets/img/aluraverso/shareimage.1686744881.png" alt="Gui Dev Alura Course" title="Gui Dev Alura Course" loading="lazy" />
+						<img src="https://www.alura.com.br/assets/img/aluraverso/shareimage.1686744881.png"
+							alt="Gui Dev Alura Course" title="Gui Dev Alura Course" loading="lazy" />
 
 					</div> <!-- Image -->
 
@@ -765,7 +771,8 @@
 
 						<hr class="hr-horizontal" />
 
-						<p>Um curso ofertado pelo governo do Paraná através do <b>Novo Ensino médio</b>, aprendi um pouco sobre requisição de dados, modelo cascata, etc.</p>
+						<p>Um curso ofertado pelo governo do Paraná através do <b>Novo Ensino médio</b>, aprendi um
+							pouco sobre requisição de dados, modelo cascata, etc.</p>
 
 					</div> <!-- Text -->
 
@@ -776,7 +783,8 @@
 
 					<div class="modal-knowledge-box-single-image">
 
-						<img src="https://www.alura.com.br/assets/img/aluraverso/shareimage.1686744881.png" alt="Gui Dev Alura Course" title="Gui Dev Alura Course" loading="lazy" />
+						<img src="https://www.alura.com.br/assets/img/aluraverso/shareimage.1686744881.png"
+							alt="Gui Dev Alura Course" title="Gui Dev Alura Course" loading="lazy" />
 
 					</div> <!-- Image -->
 
@@ -786,7 +794,9 @@
 
 						<hr class="hr-horizontal" />
 
-						<p>Através do programa <b>Edutech</b> que aconteceu em 2021, eu participei e tive acesso à cursos da Alura que ensinavam como desenvolver jogos básicos usando <b>Scratch, JavaScript & GameMaker Studio</b>.</p>
+						<p>Através do programa <b>Edutech</b> que aconteceu em 2021, eu participei e tive acesso à
+							cursos da Alura que ensinavam como desenvolver jogos básicos usando <b>Scratch, JavaScript &
+								GameMaker Studio</b>.</p>
 
 					</div> <!-- Text -->
 
@@ -797,7 +807,9 @@
 
 					<div class="modal-knowledge-box-single-image">
 
-						<img src="https://www.sistemapoliedro.com.br/app/uploads/2020/11/Novo-Ensino-Medio.v2-1024x518-1.jpg" alt="Gui Dev Novo Ensino Médio School" title="Gui Dev Novo Ensino Médio School" loading="lazy" />
+						<img src="https://www.sistemapoliedro.com.br/app/uploads/2020/11/Novo-Ensino-Medio.v2-1024x518-1.jpg"
+							alt="Gui Dev Novo Ensino Médio School" title="Gui Dev Novo Ensino Médio School"
+							loading="lazy" />
 
 					</div> <!-- Image -->
 
@@ -807,7 +819,8 @@
 
 						<hr class="hr-horizontal" />
 
-						<p>Estou atualmente no 2º ano do Novo Ensino Médio cursando o técnico de <b>Análise e Desenvolvimento de Sistemas</b> que tem uma duração total de 3 anos.</p>
+						<p>Estou atualmente no 2º ano do Novo Ensino Médio cursando o técnico de <b>Análise e
+								Desenvolvimento de Sistemas</b> que tem uma duração total de 3 anos.</p>
 
 					</div> <!-- Text -->
 
@@ -827,8 +840,10 @@
 
 					<div class="modal-knowledge-box-single-image">
 
-						<img src="/public/assets/certificates/logica_programacao.jpg" alt="Gui Dev Logica Programacao Course" title="Gui Dev Logica Programacao Course" loading="lazy" />
-					
+						<img src="/public/assets/certificates/logica_programacao.jpg"
+							alt="Gui Dev Logica Programacao Course" title="Gui Dev Logica Programacao Course"
+							loading="lazy" />
+
 					</div> <!-- Image -->
 
 					<div class="modal-knowledge-box-single-text">
@@ -839,8 +854,9 @@
 
 						<p>A lógica de programação é a base de tudo no mundo da programação.</p>
 
-						<a href="https://cursos.dankicode.com/api/certificados/698378c8-dc05-404c-80ab-cc738b212194" target="_blank">Link Certificado</a>
-					
+						<a href="https://cursos.dankicode.com/api/certificados/698378c8-dc05-404c-80ab-cc738b212194"
+							target="_blank">Link Certificado</a>
+
 					</div> <!-- Text -->
 
 				</div> <!-- Modal Box Single -->
@@ -850,8 +866,9 @@
 
 					<div class="modal-knowledge-box-single-image">
 
-						<img src="/public/assets/certificates/front_end.jpg" alt="Gui Dev Front End Course" title="Gui Dev Front End Course" loading="lazy" />
-					
+						<img src="/public/assets/certificates/front_end.jpg" alt="Gui Dev Front End Course"
+							title="Gui Dev Front End Course" loading="lazy" />
+
 					</div> <!-- Image -->
 
 					<div class="modal-knowledge-box-single-text">
@@ -862,7 +879,8 @@
 
 						<p>Ensinando desde o básico e os fundamentos do Front-End até conceitos mais avançados.</p>
 
-						<a href="https://cursos.dankicode.com/api/certificados/03b47828-aab0-4fd6-9b1b-d7f07f114fbc" target="_blank">Link Certificado</a>
+						<a href="https://cursos.dankicode.com/api/certificados/03b47828-aab0-4fd6-9b1b-d7f07f114fbc"
+							target="_blank">Link Certificado</a>
 
 					</div> <!-- Text -->
 
@@ -873,7 +891,8 @@
 
 					<div class="modal-knowledge-box-single-image">
 
-						<img src="/public/assets/certificates/front_end_2.jpg" alt="Gui Dev Front End 2 Course" title="Gui Dev Front End 2 Course" loading="lazy" />
+						<img src="/public/assets/certificates/front_end_2.jpg" alt="Gui Dev Front End 2 Course"
+							title="Gui Dev Front End 2 Course" loading="lazy" />
 
 					</div> <!-- Image -->
 
@@ -883,9 +902,12 @@
 
 						<hr class="hr-horizontal" />
 
-						<p>O curso ensinava o Front-End de uma forma mais moderna, usando as tags mais recentes do <b>HTML 5</b> como <b>header, section, footer, etc</b> e também usando <b>flexbox</b> deixando o <b>float</b> para o passado.</p>
+						<p>O curso ensinava o Front-End de uma forma mais moderna, usando as tags mais recentes do
+							<b>HTML 5</b> como <b>header, section, footer, etc</b> e também usando <b>flexbox</b>
+							deixando o <b>float</b> para o passado.</p>
 
-						<a href="https://cursos.dankicode.com/api/certificados/82b8737b-07f4-4fdf-b9b5-c1a18194fa3a" target="_blank">Link Certificado</a>
+						<a href="https://cursos.dankicode.com/api/certificados/82b8737b-07f4-4fdf-b9b5-c1a18194fa3a"
+							target="_blank">Link Certificado</a>
 
 					</div> <!-- Text -->
 
@@ -896,7 +918,8 @@
 
 					<div class="modal-knowledge-box-single-image">
 
-						<img src="/public/assets/certificates/design_web.jpg" alt="Gui Dev Design Web Course" title="Gui Dev Design Web Course" loading="lazy" />
+						<img src="/public/assets/certificates/design_web.jpg" alt="Gui Dev Design Web Course"
+							title="Gui Dev Design Web Course" loading="lazy" />
 
 					</div> <!-- Image -->
 
@@ -906,9 +929,11 @@
 
 						<hr class="hr-horizontal" />
 
-						<p>Ensinado sobre <b>User Experience (UX)</b> e as melhores formas de se criar um design bonito, chamativo e saudável para seu negócio.</p>
+						<p>Ensinado sobre <b>User Experience (UX)</b> e as melhores formas de se criar um design bonito,
+							chamativo e saudável para seu negócio.</p>
 
-						<a href="https://cursos.dankicode.com/api/certificados/e0a7bc00-afda-4e26-9976-bd17ae1e3c3e" target="_blank">Link Certificado</a>
+						<a href="https://cursos.dankicode.com/api/certificados/e0a7bc00-afda-4e26-9976-bd17ae1e3c3e"
+							target="_blank">Link Certificado</a>
 
 					</div> <!-- Text -->
 
@@ -919,7 +944,8 @@
 
 					<div class="modal-knowledge-box-single-image">
 
-						<img src="/public/assets/certificates/javascript.jpg" alt="Gui Dev Javascript Course" title="Gui Dev Javascript Course" loading="lazy" />
+						<img src="/public/assets/certificates/javascript.jpg" alt="Gui Dev Javascript Course"
+							title="Gui Dev Javascript Course" loading="lazy" />
 
 					</div> <!-- Image -->
 
@@ -929,9 +955,11 @@
 
 						<hr class="hr-horizontal" />
 
-						<p>Uma linguagem de programação famosa e poderosa usada principalmene no <b>Desenvolvimento Web</b>.</p>
+						<p>Uma linguagem de programação famosa e poderosa usada principalmene no <b>Desenvolvimento
+								Web</b>.</p>
 
-						<a href="https://cursos.dankicode.com/api/certificados/8b9217e1-bae6-4cc8-ada5-d719a2ec237c" target="_blank">Link Certificado</a>
+						<a href="https://cursos.dankicode.com/api/certificados/8b9217e1-bae6-4cc8-ada5-d719a2ec237c"
+							target="_blank">Link Certificado</a>
 
 					</div> <!-- Text -->
 
@@ -942,7 +970,9 @@
 
 					<div class="modal-knowledge-box-single-image">
 
-						<img src="/public/assets/certificates/desenvolvimento_de_aplicativos.jpg" alt="Gui Dev Desenvolvimento de Aplicativos Course" title="Gui Dev Desenvolvimento de Aplicativos Course" loading="lazy" />
+						<img src="/public/assets/certificates/desenvolvimento_de_aplicativos.jpg"
+							alt="Gui Dev Desenvolvimento de Aplicativos Course"
+							title="Gui Dev Desenvolvimento de Aplicativos Course" loading="lazy" />
 
 					</div> <!-- Image -->
 
@@ -952,9 +982,12 @@
 
 						<hr class="hr-horizontal" />
 
-						<p>Aprendido como desenvolver aplicativos usando a <b>Biblioteca JavaScript</b> mais famosa para se desenvolver aplicativos para <b>Android</b> e <b>IOS</b> que seria o <b>React Native</b>.</p>
+						<p>Aprendido como desenvolver aplicativos usando a <b>Biblioteca JavaScript</b> mais famosa para
+							se desenvolver aplicativos para <b>Android</b> e <b>IOS</b> que seria o <b>React Native</b>.
+						</p>
 
-						<a href="https://cursos.dankicode.com/api/certificados/942a30a5-5dfb-4b7f-808e-d2ba138e0e8f" target="_blank">Link Certificado</a>
+						<a href="https://cursos.dankicode.com/api/certificados/942a30a5-5dfb-4b7f-808e-d2ba138e0e8f"
+							target="_blank">Link Certificado</a>
 
 					</div> <!-- Text -->
 
@@ -965,7 +998,8 @@
 
 					<div class="modal-knowledge-box-single-image">
 
-						<img src="/public/assets/certificates/firebase.jpg" alt="Gui Dev Firebase Course" title="Gui Dev Firebase Course" loading="lazy" />
+						<img src="/public/assets/certificates/firebase.jpg" alt="Gui Dev Firebase Course"
+							title="Gui Dev Firebase Course" loading="lazy" />
 
 					</div> <!-- Image -->
 
@@ -975,9 +1009,11 @@
 
 						<hr class="hr-horizontal" />
 
-						<p>O curso ensinava como hospedar suas aplicações usando a poderosa plataforma baseada em nuvem do <b>Google</b>.</p>
+						<p>O curso ensinava como hospedar suas aplicações usando a poderosa plataforma baseada em nuvem
+							do <b>Google</b>.</p>
 
-						<a href="https://cursos.dankicode.com/api/certificados/d78c0fc7-afb1-4462-8a74-422386517a62" target="_blank">Link Certificado</a>
+						<a href="https://cursos.dankicode.com/api/certificados/d78c0fc7-afb1-4462-8a74-422386517a62"
+							target="_blank">Link Certificado</a>
 
 					</div> <!-- Text -->
 
@@ -988,7 +1024,8 @@
 
 					<div class="modal-knowledge-box-single-image">
 
-						<img src="/public/assets/certificates/php.jpg" alt="Gui Dev PHP Course" title="Gui Dev PHP Course" loading="lazy" />
+						<img src="/public/assets/certificates/php.jpg" alt="Gui Dev PHP Course"
+							title="Gui Dev PHP Course" loading="lazy" />
 
 					</div> <!-- Image -->
 
@@ -1000,7 +1037,8 @@
 
 						<p>Ensinado sobre PHP, seus fundamentos e aprofundamento sobre a linguagem.</p>
 
-						<a href="https://cursos.dankicode.com/api/certificados/7b0a58e0-ec71-4ab3-accf-7bfc62b0741f" target="_blank">Link Certificado</a>
+						<a href="https://cursos.dankicode.com/api/certificados/7b0a58e0-ec71-4ab3-accf-7bfc62b0741f"
+							target="_blank">Link Certificado</a>
 
 					</div> <!-- Text -->
 
@@ -1011,8 +1049,9 @@
 
 					<div class="modal-knowledge-box-single-image">
 
-						<img src="/public/assets/certificates/banco_de_dados.jpg" alt="Gui Dev Banco de Dados Course" title="Gui Dev Banco de Dados Course" loading="lazy" />
-					
+						<img src="/public/assets/certificates/banco_de_dados.jpg" alt="Gui Dev Banco de Dados Course"
+							title="Gui Dev Banco de Dados Course" loading="lazy" />
+
 					</div> <!-- Image -->
 
 					<div class="modal-knowledge-box-single-text">
@@ -1021,9 +1060,11 @@
 
 						<hr class="hr-horizontal" />
 
-						<p>Um curso que ensinava os principais banco de dados usados relacional e não relacional que seriam respectivamente <b>MySQL</b> e <b>MongoDB</b>.</p>
-						
-						<a href="https://cursos.dankicode.com/api/certificados/763b6932-7e83-49da-9817-79713fa4f342" target="_blank">Link Certificado</a>
+						<p>Um curso que ensinava os principais banco de dados usados relacional e não relacional que
+							seriam respectivamente <b>MySQL</b> e <b>MongoDB</b>.</p>
+
+						<a href="https://cursos.dankicode.com/api/certificados/763b6932-7e83-49da-9817-79713fa4f342"
+							target="_blank">Link Certificado</a>
 
 					</div> <!-- Text -->
 
@@ -1034,7 +1075,9 @@
 
 					<div class="modal-knowledge-box-single-image">
 
-						<img src="/public/assets/certificates/ingles_para_programadores.jpg" alt="Gui Dev Inglês Para Programadores Course" title="Gui Dev Inglês Para Programadores Course" loading="lazy" />
+						<img src="/public/assets/certificates/ingles_para_programadores.jpg"
+							alt="Gui Dev Inglês Para Programadores Course"
+							title="Gui Dev Inglês Para Programadores Course" loading="lazy" />
 
 					</div> <!-- Image -->
 
@@ -1046,10 +1089,11 @@
 
 						<p>Aprendido um pouco do inglês mais voltado para programadores e seus conceitos.</p>
 
-						<a href="https://cursos.dankicode.com/api/certificados/ee5d9a94-0e20-45e7-969b-bc68648fca53" target="_blank">Link Certificado</a>
+						<a href="https://cursos.dankicode.com/api/certificados/ee5d9a94-0e20-45e7-969b-bc68648fca53"
+							target="_blank">Link Certificado</a>
 
 					</div> <!-- Text -->
-					
+
 				</div> <!-- Modal Box Single -->
 
 				<!-- Modal Box Single -->
@@ -1057,7 +1101,9 @@
 
 					<div class="modal-knowledge-box-single-image">
 
-						<img src="/public/assets/certificates/alura_all_certificates.jpg" alt="Gui Dev Alura Todos os Certificados" title="Gui Dev Alura Todos os Certificados" loading="lazy" />
+						<img src="/public/assets/certificates/alura_all_certificates.jpg"
+							alt="Gui Dev Alura Todos os Certificados" title="Gui Dev Alura Todos os Certificados"
+							loading="lazy" />
 
 					</div> <!-- Image -->
 
@@ -1067,9 +1113,11 @@
 
 						<hr class="hr-horizontal" />
 
-						<p>Todos os cursos e seus respectivos certificados ao longo de toda minha jornada estudando na <b>Alura</b>.</p>
+						<p>Todos os cursos e seus respectivos certificados ao longo de toda minha jornada estudando na
+							<b>Alura</b>.</p>
 
-						<a href="https://cursos.alura.com.br/user/guilherme-fortunato-machado/fullCertificate/918a8de5a99bf26f9b69462b5d300c8d" target="_blank">Link Certificado</a>
+						<a href="https://cursos.alura.com.br/user/guilherme-fortunato-machado/fullCertificate/918a8de5a99bf26f9b69462b5d300c8d"
+							target="_blank">Link Certificado</a>
 
 					</div> <!-- Text -->
 
@@ -1089,7 +1137,9 @@
 
 					<div class="modal-knowledge-custom-box-single-image w30">
 
-						<img src="https://media.istockphoto.com/id/1357687122/pt/v%C3%ADdeo/national-flag-of-brazil-animation-stock-video-brazilian-flag-waving-in-loop-and-textured-3d.jpg?s=640x640&k=20&c=6-C0KT4ArY803qduTybeayIaZtSjhWhJFeX4WFOek5A=" alt="Gui Dev Brazilian Portuguese Idiom" title="Gui Dev Brazilian Portuguese Idiom" loading="lazy" />
+						<img src="https://media.istockphoto.com/id/1357687122/pt/v%C3%ADdeo/national-flag-of-brazil-animation-stock-video-brazilian-flag-waving-in-loop-and-textured-3d.jpg?s=640x640&k=20&c=6-C0KT4ArY803qduTybeayIaZtSjhWhJFeX4WFOek5A="
+							alt="Gui Dev Brazilian Portuguese Idiom" title="Gui Dev Brazilian Portuguese Idiom"
+							loading="lazy" />
 
 					</div> <!-- Image -->
 
@@ -1102,15 +1152,17 @@
 						<div class="modal-knowledge-idioms-nivel flex pad15">
 
 							<p>Iniciante</p>
-	
-							<div class="modal-knowledge-idioms-nivel-custom_line modal-knowledge-idioms-nivel-fill"></div>
-	
+
+							<div class="modal-knowledge-idioms-nivel-custom_line modal-knowledge-idioms-nivel-fill">
+							</div>
+
 							<p>Intermediário</p>
-	
-							<div class="modal-knowledge-idioms-nivel-custom_line modal-knowledge-idioms-nivel-fill"></div>
-	
+
+							<div class="modal-knowledge-idioms-nivel-custom_line modal-knowledge-idioms-nivel-fill">
+							</div>
+
 							<p class="modal-knowledge-idioms-nivel-fill">Avançado</p>
-	
+
 						</div> <!-- Modal Knowledge Idioms Nivel -->
 
 					</div> <!-- Text -->
@@ -1122,7 +1174,8 @@
 
 					<div class="modal-knowledge-custom-box-single-image w30">
 
-						<img src="https://img.freepik.com/fotos-premium/bandeira-dos-estados-unidos-da-america-3d-ilustracao-da-bandeira-dos-estados-unidos-da-america-acenando_562847-224.jpg" alt="Gui Dev English USA Idiom" title="Gui Dev English USA Idiom" loading="lazy" />
+						<img src="https://img.freepik.com/fotos-premium/bandeira-dos-estados-unidos-da-america-3d-ilustracao-da-bandeira-dos-estados-unidos-da-america-acenando_562847-224.jpg"
+							alt="Gui Dev English USA Idiom" title="Gui Dev English USA Idiom" loading="lazy" />
 
 					</div> <!-- Image -->
 
@@ -1135,15 +1188,17 @@
 						<div class="modal-knowledge-idioms-nivel flex pad15">
 
 							<p>Iniciante</p>
-	
-							<div class="modal-knowledge-idioms-nivel-custom_line modal-knowledge-idioms-nivel-fill"></div>
-	
+
+							<div class="modal-knowledge-idioms-nivel-custom_line modal-knowledge-idioms-nivel-fill">
+							</div>
+
 							<p class="modal-knowledge-idioms-nivel-fill">Intermediário</p>
-	
-							<div class="modal-knowledge-idioms-nivel-custom_line modal-knowledge-idioms-nivel-midfill"></div>
-	
+
+							<div class="modal-knowledge-idioms-nivel-custom_line modal-knowledge-idioms-nivel-midfill">
+							</div>
+
 							<p>Avançado</p>
-	
+
 						</div> <!-- Modal Knowledge Idioms Nivel -->
 
 					</div> <!-- Text -->
@@ -1155,8 +1210,9 @@
 
 					<div class="modal-knowledge-custom-box-single-image w30">
 
-						<img src="https://cdn.awsli.com.br/600x450/900/900758/produto/171892750/4e3347ca7c.jpg" alt="Gui Dev Spanish Idiom" title="Gui Dev Spanish Idiom" loading="lazy" />
-					
+						<img src="https://cdn.awsli.com.br/600x450/900/900758/produto/171892750/4e3347ca7c.jpg"
+							alt="Gui Dev Spanish Idiom" title="Gui Dev Spanish Idiom" loading="lazy" />
+
 					</div> <!-- Image -->
 
 					<div class="modal-knowledge-custom-box-single-text flex-column w70">
@@ -1168,15 +1224,16 @@
 						<div class="modal-knowledge-idioms-nivel flex pad15">
 
 							<p class="modal-knowledge-idioms-nivel-fill">Iniciante</p>
-	
-							<div class="modal-knowledge-idioms-nivel-custom_line modal-knowledge-idioms-nivel-midfill"></div>
-	
+
+							<div class="modal-knowledge-idioms-nivel-custom_line modal-knowledge-idioms-nivel-midfill">
+							</div>
+
 							<p>Intermediário</p>
-	
+
 							<div class="modal-knowledge-idioms-nivel-custom_line"></div>
-	
+
 							<p>Avançado</p>
-	
+
 						</div> <!-- Modal Knowledge Idioms Nivel -->
 
 					</div> <!-- Text -->
@@ -1187,13 +1244,14 @@
 				<div class="modal-knowledge-custom-box-single w100 flex">
 
 					<div class="modal-knowledge-custom-box-single-image w30">
-						
-						<img src="https://img.freepik.com/vetores-premium/bandeira-italiana-bandeira-da-italia_175392-29.jpg" alt="Gui Dev Italian Idiom" title="Gui Dev Italian Idiom" loading="lazy" />
-					
+
+						<img src="https://img.freepik.com/vetores-premium/bandeira-italiana-bandeira-da-italia_175392-29.jpg"
+							alt="Gui Dev Italian Idiom" title="Gui Dev Italian Idiom" loading="lazy" />
+
 					</div> <!-- Image -->
 
 					<div class="modal-knowledge-custom-box-single-text flex-column w70">
-						
+
 						<h3>Italiano</h3>
 
 						<hr class="hr-horizontal" />
@@ -1201,17 +1259,18 @@
 						<div class="modal-knowledge-idioms-nivel flex pad15">
 
 							<p class="modal-knowledge-idioms-nivel-fill">Iniciante</p>
-	
-							<div class="modal-knowledge-idioms-nivel-custom_line modal-knowledge-idioms-nivel-midfill"></div>
-	
+
+							<div class="modal-knowledge-idioms-nivel-custom_line modal-knowledge-idioms-nivel-midfill">
+							</div>
+
 							<p>Intermediário</p>
-	
+
 							<div class="modal-knowledge-idioms-nivel-custom_line"></div>
-	
+
 							<p>Avançado</p>
-	
+
 						</div> <!-- Modal Knowledge Idioms Nivel -->
-					
+
 					</div> <!-- Text -->
 
 				</div> <!-- Modal Custom Box Single -->
@@ -1220,7 +1279,7 @@
 
 		</div> <!-- Modal Knowledge Container -->
 	</div> <!-- Knowledge Modal -->
-	
+
 	<!-- End Modals -->
 	<!------------------------>
 
@@ -1285,7 +1344,8 @@
 	</footer> <!-- Footer -->
 
 	<!-- Scripts -->
-	<script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.7.0.min.js"
+		integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.5/dist/js.cookie.min.js"></script>
 
 	<script src="https://kit.fontawesome.com/c092b4e18e.js" crossorigin="anonymous"></script>

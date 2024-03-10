@@ -133,6 +133,50 @@ $(()=>{
     })
 
     ////////////////////////////////
+    ////// Header Options Languages
+    const languagesSelector = $(".languages-selector");
+    const languagesSelectorButton = $(".languages-select-button");
+
+    const languageSelected = $(".languages-selected-language");
+    const languagesOptions = $(".languages-select-dropdown li");
+
+    // Languages Selector Button
+    languagesSelectorButton.on("click", () => {
+            
+        languagesSelector.toggleClass("active");
+
+        languagesSelectorButton.attr(
+            "aria-expanded",
+            languagesSelectorButton.attr("aria-expanded") === "true" ? "false" : "true"
+        );
+
+    });
+
+    languagesOptions.each((index, languageOption) => {
+
+        function handler(e) {
+
+            languageSelected.empty();
+            let selectedChildren = $(languageOption).children()[0];
+            $(selectedChildren).clone().appendTo(languageSelected);
+
+            if (e.type === "click" && e.clientX !== 0 && e.clientY !== 0) {
+                languagesSelector.removeClass("active");
+
+            }
+
+            if (e.key === "Enter") {
+                languagesSelector.removeClass("active");
+
+            }
+            
+        }
+
+        $(languageOption).on("keyup", handler);
+        $(languageOption).on("click", handler);
+
+    });
+
     ////// Header Options Themes
     // Variables
     const ThemeButton = HeaderOptions.find('button#theme-changer');
