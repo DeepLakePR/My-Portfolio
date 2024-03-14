@@ -1,0 +1,38 @@
+{
+
+    "global-translations": {
+        "more-about-text": "了解更多",
+
+        "beginner-text": "初學者",
+        "intermediate-text": "中介",
+        "advanced-text": "先進的"
+    },
+    
+    "navigation" : {
+        "navigation-home": "家",
+        "navigation-about-me": "關於我",
+        "navigation-projects": "專案",
+        "navigation-knowledge": "知識",
+        "navigation-contact": "接觸"
+    },
+
+    "apresentation": {
+        "apresentation-text-h2": "嗨，我是<span>吉列爾梅·福爾圖納托</span>",
+        "apresentation-text-p": "一個<span>將</span>行程式碼轉化為<span>創新解決方案的男孩。</span>",
+        
+        "apresentation-fullstack": "全端開發人員"
+    },
+
+    "end-to-end-applications": {
+        "end-to-end-applications-text": "創建和開發的應用程式<br /><span>端對端</span>"
+    },
+
+    "contact": {
+        "contact-call-to-action-text": "讓我們來聊聊吧？<br />給我發送電子郵件並<br /><a href='mailto:guilhermefortunato2008@gmail.com?subject=%E6%88%91%E5%80%91%E4%BE%86%E8%AB%87%E8%AB%87%E7%94%9F%E6%84%8F%E5%90%A7&body=你好%20吉列爾梅...' >輸入聯絡方式我。</a>"
+    },
+
+    "footer": {
+        "footer-all-rights-reserved": "&copy; 2024 - 由 吉列爾梅·福圖納托·馬查多 開發和創建"
+    }
+
+}

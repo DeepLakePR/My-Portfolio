@@ -1,5 +1,5 @@
 /* Header Section Content Apresentation */
-section.section-apresentation{
+section.apresentation{
     padding-top: 115px;
     position: relative;
     z-index: 500;
@@ -10,7 +10,7 @@ section.section-apresentation{
 }
 
 /* Apresentation > Text */
-.section-apresentation .apresentation-text{
+.apresentation .apresentation-text{
     padding: 70px 0;
     color: var(--global-default-color);
 }
@@ -41,37 +41,37 @@ section.section-apresentation{
 }
 
 /* Apresentation > Social Media */
-.section-apresentation .apresentation-social_media{
+.apresentation .apresentation-social_media{
     padding: 20px 10px;
 }
 
-.section-apresentation .apresentation-social_media a{
+.apresentation .apresentation-social_media a{
     color: var(--global-default-color);
     font-size: 40px;
     transition: none;
 }
 
-.section-apresentation .apresentation-social_media a i{
+.apresentation .apresentation-social_media a i{
     transition: color 0.25s ease-in-out;
 }
 
-.section-apresentation .apresentation-social_media a i:hover{
+.apresentation .apresentation-social_media a i:hover{
     color: var(--section-button-secondary-hover-color);
 }
 
 /* Apresentation > Image */
-.section-apresentation .apresentation-image{
+.apresentation .apresentation-image{
     align-items: center;
     justify-content: center;
 }
 
-.section-apresentation .apresentation-image img{
+.apresentation .apresentation-image img{
     max-width: 300px;
     border-radius: 50%;
     box-shadow: 0px 13px 17px 0px var(--global-shadow-background-color);
 }
 
-.section-apresentation .apresentation-image h3{
+.apresentation .apresentation-image h3{
     margin-top: 15px;
     font-size: 25px;
     font-weight: 600;
@@ -933,21 +933,21 @@ body .modal{
 @media screen and (max-width: 768px) {
 
     /* Apresentation */
-    section.section-apresentation .container{
+    section.apresentation .container{
         padding: 20px;
     }
 
     /* Apresentation > Text */
-    .section-apresentation .apresentation-text{
+    .apresentation .apresentation-text{
         padding-bottom: 30px;
     }
 
     /* Apresentation > Image */
-    .section-apresentation .apresentation-image{
+    .apresentation .apresentation-image{
         padding-bottom: 20px;
     }
 
-    .section-apresentation .apresentation-image img{
+    .apresentation .apresentation-image img{
         max-width: 240px;
     }
 
@@ -1239,12 +1239,12 @@ body .modal{
 @media screen and (max-width: 480px) {
 
     /* Apresentation */
-    section.section-apresentation .container{
+    section.apresentation .container{
         padding: 8px;
     }
 
     /* Apresentation > Image */
-    .section-apresentation .apresentation-image img{
+    .apresentation .apresentation-image img{
         max-width: 80%;
     }
     

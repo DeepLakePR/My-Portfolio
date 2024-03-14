@@ -140,6 +140,30 @@ $(()=>{
     const languageSelected = $(".languages-selected-language");
     const languagesOptions = $(".languages-select-dropdown li");
 
+    // Variables
+    var translationsFolder = '/public/languages';
+    var translateFrom = 'pt-BR';
+
+    // Get Translation Key Function
+    function getTranslationKey(translationObject, elTranslationKey){
+
+        for (const [key, value] of Object.entries(translationObject)) {
+
+            if(key == elTranslationKey){
+                return value;
+
+            }else if(value[elTranslationKey]){
+                return value[elTranslationKey];
+            
+            }else {
+                // return getTranslationKey(value, elTranslationKey);
+                
+            }
+
+        }
+
+    }
+
     // Languages Selector Button
     languagesSelectorButton.on("click", () => {
             
@@ -152,28 +176,54 @@ $(()=>{
 
     });
 
-    languagesOptions.each((index, languageOption) => {
+    languagesOptions.each((_, languageOption) => {
 
-        function handler(e) {
+        function languagesOptionsHandler(e) {
 
             languageSelected.empty();
+
             let selectedChildren = $(languageOption).children()[0];
             $(selectedChildren).clone().appendTo(languageSelected);
 
+            ////////////
+            // Dimiss Languages Selector
             if (e.type === "click" && e.clientX !== 0 && e.clientY !== 0) {
                 languagesSelector.removeClass("active");
-
             }
 
             if (e.key === "Enter") {
                 languagesSelector.removeClass("active");
-
             }
-            
+
+            ////////////
+            // Translate Page to Selected Language
+            let translateTo = $(languageOption).attr('language');
+
+            // h1, h2, h3, p, span, b, i, a, button
+            $('h1, h2, h3, p, span, b, i, a, button').each((_i, elementToTranslate)=>{
+
+                let elementTranslationKey = $(elementToTranslate).attr('framework-language-element-key');
+
+                if(elementTranslationKey){
+
+                    fetch(`${translationsFolder}/${translateTo}.json`).then(response => response.json()).then(translationData => {
+                        $(elementToTranslate).html(getTranslationKey(translationData, elementTranslationKey));
+
+                    }).catch((error)=>{
+                        console.warn(error);
+
+                    });
+                
+                }
+
+            })
+
+            translateFrom = translateTo;
+
         }
 
-        $(languageOption).on("keyup", handler);
-        $(languageOption).on("click", handler);
+        $(languageOption).on("keyup", languagesOptionsHandler);
+        $(languageOption).on("click", languagesOptionsHandler);
 
     });
 

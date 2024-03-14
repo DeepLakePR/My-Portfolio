@@ -1,0 +1,38 @@
+{
+
+    "global-translations": {
+        "more-about-text": "Saber más",
+
+        "beginner-text": "Principiante",
+        "intermediate-text": "Intermediario",
+        "advanced-text": "Avanzado"
+    },
+    
+    "navigation" : {
+        "navigation-home": "Hogar",
+        "navigation-about-me": "Acerca de Mí",
+        "navigation-projects": "Proyectos",
+        "navigation-knowledge": "Conocimiento",
+        "navigation-contact": "Contacto"
+    },
+
+    "apresentation": {
+        "apresentation-text-h2": "Hola, soy <span>Guilherme Fortunato</span>",
+        "apresentation-text-p": "Un niño que <span>transforma</span> líneas de código en <span>soluciones innovadoras.</span>",
+        
+        "apresentation-fullstack": "Desarrollador FullStack"
+    },
+
+    "end-to-end-applications": {
+        "end-to-end-applications-text": "Aplicaciones creadas y desarrolladas de<br /><span>Extremo a Extremo</span>"
+    },
+
+    "contact": {
+        "contact-call-to-action-text": "¿Hablemos?<br />Envíame un correo electrónico y<br /><a href='mailto:guilhermefortunato2008@gmail.com?subject=Hablemos%20de%20Negocios&body=Hola%20Guilherme...'>Entra en contacto Yo.</a>"
+    },
+
+    "footer": {
+        "footer-all-rights-reserved": "&copy; 2024 - Desarrollado y creado por Guilherme Fortunato Machado."
+    }
+
+}

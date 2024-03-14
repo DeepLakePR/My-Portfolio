@@ -127,6 +127,7 @@ header .header-options {
     cursor: pointer;
     display: flex;
     align-items: center;
+    border-radius: 2px;
 }
 
 .languages-select-button, .languages-selected-language img {
@@ -172,7 +173,7 @@ header .header-options {
 
 .languages-select-dropdown li {
     position: relative;
-    padding: 3px 6px;
+    padding: 3px 8px;
     cursor: pointer;
     display: flex;
     gap: 16px;
@@ -188,6 +189,7 @@ header .header-options {
     display: flex;
     gap: 16px;
     align-items: center;
+    border-radius: 2px;
 }
 
 .languages-select-dropdown li:hover{
