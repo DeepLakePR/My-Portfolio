@@ -163,7 +163,8 @@ section.about-me .about-me_text{
 
 .about-me_text p{
     font-weight: var(--section-text-font-weight);
-    letter-spacing: 1px;
+    letter-spacing: 1.2px;
+    line-height: 22px;
 }
 
 /* Section Created Projects */
@@ -403,6 +404,7 @@ section.technologies .container{
 /* Technologies > Dynamic Image */
 .technologies-dynamic-image{
     margin-top: 40px;
+    margin-left: 40px;
     align-items: center;
     justify-content: center;
     max-height: 650px;
