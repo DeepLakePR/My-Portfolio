@@ -170,6 +170,12 @@ $(()=>{
         $('h1, h2, h3, p, span, b, i, a, button').each((_i, elementToTranslate)=>{
 
             let elementTranslationKey = $(elementToTranslate).attr('framework-language-element-key');
+            let elementTranslationContactLink = $(elementToTranslate).attr('framework-language-contact-link');
+
+            if(elementTranslationContactLink == 'true'){
+                $(elementToTranslate).attr('href', '').attr('target', '_blank');
+
+            }
 
             if(elementTranslationKey){
 

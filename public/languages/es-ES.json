@@ -1,6 +1,8 @@
 {
 
     "global-translations": {
+        "email-contact-link": "<a href='mailto:guilhermefortunato2008@gmail.com?subject=Hablemos%20de%20Negocios&body=Hola%20Guilherme...' target='_blank'><i class='fa-solid fa-envelope'></i></a>",
+
         "more-about-text": "Saber más",
 
         "beginner-text": "Principiante",
@@ -31,7 +33,7 @@
 
     "about-me": {
         "about-me-title": "Acerca de Mí",
-        "about-me-text": "Hola, mi nombre es Guilherme Fortunato Machado, actualmente tengo <b>16 años</b> y vivo en Paraná, desde los 9 años he tenido contacto con la programación y el desarrollo de juegos, a los 12 años creé mi primer sitio web, realicé el <b>curso Fullstack de Danki Code</b> y hoy tengo certificados como <b>Desarrollador de Juegos, Desarrollador Web y Programador de Aplicaciones</b>, tengo conocimientos en idiomas como <b>PHP, JavaScript y Lua</b> como lenguaje de programación para juegos. <b>Me interesan trabajos o trabajos freelance en el área Fullstack o Mobile</b>, y también estoy aprendiendo Python y en un futuro Ruby, pero ese no es el punto ahora. Tengo conocimientos en tecnologías como <b>React JS, React Native y un poco NodeJS</b>, Front-End Frameworks como <b>Bootstrap, Materialize y SASS</b>, y en bases de datos lo que tengo Sé más sobre <b>MySQL</b>, pero también sé un poco sobre <b>MongoDB</b>."
+        "about-me-text": "Hola, mi nombre es Guilherme Fortunato Machado, actualmente tengo <b>16 años</b> y vivo en Paraná, desde los 9 años he tenido contacto con la programación y el desarrollo de juegos, a los 12 años creé mi primer sitio web, realicé el <b>curso Fullstack de Danki Code</b> y hoy tengo certificados como <b>Desarrollador de Juegos, Desarrollador Web y Programador de Aplicaciones</b>, tengo conocimientos en idiomas como <b >PHP, JavaScript y Lua</b> como lenguaje de programación para juegos. <b>Estoy interesado en trabajar o trabajar como freelance en el área Fullstack o Mobile</b>, y también estoy aprendiendo <b>Python</b> y en un futuro <b>Ruby</b>. Tengo conocimientos en tecnologías como <b>React JS, React Native y un poco NodeJS</b>, Front-End Frameworks como <b>Bootstrap, Materialize y SASS</b>, y en bases de datos lo que tengo más conocimientos de <b>MySQL</b>, también tengo algunos conocimientos de <b>MongoDB</b>."
     },
 
     "projects": {
@@ -45,7 +47,7 @@
     },
 
     "contact": {
-        "contact-call-to-action-text": "¿Hablemos?<br />Envíame un correo electrónico y<br /><a href='mailto:guilhermefortunato2008@gmail.com?subject=Hablemos%20de%20Negocios&body=Hola%20Guilherme...'>Entra en contacto Yo.</a>"
+        "contact-call-to-action-text": "¿Hablemos?<br />Envíame un correo electrónico y<br /><a href='mailto:guilhermefortunato2008@gmail.com?subject=Hablemos%20de%20Negocios&body=Hola%20Guilherme...' target='_blank'>Entra en contacto Yo.</a>"
     },
 
     "projects-modal": {
