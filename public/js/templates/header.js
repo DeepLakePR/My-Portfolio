@@ -164,6 +164,29 @@ $(()=>{
 
     }
 
+    // Translate Page Function
+    function translatePage(translateTo){
+
+        $('h1, h2, h3, p, span, b, i, a, button').each((_i, elementToTranslate)=>{
+
+            let elementTranslationKey = $(elementToTranslate).attr('framework-language-element-key');
+
+            if(elementTranslationKey){
+
+                fetch(`${translationsFolder}/${translateTo}.json`).then(response => response.json()).then(translationData => {
+                    $(elementToTranslate).html(getTranslationKey(translationData, elementTranslationKey));
+
+                }).catch((error)=>{
+                    console.warn(error);
+
+                });
+            
+            }
+
+        })
+
+    }
+
     // Languages Selector Button
     languagesSelectorButton.on("click", () => {
             
@@ -200,23 +223,12 @@ $(()=>{
             let translateTo = $(languageOption).attr('language');
 
             // h1, h2, h3, p, span, b, i, a, button
-            $('h1, h2, h3, p, span, b, i, a, button').each((_i, elementToTranslate)=>{
+            translatePage(translateTo);
 
-                let elementTranslationKey = $(elementToTranslate).attr('framework-language-element-key');
-
-                if(elementTranslationKey){
-
-                    fetch(`${translationsFolder}/${translateTo}.json`).then(response => response.json()).then(translationData => {
-                        $(elementToTranslate).html(getTranslationKey(translationData, elementTranslationKey));
-
-                    }).catch((error)=>{
-                        console.warn(error);
-
-                    });
+            Cookies.set("WebsiteLanguage", translateTo, {
+                expires: 90,
                 
-                }
-
-            })
+            });
 
             translateFrom = translateTo;
 
@@ -226,6 +238,22 @@ $(()=>{
         $(languageOption).on("click", languagesOptionsHandler);
 
     });
+
+    setTimeout(()=>{
+        if(Cookies.get("WebsiteLanguage")){ 
+
+            let getWebsiteLanguageCookie = Cookies.get("WebsiteLanguage");
+
+            translatePage(getWebsiteLanguageCookie);
+
+            languageSelected.empty();
+
+            let selectedChildren = $(`li[language=${getWebsiteLanguageCookie}]`).children()[0];
+            $(selectedChildren).clone().appendTo(languageSelected);
+
+        }
+
+    }, 0);
 
     ////// Header Options Themes
     // Variables

@@ -113,24 +113,6 @@
 
 			<div class="header-options w10 flex pos-relative">
 
-				<!--
-				<select>
-
-					<option value="en-US"><img src="/public/assets/languages-icons/en-US.jpeg" alt="Guilherme Fortunato Developer English USA" title="Guilherme Fortunato Developer English USA" loading="lazy" />
-					</option>
-
-					<option value="es-ES"><img src="/public/assets/languages-icons/es-ES.jpeg" alt="Guilherme Fortunato Español ES" title="Guilherme Fortunato Developer Español ES" loading="lazy" />
-					</option>
-
-					<option value="pt-BR"><img src="/public/assets/languages-icons/pt-BR.jpeg" alt="Guilherme Fortunato Developer Português BR" title="Guilherme Fortunato Developer Português BR" loading="lazy" />
-					</option>
-
-					<option value="zh-HK"><img src="/public/assets/languages-icons/zh-HK.jpeg" alt="Guilherme Fortunato Developer 國語 HK" title="Guilherme Fortunato Developer 國語 HK" loading="lazy" />
-					</option>
-
-				</select>
-				-->
-
 				<div class="languages-selector">
 
 					<button class="languages-select-button button" aria-labelledby="select button"
@@ -248,9 +230,13 @@
 
 			<div class="about-me_text pad20">
 
-				<h2 id="js-scroll-about-me-text">Sobre Mim</h2>
+				<h2 id="js-scroll-about-me-text"
+				framework-language-element-key="about-me-title">
+					Sobre Mim
+				</h2>
 
-				<p style="max-width: 700px;">
+				<p style="max-width: 700px;"
+				framework-language-element-key="about-me-text">
 					Olá, meu nome é Guilherme Fortunato Machado, atualmente tenho <b>16 anos</b> e moro no Paraná, desde
 					os 9 anos tive contato com programação e desenvolvimento de jogos, aos 12 anos criei meu primeiro
 					site, fiz o <b>Curso Fullstack da Danki Code</b> e hoje tenho certificados como <b>Desenvolvedor de
@@ -274,7 +260,9 @@
 	<section class="projects"> <!-- Projects -->
 		<div class="container pad40">
 
-			<h2 id="js-scroll-projects-text">Projetos Criados</h2>
+			<h2 id="js-scroll-projects-text" framework-language-element-key="projects-title">
+				Projetos
+			</h2>
 
 			<div class="projects-wrapper flex-column pad30">
 
@@ -472,7 +460,7 @@
 				</div> <!-- Projects Single -->
 
 				<div class="projects-more-button">
-					<h3>Mais Projetos</h3>
+					<h3 framework-language-element-key="projects-more-button">Mais Projetos</h3>
 
 					<i id="script_projects-more-button" class="fa-solid fa-chevron-down"></i>
 				</div>
@@ -485,7 +473,9 @@
 	<!-- Technologies Section -->
 	<section class="technologies pad20"> <!-- Technologies -->
 
-		<h2 id="js-scroll-knowledge-text">Meu Conhecimento</h2>
+		<h2 id="js-scroll-knowledge-text" framework-language-element-key="knowledge-title">
+			Meu Conhecimento
+		</h2>
 
 		<div class="container flex pad20">
 
@@ -661,7 +651,7 @@
 
 				<div class="technologies-more-button">
 					<button class="button flex pad10 knowledge-modal-toggle" id="modal-toggle"
-						modal-target="#knowledge-modal">
+					modal-target="#knowledge-modal" framework-language-element-key="knowledge-modal-button">
 						Mais Sobre Meu Conhecimento
 						<i class="fa-solid fa-plus"></i>
 					</button>
@@ -693,30 +683,6 @@
 
 		</div> <!-- Container -->
 	</section> <!-- Contact -->
-
-	<!-- Cookies Wrapper -->
-	<div class="cookies-privay-wrapper">
-		<div class="container pad10 flex-column">
-
-			<div class="cookies-wrapper-icon">
-				<i class="fa-solid fa-cookie-bite"></i>
-			</div>
-
-			<div class="cookies-wrapper-text text-center">
-				<p>
-					O <b>Gui Dev</b> utiliza cookies para melhorar sua experiência em nosso website.
-				</p>
-			</div>
-
-			<div class="cookies-wrapper-actions flex">
-				<button type="button" class="cookies-wrapper-actions-button-agree">Eu Aceito</button>
-
-				<a href="https://www.kaspersky.com.br/resource-center/definitions/cookies" target="_blank">Saiba
-					Mais</a>
-			</div>
-
-		</div> <!-- Container -->
-	</div> <!-- Cookies Wrapper -->
 
 	<!------------------------>
 	<!-- Modals -->
@@ -755,12 +721,14 @@
 				<div class="project-info-modal-footer-buttons project-info-modal-div w100 flex">
 
 					<a href="#project-info-deployed" target="_self"
-						class="project-info-modal-button project-info-modal-button-deployed ahref-disabled">
+					class="project-info-modal-button project-info-modal-button-deployed ahref-disabled"
+					framework-language-element-key="projects-modal-button-deployed">
 						Projeto no Ar
 					</a>
 
 					<a href="#project-info-repository" target="_self"
-						class="project-info-modal-button project-info-modal-button-repository ahref-disabled">
+					class="project-info-modal-button project-info-modal-button-repository ahref-disabled"
+					framework-language-element-key="projects-modal-button-repository">
 						Repositório no Github
 					</a>
 
@@ -778,12 +746,17 @@
 
 			<button class="button modal-close"><i class="fa-solid fa-x"></i></button>
 
-			<h2 class="modal-title w100 text-center">Meu Conhecimento</h2>
+			<h2 class="modal-title w100 text-center" framework-language-element-key="knowledge-title">
+				Meu Conhecimento
+			</h2>
 
 			<!-- Courses -->
 			<div class="modal-knowledge modal-knowledge-courses flex">
 
-				<h3 class="modal-knowledge-subtitle">Cursos & Escolas</h3>
+				<h3 class="modal-knowledge-subtitle"
+				framework-language-element-key="knowledge-modal-subtitle-courses">
+					Cursos & Escolas
+				</h3>
 
 				<!-- Modal Box Single -->
 				<div class="modal-knowledge-box-single">
@@ -887,7 +860,10 @@
 			<!-- Certificates -->
 			<div class="modal-knowledge modal-knowledge-certificates flex">
 
-				<h3 class="modal-knowledge-subtitle">Certificados</h3>
+				<h3 class="modal-knowledge-subtitle"
+				framework-language-element-key="knowledge-modal-subtitle-certificates">
+					Certificados
+				</h3>
 
 				<!-- Modal Box Single -->
 				<div class="modal-knowledge-box-single">
@@ -909,7 +885,9 @@
 						<p>A lógica de programação é a base de tudo no mundo da programação.</p>
 
 						<a href="https://cursos.dankicode.com/api/certificados/698378c8-dc05-404c-80ab-cc738b212194"
-							target="_blank">Link Certificado</a>
+							target="_blank" framework-language-element-key="certified-link">
+							Link Certificado
+						</a>
 
 					</div> <!-- Text -->
 
@@ -934,7 +912,9 @@
 						<p>Ensinando desde o básico e os fundamentos do Front-End até conceitos mais avançados.</p>
 
 						<a href="https://cursos.dankicode.com/api/certificados/03b47828-aab0-4fd6-9b1b-d7f07f114fbc"
-							target="_blank">Link Certificado</a>
+							target="_blank" framework-language-element-key="certified-link">
+							Link Certificado
+						</a>
 
 					</div> <!-- Text -->
 
@@ -961,7 +941,9 @@
 							deixando o <b>float</b> para o passado.</p>
 
 						<a href="https://cursos.dankicode.com/api/certificados/82b8737b-07f4-4fdf-b9b5-c1a18194fa3a"
-							target="_blank">Link Certificado</a>
+							target="_blank" framework-language-element-key="certified-link">
+							Link Certificado
+						</a>
 
 					</div> <!-- Text -->
 
@@ -987,7 +969,9 @@
 							chamativo e saudável para seu negócio.</p>
 
 						<a href="https://cursos.dankicode.com/api/certificados/e0a7bc00-afda-4e26-9976-bd17ae1e3c3e"
-							target="_blank">Link Certificado</a>
+							target="_blank" framework-language-element-key="certified-link">
+							Link Certificado
+						</a>
 
 					</div> <!-- Text -->
 
@@ -1013,7 +997,9 @@
 								Web</b>.</p>
 
 						<a href="https://cursos.dankicode.com/api/certificados/8b9217e1-bae6-4cc8-ada5-d719a2ec237c"
-							target="_blank">Link Certificado</a>
+							target="_blank" framework-language-element-key="certified-link">
+							Link Certificado
+						</a>
 
 					</div> <!-- Text -->
 
@@ -1041,7 +1027,9 @@
 						</p>
 
 						<a href="https://cursos.dankicode.com/api/certificados/942a30a5-5dfb-4b7f-808e-d2ba138e0e8f"
-							target="_blank">Link Certificado</a>
+							target="_blank" framework-language-element-key="certified-link">
+							Link Certificado
+						</a>
 
 					</div> <!-- Text -->
 
@@ -1067,7 +1055,9 @@
 							do <b>Google</b>.</p>
 
 						<a href="https://cursos.dankicode.com/api/certificados/d78c0fc7-afb1-4462-8a74-422386517a62"
-							target="_blank">Link Certificado</a>
+							target="_blank" framework-language-element-key="certified-link">
+							Link Certificado
+						</a>
 
 					</div> <!-- Text -->
 
@@ -1092,7 +1082,9 @@
 						<p>Ensinado sobre PHP, seus fundamentos e aprofundamento sobre a linguagem.</p>
 
 						<a href="https://cursos.dankicode.com/api/certificados/7b0a58e0-ec71-4ab3-accf-7bfc62b0741f"
-							target="_blank">Link Certificado</a>
+							target="_blank" framework-language-element-key="certified-link">
+							Link Certificado
+						</a>
 
 					</div> <!-- Text -->
 
@@ -1118,7 +1110,9 @@
 							seriam respectivamente <b>MySQL</b> e <b>MongoDB</b>.</p>
 
 						<a href="https://cursos.dankicode.com/api/certificados/763b6932-7e83-49da-9817-79713fa4f342"
-							target="_blank">Link Certificado</a>
+							target="_blank" framework-language-element-key="certified-link">
+							Link Certificado
+						</a>
 
 					</div> <!-- Text -->
 
@@ -1144,7 +1138,9 @@
 						<p>Aprendido um pouco do inglês mais voltado para programadores e seus conceitos.</p>
 
 						<a href="https://cursos.dankicode.com/api/certificados/ee5d9a94-0e20-45e7-969b-bc68648fca53"
-							target="_blank">Link Certificado</a>
+							target="_blank" framework-language-element-key="certified-link">
+							Link Certificado
+						</a>
 
 					</div> <!-- Text -->
 
@@ -1171,7 +1167,9 @@
 							<b>Alura</b>.</p>
 
 						<a href="https://cursos.alura.com.br/user/guilherme-fortunato-machado/fullCertificate/918a8de5a99bf26f9b69462b5d300c8d"
-							target="_blank">Link Certificado</a>
+							target="_blank" framework-language-element-key="certified-link">
+							Link Certificado
+						</a>
 
 					</div> <!-- Text -->
 
@@ -1184,7 +1182,10 @@
 			<!-- Idioms -->
 			<div class="modal-knowledge modal-knowledge-idioms flex">
 
-				<h3 class="modal-knowledge-subtitle">Idiomas</h3>
+				<h3 class="modal-knowledge-subtitle"
+				framework-language-element-key="knowledge-modal-subtitle-idioms">
+					Idiomas
+				</h3>
 
 				<!-- Modal Custom Box Single -->
 				<div class="modal-knowledge-custom-box-single w100 flex">
@@ -1205,17 +1206,23 @@
 
 						<div class="modal-knowledge-idioms-nivel flex pad15">
 
-							<p>Iniciante</p>
+							<p framework-language-element-key="beginner-text">
+								Iniciante
+							</p>
 
 							<div class="modal-knowledge-idioms-nivel-custom_line modal-knowledge-idioms-nivel-fill">
 							</div>
 
-							<p>Intermediário</p>
+							<p framework-language-element-key="intermediate-text">
+								Intermediário
+							</p>
 
 							<div class="modal-knowledge-idioms-nivel-custom_line modal-knowledge-idioms-nivel-fill">
 							</div>
 
-							<p class="modal-knowledge-idioms-nivel-fill">Avançado</p>
+							<p class="modal-knowledge-idioms-nivel-fill" framework-language-element-key="advanced-text">
+								Avançado
+							</p>
 
 						</div> <!-- Modal Knowledge Idioms Nivel -->
 
@@ -1241,17 +1248,23 @@
 
 						<div class="modal-knowledge-idioms-nivel flex pad15">
 
-							<p>Iniciante</p>
+							<p framework-language-element-key="beginner-text">
+								Iniciante
+							</p>
 
 							<div class="modal-knowledge-idioms-nivel-custom_line modal-knowledge-idioms-nivel-fill">
 							</div>
 
-							<p class="modal-knowledge-idioms-nivel-fill">Intermediário</p>
+							<p class="modal-knowledge-idioms-nivel-fill" framework-language-element-key="intermediate-text">
+								Intermediário
+							</p>
 
 							<div class="modal-knowledge-idioms-nivel-custom_line modal-knowledge-idioms-nivel-midfill">
 							</div>
 
-							<p>Avançado</p>
+							<p framework-language-element-key="advanced-text">
+								Avançado
+							</p>
 
 						</div> <!-- Modal Knowledge Idioms Nivel -->
 
@@ -1277,16 +1290,22 @@
 
 						<div class="modal-knowledge-idioms-nivel flex pad15">
 
-							<p class="modal-knowledge-idioms-nivel-fill">Iniciante</p>
+							<p class="modal-knowledge-idioms-nivel-fill" framework-language-element-key="beginner-text">
+								Iniciante
+							</p>
 
 							<div class="modal-knowledge-idioms-nivel-custom_line modal-knowledge-idioms-nivel-midfill">
 							</div>
 
-							<p>Intermediário</p>
+							<p framework-language-element-key="intermediate-text">
+								Intermediário
+							</p>
 
 							<div class="modal-knowledge-idioms-nivel-custom_line"></div>
 
-							<p>Avançado</p>
+							<p framework-language-element-key="advanced-text">
+								Avançado
+							</p>
 
 						</div> <!-- Modal Knowledge Idioms Nivel -->
 
@@ -1312,16 +1331,22 @@
 
 						<div class="modal-knowledge-idioms-nivel flex pad15">
 
-							<p class="modal-knowledge-idioms-nivel-fill">Iniciante</p>
+							<p class="modal-knowledge-idioms-nivel-fill" framework-language-element-key="beginner-text">
+								Iniciante
+							</p>
 
 							<div class="modal-knowledge-idioms-nivel-custom_line modal-knowledge-idioms-nivel-midfill">
 							</div>
 
-							<p>Intermediário</p>
+							<p framework-language-element-key="intermediate-text">
+								Intermediário
+							</p>
 
 							<div class="modal-knowledge-idioms-nivel-custom_line"></div>
 
-							<p>Avançado</p>
+							<p framework-language-element-key="advanced-text">
+								Avançado
+							</p>
 
 						</div> <!-- Modal Knowledge Idioms Nivel -->
 
@@ -1337,12 +1362,38 @@
 	<!-- End Modals -->
 	<!------------------------>
 
-	<!--
+	<!-- Cookies Wrapper -->
+	<div class="cookies-privay-wrapper">
+		<div class="container pad10 flex-column">
 
-		TODO:
-		+ Revision/Debugging
+			<div class="cookies-wrapper-icon">
+				<i class="fa-solid fa-cookie-bite"></i>
+			</div>
 
-	-->
+			<div class="cookies-wrapper-text text-center">
+
+				<p framework-language-element-key="cookies-text">
+					O <b>Gui Dev</b> utiliza cookies para melhorar sua experiência em nosso website.
+				</p>
+
+			</div>
+
+			<div class="cookies-wrapper-actions flex">
+
+				<button type="button" class="cookies-wrapper-actions-button-agree"
+				framework-language-element-key="cookies-accept-button">
+					Eu Aceito
+				</button>
+
+				<a href="https://www.kaspersky.com.br/resource-center/definitions/cookies" target="_blank"
+				framework-language-element-key="more-about-text">
+					Saiba Mais
+				</a>
+				
+			</div>
+
+		</div> <!-- Container -->
+	</div> <!-- Cookies Wrapper -->
 
 	<!-- Footer -->
 	<footer>

@@ -5,7 +5,9 @@
 
         "beginner-text": "初學者",
         "intermediate-text": "中介",
-        "advanced-text": "先進的"
+        "advanced-text": "先進的",
+
+        "certified-link": "認證連結"
     },
     
     "navigation" : {
@@ -27,8 +29,40 @@
         "end-to-end-applications-text": "創建和開發的應用程式<br /><span>端對端</span>"
     },
 
+    "about-me": {
+        "about-me-title": "關於我",
+        "about-me-text": "您好，我的名字是 Guilherme Fortunato Machado, 我目前<b>16歲</b>, 我住在巴拉那州, 從9歲起我就開始接觸程式設計和遊戲開發, 12歲時我創建了我的第一個網站, 我從Danki Code 製作了<b>全端課程</b>，今天我獲得了<b>遊戲開發人員、Web 開發人員和應用程式程式設計師</b>的證書，我擁有諸如<b>等語言的知識>PHP、JavaScript 和 Lua</b> 作為遊戲程式語言。 <b>我對 Fullstack 或 Mobile 領域的工作或自由工作感興趣</b>，而且我也在學習 Python 以及未來的 Ruby, 但這不是現在的重點。我擁有 <b>React JS、React Native 和一點 NodeJS</b> 等技術知識，以及 <b>Bootstrap、Materialize 和 SASS</b> 等前端框架，以及我所擁有的資料庫知識了解更多關於< b>MySQL</b>，但我也了解一點關於<b>MongoDB</b>。"
+    },
+
+    "projects": {
+        "projects-title": "專案",
+        "projects-more-button": "更多項目"
+    },
+
+    "knowledge": {
+        "knowledge-title": "我的知識",
+        "knowledge-modal-button": "更多關於我的知識 <i class='fa-solid fa-plus'></i>"
+    },
+
     "contact": {
         "contact-call-to-action-text": "讓我們來聊聊吧？<br />給我發送電子郵件並<br /><a href='mailto:guilhermefortunato2008@gmail.com?subject=%E6%88%91%E5%80%91%E4%BE%86%E8%AB%87%E8%AB%87%E7%94%9F%E6%84%8F%E5%90%A7&body=你好%20吉列爾梅...' >輸入聯絡方式我。</a>"
+    },
+
+    "projects-modal": {
+        "projects-modal-button-deployed": "專案已部署",
+        "projects-modal-button-repository": "Github 上的儲存庫"
+    },
+
+    "knowledge-modal": {
+        "knowledge-modal-subtitle-courses": "課程和學校",
+        "knowledge-modal-subtitle-certificates": "證書",
+        "knowledge-modal-subtitle-idioms": "慣用語/語言"
+    },
+
+    "cookies": {
+        "cookies-text": "<b>Gui Dev</b> 使用 cookie 來改善您在我們網站上的體驗。",
+
+        "cookies-accept-button": "我接受"
     },
 
     "footer": {

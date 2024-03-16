@@ -5,7 +5,9 @@
 
         "beginner-text": "Iniciante",
         "intermediate-text": "Intermediário",
-        "advanced-text": "Experiente"
+        "advanced-text": "Experiente",
+
+        "certified-link": "Link Certificado"
     },
 
     "navigation": {
@@ -27,8 +29,40 @@
         "end-to-end-applications-text": "Aplicações criadas e desenvolvidas de<br /><span>Ponta a Ponta</span>"
     },
 
+    "about-me": {
+        "about-me-title": "Sobre Mim",
+        "about-me-text": "Olá, meu nome é Guilherme Fortunato Machado, atualmente tenho <b>16 anos</b> e moro no Paraná, desde os 9 anos tive contato com programação e desenvolvimento de jogos, aos 12 anos criei meu primeiro site, fiz o <b>Curso Fullstack da Danki Code</b> e hoje tenho certificados como <b>Desenvolvedor de Games, Desenvolvedor Web e Programador de Aplicativos</b>, tenho conhecimento em linguagens como <b>PHP, JavaScript e Lua</b> como linguagem de programação para games. <b>Tenho interesse em trabalhos ou freelances na área Fullstack ou Mobile</b>, e também estou aprendendo Python e futuramente Ruby, mas isso não vem ao caso agora. Tenho conhecimento em tecnologias como <b>React JS, React Native e um pouco de NodeJS</b>, Frameworks Front-End como <b>Bootstrap, Materialize e SASS</b>, e em banco de dados o que eu tenho mais conhecimento é o <b>MySQL</b>, mas também conheço um pouco de <b>MongoDB</b>."
+    },
+
+    "projects": {
+        "projects-title": "Projetos",
+        "projects-more-button": "Mais Projetos"
+    },
+
+    "knowledge": {
+        "knowledge-title": "Meu Conhecimento",
+        "knowledge-modal-button": "Mais Sobre Meu Conhecimento <i class='fa-solid fa-plus'></i>"
+    },
+
     "contact": {
         "contact-call-to-action-text": "Vamos Conversar?<br />Me mande um e-mail e<br /><a href='mailto:guilhermefortunato2008@gmail.com?subject=Vamos%20Falar%20Sobre%20Negócios&body=Olá%20Guilherme...'>Entre Em Contato Comigo.</a>"
+    },
+
+    "projects-modal": {
+        "projects-modal-button-deployed": "Projeto no Ar",
+        "projects-modal-button-repository": "Repositório no Github"
+    },
+
+    "knowledge-modal": {
+        "knowledge-modal-subtitle-courses": "Cursos & Escolas",
+        "knowledge-modal-subtitle-certificates": "Certificados",
+        "knowledge-modal-subtitle-idioms": "Idiomas"
+    },
+
+    "cookies": {
+        "cookies-text": "O <b>Gui Dev</b> utiliza cookies para melhorar sua experiência em nosso website.",
+
+        "cookies-accept-button": "Eu Aceito"
     },
 
     "footer": {
