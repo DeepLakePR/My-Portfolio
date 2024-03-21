@@ -57,8 +57,68 @@
 
     "knowledge-modal": {
         "knowledge-modal-subtitle-courses": "課程和學校",
+        "knowledge-modal-courses":{
+
+            "knowledge-modal-courses-dankicode-title": "Danki 程式碼 - FullStack Master",
+            "knowledge-modal-courses-dankicode-description": "Danki Code 的 FullStack Master 包，其中包含<b>超過 25 門課程</b>，幫助您成為真正的 Web 開發人員，我的大部分 Web 知識都來自那裡。",
+
+            "knowledge-modal-courses-alura1-title": "Alura - 系統分析與開發",
+            "knowledge-modal-courses-alura1-description": "巴拉那州政府透過<b>新中等教育</b>提供的課程，了解了一些資料請求、瀑布模型等。",
+
+            "knowledge-modal-courses-alura2-title": "Alura - 初級遊戲開發",
+            "knowledge-modal-courses-alura2-description": "透過 2021 年舉辦的​​ <b>Edutech</b> 計劃，我參與並訪問了 Alura 課程，這些課程教授如何使用 <b>Scratch、JavaScript 和 GameMaker Studio</b> 開發基本遊戲。",
+
+            "knowledge-modal-courses-high_school-title": "系統分析與發展 - 新高中二年級 - Paraná",
+            "knowledge-modal-courses-high_school-description": "我目前正在新高中二年級學習<b>系統分析與發展</b>，總共持續三年。"
+
+        },
+
         "knowledge-modal-subtitle-certificates": "證書",
-        "knowledge-modal-subtitle-idioms": "慣用語/語言"
+        "knowledge-modal-certificates":{
+
+            "knowledge-modal-certificates-programming_logic-title": "程式設計邏輯 - Danki 程式碼",
+            "knowledge-modal-certificates-programming_logic-description": "程式邏輯是程式設計世界中一切事物的基礎。",
+
+            "knowledge-modal-certificates-front_end-title": "前端 - Danki 程式碼",
+            "knowledge-modal-certificates-front_end-description": "教授從前端基礎到更高級概念的所有內容。",
+
+            "knowledge-modal-certificates-front_end2-title": "前端 2.0 - Danki 代碼",
+            "knowledge-modal-certificates-front_end2-description": "該課程以更現代的方式教授前端，使用最新的 <b>HTML 5</b> 標籤，例如 <b>header、section、footer 等</b>，也使用 <b>flexbox </ b > 將<b>浮動</b>留在過去。",
+
+            "knowledge-modal-certificates-web_design-title": "網頁設計 - Danki 程式碼",
+            "knowledge-modal-certificates-web_design-description": "教授<b>使用者體驗 (UX)</b> 以及為您的企業創建美觀、引人注目且健康的設計的最佳方法。",
+
+            "knowledge-modal-certificates-javascript-title": "JavaScript - Danki 代碼",
+            "knowledge-modal-certificates-javascript-description": "一種著名且功能強大的程式語言，主要用於<b>Web開發</b>。",
+
+            "knowledge-modal-certificates-app_development-title": "行動開發 - Danki 代碼",
+            "knowledge-modal-certificates-app_development-description": "了解如何使用最著名的 <b>JavaScript 庫</b> 來開發適用於 <b>Android</b> 和 <b>IOS</b> 的應用程序，即 <b>React Native</b> >。",
+
+            "knowledge-modal-certificates-firebase-title": "火力基地 - Danki 代碼",
+            "knowledge-modal-certificates-firebase-description": "本課程教您如何使用 <b>Google</b> 強大的基於雲端的平台來託管您的應用程式。",
+
+            "knowledge-modal-certificates-php-title": "PHP - Danki 代碼",
+            "knowledge-modal-certificates-php-description": "教授 PHP 及其基礎知識和對該語言的深入了解。",
+
+            "knowledge-modal-certificates-database-title": "資料庫 - Danki 代碼",
+            "knowledge-modal-certificates-database-description": "一門教授主要使用的關係型和非關係型資料庫的課程，分別是 <b>MySQL</b> 和 <b>MongoDB</b>。",
+
+            "knowledge-modal-certificates-english_for_programmers-title": "程式設計師英語 - Danki 代碼",
+            "knowledge-modal-certificates-english_for_programmers-description": "學了一點英語更多是針對程式設計師和他們的技術概念。",
+
+            "knowledge-modal-certificates-alura_all_certificates-title": "所有證書 - Alura",
+            "knowledge-modal-certificates-alura_all_certificates-description": "我在 <b>Alura</b> 學習過程中所學的所有課程及其各自的工作量。"
+
+
+        },
+
+        "knowledge-modal-subtitle-idioms": "慣用語/語言",
+        "knowledge-modal-idioms":{
+            "idioms-brazilian-portuguese": "巴西葡萄牙語 (母語)",
+            "idioms-english-united-states": "美國英語",
+            "idioms-spanish": "西班牙語",
+            "idioms-italian": "義大利語"
+        }
     },
 
     "cookies": {

@@ -145,19 +145,23 @@ $(()=>{
     var translateFrom = 'pt-BR';
 
     // Get Translation Key Function
-    function getTranslationKey(translationObject, elTranslationKey){
+    function getTranslationKey(translationObject, elTranslationKey, elementToTranslate){
 
         for (const [key, value] of Object.entries(translationObject)) {
 
             if(key == elTranslationKey){
-                return value;
+                elementToTranslate.html(value);
 
             }else if(value[elTranslationKey]){
-                return value[elTranslationKey];
+                elementToTranslate.html(value[elTranslationKey]);
             
-            }else {
-                // return getTranslationKey(value, elTranslationKey);
-                
+            }else if(typeof(value) === 'object'){
+
+                setTimeout(()=>{
+                    return getTranslationKey(value, elTranslationKey, elementToTranslate);
+
+                }, 150);
+
             }
 
         }
@@ -180,7 +184,11 @@ $(()=>{
             if(elementTranslationKey){
 
                 fetch(`${translationsFolder}/${translateTo}.json`).then(response => response.json()).then(translationData => {
-                    $(elementToTranslate).html(getTranslationKey(translationData, elementTranslationKey));
+                    
+                    setTimeout(()=> {
+                        getTranslationKey(translationData, elementTranslationKey, $(elementToTranslate));
+                    
+                    }, 50);
 
                 }).catch((error)=>{
                     console.warn(error);

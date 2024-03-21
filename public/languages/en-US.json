@@ -57,8 +57,67 @@
 
     "knowledge-modal": {
         "knowledge-modal-subtitle-courses": "Courses & Schools",
+        "knowledge-modal-courses":{
+
+            "knowledge-modal-courses-dankicode-title": "Danki Code - FullStack Master",
+            "knowledge-modal-courses-dankicode-description": "Danki Code's FullStack Master package, which contains <b>more than 25 courses</b> preparing you to be a true web developer, a large part of my web knowledge came from there.",
+
+            "knowledge-modal-courses-alura1-title": "Alura - Systems Analysis and Development",
+            "knowledge-modal-courses-alura1-description": "A course offered by the government of Paraná through <b>New Secondary Education</b>, I learned a little about data request, waterfall model, etc.",
+
+            "knowledge-modal-courses-alura2-title": "Alura - Beginner Game Development",
+            "knowledge-modal-courses-alura2-description": "Through the <b>Edutech</b> program that took place in 2021, I participated and had access to Alura courses that taught how to develop basic games using <b>Scratch, JavaScript & GameMaker Studio</b>.",
+
+            "knowledge-modal-courses-high_school-title": "Systems Analysis and Development - New High School 2nd Year - Paraná",
+            "knowledge-modal-courses-high_school-description": "I am currently in the 2nd year of New High School studying <b>Systems Analysis and Development</b> which lasts a total of 3 years."
+
+        },
+
         "knowledge-modal-subtitle-certificates": "Certificates",
-        "knowledge-modal-subtitle-idioms": "Idioms/Languages"
+        "knowledge-modal-certificates":{
+
+            "knowledge-modal-certificates-programming_logic-title": "Programming Logic - Danki Code",
+            "knowledge-modal-certificates-programming_logic-description": "Programming logic is the basis of everything in the world of programming.",
+
+            "knowledge-modal-certificates-front_end-title": "Front-End - Danki Code",
+            "knowledge-modal-certificates-front_end-description": "Teaching everything from the basics and fundamentals of Front-End to more advanced concepts.",
+
+            "knowledge-modal-certificates-front_end2-title": "Front-End 2.0 - Danki Code",
+            "knowledge-modal-certificates-front_end2-description": "The course taught Front-End in a more modern way, using the latest <b>HTML 5</b> tags such as <b>header, section, footer, etc</b> and also using <b>flexbox </b> leaving <b>float</b> in the past.",
+
+            "knowledge-modal-certificates-web_design-title": "Web Design - Danki Code",
+            "knowledge-modal-certificates-web_design-description": "Taught about <b>User Experience (UX)</b> and the best ways to create a beautiful, eye-catching and healthy design for your business.",
+
+            "knowledge-modal-certificates-javascript-title": "JavaScript - Danki Code",
+            "knowledge-modal-certificates-javascript-description": "A famous and powerful programming language mainly used in <b>Web Development</b>.",
+
+            "knowledge-modal-certificates-app_development-title": "Mobile Development - Danki Code",
+            "knowledge-modal-certificates-app_development-description": "Learned how to develop applications using the most famous <b>JavaScript Library</b> to develop applications for <b>Android</b> and <b>IOS</b> which would be <b>React Native</b >.",
+
+            "knowledge-modal-certificates-firebase-title": "Firebase - Danki Code",
+            "knowledge-modal-certificates-firebase-description": "The course taught you how to host your applications using <b>Google</b>'s powerful cloud-based platform.",
+
+            "knowledge-modal-certificates-php-title": "PHP - Danki Code",
+            "knowledge-modal-certificates-php-description": "Taught about PHP, its fundamentals and in-depth knowledge of the language.",
+
+            "knowledge-modal-certificates-database-title": "Database - Danki Code",
+            "knowledge-modal-certificates-database-description": "A course that teaches the main relational and non-relational databases used, which would be <b>MySQL</b> and <b>MongoDB</b> respectively.",
+
+            "knowledge-modal-certificates-english_for_programmers-title": "English for Programmers - Danki Code",
+            "knowledge-modal-certificates-english_for_programmers-description": "Learned a little English more aimed at programmers and their technical concepts.",
+
+            "knowledge-modal-certificates-alura_all_certificates-title": "All Certificates - Alura",
+            "knowledge-modal-certificates-alura_all_certificates-description": "All the courses taken and their respective workloads throughout my journey studying at <b>Alura</b>."
+
+        },
+
+        "knowledge-modal-subtitle-idioms": "Idioms/Languages",
+        "knowledge-modal-idioms":{
+            "idioms-brazilian-portuguese": "Brazilian Portuguese (Native)",
+            "idioms-english-united-states": "English United States",
+            "idioms-spanish": "Spanish",
+            "idioms-italian": "Italian"
+        }
     },
 
     "cookies": {
