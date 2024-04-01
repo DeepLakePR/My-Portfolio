@@ -38,7 +38,30 @@
 
     "projects": {
         "projects-title": "Projetos",
-        "projects-more-button": "Mais Projetos"
+        "projects-more-button": "Mais Projetos",
+
+        "projects-single": {
+            
+            "projects-single-prime_consultancy-title": "Prime Assessoria Imobiliária - 2022",
+            "projects-single-prime_consultancy-description": "Desenvolvido um site Corporativo, com sistema de painel de controle para os funcionários, geração de relatórios em PDF e salvamento de documentos no banco de dados. As tecnologias usadas foram <b>Front-End (HTML5, CSS3, JavaScript), Bootstrap, PHP e Banco de Dados MySQL</b>.",
+
+            "projects-single-ibca_church-title": "Igreja IBCA App - 2022",
+            "projects-single-ibca_church-description": "Criado um aplicativo para a minha igreja, usando <b>React Native e a plataforma do Expo</b> para exportação do aplicativo para <b>IOS & Android</b>.",
+
+            "projects-single-my_portfolio-title": "Meu Portfólio - 2023",
+            "projects-single-my_portfolio-description": "O site que você está vendo agora foi desenvolvido com o puro <b>Front-End</b> e também com framework CSS próprio, <b>criei um framework CSS básico, estilo bootstrap</b>, mas que funciona e que economiza muitas linhas de código CSS.",
+
+            "projects-single-instagram_clone-title": "Instagram Clone - 2023",
+            "projects-single-instagram_clone-description": "Um clone bem básico e bem genérico do Instagram de 2019, desenvolvido em <b>React</b> e hospedado na plataforma do Google <b>Firebase</b>.",
+
+            "projects-single-dentistry-title": "Dentista/Odontologia - 2023",
+            "projects-single-dentistry-description": "Um site mostrando o trabalho de uma odontologia, criado com <b>Vanilla HTML 5 & CSS 3</b>.",
+
+            "projects-single-concessionaire-title": "Concessionária Veículos Especiais - 2023",
+            "projects-single-concessionaire-description": "Desenvolvido um site para concessionárias usando <b>PHP e Front-End</b>, pode ser facilmente adaptado e vendido para outras concessionárias."
+
+        }
+
     },
 
     "knowledge": {

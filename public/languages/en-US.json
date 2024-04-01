@@ -38,7 +38,30 @@
 
     "projects": {
         "projects-title": "Projects",
-        "projects-more-button": "More Projects"
+        "projects-more-button": "More Projects",
+
+        "projects-single": {
+            
+            "projects-single-prime_consultancy-title": "Prime Real Estate Advisory - 2022",
+            "projects-single-prime_consultancy-description": "Developed a Corporate website, with a control panel system for employees, generating PDF reports and saving documents in the database. The technologies used were <b>Front-End (HTML5, CSS3, JavaScript), Bootstrap, PHP and MySQL Database</b>.",
+
+            "projects-single-ibca_church-title": "IBCA Church App - 2022",
+            "projects-single-ibca_church-description": "Created an application for my church, using <b>React Native and the Expo platform</b> to export the application to <b>IOS & Android</b>.",
+
+            "projects-single-my_portfolio-title": "My Portfolio - 2023",
+            "projects-single-my_portfolio-description": "The website you are seeing now was developed with pure <b>Front-End</b> and also with its own CSS framework, <b>I created a basic CSS framework, bootstrap style</b>, but it works and saves many lines of CSS code.",
+
+            "projects-single-instagram_clone-title": "Instagram Clone - 2023",
+            "projects-single-instagram_clone-description": "A very basic and very generic clone of Instagram from 2019, developed in <b>React</b> and hosted on the Google platform <b>Firebase</b>.",
+
+            "projects-single-dentistry-title": "Dentist/Dentistry - 2023",
+            "projects-single-dentistry-description": "A website showing the work of a dentist, created with <b>Vanilla HTML 5 & CSS 3</b>.",
+
+            "projects-single-concessionaire-title": "Special Vehicle Dealership - 2023",
+            "projects-single-concessionaire-description": "Developed a website for dealerships using <b>PHP and Front-End</b>, it can be easily adapted and sold to other dealerships."
+
+        }
+
     },
 
     "knowledge": {

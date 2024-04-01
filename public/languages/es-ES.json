@@ -38,7 +38,30 @@
 
     "projects": {
         "projects-title": "Proyectos",
-        "projects-more-button": "Más Proyectos"
+        "projects-more-button": "Más Proyectos",
+
+        "projects-single": {
+            
+            "projects-single-prime_consultancy-title": "Asesoría Inmobiliaria Prime - 2022",
+            "projects-single-prime_consultancy-description": "Desarrollé un sitio web Corporativo, con un sistema de panel de control para los empleados, generando informes en PDF y guardando documentos en la base de datos. Las tecnologías utilizadas fueron <b>Front-End (HTML5, CSS3, JavaScript), Bootstrap, PHP y Base de Datos MySQL</b>.",
+
+            "projects-single-ibca_church-title": "App de la Iglesia IBCA - 2022",
+            "projects-single-ibca_church-description": "Creé una aplicación para mi iglesia, usando <b>React Native y la plataforma Expo</b> para exportar la aplicación a <b>IOS y Android</b>.",
+
+            "projects-single-my_portfolio-title": "Mi portafolio - 2023",
+            "projects-single-my_portfolio-description": "El sitio web que estás viendo ahora fue desarrollado con <b>Front-End</b> puro y también con su propio framework CSS, <b>creé un framework CSS básico, estilo bootstrap</b>, pero funciona y ahorra. Muchas líneas de código CSS.",
+
+            "projects-single-instagram_clone-title": "Clon de Instagram - 2023",
+            "projects-single-instagram_clone-description": "Un clon muy básico y muy genérico de Instagram de 2019, desarrollado en <b>React</b> y alojado en la plataforma de Google <b>Firebase</b>.",
+
+            "projects-single-dentistry-title": "Dentista/Odontología - 2023",
+            "projects-single-dentistry-description": "Un sitio web que muestra el trabajo de un dentista, creado con <b>Vanilla HTML 5 & CSS 3</b>.",
+
+            "projects-single-concessionaire-title": "Concesionario de vehículos especiales - 2023",
+            "projects-single-concessionaire-description": "Desarrollé un sitio web para concesionarios usando <b>PHP y Front-End</b>, se puede adaptar y vender fácilmente a otros concesionarios."
+
+        }
+
     },
 
     "knowledge": {
@@ -108,7 +131,6 @@
 
             "knowledge-modal-certificates-alura_all_certificates-title": "Todos los Certificados - Alura",
             "knowledge-modal-certificates-alura_all_certificates-description": "Todos los cursos realizados y sus respectivas cargas de trabajo a lo largo de mi trayectoria estudiando en <b>Alura</b>."
-
 
         },
 

@@ -38,7 +38,30 @@
 
     "projects": {
         "projects-title": "專案",
-        "projects-more-button": "更多項目"
+        "projects-more-button": "更多項目",
+        
+        "projects-single": {
+            
+            "projects-single-prime_consultancy-title": "優質房地產諮詢 - 2022",
+            "projects-single-prime_consultancy-description": "開發了一個企業網站，為員工提供控制面板系統，產生 PDF 報告並將文件保存在資料庫中。使用的技術是<b>前端(HTML5、CSS3、JavaScript)、Bootstrap、PHP 和 MySQL 資料庫</b>。",
+
+            "projects-single-ibca_church-title": "IBCA 教會應用程式 - 2022",
+            "projects-single-ibca_church-description": "為我的教會創建了一個應用程序，使用 <b>React Native 和 Expo 平台</b> 將應用程式匯出到 <b>IOS 和 Android</b>。",
+
+            "projects-single-my_portfolio-title": "我的投資組合 - 2023",
+            "projects-single-my_portfolio-description": "你現在看到的網站是用純<b>前端</b>開發的, 也有自己的CSS框架, <b>我創建了一個基本的CSS框架, bootstrap風格</b>，但它可以工作並儲存很多行 CSS 程式碼。",
+
+            "projects-single-instagram_clone-title": "Instagram 複製 - 2023",
+            "projects-single-instagram_clone-description": "2019 年 Instagram 的一個非常基本且非常通用的克隆，在 <b>React</b> 中開發並託管在 Google 平台 <b>Firebase</b> 上。",
+
+            "projects-single-dentistry-title": "牙醫/牙科 - 2023",
+            "projects-single-dentistry-description": "一個展示牙醫工作的網站，使用 <b>Vanilla HTML 5 和 CSS 3</b> 創建。",
+
+            "projects-single-concessionaire-title": "特種車輛經銷店 - 2023",
+            "projects-single-concessionaire-description": "使用<b>PHP和前端</b>為經銷商開發了一個網站，可以輕鬆調整並出售給其他經銷商。"
+
+        }
+
     },
 
     "knowledge": {
@@ -122,7 +145,7 @@
     },
 
     "cookies": {
-        "cookies-text": "<b>Gui Dev</b> 使用 cookie 來改善您在我們網站上的體驗。",
+        "cookies-text": "<b>Gui Dev</b> 使用 餅乾 來改善您在我們網站上的體驗。",
 
         "cookies-accept-button": "我接受"
     },
