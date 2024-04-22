@@ -280,7 +280,7 @@ $(function(){
 
             //// Modal
             // Modal -> Title
-            ModalProjectInfoTitle.text(`Projeto ${ProjectInfoTitle}`);
+            ModalProjectInfoTitle.text(`${projectsModalPreTitle} ${ProjectInfoTitle}`);
 
             // Modal -> Image
             ModalProjectInfoImage.attr('src', ProjectInfoImage);
@@ -322,7 +322,7 @@ $(function(){
     // Project Info Modal -> Reset
     function ProjectInfoModalReset(){
 
-        ModalProjectInfoTitle.text('Projeto ${PROJECT_TITLE}');
+        ModalProjectInfoTitle.text(`${projectsModalPreTitle} \${PROJECT_TITLE}`);
 
         // Modal -> Image
         ModalProjectInfoImage.attr('src', '/public/assets/logo-2.png');

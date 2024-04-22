@@ -1,3 +1,5 @@
+var projectsModalPreTitle = 'Projeto';
+
 $(()=>{
 
     ////////////////////////////////
@@ -22,24 +24,10 @@ $(()=>{
         let ButtonTarget = $(e.target).attr("js-scrolltarget");
         let ElementTarget = $("#" + ButtonTarget);
 
-        let offsetDebug = 190;
-
-        /*
-        if(ButtonTarget == 'js-scroll-about-me-text' || ButtonTarget == 'js-scroll-projects-text'){
-            offsetDebug = 190;
-
-        }
-        */
+        let offsetDebug = 140;
 
         if(ButtonTarget == 'js-scroll-knowledge-text' || ButtonTarget == 'js-scroll-contact-text'){
             ElementTarget = ElementTarget.parent();
-
-            /*
-            if(ButtonTarget == 'js-scroll-knowledge-text'){
-                offsetDebug = 190;
-            
-            }
-            */
 
         }
 
@@ -133,6 +121,197 @@ $(()=>{
     })
 
     ////////////////////////////////
+    ////// Header Options Languages
+    const languagesSelector = $(".languages-selector");
+    const languagesSelectorButton = $(".languages-select-button");
+
+    const languageSelected = $(".languages-selected-language");
+    const languagesOptions = $(".languages-select-dropdown li");
+
+    // Variables
+    var translationsFolder = '/public/languages';
+    var translateFrom = 'pt-BR';
+
+    // Get Translation Key Function
+    function getTranslationKey(translationObject, elTranslationKey, elementToTranslate, translateAttribute){
+
+        for (const [key, value] of Object.entries(translationObject)) {
+
+            if(translationObject['projects-modal']){
+                projectsModalPreTitle = translationObject['projects-modal']['projects-modal-pre-title']
+
+            }
+
+            if(!translateAttribute){ // Not Translate attribute
+
+                if(key == elTranslationKey){
+                    elementToTranslate.html(value);
+
+                }else if(value[elTranslationKey]){
+                    elementToTranslate.html(value[elTranslationKey]);
+                
+                }else if(typeof(value) === 'object'){
+
+                    setTimeout(()=>{
+                        return getTranslationKey(value, elTranslationKey, elementToTranslate, false);
+
+                    }, 150);
+
+                }
+
+            }else if(translateAttribute){ // Translate attribute (Projects Single)
+                
+                if(key === elTranslationKey){
+
+                    let projectSingleTranslation = translationObject[key];
+
+                    // Title
+                    elementToTranslate.data(
+                        'project-info-title', 
+                        projectSingleTranslation['projects-modal-single-title']
+                    );
+                    
+                    // Tags
+                    elementToTranslate.data(
+                        'project-info-tags', 
+                        projectSingleTranslation['projects-modal-single-tags']
+                    );
+                    
+                    // Description
+                    elementToTranslate.data(
+                        'project-info-description', 
+                        projectSingleTranslation['projects-modal-single-description']
+                    );
+
+                }
+
+                if(typeof(value) === 'object'){
+
+                    setTimeout(()=>{
+                        return getTranslationKey(value, elTranslationKey, elementToTranslate, true);
+
+                    }, 150);
+
+                }
+
+            }
+
+        }
+
+    }
+
+    // Translate Page Function
+    function translatePage(translateTo){
+
+        $('h1, h2, h3, p, span, b, i, a, button, div.projects-single').each((_i, elementToTranslate)=>{
+
+            let elementTranslationKey = $(elementToTranslate).attr('framework-language-element-key');
+            let elementTranslationContactLink = $(elementToTranslate).attr('framework-language-contact-link');
+
+            if(elementTranslationContactLink == 'true'){
+                $(elementToTranslate).attr('href', '').attr('target', '_blank');
+
+            }
+
+            // Translate Direct Elements
+            if(elementTranslationKey){
+
+                fetch(`${translationsFolder}/${translateTo}.json`).then(response => response.json()).then(translationData => {
+                    
+                    setTimeout(()=> {
+
+                        // Not translate projects single attributes
+                        if(!$(elementToTranslate).hasClass('projects-single')){
+                            getTranslationKey(translationData, elementTranslationKey, $(elementToTranslate), false);
+                            
+                        }else{ // Translate projects single attributes
+                            getTranslationKey(translationData, elementTranslationKey, $(elementToTranslate), true);
+
+                        }
+                    
+                    }, 50);
+
+                    
+
+                }).catch((error)=>{
+                    console.warn(error);
+
+                });
+            
+            }
+
+        })
+
+    }
+
+    // Languages Selector Button
+    languagesSelectorButton.on("click", () => {
+            
+        languagesSelector.toggleClass("active");
+
+        languagesSelectorButton.attr(
+            "aria-expanded",
+            languagesSelectorButton.attr("aria-expanded") === "true" ? "false" : "true"
+        );
+
+    });
+
+    languagesOptions.each((_, languageOption) => {
+
+        function languagesOptionsHandler(e) {
+
+            languageSelected.empty();
+
+            let selectedChildren = $(languageOption).children()[0];
+            $(selectedChildren).clone().appendTo(languageSelected);
+
+            ////////////
+            // Dimiss Languages Selector
+            if (e.type === "click" && e.clientX !== 0 && e.clientY !== 0) {
+                languagesSelector.removeClass("active");
+            }
+
+            if (e.key === "Enter") {
+                languagesSelector.removeClass("active");
+            }
+
+            ////////////
+            // Translate Page to Selected Language
+            let translateTo = $(languageOption).attr('language');
+
+            // h1, h2, h3, p, span, b, i, a, button
+            translatePage(translateTo);
+
+            Cookies.set("WebsiteLanguage", translateTo, {
+                expires: 90,
+                
+            });
+
+            translateFrom = translateTo;
+
+        }
+
+        $(languageOption).on("keyup", languagesOptionsHandler);
+        $(languageOption).on("click", languagesOptionsHandler);
+
+    });
+
+    setTimeout(()=>{
+        if(Cookies.get("WebsiteLanguage")){ 
+
+            let getWebsiteLanguageCookie = Cookies.get("WebsiteLanguage");
+
+            translatePage(getWebsiteLanguageCookie);
+
+            languageSelected.empty();
+
+            let selectedChildren = $(`li[language=${getWebsiteLanguageCookie}]`).children()[0];
+            $(selectedChildren).clone().appendTo(languageSelected);
+
+        }
+
+    }, 0);
+
     ////// Header Options Themes
     // Variables
     const ThemeButton = HeaderOptions.find('button#theme-changer');

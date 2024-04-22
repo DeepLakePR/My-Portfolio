@@ -1,0 +1,199 @@
+{
+
+    "global-translations": {
+        "email-contact-link": "<a href='mailto:guilhermefortunato2008@gmail.com?subject=%E6%88%91%E5%80%91%E4%BE%86%E8%AB%87%E8%AB%87%E7%94%9F%E6%84%8F%E5%90%A7&body=你好%20吉列爾梅...' target='_blank'><i class='fa-solid fa-envelope'></i></a>",
+
+        "more-about-text": "了解更多",
+
+        "beginner-text": "初學者",
+        "intermediate-text": "中介",
+        "advanced-text": "先進的",
+
+        "certified-link": "認證連結"
+    },
+    
+    "navigation" : {
+        "navigation-home": "家",
+        "navigation-about-me": "關於我",
+        "navigation-projects": "專案",
+        "navigation-knowledge": "知識",
+        "navigation-contact": "接觸"
+    },
+
+    "apresentation": {
+        "apresentation-text-h2": "嗨，我是<span>吉列爾梅·福爾圖納托</span>",
+        "apresentation-text-p": "一個<span>將</span>行程式碼轉化為<span>創新解決方案的男孩。</span>",
+        
+        "apresentation-fullstack": "全端開發人員"
+    },
+
+    "end-to-end-applications": {
+        "end-to-end-applications-text": "創建和開發的應用程式<br /><span>端對端</span>"
+    },
+
+    "about-me": {
+        "about-me-title": "關於我",
+        "about-me-text": "您好，我的名字是 Guilherme Fortunato Machado, 我目前<b>16歲</b>, 我住在巴拉那州, 從9歲起我就開始接觸程式設計和遊戲開發, 12歲時我創建了我的第一個網站, 我從Danki Code 製作了<b>全端課程</b>，今天我擁有了<b>遊戲開發人員、Web 開發人員和應用程式程式設計師</b>的證書，我擁有以下語言的知識<b>PHP、JavaScript 和 Lua</b> 作為遊戲程式語言。 <b>我對 Fullstack 或行動領域的工作或自由職業感興趣</b>，我也在學習 <b>Python</b> 以及未來的 <b>Ruby</b>。我了解 <b>React JS、React Native 和一點 NodeJS</b> 等技術，<b>Bootstrap、Materialize 和 SASS</b> 等前端框架，以及我所擁有的資料庫知識更多<b>MySQL< /b>的知識，我也有一些<b>MongoDB</b>的知識。"
+    },
+
+    "projects": {
+        "projects-title": "專案",
+        "projects-more-button": "更多項目",
+        
+        "projects-single": {
+            
+            "projects-single-prime_consultancy-title": "優質房地產諮詢 - 2022",
+            "projects-single-prime_consultancy-description": "開發了一個企業網站，為員工提供控制面板系統，產生 PDF 報告並將文件保存在資料庫中。使用的技術是<b>前端(HTML5、CSS3、JavaScript)、Bootstrap、PHP 和 MySQL 資料庫</b>。",
+
+            "projects-single-ibca_church-title": "IBCA 教會應用程式 - 2022",
+            "projects-single-ibca_church-description": "為我的教會創建了一個應用程序，使用 <b>React Native 和 Expo 平台</b> 將應用程式匯出到 <b>IOS 和 Android</b>。",
+
+            "projects-single-my_portfolio-title": "我的投資組合 - 2023",
+            "projects-single-my_portfolio-description": "你現在看到的網站是用純<b>前端</b>開發的, 也有自己的CSS框架, <b>我創建了一個基本的CSS框架, bootstrap風格</b>，但它可以工作並儲存很多行 CSS 程式碼。",
+
+            "projects-single-instagram_clone-title": "Instagram 複製 - 2023",
+            "projects-single-instagram_clone-description": "2019 年 Instagram 的一個非常基本且非常通用的克隆，在 <b>React</b> 中開發並託管在 Google 平台 <b>Firebase</b> 上。",
+
+            "projects-single-dentistry-title": "牙醫/牙科 - 2023",
+            "projects-single-dentistry-description": "一個展示牙醫工作的網站，使用 <b>Vanilla HTML 5 和 CSS 3</b> 創建。",
+
+            "projects-single-concessionaire-title": "特種車輛經銷店 - 2023",
+            "projects-single-concessionaire-description": "使用<b>PHP和前端</b>為經銷商開發了一個網站，可以輕鬆調整並出售給其他經銷商。"
+
+        }
+
+    },
+
+    "knowledge": {
+        "knowledge-title": "我的知識",
+        "knowledge-modal-button": "更多關於我的知識 <i class='fa-solid fa-plus'></i>"
+    },
+
+    "contact": {
+        "contact-call-to-action-text": "讓我們來聊聊吧？<br />給我發送電子郵件並<br /><a href='mailto:guilhermefortunato2008@gmail.com?subject=%E6%88%91%E5%80%91%E4%BE%86%E8%AB%87%E8%AB%87%E7%94%9F%E6%84%8F%E5%90%A7&body=你好%20吉列爾梅...' target='_blank'>輸入聯絡方式我。</a>"
+    },
+
+    "projects-modal": {
+        "projects-modal-pre-title": "專案",
+
+        "projects-modal-button-deployed": "專案已部署",
+        "projects-modal-button-repository": "Github 上的儲存庫",
+
+        "projects-modal-single": {
+
+            "projects-modal-single-prime_consultancy": {
+                "projects-modal-single-title": "優質房地產諮詢",
+                "projects-modal-single-tags": "網站 - 儀表板 - PDF 生成",
+                "projects-modal-single-description": "開發了一個具有<b>控制面板</b>和其他功能的複雜網站，將公司的流程和結果簡化了<b>100%</b>，使用的主要技術和庫是<b>前端</b>使用<b>JQuery和Bootstrap</b>作為庫，<b>後端</b>使用<b>FPDF (PDF生成器) 和PHPMailer (發送電子郵件) </b> 作為函式庫和<b>MySQL 資料庫</b>來儲存所有關於客戶、流程等的資訊。數據的問題。"
+            },
+
+            "projects-modal-single-ibca_church": {
+                "projects-modal-single-title": "IBCA 應用教堂",
+                "projects-modal-single-tags": "應用程式-資訊控制-日期和動態註釋",
+                "projects-modal-single-description": "為我參加的教會創建的一個應用，主要是為了記錄教會的日期和活動而開發的，參加教會<b>青年團</b>的成員也可以註冊，全部用<b>React Native</開發b> 使用<b>Expo</b>平台將應用程式匯出到<b>Android和IOS</b>。"
+            },
+
+            "projects-modal-single-my_portfolio": {
+                "projects-modal-single-title": "我的投資組合",
+                "projects-modal-single-tags": "網址 - 動畫 - 動態模態",
+                "projects-modal-single-description": "這是您目前所在的項目，使用 <b>Vanilla HTML5 和 CSS3</b> 開發，並使用 <b>JQuery</b> 來促進 <b>Javascript</b> 部分，它也是 A 類型創建了自己的“<b>框架</b>”和100% 原始CSS, 並創建了<b>主題</b>。使用 <b>Scroll Reveal</b> 庫創建了組合中的大部分動畫。"
+            },
+
+            "projects-modal-single-instagram_clone": {
+                "projects-modal-single-title": "Instagram 複製",
+                "projects-modal-single-tags": "網站 - React JS - 貼文 - 帳戶創建",
+                "projects-modal-single-description": "這個專案來自我在 <b>Danki Code</b> 上學習的 <b>Javascript</b> 課程，它非常簡單，但很有效，並且已經流傳了很多年。"
+            },
+
+            "projects-modal-single-dentistry": {
+                "projects-modal-single-title": "牙科",
+                "projects-modal-single-tags": "網站 - 靜態",
+                "projects-modal-single-description": "另一個專案也是開發的，來自 <b>Danki Code</b> 的<b>前端網站管理員</b>課程，但也可以輕鬆調整併創建可以出售的網站的新變體<b>牙科</b>，使用<b>Vanilla HTML5 和CSS3</b> 建立。"
+            },
+
+            "projects-modal-single-concessionaire": {
+                "projects-modal-single-title": "特種車經銷店",
+                "projects-modal-single-tags": "網站 - 多頁面 - 動態頁面加載",
+                "projects-modal-single-description": "該項目取自 <b>Danki Code</b> 的<b>後端</b>課程，這是一個稍微複雜的項目，採用了<b>前端</b>中開發的網站課程。 b> 進行了改進並實現了 <b>PHP</b>。"
+            }
+            
+        }
+    },
+
+    "knowledge-modal": {
+        "knowledge-modal-subtitle-courses": "課程和學校",
+        "knowledge-modal-courses":{
+
+            "knowledge-modal-courses-dankicode-title": "Danki 程式碼 - FullStack Master",
+            "knowledge-modal-courses-dankicode-description": "Danki Code 的 FullStack Master 包，其中包含<b>超過 25 門課程</b>，幫助您成為真正的 Web 開發人員，我的大部分 Web 知識都來自那裡。",
+
+            "knowledge-modal-courses-alura1-title": "Alura - 系統分析與開發",
+            "knowledge-modal-courses-alura1-description": "巴拉那州政府透過<b>新中等教育</b>提供的課程，了解了一些資料請求、瀑布模型等。",
+
+            "knowledge-modal-courses-alura2-title": "Alura - 初級遊戲開發",
+            "knowledge-modal-courses-alura2-description": "透過 2021 年舉辦的​​ <b>Edutech</b> 計劃，我參與並訪問了 Alura 課程，這些課程教授如何使用 <b>Scratch、JavaScript 和 GameMaker Studio</b> 開發基本遊戲。",
+
+            "knowledge-modal-courses-high_school-title": "系統分析與發展 - 新高中二年級 - Paraná",
+            "knowledge-modal-courses-high_school-description": "我目前正在新高中二年級學習<b>系統分析與發展</b>，總共持續三年。"
+
+        },
+
+        "knowledge-modal-subtitle-certificates": "證書",
+        "knowledge-modal-certificates":{
+
+            "knowledge-modal-certificates-programming_logic-title": "程式設計邏輯 - Danki 程式碼",
+            "knowledge-modal-certificates-programming_logic-description": "程式邏輯是程式設計世界中一切事物的基礎。",
+
+            "knowledge-modal-certificates-front_end-title": "前端 - Danki 程式碼",
+            "knowledge-modal-certificates-front_end-description": "教授從前端基礎到更高級概念的所有內容。",
+
+            "knowledge-modal-certificates-front_end2-title": "前端 2.0 - Danki 代碼",
+            "knowledge-modal-certificates-front_end2-description": "該課程以更現代的方式教授前端，使用最新的 <b>HTML 5</b> 標籤，例如 <b>header、section、footer 等</b>，也使用 <b>flexbox </b> 將<b>浮動</b>留在過去。",
+
+            "knowledge-modal-certificates-web_design-title": "網頁設計 - Danki 程式碼",
+            "knowledge-modal-certificates-web_design-description": "教授<b>使用者體驗 (UX)</b> 以及為您的企業創建美觀、引人注目且健康的設計的最佳方法。",
+
+            "knowledge-modal-certificates-javascript-title": "JavaScript - Danki 代碼",
+            "knowledge-modal-certificates-javascript-description": "一種著名且功能強大的程式語言，主要用於<b>Web開發</b>。",
+
+            "knowledge-modal-certificates-app_development-title": "行動開發 - Danki 代碼",
+            "knowledge-modal-certificates-app_development-description": "了解如何使用最著名的 <b>JavaScript 庫</b> 來開發適用於 <b>Android</b> 和 <b>IOS</b> 的應用程序，即 <b>React Native</b> >。",
+
+            "knowledge-modal-certificates-firebase-title": "火力基地 - Danki 代碼",
+            "knowledge-modal-certificates-firebase-description": "本課程教您如何使用 <b>Google</b> 強大的基於雲端的平台來託管您的應用程式。",
+
+            "knowledge-modal-certificates-php-title": "PHP - Danki 代碼",
+            "knowledge-modal-certificates-php-description": "教授 PHP 及其基礎知識和對該語言的深入了解。",
+
+            "knowledge-modal-certificates-database-title": "資料庫 - Danki 代碼",
+            "knowledge-modal-certificates-database-description": "一門教授主要使用的關係型和非關係型資料庫的課程，分別是 <b>MySQL</b> 和 <b>MongoDB</b>。",
+
+            "knowledge-modal-certificates-english_for_programmers-title": "程式設計師英語 - Danki 代碼",
+            "knowledge-modal-certificates-english_for_programmers-description": "學了一點英語更多是針對程式設計師和他們的技術概念。",
+
+            "knowledge-modal-certificates-alura_all_certificates-title": "所有證書 - Alura",
+            "knowledge-modal-certificates-alura_all_certificates-description": "我在 <b>Alura</b> 學習過程中所學的所有課程及其各自的工作量。"
+
+
+        },
+
+        "knowledge-modal-subtitle-idioms": "慣用語/語言",
+        "knowledge-modal-idioms":{
+            "idioms-brazilian-portuguese": "巴西葡萄牙語 (母語)",
+            "idioms-english-united-states": "美國英語",
+            "idioms-spanish": "西班牙語",
+            "idioms-italian": "義大利語"
+        }
+    },
+
+    "cookies": {
+        "cookies-text": "<b>Gui Dev</b> 使用 餅乾 來改善您在我們網站上的體驗。",
+
+        "cookies-accept-button": "我接受"
+    },
+
+    "footer": {
+        "footer-all-rights-reserved": "&copy; 2024 - 由 吉列爾梅·福圖納托·馬查多 開發和創建"
+    }
+
+}

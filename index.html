@@ -55,6 +55,17 @@
 		content="Venha conhecer meu portfólio e saber quem eu sou e com o que eu trabalho." />
 	<meta property="twitter:image" content="https://guifm.dev/public/assets/seo/og-image.jpg" />
 
+	<!-- Scripts -->
+	<script src="https://code.jquery.com/jquery-3.7.0.min.js"
+	integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.5/dist/js.cookie.min.js"></script>
+
+	<!-- Scripts > Fontawesome -->
+	<script src="https://kit.fontawesome.com/c092b4e18e.js" crossorigin="anonymous"></script>
+
+	<!-- Scripts > Header -->
+	<script type="text/javascript" src="/public/js/templates/header.js"></script>
+
 </head>
 
 <body>
@@ -72,15 +83,89 @@
 
 			<nav class="header-navigation navigation w80 flex">
 				<ul class="flex">
-					<li class="navigation-selected"><a href="#home" js-scrolltarget="js-scroll-home-top">Home</a></li>
-					<li><a href="#about-me" js-scrolltarget="js-scroll-about-me-text">Sobre Mim</a></li>
-					<li><a href="#projects" js-scrolltarget="js-scroll-projects-text">Projetos Criados</a></li>
-					<li><a href="#knowledge" js-scrolltarget="js-scroll-knowledge-text">Meu Conhecimento</a></li>
-					<li><a href="#contact" js-scrolltarget="js-scroll-contact-text">Contato</a></li>
+
+					<li class="navigation-selected">
+						<a href="#home" js-scrolltarget="js-scroll-home-top"
+							framework-language-element-key="navigation-home">
+							Home
+						</a>
+					</li>
+
+					<li>
+						<a href="#about-me" js-scrolltarget="js-scroll-about-me-text"
+							framework-language-element-key="navigation-about-me">
+							Sobre Mim
+						</a>
+					</li>
+
+					<li>
+						<a href="#projects" js-scrolltarget="js-scroll-projects-text"
+							framework-language-element-key="navigation-projects">
+							Projetos
+						</a>
+					</li>
+
+					<li>
+						<a href="#knowledge" js-scrolltarget="js-scroll-knowledge-text"
+							framework-language-element-key="navigation-knowledge">
+							Conhecimento
+						</a>
+					</li>
+
+					<li>
+						<a href="#contact" js-scrolltarget="js-scroll-contact-text"
+							framework-language-element-key="navigation-contact">
+							Contato
+						</a>
+					</li>
+
 				</ul>
 			</nav> <!-- Navigation -->
 
 			<div class="header-options w10 flex pos-relative">
+
+				<div class="languages-selector">
+
+					<button class="languages-select-button button" aria-labelledby="select button"
+						aria-haspopup="listbox" aria-expanded="false" aria-controls="select-dropdown">
+
+						<span class="languages-selected-language">
+							<img src="/public/assets/languages-icons/pt-BR.jpeg"
+								alt="Guilherme Fortunato Developer Português BR"
+								title="Guilherme Fortunato Developer Português BR" loading="lazy" />
+						</span>
+						<span class="languages-select-arrow"></span>
+
+					</button>
+
+					<ul class="languages-select-dropdown">
+
+						<li language="en-US">
+							<img src="/public/assets/languages-icons/en-US.jpeg"
+								alt="Guilherme Fortunato Developer English USA"
+								title="Guilherme Fortunato Developer English USA" loading="lazy" />
+						</li>
+
+						<li language="es-ES">
+							<img src="/public/assets/languages-icons/es-ES.jpeg" alt="Guilherme Fortunato Español ES"
+								title="Guilherme Fortunato Developer Español ES" loading="lazy" />
+						</li>
+
+						<li language="pt-BR">
+							<img src="/public/assets/languages-icons/pt-BR.jpeg"
+								alt="Guilherme Fortunato Developer Português BR"
+								title="Guilherme Fortunato Developer Português BR" loading="lazy" />
+						</li>
+
+						<li language="zh-HK">
+							<img src="/public/assets/languages-icons/zh-HK.jpeg"
+								alt="Guilherme Fortunato Developer 國語 HK" title="Guilherme Fortunato Developer 國語 HK"
+								loading="lazy" />
+						</li>
+
+					</ul>
+
+				</div> <!-- Languages Button -->
 
 				<button id="theme-changer" class="pos-relative button w50">
 					<i id="header-opt-light-theme" class="fa-solid fa-sun"></i>
@@ -97,13 +182,15 @@
 	</header> <!-- Header -->
 
 	<!-- Apresentation Section -->
-	<section class="section-apresentation">
+	<section class="apresentation">
 		<div class="container flex pad40">
 
 			<div class="apresentation-text w60">
 
-				<h2>Olá, eu sou o <span>Guilherme Fortunato</span></h2>
-				<p>Um garoto que <span>transforma</span> linhas de código em <span>soluções inovadoras.</span></p>
+				<h2 framework-language-element-key="apresentation-text-h2">Olá, eu sou o <span>Guilherme
+						Fortunato</span></h2>
+				<p framework-language-element-key="apresentation-text-p">Um garoto que <span>transforma</span> linhas de
+					código em <span>soluções inovadoras.</span></p>
 
 				<div class="apresentation-social_media">
 
@@ -120,7 +207,8 @@
 					</a>
 
 					<a href="mailto:guilhermefortunato2008@gmail.com?subject=Vamos%20Falar%20Sobre%20Negócios&body=Olá%20Guilherme..."
-						target="_blank">
+						target="_blank" framework-language-element-key="email-contact-link"
+						framework-language-contact-link="true">
 						<i class="fa-solid fa-envelope"></i>
 					</a>
 
@@ -131,7 +219,7 @@
 				<img src="public/assets/gui-photo-1-bg.png" alt="Guilherme Fortunato Desenvolvedor"
 					title="Guilherme Fortunato Desenvolvedor" loading="lazy" />
 
-				<h3>FullStack Developer</h3>
+				<h3 framework-language-element-key="apresentation-fullstack">Desenvolvedor FullStack</h3>
 			</div> <!-- Gui Image -->
 
 		</div> <!-- Container -->
@@ -147,7 +235,8 @@
 
 		<div class="container">
 
-			<h2 class="w100 center-element title-text" id="end-to-end-applications-text-animation">
+			<h2 class="w100 center-element title-text" id="end-to-end-applications-text-animation"
+				framework-language-element-key="end-to-end-applications-text">
 				Aplicações criadas e desenvolvidas de<br />
 				<span>Ponta a Ponta</span>
 			</h2>
@@ -168,15 +257,18 @@
 
 			<div class="about-me_text pad20">
 
-				<h2 id="js-scroll-about-me-text">Sobre Mim</h2>
+				<h2 id="js-scroll-about-me-text" framework-language-element-key="about-me-title">
+					Sobre Mim
+				</h2>
 
-				<p>
+				<p framework-language-element-key="about-me-text">
 					Olá, meu nome é Guilherme Fortunato Machado, atualmente tenho <b>16 anos</b> e moro no Paraná, desde
 					os 9 anos tive contato com programação e desenvolvimento de jogos, aos 12 anos criei meu primeiro
 					site, fiz o <b>Curso Fullstack da Danki Code</b> e hoje tenho certificados como <b>Desenvolvedor de
 						Games, Desenvolvedor Web e Programador de Aplicativos</b>, tenho conhecimento em linguagens como
 					<b>PHP, JavaScript e Lua</b> como linguagem de programação para games. <b>Tenho interesse em
-						trabalhos ou freelances na área Fullstack ou Mobile</b>, e também estou aprendendo <b>Python</b>
+						trabalhos ou freelances na área Fullstack ou Mobile</b>, e também estarei aprendendo
+					<b>Python</b>
 					e
 					futuramente <b>Ruby</b>. Tenho conhecimento em tecnologias como <b>React JS, React Native e um pouco
 						de NodeJS</b>, Frameworks Front-End como <b>Bootstrap, Materialize e SASS</b>, e
@@ -195,9 +287,12 @@
 	<section class="projects"> <!-- Projects -->
 		<div class="container pad40">
 
-			<h2 id="js-scroll-projects-text">Projetos Criados</h2>
+			<h2 id="js-scroll-projects-text" framework-language-element-key="projects-title">
+				Projetos
+			</h2>
 
 			<div class="projects-wrapper flex-column pad30">
+
 
 				<div class="projects-single flex pad20" data-project-info-title="Prime Assessoria Imobiliária"
 					data-project-info-image="/public/assets/projects-images/prime_assessoria_desktop_2.jpg"
@@ -212,7 +307,8 @@
 						fa-brands fa-php|
 						fa-solid fa-database
 					" data-project-info-deploy-link="https://www.caixaaquiprime.com.br/inicio/"
-					data-project-info-repository-link="null">
+					data-project-info-repository-link="null"
+					framework-language-element-key="projects-modal-single-prime_consultancy">
 
 					<div class="projects-single-image w45">
 						<img src="/public/assets/projects-images/prime_assessoria_desktop.jpg" alt="Project Image"
@@ -221,28 +317,34 @@
 
 					<div class="projects-single-text w55 pad20">
 
-						<h2>Prime Assessoria Imobiliária - 2022</h2>
-						<p>
+						<h2 framework-language-element-key="projects-single-prime_consultancy-title">
+							Prime Assessoria Imobiliária - 2022
+						</h2>
+						<p framework-language-element-key="projects-single-prime_consultancy-description">
 							Desenvolvido um site Corporativo, com sistema de painel de controle para os funcionários,
 							geração de relatórios em PDF e salvamento de documentos no banco de dados.
 							As tecnologias usadas foram <b>Front-End (HTML5, CSS3, JavaScript), Bootstrap, PHP e Banco
 								de Dados MySQL</b>.
 						</p>
 
-						<a href="#project-info" class="modal-toggle" modal-target="#project-info-modal">Saiba Mais</a>
+						<a href="#project-info" class="modal-toggle" modal-target="#project-info-modal"
+							framework-language-element-key="more-about-text">
+							Saiba Mais
+						</a>
 
 					</div>
 
 				</div> <!-- Projects Single -->
 
-				<div class="projects-single flex pad20" data-project-info-title="IBCA Church App"
+				<div class="projects-single flex pad20" data-project-info-title="Igreja IBCA App"
 					data-project-info-image="null"
 					data-project-info-tags="Aplicativo - Controle de Informações - Datas e Anotações Dinâmicas"
 					data-project-info-description="Um aplicativo criado para a igreja em que frequento, desenvolvido principalmente para ter como anotação as datas e eventos da igreja, também podendo se registrar membros que estão participando do <b>Grupo de Jovens</b> da igreja, desenvolvido tudo em <b>React Native</b> utilizando a plataforma do <b>Expo</b> para se exportar o aplicativo para <b>Android e IOS</b>."
 					data-project-info-technologies="
 						fa-brands fa-square-js|
 						fa-brands fa-react
-					" data-project-info-deploy-link="null" data-project-info-repository-link="null">
+					" data-project-info-deploy-link="null" data-project-info-repository-link="null"
+					framework-language-element-key="projects-modal-single-ibca_church">
 
 					<div class="projects-single-image w45">
 						<img src="/public/assets/projects-images/ibca_church_app.png" alt="Project Image"
@@ -251,13 +353,18 @@
 
 					<div class="projects-single-text w55 pad20">
 
-						<h2>IBCA Church App - 2022</h2>
-						<p>
+						<h2 framework-language-element-key="projects-single-ibca_church-title">
+							Igreja IBCA App - 2022
+						</h2>
+						<p framework-language-element-key="projects-single-ibca_church-description">
 							Criado um aplicativo para a minha igreja, usando <b>React Native e a plataforma do Expo</b>
 							para exportação do aplicativo para <b>IOS & Android</b>.
 						</p>
 
-						<a href="#project-info" class="modal-toggle" modal-target="#project-info-modal">Saiba Mais</a>
+						<a href="#project-info" class="modal-toggle" modal-target="#project-info-modal"
+							framework-language-element-key="more-about-text">
+							Saiba Mais
+						</a>
 
 					</div>
 
@@ -272,7 +379,8 @@
 						fa-brands fa-css3|
 						fa-brands fa-square-js
 					" data-project-info-deploy-link="https://guifm.dev/"
-					data-project-info-repository-link="https://github.com/DeepLakePR/My-Portfolio">
+					data-project-info-repository-link="https://github.com/DeepLakePR/My-Portfolio"
+					framework-language-element-key="projects-modal-single-my_portfolio">
 
 					<div class="projects-single-image w45">
 						<img src="/public/assets/projects-images/portfolio_desktop.jpg" alt="Project Image"
@@ -281,12 +389,19 @@
 
 					<div class="projects-single-text w55 pad20">
 
-						<h2>Meu Portfólio - 2023</h2>
-						<p>O site que você está vendo agora foi desenvolvido com o puro <b>Front-End</b> e também com
+						<h2 framework-language-element-key="projects-single-my_portfolio-title">
+							Meu Portfólio - 2023
+						</h2>
+						<p framework-language-element-key="projects-single-my_portfolio-description">
+							O site que você está vendo agora foi desenvolvido com o puro <b>Front-End</b> e também com
 							framework CSS próprio, <b>criei um framework CSS básico, estilo bootstrap</b>, mas que
-							funciona e que economiza muitas linhas de código CSS.</p>
+							funciona e que economiza muitas linhas de código CSS.
+						</p>
 
-						<a href="#project-info" class="modal-toggle" modal-target="#project-info-modal">Saiba Mais</a>
+						<a href="#project-info" class="modal-toggle" modal-target="#project-info-modal"
+							framework-language-element-key="more-about-text">
+							Saiba Mais
+						</a>
 
 					</div>
 
@@ -299,7 +414,8 @@
 					data-project-info-technologies="
 						fa-brands fa-square-js|
 						fa-brands fa-react
-					" data-project-info-deploy-link="https://instagram-clone-54b87.web.app/" data-project-info-repository-link="null">
+					" data-project-info-deploy-link="https://instagram-clone-54b87.web.app/" data-project-info-repository-link="null"
+					framework-language-element-key="projects-modal-single-instagram_clone">
 
 					<div class="projects-single-image w45">
 						<img src="/public/assets/projects-images/instagram_clone_desktop.jpg" alt="Project Image"
@@ -308,11 +424,18 @@
 
 					<div class="projects-single-text w55 pad20">
 
-						<h2>Instagram Clone - 2023</h2>
-						<p>Um clone bem básico e bem genérico do Instagram de 2019, desenvolvido em <b>React</b> e
-							hospedado na plataforma do Google <b>Firebase</b>.</p>
+						<h2 framework-language-element-key="projects-single-instagram_clone-title">
+							Instagram Clone - 2023
+						</h2>
+						<p framework-language-element-key="projects-single-instagram_clone-description">
+							Um clone bem básico e bem genérico do Instagram de 2019, desenvolvido em <b>React</b> e
+							hospedado na plataforma do Google <b>Firebase</b>.
+						</p>
 
-						<a href="#project-info" class="modal-toggle" modal-target="#project-info-modal">Saiba Mais</a>
+						<a href="#project-info" class="modal-toggle" modal-target="#project-info-modal"
+							framework-language-element-key="more-about-text">
+							Saiba Mais
+						</a>
 
 					</div>
 
@@ -326,7 +449,8 @@
 						fa-brands fa-html5|
 						fa-brands fa-css3
 					" data-project-info-deploy-link="null"
-					data-project-info-repository-link="https://github.com/DeepLakePR/Projeto_10_Dentista_2">
+					data-project-info-repository-link="https://github.com/DeepLakePR/Projeto_10_Dentista_2"
+					framework-language-element-key="projects-modal-single-dentistry">
 
 					<div class="projects-single-image w45">
 						<img src="/public/assets/projects-images/dentista_odontologia_desktop.png" alt="Project Image"
@@ -335,11 +459,17 @@
 
 					<div class="projects-single-text w55 pad20">
 
-						<h2>Dentista/Odontologia - 2023</h2>
-						<p>Um site mostrando o trabalho de uma odontologia, criado com <b>Vanilla HTML 5 & CSS 3</b>.
+						<h2 framework-language-element-key="projects-single-dentistry-title">
+							Dentista/Odontologia - 2023
+						</h2>
+						<p framework-language-element-key="projects-single-dentistry-description">
+							Um site mostrando o trabalho de uma odontologia, criado com <b>Vanilla HTML 5 & CSS 3</b>.
 						</p>
 
-						<a href="#project-info" class="modal-toggle" modal-target="#project-info-modal">Saiba Mais</a>
+						<a href="#project-info" class="modal-toggle" modal-target="#project-info-modal"
+							framework-language-element-key="more-about-text">
+							Saiba Mais
+						</a>
 
 					</div>
 
@@ -355,7 +485,8 @@
 						fa-brands fa-square-js|
 						fa-brands fa-php
 					" data-project-info-deploy-link="null"
-					data-project-info-repository-link="https://github.com/DeepLakePR/Projeto_06_Concessionaria_PHP">
+					data-project-info-repository-link="https://github.com/DeepLakePR/Projeto_06_Concessionaria_PHP"
+					framework-language-element-key="projects-modal-single-concessionaire">
 
 					<div class="projects-single-image w45">
 						<img src="/public/assets/projects-images/concessionaria_desktop.jpg" alt="Project Image"
@@ -364,18 +495,26 @@
 
 					<div class="projects-single-text w55 pad20">
 
-						<h2>Concessionária Veículos Especiais - 2023</h2>
-						<p>Desenvolvido um site para concessionárias usando <b>PHP e Front-End</b>, pode ser facilmente
-							adaptado e vendido para outras concessionárias.</p>
+						<h2 framework-language-element-key="projects-single-concessionaire-title">
+							Concessionária Veículos Especiais - 2023
+						</h2>
+						<p framework-language-element-key="projects-single-concessionaire-description">
+							Desenvolvido um site para concessionárias usando <b>PHP e Front-End</b>, pode ser facilmente
+							adaptado e vendido para outras concessionárias.
+						</p>
 
-						<a href="#project-info" class="modal-toggle" modal-target="#project-info-modal">Saiba Mais</a>
+						<a href="#project-info" class="modal-toggle" modal-target="#project-info-modal"
+							framework-language-element-key="more-about-text">
+							Saiba Mais
+						</a>
 
 					</div>
 
 				</div> <!-- Projects Single -->
 
+
 				<div class="projects-more-button">
-					<h3>Mais Projetos</h3>
+					<h3 framework-language-element-key="projects-more-button">Mais Projetos</h3>
 
 					<i id="script_projects-more-button" class="fa-solid fa-chevron-down"></i>
 				</div>
@@ -388,7 +527,9 @@
 	<!-- Technologies Section -->
 	<section class="technologies pad20"> <!-- Technologies -->
 
-		<h2 id="js-scroll-knowledge-text">Meu Conhecimento</h2>
+		<h2 id="js-scroll-knowledge-text" framework-language-element-key="knowledge-title">
+			Meu Conhecimento
+		</h2>
 
 		<div class="container flex pad20">
 
@@ -402,15 +543,15 @@
 
 					<div class="technologies-single-box-nivel flex pad15">
 
-						<p>Iniciante</p>
+						<p framework-language-element-key="beginner-text">Iniciante</p>
 
 						<div class="tech-single-box-nivel-custom_line"></div>
 
-						<p>Intermediário</p>
+						<p framework-language-element-key="intermediate-text">Intermediário</p>
 
 						<div class="tech-single-box-nivel-custom_line tech-single-box-nivel-current"></div>
 
-						<p>Experiente</p>
+						<p framework-language-element-key="advanced-text">Experiente</p>
 
 					</div> <!-- Technologies Single Box Nivel -->
 				</div> <!-- Technologies Single Box -->
@@ -423,15 +564,15 @@
 
 					<div class="technologies-single-box-nivel flex pad15">
 
-						<p>Iniciante</p>
+						<p framework-language-element-key="beginner-text">Iniciante</p>
 
 						<div class="tech-single-box-nivel-custom_line"></div>
 
-						<p>Intermediário</p>
+						<p framework-language-element-key="intermediate-text">Intermediário</p>
 
 						<div class="tech-single-box-nivel-custom_line tech-single-box-nivel-current"></div>
 
-						<p>Experiente</p>
+						<p framework-language-element-key="advanced-text">Experiente</p>
 
 					</div> <!-- Technologies Single Box Nivel -->
 				</div> <!-- Technologies Single Box -->
@@ -444,15 +585,15 @@
 
 					<div class="technologies-single-box-nivel flex pad15">
 
-						<p>Iniciante</p>
+						<p framework-language-element-key="beginner-text">Iniciante</p>
 
 						<div class="tech-single-box-nivel-custom_line tech-single-box-nivel-current"></div>
 
-						<p>Intermediário</p>
+						<p framework-language-element-key="intermediate-text">Intermediário</p>
 
 						<div class="tech-single-box-nivel-custom_line"></div>
 
-						<p>Experiente</p>
+						<p framework-language-element-key="advanced-text">Experiente</p>
 
 					</div> <!-- Technologies Single Box Nivel -->
 				</div> <!-- Technologies Single Box -->
@@ -465,15 +606,15 @@
 
 					<div class="technologies-single-box-nivel flex pad15">
 
-						<p>Iniciante</p>
+						<p framework-language-element-key="beginner-text">Iniciante</p>
 
 						<div class="tech-single-box-nivel-custom_line"></div>
 
-						<p>Intermediário</p>
+						<p framework-language-element-key="intermediate-text">Intermediário</p>
 
 						<div class="tech-single-box-nivel-custom_line"></div>
 
-						<p>Experiente</p>
+						<p framework-language-element-key="advanced-text">Experiente</p>
 
 					</div> <!-- Technologies Single Box Nivel -->
 				</div> <!-- Technologies Single Box -->
@@ -486,15 +627,15 @@
 
 					<div class="technologies-single-box-nivel flex pad15">
 
-						<p>Iniciante</p>
+						<p framework-language-element-key="beginner-text">Iniciante</p>
 
 						<div class="tech-single-box-nivel-custom_line"></div>
 
-						<p>Intermediário</p>
+						<p framework-language-element-key="intermediate-text">Intermediário</p>
 
 						<div class="tech-single-box-nivel-custom_line"></div>
 
-						<p>Experiente</p>
+						<p framework-language-element-key="advanced-text">Experiente</p>
 
 					</div> <!-- Technologies Single Box Nivel -->
 				</div> <!-- Technologies Single Box -->
@@ -507,15 +648,15 @@
 
 					<div class="technologies-single-box-nivel flex pad15">
 
-						<p>Iniciante</p>
+						<p framework-language-element-key="beginner-text">Iniciante</p>
 
 						<div class="tech-single-box-nivel-custom_line tech-single-box-nivel-current"></div>
 
-						<p>Intermediário</p>
+						<p framework-language-element-key="intermediate-text">Intermediário</p>
 
 						<div class="tech-single-box-nivel-custom_line"></div>
 
-						<p>Experiente</p>
+						<p framework-language-element-key="advanced-text">Experiente</p>
 
 					</div> <!-- Technologies Single Box Nivel -->
 				</div> <!-- Technologies Single Box -->
@@ -528,15 +669,15 @@
 
 					<div class="technologies-single-box-nivel flex pad15">
 
-						<p>Iniciante</p>
+						<p framework-language-element-key="beginner-text">Iniciante</p>
 
 						<div class="tech-single-box-nivel-custom_line tech-single-box-nivel-current"></div>
 
-						<p>Intermediário</p>
+						<p framework-language-element-key="intermediate-text">Intermediário</p>
 
 						<div class="tech-single-box-nivel-custom_line"></div>
 
-						<p>Experiente</p>
+						<p framework-language-element-key="advanced-text">Experiente</p>
 
 					</div> <!-- Technologies Single Box Nivel -->
 				</div> <!-- Technologies Single Box -->
@@ -549,22 +690,22 @@
 
 					<div class="technologies-single-box-nivel flex pad15">
 
-						<p>Iniciante</p>
+						<p framework-language-element-key="beginner-text">Iniciante</p>
 
 						<div class="tech-single-box-nivel-custom_line"></div>
 
-						<p>Intermediário</p>
+						<p framework-language-element-key="intermediate-text">Intermediário</p>
 
 						<div class="tech-single-box-nivel-custom_line"></div>
 
-						<p>Experiente</p>
+						<p framework-language-element-key="advanced-text">Experiente</p>
 
 					</div> <!-- Technologies Single Box Nivel -->
 				</div> <!-- Technologies Single Box -->
 
 				<div class="technologies-more-button">
 					<button class="button flex pad10 knowledge-modal-toggle" id="modal-toggle"
-						modal-target="#knowledge-modal">
+						modal-target="#knowledge-modal" framework-language-element-key="knowledge-modal-button">
 						Mais Sobre Meu Conhecimento
 						<i class="fa-solid fa-plus"></i>
 					</button>
@@ -586,36 +727,16 @@
 
 			<div class="contact-bg_opacity"></div>
 
-			<h2 id="js-scroll-contact-text">Vamos Conversar?<br />Me mande um e-mail e<br /><a
-					href="mailto:guilhermefortunato2008@gmail.com?subject=Vamos%20Falar%20Sobre%20Negócios&body=Olá%20Guilherme...">Entre
-					Em Contato Comigo.</a></h2>
+			<h2 id="js-scroll-contact-text" framework-language-element-key="contact-call-to-action-text">
+				Vamos Conversar?<br />Me mande um e-mail e<br />
+				<a href="mailto:guilhermefortunato2008@gmail.com?subject=Vamos%20Falar%20Sobre%20Negócios&body=Olá%20Guilherme..."
+					target="_blank">
+					Entre Em Contato Comigo.
+				</a>
+			</h2>
 
 		</div> <!-- Container -->
 	</section> <!-- Contact -->
-
-	<!-- Cookies Wrapper -->
-	<div class="cookies-privay-wrapper">
-		<div class="container pad10 flex-column">
-
-			<div class="cookies-wrapper-icon">
-				<i class="fa-solid fa-cookie-bite"></i>
-			</div>
-
-			<div class="cookies-wrapper-text text-center">
-				<p>
-					O <b>Gui Dev</b> utiliza cookies para melhorar sua experiência em nosso website.
-				</p>
-			</div>
-
-			<div class="cookies-wrapper-actions flex">
-				<button type="button" class="cookies-wrapper-actions-button-agree">Eu Aceito</button>
-
-				<a href="https://www.kaspersky.com.br/resource-center/definitions/cookies" target="_blank">Saiba
-					Mais</a>
-			</div>
-
-		</div> <!-- Container -->
-	</div> <!-- Cookies Wrapper -->
 
 	<!------------------------>
 	<!-- Modals -->
@@ -626,7 +747,7 @@
 
 			<button class="button modal-close"><i class="fa-solid fa-x"></i></button>
 
-			<h2 class="modal-title w100 text-center">Projeto ${PROJECT_TITLE}</h2>
+			<h2 class="modal-title w100 text-center">${PROJECT_TITLE}</h2>
 
 			<div class="project-info-modal-content w100 flex pad10">
 
@@ -654,12 +775,14 @@
 				<div class="project-info-modal-footer-buttons project-info-modal-div w100 flex">
 
 					<a href="#project-info-deployed" target="_self"
-						class="project-info-modal-button project-info-modal-button-deployed ahref-disabled">
+						class="project-info-modal-button project-info-modal-button-deployed ahref-disabled"
+						framework-language-element-key="projects-modal-button-deployed">
 						Projeto no Ar
 					</a>
 
 					<a href="#project-info-repository" target="_self"
-						class="project-info-modal-button project-info-modal-button-repository ahref-disabled">
+						class="project-info-modal-button project-info-modal-button-repository ahref-disabled"
+						framework-language-element-key="projects-modal-button-repository">
 						Repositório no Github
 					</a>
 
@@ -677,12 +800,16 @@
 
 			<button class="button modal-close"><i class="fa-solid fa-x"></i></button>
 
-			<h2 class="modal-title w100 text-center">Meu Conhecimento</h2>
+			<h2 class="modal-title w100 text-center" framework-language-element-key="knowledge-title">
+				Meu Conhecimento
+			</h2>
 
 			<!-- Courses -->
 			<div class="modal-knowledge modal-knowledge-courses flex">
 
-				<h3 class="modal-knowledge-subtitle">Cursos & Escolas</h3>
+				<h3 class="modal-knowledge-subtitle" framework-language-element-key="knowledge-modal-subtitle-courses">
+					Cursos & Escolas
+				</h3>
 
 				<!-- Modal Box Single -->
 				<div class="modal-knowledge-box-single">
@@ -696,13 +823,17 @@
 
 					<div class="modal-knowledge-box-single-text">
 
-						<h3>Danki Code - FullStack Master</h3>
+						<h3 framework-language-element-key="knowledge-modal-courses-dankicode-title">
+							Danki Code - FullStack Master
+						</h3>
 
 						<hr class="hr-horizontal" />
 
-						<p>Pacote FullStack Master da Danki Code onde dentro dele possuem <b>mais de 25 cursos</b> te
+						<p framework-language-element-key="knowledge-modal-courses-dankicode-description">
+							Pacote FullStack Master da Danki Code onde dentro dele possuem <b>mais de 25 cursos</b> te
 							preparando pra ser um verdadeiro desenvolvedor web, grande parte do meu conhecimento web
-							veio de lá.</p>
+							veio de lá.
+						</p>
 
 					</div> <!-- Text -->
 
@@ -720,12 +851,16 @@
 
 					<div class="modal-knowledge-box-single-text">
 
-						<h3>Alura - Análise e Desenvolvimento de Sistemas</h3>
+						<h3 framework-language-element-key="knowledge-modal-courses-alura1-title">
+							Alura - Análise e Desenvolvimento de Sistemas
+						</h3>
 
 						<hr class="hr-horizontal" />
 
-						<p>Um curso ofertado pelo governo do Paraná através do <b>Novo Ensino médio</b>, aprendi um
-							pouco sobre requisição de dados, modelo cascata, etc.</p>
+						<p framework-language-element-key="knowledge-modal-courses-alura1-description">
+							Um curso ofertado pelo governo do Paraná através do <b>Novo Ensino médio</b>, aprendi um
+							pouco sobre requisição de dados, modelo cascata, etc.
+						</p>
 
 					</div> <!-- Text -->
 
@@ -743,13 +878,17 @@
 
 					<div class="modal-knowledge-box-single-text">
 
-						<h3>Alura - Desenvolvimento Iniciante de Games</h3>
+						<h3 framework-language-element-key="knowledge-modal-courses-alura2-title">
+							Alura - Desenvolvimento Iniciante de Games
+						</h3>
 
 						<hr class="hr-horizontal" />
 
-						<p>Através do programa <b>Edutech</b> que aconteceu em 2021, eu participei e tive acesso à
+						<p framework-language-element-key="knowledge-modal-courses-alura2-description">
+							Através do programa <b>Edutech</b> que aconteceu em 2021, eu participei e tive acesso à
 							cursos da Alura que ensinavam como desenvolver jogos básicos usando <b>Scratch, JavaScript &
-								GameMaker Studio</b>.</p>
+								GameMaker Studio</b>.
+						</p>
 
 					</div> <!-- Text -->
 
@@ -768,12 +907,16 @@
 
 					<div class="modal-knowledge-box-single-text">
 
-						<h3>Análise e Desenvolvimento de Sistemas - Novo Ensino Médio 2º Ano - Paraná</h3>
+						<h3 framework-language-element-key="knowledge-modal-courses-high_school-title">
+							Análise e Desenvolvimento de Sistemas - Novo Ensino Médio 2º Ano - Paraná
+						</h3>
 
 						<hr class="hr-horizontal" />
 
-						<p>Estou atualmente no 2º ano do Novo Ensino Médio cursando o técnico de <b>Análise e
-								Desenvolvimento de Sistemas</b> que tem uma duração total de 3 anos.</p>
+						<p framework-language-element-key="knowledge-modal-courses-high_school-description">
+							Estou atualmente no 2º ano do Novo Ensino Médio cursando o técnico de <b>Análise e
+								Desenvolvimento de Sistemas</b> que tem uma duração total de 3 anos.
+						</p>
 
 					</div> <!-- Text -->
 
@@ -786,7 +929,10 @@
 			<!-- Certificates -->
 			<div class="modal-knowledge modal-knowledge-certificates flex">
 
-				<h3 class="modal-knowledge-subtitle">Certificados</h3>
+				<h3 class="modal-knowledge-subtitle"
+					framework-language-element-key="knowledge-modal-subtitle-certificates">
+					Certificados
+				</h3>
 
 				<!-- Modal Box Single -->
 				<div class="modal-knowledge-box-single">
@@ -801,14 +947,19 @@
 
 					<div class="modal-knowledge-box-single-text">
 
-						<h3>Lógica de Programação - Danki Code</h3>
+						<h3 framework-language-element-key="knowledge-modal-certificates-programming_logic-title">Lógica
+							de Programação - Danki Code</h3>
 
 						<hr class="hr-horizontal" />
 
-						<p>A lógica de programação é a base de tudo no mundo da programação.</p>
+						<p framework-language-element-key="knowledge-modal-certificates-programming_logic-description">
+							A lógica de programação é a base de tudo no mundo da programação.
+						</p>
 
 						<a href="https://cursos.dankicode.com/api/certificados/698378c8-dc05-404c-80ab-cc738b212194"
-							target="_blank">Link Certificado</a>
+							target="_blank" framework-language-element-key="certified-link">
+							Link Certificado
+						</a>
 
 					</div> <!-- Text -->
 
@@ -826,14 +977,19 @@
 
 					<div class="modal-knowledge-box-single-text">
 
-						<h3>Front-End - Danki Code</h3>
+						<h3 framework-language-element-key="knowledge-modal-certificates-front_end-title">Front-End -
+							Danki Code</h3>
 
 						<hr class="hr-horizontal" />
 
-						<p>Ensinando desde o básico e os fundamentos do Front-End até conceitos mais avançados.</p>
+						<p framework-language-element-key="knowledge-modal-certificates-front_end-description">
+							Ensinando desde o básico e os fundamentos do Front-End até conceitos mais avançados.
+						</p>
 
 						<a href="https://cursos.dankicode.com/api/certificados/03b47828-aab0-4fd6-9b1b-d7f07f114fbc"
-							target="_blank">Link Certificado</a>
+							target="_blank" framework-language-element-key="certified-link">
+							Link Certificado
+						</a>
 
 					</div> <!-- Text -->
 
@@ -851,16 +1007,21 @@
 
 					<div class="modal-knowledge-box-single-text">
 
-						<h3>Front-End 2.0 - Danki Code</h3>
+						<h3 framework-language-element-key="knowledge-modal-certificates-front_end2-title">Front-End 2.0
+							- Danki Code</h3>
 
 						<hr class="hr-horizontal" />
 
-						<p>O curso ensinava o Front-End de uma forma mais moderna, usando as tags mais recentes do
+						<p framework-language-element-key="knowledge-modal-certificates-front_end2-description">
+							O curso ensinava o Front-End de uma forma mais moderna, usando as tags mais recentes do
 							<b>HTML 5</b> como <b>header, section, footer, etc</b> e também usando <b>flexbox</b>
-							deixando o <b>float</b> para o passado.</p>
+							deixando o <b>float</b> para o passado.
+						</p>
 
 						<a href="https://cursos.dankicode.com/api/certificados/82b8737b-07f4-4fdf-b9b5-c1a18194fa3a"
-							target="_blank">Link Certificado</a>
+							target="_blank" framework-language-element-key="certified-link">
+							Link Certificado
+						</a>
 
 					</div> <!-- Text -->
 
@@ -878,15 +1039,21 @@
 
 					<div class="modal-knowledge-box-single-text">
 
-						<h3>Design Web - Danki Code</h3>
+						<h3 framework-language-element-key="knowledge-modal-certificates-web_design-title">Design Web -
+							Danki Code</h3>
 
 						<hr class="hr-horizontal" />
 
-						<p>Ensinado sobre <b>User Experience (UX)</b> e as melhores formas de se criar um design bonito,
-							chamativo e saudável para seu negócio.</p>
+						<p framework-language-element-key="knowledge-modal-certificates-web_design-description">
+							Ensinado sobre <b>User Experience (UX)</b> e as melhores formas de se criar um design
+							bonito,
+							chamativo e saudável para seu negócio.
+						</p>
 
 						<a href="https://cursos.dankicode.com/api/certificados/e0a7bc00-afda-4e26-9976-bd17ae1e3c3e"
-							target="_blank">Link Certificado</a>
+							target="_blank" framework-language-element-key="certified-link">
+							Link Certificado
+						</a>
 
 					</div> <!-- Text -->
 
@@ -904,15 +1071,20 @@
 
 					<div class="modal-knowledge-box-single-text">
 
-						<h3>JavaScript - Danki Code</h3>
+						<h3 framework-language-element-key="knowledge-modal-certificates-javascript-title">JavaScript -
+							Danki Code</h3>
 
 						<hr class="hr-horizontal" />
 
-						<p>Uma linguagem de programação famosa e poderosa usada principalmene no <b>Desenvolvimento
-								Web</b>.</p>
+						<p framework-language-element-key="knowledge-modal-certificates-javascript-description">
+							Uma linguagem de programação famosa e poderosa usada principalmente no <b>Desenvolvimento
+								Web</b>.
+						</p>
 
 						<a href="https://cursos.dankicode.com/api/certificados/8b9217e1-bae6-4cc8-ada5-d719a2ec237c"
-							target="_blank">Link Certificado</a>
+							target="_blank" framework-language-element-key="certified-link">
+							Link Certificado
+						</a>
 
 					</div> <!-- Text -->
 
@@ -931,16 +1103,22 @@
 
 					<div class="modal-knowledge-box-single-text">
 
-						<h3>Desenvolvimento de Aplicativos - Danki Code</h3>
+						<h3 framework-language-element-key="knowledge-modal-certificates-app_development-title">
+							Desenvolvimento de Aplicativos - Danki Code
+						</h3>
 
 						<hr class="hr-horizontal" />
 
-						<p>Aprendido como desenvolver aplicativos usando a <b>Biblioteca JavaScript</b> mais famosa para
+						<p framework-language-element-key="knowledge-modal-certificates-app_development-description">
+							Aprendido como desenvolver aplicativos usando a <b>Biblioteca JavaScript</b> mais famosa
+							para
 							se desenvolver aplicativos para <b>Android</b> e <b>IOS</b> que seria o <b>React Native</b>.
 						</p>
 
 						<a href="https://cursos.dankicode.com/api/certificados/942a30a5-5dfb-4b7f-808e-d2ba138e0e8f"
-							target="_blank">Link Certificado</a>
+							target="_blank" framework-language-element-key="certified-link">
+							Link Certificado
+						</a>
 
 					</div> <!-- Text -->
 
@@ -958,15 +1136,20 @@
 
 					<div class="modal-knowledge-box-single-text">
 
-						<h3>Firebase - Danki Code</h3>
+						<h3 framework-language-element-key="knowledge-modal-certificates-firebase-title">Firebase -
+							Danki Code</h3>
 
 						<hr class="hr-horizontal" />
 
-						<p>O curso ensinava como hospedar suas aplicações usando a poderosa plataforma baseada em nuvem
-							do <b>Google</b>.</p>
+						<p framework-language-element-key="knowledge-modal-certificates-firebase-description">
+							O curso ensina como hospedar suas aplicações usando a poderosa plataforma baseada em nuvem
+							do <b>Google</b>.
+						</p>
 
 						<a href="https://cursos.dankicode.com/api/certificados/d78c0fc7-afb1-4462-8a74-422386517a62"
-							target="_blank">Link Certificado</a>
+							target="_blank" framework-language-element-key="certified-link">
+							Link Certificado
+						</a>
 
 					</div> <!-- Text -->
 
@@ -984,14 +1167,18 @@
 
 					<div class="modal-knowledge-box-single-text">
 
-						<h3>PHP - Danki Code</h3>
+						<h3 framework-language-element-key="knowledge-modal-certificates-php-title">PHP - Danki Code
+						</h3>
 
 						<hr class="hr-horizontal" />
 
-						<p>Ensinado sobre PHP, seus fundamentos e aprofundamento sobre a linguagem.</p>
+						<p framework-language-element-key="knowledge-modal-certificates-php-description">Ensinado sobre
+							PHP, seus fundamentos e aprofundamento sobre a linguagem.</p>
 
 						<a href="https://cursos.dankicode.com/api/certificados/7b0a58e0-ec71-4ab3-accf-7bfc62b0741f"
-							target="_blank">Link Certificado</a>
+							target="_blank" framework-language-element-key="certified-link">
+							Link Certificado
+						</a>
 
 					</div> <!-- Text -->
 
@@ -1009,15 +1196,20 @@
 
 					<div class="modal-knowledge-box-single-text">
 
-						<h3>Banco De Dados - Danki Code</h3>
+						<h3 framework-language-element-key="knowledge-modal-certificates-database-title">Banco De Dados
+							- Danki Code</h3>
 
 						<hr class="hr-horizontal" />
 
-						<p>Um curso que ensinava os principais banco de dados usados relacional e não relacional que
-							seriam respectivamente <b>MySQL</b> e <b>MongoDB</b>.</p>
+						<p framework-language-element-key="knowledge-modal-certificates-database-description">
+							Um curso que ensina os principais banco de dados usados relacional e não relacional que
+							seriam respectivamente <b>MySQL</b> e <b>MongoDB</b>.
+						</p>
 
 						<a href="https://cursos.dankicode.com/api/certificados/763b6932-7e83-49da-9817-79713fa4f342"
-							target="_blank">Link Certificado</a>
+							target="_blank" framework-language-element-key="certified-link">
+							Link Certificado
+						</a>
 
 					</div> <!-- Text -->
 
@@ -1036,16 +1228,24 @@
 
 					<div class="modal-knowledge-box-single-text">
 
-						<h3>Inglês Para Programadores - Danki Code</h3>
+						<h3 framework-language-element-key="knowledge-modal-certificates-english_for_programmers-title">
+							Inglês Para Programadores - Danki Code
+						</h3>
 
 						<hr class="hr-horizontal" />
 
-						<p>Aprendido um pouco do inglês mais voltado para programadores e seus conceitos.</p>
+						<p
+							framework-language-element-key="knowledge-modal-certificates-english_for_programmers-description">
+							Aprendido um pouco do inglês mais voltado para programadores e seus conceitos técnicos.
+						</p>
 
 						<a href="https://cursos.dankicode.com/api/certificados/ee5d9a94-0e20-45e7-969b-bc68648fca53"
-							target="_blank">Link Certificado</a>
+							target="_blank" framework-language-element-key="certified-link">
+							Link Certificado
+						</a>
 
 					</div> <!-- Text -->
+
 
 				</div> <!-- Modal Box Single -->
 
@@ -1062,15 +1262,23 @@
 
 					<div class="modal-knowledge-box-single-text">
 
-						<h3>Alura - Todos os Certificados</h3>
+						<h3 framework-language-element-key="knowledge-modal-certificates-alura_all_certificates-title">
+							Todos os Certificados - Alura
+						</h3>
 
 						<hr class="hr-horizontal" />
 
-						<p>Todos os cursos e seus respectivos certificados ao longo de toda minha jornada estudando na
-							<b>Alura</b>.</p>
+						<p
+							framework-language-element-key="knowledge-modal-certificates-alura_all_certificates-description">
+							Todos os cursos feitos e suas respectivas cargas horárias ao longo de toda minha jornada
+							estudando na
+							<b>Alura</b>.
+						</p>
 
 						<a href="https://cursos.alura.com.br/user/guilherme-fortunato-machado/fullCertificate/918a8de5a99bf26f9b69462b5d300c8d"
-							target="_blank">Link Certificado</a>
+							target="_blank" framework-language-element-key="certified-link">
+							Link Certificado
+						</a>
 
 					</div> <!-- Text -->
 
@@ -1083,7 +1291,9 @@
 			<!-- Idioms -->
 			<div class="modal-knowledge modal-knowledge-idioms flex">
 
-				<h3 class="modal-knowledge-subtitle">Idiomas</h3>
+				<h3 class="modal-knowledge-subtitle" framework-language-element-key="knowledge-modal-subtitle-idioms">
+					Idiomas
+				</h3>
 
 				<!-- Modal Custom Box Single -->
 				<div class="modal-knowledge-custom-box-single w100 flex">
@@ -1098,23 +1308,25 @@
 
 					<div class="modal-knowledge-custom-box-single-text flex-column w70">
 
-						<h3>Português Brasileiro (Nativo)</h3>
+						<h3 framework-language-element-key="idioms-brazilian-portuguese">Português Brasileiro (Nativo)
+						</h3>
 
 						<hr class="hr-horizontal" />
 
 						<div class="modal-knowledge-idioms-nivel flex pad15">
 
-							<p>Iniciante</p>
+							<p framework-language-element-key="beginner-text">Iniciante</p>
 
 							<div class="modal-knowledge-idioms-nivel-custom_line modal-knowledge-idioms-nivel-fill">
 							</div>
 
-							<p>Intermediário</p>
+							<p framework-language-element-key="intermediate-text">Intermediário</p>
 
 							<div class="modal-knowledge-idioms-nivel-custom_line modal-knowledge-idioms-nivel-fill">
 							</div>
 
-							<p class="modal-knowledge-idioms-nivel-fill">Avançado</p>
+							<p framework-language-element-key="advanced-text" class="modal-knowledge-idioms-nivel-fill">
+								Avançado</p>
 
 						</div> <!-- Modal Knowledge Idioms Nivel -->
 
@@ -1134,23 +1346,24 @@
 
 					<div class="modal-knowledge-custom-box-single-text flex-column w70">
 
-						<h3>Inglês Estados Unidos</h3>
+						<h3 framework-language-element-key="idioms-english-united-states">Inglês Estados Unidos</h3>
 
 						<hr class="hr-horizontal" />
 
 						<div class="modal-knowledge-idioms-nivel flex pad15">
 
-							<p>Iniciante</p>
+							<p framework-language-element-key="beginner-text">Iniciante</p>
 
 							<div class="modal-knowledge-idioms-nivel-custom_line modal-knowledge-idioms-nivel-fill">
 							</div>
 
-							<p class="modal-knowledge-idioms-nivel-fill">Intermediário</p>
+							<p framework-language-element-key="intermediate-text"
+								class="modal-knowledge-idioms-nivel-fill">Intermediário</p>
 
 							<div class="modal-knowledge-idioms-nivel-custom_line modal-knowledge-idioms-nivel-midfill">
 							</div>
 
-							<p>Avançado</p>
+							<p framework-language-element-key="advanced-text">Avançado</p>
 
 						</div> <!-- Modal Knowledge Idioms Nivel -->
 
@@ -1170,22 +1383,23 @@
 
 					<div class="modal-knowledge-custom-box-single-text flex-column w70">
 
-						<h3>Espanhol</h3>
+						<h3 framework-language-element-key="idioms-spanish">Espanhol</h3>
 
 						<hr class="hr-horizontal" />
 
 						<div class="modal-knowledge-idioms-nivel flex pad15">
 
-							<p class="modal-knowledge-idioms-nivel-fill">Iniciante</p>
+							<p framework-language-element-key="beginner-text" class="modal-knowledge-idioms-nivel-fill">
+								Iniciante</p>
 
 							<div class="modal-knowledge-idioms-nivel-custom_line modal-knowledge-idioms-nivel-midfill">
 							</div>
 
-							<p>Intermediário</p>
+							<p framework-language-element-key="intermediate-text">Intermediário</p>
 
 							<div class="modal-knowledge-idioms-nivel-custom_line"></div>
 
-							<p>Avançado</p>
+							<p framework-language-element-key="advanced-text">Avançado</p>
 
 						</div> <!-- Modal Knowledge Idioms Nivel -->
 
@@ -1205,22 +1419,23 @@
 
 					<div class="modal-knowledge-custom-box-single-text flex-column w70">
 
-						<h3>Italiano</h3>
+						<h3 framework-language-element-key="idioms-italian">Italiano</h3>
 
 						<hr class="hr-horizontal" />
 
 						<div class="modal-knowledge-idioms-nivel flex pad15">
 
-							<p class="modal-knowledge-idioms-nivel-fill">Iniciante</p>
+							<p framework-language-element-key="beginner-text" class="modal-knowledge-idioms-nivel-fill">
+								Iniciante</p>
 
 							<div class="modal-knowledge-idioms-nivel-custom_line modal-knowledge-idioms-nivel-midfill">
 							</div>
 
-							<p>Intermediário</p>
+							<p framework-language-element-key="intermediate-text">Intermediário</p>
 
 							<div class="modal-knowledge-idioms-nivel-custom_line"></div>
 
-							<p>Avançado</p>
+							<p framework-language-element-key="advanced-text">Avançado</p>
 
 						</div> <!-- Modal Knowledge Idioms Nivel -->
 
@@ -1236,6 +1451,39 @@
 	<!-- End Modals -->
 	<!------------------------>
 
+	<!-- Cookies Wrapper -->
+	<div class="cookies-privay-wrapper">
+		<div class="container pad10 flex-column">
+
+			<div class="cookies-wrapper-icon">
+				<i class="fa-solid fa-cookie-bite"></i>
+			</div>
+
+			<div class="cookies-wrapper-text text-center">
+
+				<p framework-language-element-key="cookies-text">
+					O <b>Gui Dev</b> utiliza cookies para melhorar sua experiência em nosso website.
+				</p>
+
+			</div>
+
+			<div class="cookies-wrapper-actions flex">
+
+				<button type="button" class="cookies-wrapper-actions-button-agree"
+					framework-language-element-key="cookies-accept-button">
+					Eu Aceito
+				</button>
+
+				<a href="https://www.kaspersky.com.br/resource-center/definitions/cookies" target="_blank"
+					framework-language-element-key="more-about-text">
+					Saiba Mais
+				</a>
+
+			</div>
+
+		</div> <!-- Container -->
+	</div> <!-- Cookies Wrapper -->
+
 	<!-- Footer -->
 	<footer>
 		<div class="container pad10">
@@ -1245,12 +1493,42 @@
 				<div class="footer-navigation navigation flex-column w33 marg20">
 					<nav>
 						<ul>
-							<li><a href="#home" js-scrolltarget="js-scroll-home-top">Home</a></li>
-							<li><a href="#about-me" js-scrolltarget="js-scroll-about-me-text">Sobre Mim</a></li>
-							<li><a href="#projects" js-scrolltarget="js-scroll-projects-text">Projetos Criados</a></li>
-							<li><a href="#knowledge" js-scrolltarget="js-scroll-knowledge-text">Meu Conhecimento</a>
+
+							<li>
+								<a href="#home" js-scrolltarget="js-scroll-home-top"
+									framework-language-element-key="navigation-home">
+									Home
+								</a>
 							</li>
-							<li><a href="#contact" js-scrolltarget="js-scroll-contact-text">Contato</a></li>
+
+							<li>
+								<a href="#about-me" js-scrolltarget="js-scroll-about-me-text"
+									framework-language-element-key="navigation-about-me">
+									Sobre Mim
+								</a>
+							</li>
+
+							<li>
+								<a href="#projects" js-scrolltarget="js-scroll-projects-text"
+									framework-language-element-key="navigation-projects">
+									Projetos
+								</a>
+							</li>
+
+							<li>
+								<a href="#knowledge" js-scrolltarget="js-scroll-knowledge-text"
+									framework-language-element-key="navigation-knowledge">
+									Conhecimento
+								</a>
+							</li>
+
+							<li>
+								<a href="#contact" js-scrolltarget="js-scroll-contact-text"
+									framework-language-element-key="navigation-contact">
+									Contato
+								</a>
+							</li>
+
 						</ul>
 					</nav>
 				</div> <!-- Desktop Navigation -->
@@ -1272,7 +1550,8 @@
 					</a>
 
 					<a href="mailto:guilhermefortunato2008@gmail.com?subject=Vamos%20Falar%20Sobre%20Negócios&body=Olá%20Guilherme..."
-						target="_blank">
+						target="_blank" framework-language-element-key="email-contact-link"
+						framework-language-contact-link="true">
 						<i class="fa-solid fa-envelope"></i>
 					</a>
 
@@ -1289,18 +1568,15 @@
 		</div> <!-- Container -->
 
 		<div class="footer-subfooter w100 pad20">
-			<p>&copy; 2023 - Desenvolvido e criado por Guilherme Fortunato Machado</p>
+
+			<p framework-language-element-key="footer-all-rights-reserved">
+				&copy; 2024 - Desenvolvido e criado por Guilherme Fortunato Machado
+			</p>
+
 		</div> <!-- SubFooter -->
 	</footer> <!-- Footer -->
 
 	<!-- Scripts -->
-	<script src="https://code.jquery.com/jquery-3.7.0.min.js"
-		integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.5/dist/js.cookie.min.js"></script>
-
-	<script src="https://kit.fontawesome.com/c092b4e18e.js" crossorigin="anonymous"></script>
-
-	<script src="/public/js/templates/header.js"></script>
 	<script src="/public/js/templates/cookies.js"></script>
 	<script src="/public/js/templates/footer.js"></script>
 
@@ -1315,7 +1591,6 @@
 
 	TODO:
 	+ Next Updates:
-		+ Multi Languages Support
 		+ Soft Skills Section
 		+ Update Created Projects
 		+ Add More Created Projects
