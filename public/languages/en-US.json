@@ -33,7 +33,7 @@
 
     "about-me": {
         "about-me-title": "About Me",
-        "about-me-text": "Hello, my name is Guilherme Fortunato Machado, I am currently <b>16 years old</b> and I live in Paraná, since I was 9 years old I have had contact with programming and game development, at 12 years old I created my first website, I made the <b >Fullstack course from Danki Code</b> and today I have certificates as <b>Game Developer, Web Developer and Application Programmer</b>, I have knowledge in languages such as <b>PHP, JavaScript and Lua</b> as a programming language for games. <b>I'm interested in work or freelance work in the Fullstack or Mobile area</b>, and I'm also learning <b>Python</b> and in the future <b>Ruby</b>. I have knowledge in technologies such as <b>React JS, React Native and a little NodeJS</b>, Front-End Frameworks such as <b>Bootstrap, Materialize and SASS</b>, and in databases what I have I have more knowledge of <b>MySQL</b>, I also have some knowledge of <b>MongoDB</b>."
+        "about-me-text": "Hello, my name is Guilherme Fortunato Machado, I am currently <b>16 years old</b> and I live in Paraná, since I was 9 years old I have had contact with programming and game development, at 12 years old I created my first website, I made the <b>Fullstack course from Danki Code</b> and today I have certificates as <b>Game Developer, Web Developer and Application Programmer</b>, I have knowledge in languages such as <b>PHP, JavaScript and Lua</b> as a programming language for games. <b>I'm interested in work or freelance work in the Fullstack or Mobile area</b>, and I'm also learning <b>Python</b> and in the future <b>Ruby</b>. I have knowledge in technologies such as <b>React JS, React Native and a little NodeJS</b>, Front-End Frameworks such as <b>Bootstrap, Materialize and SASS</b>, and in databases what I have I have more knowledge of <b>MySQL</b>, I also have some knowledge of <b>MongoDB</b>."
     },
 
     "projects": {
@@ -74,8 +74,50 @@
     },
 
     "projects-modal": {
+        "projects-modal-pre-title": "Project",
+
         "projects-modal-button-deployed": "Project Deployed",
-        "projects-modal-button-repository": "Repository on Github"
+        "projects-modal-button-repository": "Repository on Github",
+
+        "projects-modal-single": {
+
+            "projects-modal-single-prime_consultancy": {
+                "projects-modal-single-title": "Prime Real Estate Advisory",
+                "projects-modal-single-tags": "Website - Dashboard - PDF Generation",
+                "projects-modal-single-description": "Developed a complex website with <b>Control Panel</b> and other features that streamlined the company's processes and results by up to <b>100%</b>, the main technologies and libraries used were <b>Front-End</b> using <b>JQuery and Bootstrap</b> as libraries, <b>Back-End</b> using <b>FPDF (PDF Generator) and PHPMailer (Sends E-mails)</b> as libraries and <b>MySQL Database</b> to store all information about customers, processes, etc. <br/> A <b>Backup System</b> was also developed for the Database for security in case there is a problem affecting the data."
+            },
+
+            "projects-modal-single-ibca_church": {
+                "projects-modal-single-title": "IBCA App Church",
+                "projects-modal-single-tags": "Application - Information Control - Dates and Dynamic Notes",
+                "projects-modal-single-description": "An application created for the church I attend, developed mainly to record the church's dates and events, and members who are participating in the church's <b>Youth Group</b> can also register, developed all in <b>React Native</b> using the <b>Expo</b> platform to export the application to <b>Android and IOS</b>."
+            },
+
+            "projects-modal-single-my_portfolio": {
+                "projects-modal-single-title": "My Portfolio",
+                "projects-modal-single-tags": "Website - Animations - Dynamic Modal",
+                "projects-modal-single-description": "This is the project you are currently in, developed using <b>Vanilla HTML5 and CSS3</b> and using <b>JQuery</b> to facilitate the <b>Javascript</b> part, it was also A type of '<b>Framework</b>' own and 100% original CSS was created and along with this the <b>Themes</b> were created. Used the <b>Scroll Reveal</b> library to create most of the animations in the portfolio."
+            },
+
+            "projects-modal-single-instagram_clone": {
+                "projects-modal-single-title": "Instagram Clone",
+                "projects-modal-single-tags": "Website - React JS - Posts - Account Creation",
+                "projects-modal-single-description": "A project that came from the <b>Javascript</b> course I was taking at <b>Danki Code</b>, something very simple but that works and has been in the air for years."
+            },
+
+            "projects-modal-single-dentistry": {
+                "projects-modal-single-title": "Dentistry",
+                "projects-modal-single-tags": "Website - Static",
+                "projects-modal-single-description": "Another project that was also developed and came from the <b>Front-End Webmaster</b> course at <b>Danki Code</b> but which can also be easily adapted and created new variations of the website that can be sold to <b>Dentistry</b>, created using <b>Vanilla HTML5 and CSS3</b>."
+            },
+
+            "projects-modal-single-concessionaire": {
+                "projects-modal-single-title": "Special Car Dealership",
+                "projects-modal-single-tags": "Website - Multi-Page - Dynamic Page Loading",
+                "projects-modal-single-description": "This project was taken from the <b>Back-End</b> course at <b>Danki Code</b>, a slightly more complex project that took the website developed in the <b>Front-End</b> course where it was improved and implementing <b>PHP</b>."
+            }
+            
+        }
     },
 
     "knowledge-modal": {
@@ -115,7 +157,7 @@
             "knowledge-modal-certificates-javascript-description": "A famous and powerful programming language mainly used in <b>Web Development</b>.",
 
             "knowledge-modal-certificates-app_development-title": "Mobile Development - Danki Code",
-            "knowledge-modal-certificates-app_development-description": "Learned how to develop applications using the most famous <b>JavaScript Library</b> to develop applications for <b>Android</b> and <b>IOS</b> which would be <b>React Native</b >.",
+            "knowledge-modal-certificates-app_development-description": "Learned how to develop applications using the most famous <b>JavaScript Library</b> to develop applications for <b>Android</b> and <b>IOS</b> which would be <b>React Native</b>.",
 
             "knowledge-modal-certificates-firebase-title": "Firebase - Danki Code",
             "knowledge-modal-certificates-firebase-description": "The course taught you how to host your applications using <b>Google</b>'s powerful cloud-based platform.",

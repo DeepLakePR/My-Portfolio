@@ -74,8 +74,50 @@
     },
 
     "projects-modal": {
+        "projects-modal-pre-title": "專案",
+
         "projects-modal-button-deployed": "專案已部署",
-        "projects-modal-button-repository": "Github 上的儲存庫"
+        "projects-modal-button-repository": "Github 上的儲存庫",
+
+        "projects-modal-single": {
+
+            "projects-modal-single-prime_consultancy": {
+                "projects-modal-single-title": "優質房地產諮詢",
+                "projects-modal-single-tags": "網站 - 儀表板 - PDF 生成",
+                "projects-modal-single-description": "開發了一個具有<b>控制面板</b>和其他功能的複雜網站，將公司的流程和結果簡化了<b>100%</b>，使用的主要技術和庫是<b>前端</b>使用<b>JQuery和Bootstrap</b>作為庫，<b>後端</b>使用<b>FPDF (PDF生成器) 和PHPMailer (發送電子郵件) </b> 作為函式庫和<b>MySQL 資料庫</b>來儲存所有關於客戶、流程等的資訊。數據的問題。"
+            },
+
+            "projects-modal-single-ibca_church": {
+                "projects-modal-single-title": "IBCA 應用教堂",
+                "projects-modal-single-tags": "應用程式-資訊控制-日期和動態註釋",
+                "projects-modal-single-description": "為我參加的教會創建的一個應用，主要是為了記錄教會的日期和活動而開發的，參加教會<b>青年團</b>的成員也可以註冊，全部用<b>React Native</開發b> 使用<b>Expo</b>平台將應用程式匯出到<b>Android和IOS</b>。"
+            },
+
+            "projects-modal-single-my_portfolio": {
+                "projects-modal-single-title": "我的投資組合",
+                "projects-modal-single-tags": "網址 - 動畫 - 動態模態",
+                "projects-modal-single-description": "這是您目前所在的項目，使用 <b>Vanilla HTML5 和 CSS3</b> 開發，並使用 <b>JQuery</b> 來促進 <b>Javascript</b> 部分，它也是 A 類型創建了自己的“<b>框架</b>”和100% 原始CSS, 並創建了<b>主題</b>。使用 <b>Scroll Reveal</b> 庫創建了組合中的大部分動畫。"
+            },
+
+            "projects-modal-single-instagram_clone": {
+                "projects-modal-single-title": "Instagram 複製",
+                "projects-modal-single-tags": "網站 - React JS - 貼文 - 帳戶創建",
+                "projects-modal-single-description": "這個專案來自我在 <b>Danki Code</b> 上學習的 <b>Javascript</b> 課程，它非常簡單，但很有效，並且已經流傳了很多年。"
+            },
+
+            "projects-modal-single-dentistry": {
+                "projects-modal-single-title": "牙科",
+                "projects-modal-single-tags": "網站 - 靜態",
+                "projects-modal-single-description": "另一個專案也是開發的，來自 <b>Danki Code</b> 的<b>前端網站管理員</b>課程，但也可以輕鬆調整併創建可以出售的網站的新變體<b>牙科</b>，使用<b>Vanilla HTML5 和CSS3</b> 建立。"
+            },
+
+            "projects-modal-single-concessionaire": {
+                "projects-modal-single-title": "特種車經銷店",
+                "projects-modal-single-tags": "網站 - 多頁面 - 動態頁面加載",
+                "projects-modal-single-description": "該項目取自 <b>Danki Code</b> 的<b>後端</b>課程，這是一個稍微複雜的項目，採用了<b>前端</b>中開發的網站課程。 b> 進行了改進並實現了 <b>PHP</b>。"
+            }
+            
+        }
     },
 
     "knowledge-modal": {
@@ -106,7 +148,7 @@
             "knowledge-modal-certificates-front_end-description": "教授從前端基礎到更高級概念的所有內容。",
 
             "knowledge-modal-certificates-front_end2-title": "前端 2.0 - Danki 代碼",
-            "knowledge-modal-certificates-front_end2-description": "該課程以更現代的方式教授前端，使用最新的 <b>HTML 5</b> 標籤，例如 <b>header、section、footer 等</b>，也使用 <b>flexbox </ b > 將<b>浮動</b>留在過去。",
+            "knowledge-modal-certificates-front_end2-description": "該課程以更現代的方式教授前端，使用最新的 <b>HTML 5</b> 標籤，例如 <b>header、section、footer 等</b>，也使用 <b>flexbox </b> 將<b>浮動</b>留在過去。",
 
             "knowledge-modal-certificates-web_design-title": "網頁設計 - Danki 程式碼",
             "knowledge-modal-certificates-web_design-description": "教授<b>使用者體驗 (UX)</b> 以及為您的企業創建美觀、引人注目且健康的設計的最佳方法。",

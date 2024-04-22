@@ -33,7 +33,7 @@
 
     "about-me": {
         "about-me-title": "Acerca de Mí",
-        "about-me-text": "Hola, mi nombre es Guilherme Fortunato Machado, actualmente tengo <b>16 años</b> y vivo en Paraná, desde los 9 años he tenido contacto con la programación y el desarrollo de juegos, a los 12 años creé mi primer sitio web, realicé el <b>curso Fullstack de Danki Code</b> y hoy tengo certificados como <b>Desarrollador de Juegos, Desarrollador Web y Programador de Aplicaciones</b>, tengo conocimientos en idiomas como <b >PHP, JavaScript y Lua</b> como lenguaje de programación para juegos. <b>Estoy interesado en trabajar o trabajar como freelance en el área Fullstack o Mobile</b>, y también estoy aprendiendo <b>Python</b> y en un futuro <b>Ruby</b>. Tengo conocimientos en tecnologías como <b>React JS, React Native y un poco NodeJS</b>, Front-End Frameworks como <b>Bootstrap, Materialize y SASS</b>, y en bases de datos lo que tengo más conocimientos de <b>MySQL</b>, también tengo algunos conocimientos de <b>MongoDB</b>."
+        "about-me-text": "Hola, mi nombre es Guilherme Fortunato Machado, actualmente tengo <b>16 años</b> y vivo en Paraná, desde los 9 años he tenido contacto con la programación y el desarrollo de juegos, a los 12 años creé mi primer sitio web, realicé el <b>curso Fullstack de Danki Code</b> y hoy tengo certificados como <b>Desarrollador de Juegos, Desarrollador Web y Programador de Aplicaciones</b>, tengo conocimientos en idiomas como <b>PHP, JavaScript y Lua</b> como lenguaje de programación para juegos. <b>Estoy interesado en trabajar o trabajar como freelance en el área Fullstack o Mobile</b>, y también estoy aprendiendo <b>Python</b> y en un futuro <b>Ruby</b>. Tengo conocimientos en tecnologías como <b>React JS, React Native y un poco NodeJS</b>, Front-End Frameworks como <b>Bootstrap, Materialize y SASS</b>, y en bases de datos lo que tengo más conocimientos de <b>MySQL</b>, también tengo algunos conocimientos de <b>MongoDB</b>."
     },
 
     "projects": {
@@ -74,8 +74,50 @@
     },
 
     "projects-modal": {
+        "projects-modal-pre-title": "Proyecto",
+
         "projects-modal-button-deployed": "Proyecto Implementado",
-        "projects-modal-button-repository": "Repositorio en Github"
+        "projects-modal-button-repository": "Repositorio en Github",
+
+        "projects-modal-single": {
+
+            "projects-modal-single-prime_consultancy": {
+                "projects-modal-single-title": "Asesoría Inmobiliaria Prime",
+                "projects-modal-single-tags": "Sitio web - Panel de control - Generación de PDF",
+                "projects-modal-single-description": "Desarrollé un sitio web complejo con <b>Panel de Control</b> y otras funcionalidades que agilizaron los procesos y resultados de la empresa hasta en un <b>100%</b>, las principales tecnologías y librerías utilizadas fueron el <b>Front -End </b> usando <b>JQuery y Bootstrap</b> como bibliotecas, <b>Back-End</b> usando <b>FPDF (Generador de PDF) y PHPMailer (Envía correos electrónicos)</b> como bibliotecas y <b>Base de Datos MySQL</b> para almacenar toda la información sobre clientes, procesos, etc. <br/> También se desarrolló un <b>Sistema de Respaldo</b> para la Base de Datos por seguridad en caso de que haya un problema que afecta los datos."
+            },
+
+            "projects-modal-single-ibca_church": {
+                "projects-modal-single-title": "Iglesia de la aplicación IBCA",
+                "projects-modal-single-tags": "Aplicación - Control de Información - Fechas y Notas Dinámicas",
+                "projects-modal-single-description": "Una aplicación creada para la iglesia a la que asisto, desarrollada principalmente para registrar las fechas y eventos de la iglesia, y los miembros que participan en el <b>Grupo de Jóvenes</b> de la iglesia también pueden registrarse, desarrollado todo en <b>React Native</b> utilizando la plataforma <b>Expo</b> para exportar la aplicación a <b>Android e IOS</b>."
+            },
+
+            "projects-modal-single-my_portfolio": {
+                "projects-modal-single-title": "Mi portafolio",
+                "projects-modal-single-tags": "Sitio web - Animaciones - Modal dinámico",
+                "projects-modal-single-description": "Este es el proyecto en el que estás actualmente, desarrollado usando <b>Vanilla HTML5 y CSS3</b> y usando <b>JQuery</b> para facilitar la parte de <b>Javascript</b>, también era tipo A. Se creó un '<b>Framework</b>' CSS propio y 100% original y junto con esto se crearon los <b>Temas</b>. Usé la biblioteca <b>Scroll Reveal</b> para crear la mayoría de las animaciones del portafolio."
+            },
+
+            "projects-modal-single-instagram_clone": {
+                "projects-modal-single-title": "Clon de Instagram",
+                "projects-modal-single-tags": "Sitio web - React JS - Publicaciones - Creación de cuenta",
+                "projects-modal-single-description": "Un proyecto que surgió del curso de <b>Javascript</b> que estaba tomando en <b>Danki Code</b>, algo muy sencillo pero que funciona y lleva años en el aire."
+            },
+
+            "projects-modal-single-dentistry": {
+                "projects-modal-single-title": "Odontología",
+                "projects-modal-single-tags": "Sitio web - Estático",
+                "projects-modal-single-description": "Otro proyecto que también se desarrolló y surgió del curso de <b>Webmaster Front-End</b> de <b>Danki Code</b> pero que también se puede adaptar fácilmente y crear nuevas variaciones del sitio web que se pueden vender. para <b>Odontología</b>, creado usando <b>Vanilla HTML5 y CSS3</b>."
+            },
+
+            "projects-modal-single-concessionaire": {
+                "projects-modal-single-title": "Concesionario de autos especiales",
+                "projects-modal-single-tags": "Sitio web - Varias páginas - Carga de página dinámica",
+                "projects-modal-single-description": "Este proyecto fue tomado del curso <b>Back-End</b> de <b>Danki Code</b>, un proyecto un poco más complejo que tomó el sitio web desarrollado en el <b>Front-End</b>. curso donde se mejoró e implementó <b>PHP</b>."
+            }
+            
+        }
     },
 
     "knowledge-modal": {

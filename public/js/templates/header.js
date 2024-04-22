@@ -1,3 +1,5 @@
+var projectsModalPreTitle = 'Projeto';
+
 $(()=>{
 
     ////////////////////////////////
@@ -22,24 +24,10 @@ $(()=>{
         let ButtonTarget = $(e.target).attr("js-scrolltarget");
         let ElementTarget = $("#" + ButtonTarget);
 
-        let offsetDebug = 190;
-
-        /*
-        if(ButtonTarget == 'js-scroll-about-me-text' || ButtonTarget == 'js-scroll-projects-text'){
-            offsetDebug = 190;
-
-        }
-        */
+        let offsetDebug = 140;
 
         if(ButtonTarget == 'js-scroll-knowledge-text' || ButtonTarget == 'js-scroll-contact-text'){
             ElementTarget = ElementTarget.parent();
-
-            /*
-            if(ButtonTarget == 'js-scroll-knowledge-text'){
-                offsetDebug = 190;
-            
-            }
-            */
 
         }
 
@@ -145,22 +133,66 @@ $(()=>{
     var translateFrom = 'pt-BR';
 
     // Get Translation Key Function
-    function getTranslationKey(translationObject, elTranslationKey, elementToTranslate){
+    function getTranslationKey(translationObject, elTranslationKey, elementToTranslate, translateAttribute){
 
         for (const [key, value] of Object.entries(translationObject)) {
 
-            if(key == elTranslationKey){
-                elementToTranslate.html(value);
+            if(translationObject['projects-modal']){
+                projectsModalPreTitle = translationObject['projects-modal']['projects-modal-pre-title']
 
-            }else if(value[elTranslationKey]){
-                elementToTranslate.html(value[elTranslationKey]);
-            
-            }else if(typeof(value) === 'object'){
+            }
 
-                setTimeout(()=>{
-                    return getTranslationKey(value, elTranslationKey, elementToTranslate);
+            if(!translateAttribute){ // Not Translate attribute
 
-                }, 150);
+                if(key == elTranslationKey){
+                    elementToTranslate.html(value);
+
+                }else if(value[elTranslationKey]){
+                    elementToTranslate.html(value[elTranslationKey]);
+                
+                }else if(typeof(value) === 'object'){
+
+                    setTimeout(()=>{
+                        return getTranslationKey(value, elTranslationKey, elementToTranslate, false);
+
+                    }, 150);
+
+                }
+
+            }else if(translateAttribute){ // Translate attribute (Projects Single)
+                
+                if(key === elTranslationKey){
+
+                    let projectSingleTranslation = translationObject[key];
+
+                    // Title
+                    elementToTranslate.data(
+                        'project-info-title', 
+                        projectSingleTranslation['projects-modal-single-title']
+                    );
+                    
+                    // Tags
+                    elementToTranslate.data(
+                        'project-info-tags', 
+                        projectSingleTranslation['projects-modal-single-tags']
+                    );
+                    
+                    // Description
+                    elementToTranslate.data(
+                        'project-info-description', 
+                        projectSingleTranslation['projects-modal-single-description']
+                    );
+
+                }
+
+                if(typeof(value) === 'object'){
+
+                    setTimeout(()=>{
+                        return getTranslationKey(value, elTranslationKey, elementToTranslate, true);
+
+                    }, 150);
+
+                }
 
             }
 
@@ -171,7 +203,7 @@ $(()=>{
     // Translate Page Function
     function translatePage(translateTo){
 
-        $('h1, h2, h3, p, span, b, i, a, button').each((_i, elementToTranslate)=>{
+        $('h1, h2, h3, p, span, b, i, a, button, div.projects-single').each((_i, elementToTranslate)=>{
 
             let elementTranslationKey = $(elementToTranslate).attr('framework-language-element-key');
             let elementTranslationContactLink = $(elementToTranslate).attr('framework-language-contact-link');
@@ -181,14 +213,25 @@ $(()=>{
 
             }
 
+            // Translate Direct Elements
             if(elementTranslationKey){
 
                 fetch(`${translationsFolder}/${translateTo}.json`).then(response => response.json()).then(translationData => {
                     
                     setTimeout(()=> {
-                        getTranslationKey(translationData, elementTranslationKey, $(elementToTranslate));
+
+                        // Not translate projects single attributes
+                        if(!$(elementToTranslate).hasClass('projects-single')){
+                            getTranslationKey(translationData, elementTranslationKey, $(elementToTranslate), false);
+                            
+                        }else{ // Translate projects single attributes
+                            getTranslationKey(translationData, elementTranslationKey, $(elementToTranslate), true);
+
+                        }
                     
                     }, 50);
+
+                    
 
                 }).catch((error)=>{
                     console.warn(error);

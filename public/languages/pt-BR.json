@@ -74,8 +74,50 @@
     },
 
     "projects-modal": {
+        "projects-modal-pre-title": "Projeto",
+
         "projects-modal-button-deployed": "Projeto no Ar",
-        "projects-modal-button-repository": "Repositório no Github"
+        "projects-modal-button-repository": "Repositório no Github",
+
+        "projects-modal-single": {
+
+            "projects-modal-single-prime_consultancy": {
+                "projects-modal-single-title": "Prime Assessoria Imobiliária",
+                "projects-modal-single-tags": "Website - Dashboard - Geração de PDF",
+                "projects-modal-single-description": "Desenvolvido um site complexo com <b>Painel de Controle</b> e entre outras funcionalidades que agilizaram em até <b>100%</b> os processos e resultados da empresa, as principais tecnologias e bibliotecas utilizadas foram <b>Front-End</b> usando <b>JQuery e Bootstrap</b> como bibliotecas, <b>Back-End</b> usando <b>FPDF (Gerador de PDF) e PHPMailer (Envia E-mails)</b> como bibliotecas e <b>Banco de Dados MySQL</b> para armazenar todas as informações de clientes, processos e etc. <br/> Também foi desenvolvido um <b>Sistema de Backup</b> para o Banco de Dados por segurança caso tenha algum problema que afete os dados."
+            },
+
+            "projects-modal-single-ibca_church": {
+                "projects-modal-single-title": "Igreja IBCA App",
+                "projects-modal-single-tags": "Aplicativo - Controle de Informações - Datas e Anotações Dinâmicas",
+                "projects-modal-single-description": "Um aplicativo criado para a igreja em que frequento, desenvolvido principalmente para ter como anotação as datas e eventos da igreja, também podendo se registrar membros que estão participando do <b>Grupo de Jovens</b> da igreja, desenvolvido tudo em <b>React Native</b> utilizando a plataforma do <b>Expo</b> para se exportar o aplicativo para <b>Android e IOS</b>."
+            },
+
+            "projects-modal-single-my_portfolio": {
+                "projects-modal-single-title": "Meu Portfólio",
+                "projects-modal-single-tags": "Website - Animações - Modal Dinâmica",
+                "projects-modal-single-description": "Este é o projeto em que você está atualmente, desenvolvido usando <b>Vanilla HTML5 e CSS3</b> e usando <b>JQuery</b> para se facilitar a parte do <b>Javascript</b>, também foi criado um tipo de '<b>Framework</b>' CSS próprio e 100% original e junto com isso foi criado os <b>Temas</b>. Usado a biblioteca <b>Scroll Reveal</b> para se fazer a maioria das animações que estão no portfólio."
+            },
+
+            "projects-modal-single-instagram_clone": {
+                "projects-modal-single-title": "Instagram Clone",
+                "projects-modal-single-tags": "Website - React JS - Posts - Criação de Contas",
+                "projects-modal-single-description": "Um projeto que veio do curso de <b>Javascript</b> em que eu estava fazendo na <b>Danki Code</b>, algo bem simples mas que funciona e que já está a anos no ar."
+            },
+
+            "projects-modal-single-dentistry": {
+                "projects-modal-single-title": "Odontologia",
+                "projects-modal-single-tags": "Website - Estático",
+                "projects-modal-single-description": "Outro projeto que também foi desenvolvido e veio do curso de <b>Front-End Webmaster</b> da <b>Danki Code</b> mas que também pode ser facilmente adaptado e criado novas variações do site que podem ser vendidas para <b>Odontologias</b>, criado usando <b>Vanilla HTML5 e CSS3</b>."
+            },
+
+            "projects-modal-single-concessionaire": {
+                "projects-modal-single-title": "Concessionária de Carros Especiais",
+                "projects-modal-single-tags": "Website - Multi-Páginas - Carregamento Dinâmico de Páginas",
+                "projects-modal-single-description": "Esse projeto foi tirado do curso de <b>Back-End</b> da <b>Danki Code</b>, um projeto um pouco mais complexo que pegou o site desenvolvido no curso de <b>Front-End</b> onde foi melhorado e implantando o <b>PHP</b>."
+            }
+            
+        }
     },
 
     "knowledge-modal": {
