@@ -33,7 +33,7 @@
 
     "about-me": {
         "about-me-title": "Acerca de Mí",
-        "about-me-text": "Hola, mi nombre es Guilherme Fortunato Machado, actualmente tengo <b>16 años</b> y vivo en Paraná, desde los 9 años he tenido contacto con la programación y el desarrollo de juegos, a los 12 años creé mi primer sitio web, realicé el <b>curso Fullstack de Danki Code</b> y hoy tengo certificados como <b>Desarrollador de Juegos, Desarrollador Web y Programador de Aplicaciones</b>, tengo conocimientos en idiomas como <b>PHP, JavaScript y Lua</b> como lenguaje de programación para juegos. <b>Estoy interesado en trabajar o trabajar como freelance en el área Fullstack o Mobile</b>, y también estoy aprendiendo <b>Python</b> y en un futuro <b>Ruby</b>. Tengo conocimientos en tecnologías como <b>React JS, React Native y un poco NodeJS</b>, Front-End Frameworks como <b>Bootstrap, Materialize y SASS</b>, y en bases de datos lo que tengo más conocimientos de <b>MySQL</b>, también tengo algunos conocimientos de <b>MongoDB</b>."
+        "about-me-text": "Hola, mi nombre es Guilherme Fortunato Machado, actualmente tengo <b>16 años</b> y vivo en Brasil, desde los 9 años he tenido contacto con la programación y el desarrollo de juegos, a los 12 años creé mi primer sitio web, realicé el <b>curso Fullstack de Danki Code</b> y hoy tengo certificados como <b>Desarrollador de Juegos, Desarrollador Web y Programador de Aplicaciones</b>, tengo conocimientos en idiomas como <b>PHP, JavaScript y Lua</b> como lenguaje de programación para juegos. <b>Estoy interesado en trabajar o trabajar como freelance en el área Fullstack o Mobile</b>, y también estoy aprendiendo <b>Python</b> y en un futuro <b>Ruby</b>. Tengo conocimientos en tecnologías como <b>React JS, React Native y un poco NodeJS</b>, Front-End Frameworks como <b>Bootstrap, Materialize y SASS</b>, y en bases de datos lo que tengo más conocimientos de <b>MySQL</b>, también tengo algunos conocimientos de <b>MongoDB</b>."
     },
 
     "projects": {
@@ -66,7 +66,59 @@
 
     "knowledge": {
         "knowledge-title": "Mi Conocimiento",
-        "knowledge-modal-button": "Más Sobre Mis Conocimientos <i class='fa-solid fa-plus'></i>"
+        "knowledge-modal-button": "Más Sobre Mis Conocimientos <i class='fa-solid fa-plus'></i>",
+
+        "knowledge-soft-skills": {
+
+            "soft-skills-title": "Habilidades Blandas",
+
+
+            "soft-skills-fast_learning": {
+                "soft-skills-fast_learning-title": "Aprendizaje <b>rápido</b>",
+                "soft-skills-fast_learning-description": "Así como tengo autonomía y fácil adaptación, mi curva de aprendizaje es rápida, constante y exponencial."
+            },
+
+            "soft-skills-team_work": {
+                "soft-skills-team_work-title": "<b>Trabajo en equipo</b>",
+                "soft-skills-team_work-description": "Me encanta trabajar en equipo y aprender de mis compañeros, evolucionar junto a ellos y verlos triunfar junto a mí es una misión y un sueño."
+            },
+
+            "soft-skills-clean_organized": {
+                "soft-skills-clean_organized-title": "<b>Ambiente de trabajo limpio y organizado</b>",
+                "soft-skills-clean_organized-description": "Soy un hombre sumamente organizado que tiene TOC cuando ve algo fuera de lugar o algo sucio, esa es una regla para mí."
+            },
+
+            "soft-skills-autonomy": {
+                "soft-skills-autonomy-title": "<b>Autonomía</b> para resolver <b>Problemas</b>",
+                "soft-skills-autonomy-description": "Si es necesario, voy a lo más profundo de Internet para encontrar una solución a un problema en las aplicaciones que desarrollo, no puedo dormir sin haber solucionado un error primero y ciertamente no dependo de otros desarrolladores para hacerlo."
+            },
+
+            "soft-skills-respect_empathy": {
+                "soft-skills-respect_empathy-title": "<b>Empatía y Respeto</b>",
+                "soft-skills-respect_empathy-description": "Amar a los demás y respetarlos sin importar las diferencias es un principio para mí ya que “El respeto genera respeto”."
+            },
+
+            "soft-skills-communication": {
+                "soft-skills-communication-title": "<b>Comunicación</b>",
+                "soft-skills-communication-description": "En los últimos años me he centrado en evolucionar mi comunicación con las personas y esto me ha dado resultados increíbles. El arte de comunicar es hermoso."
+            },
+
+            "soft-skills-proactivity_focus": {
+                "soft-skills-proactivity_focus-title": "<b>Proactividad y Enfoque</b>",
+                "soft-skills-proactivity_focus-description": "Siempre estoy moviéndome y haciendo algo, y cuando estoy quieto me pregunto por qué, y poco después vuelvo a concentrarme."
+            },
+
+            "soft-skills-resilience": {
+                "soft-skills-resilience-title": "<b>Resiliencia</b>",
+                "soft-skills-resilience-description": "La gran mayoría de las personas suelen darse por vencidos ante la primera dificultad que aparece en el camino, pero yo voy más allá, rendirme no es una opción para mí. Me hace diferente, me hace mejor."
+            },
+
+            "soft-skills-flexibility_adaptation": {
+                "soft-skills-flexibility_adaptation-title": "<b>Flexibilidad y Adaptabilidad</b>",
+                "soft-skills-flexibility_adaptation-description": "I am flexible and tend to adapt easily to new technologies and new market trends around the world."
+            }
+
+        }
     },
 
     "contact": {

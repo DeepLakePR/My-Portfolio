@@ -1,5 +1,5 @@
 /* Header Section Content Apresentation */
-section.apresentation{
+section.apresentation {
     padding-top: 115px;
     position: relative;
     z-index: 500;
@@ -10,25 +10,26 @@ section.apresentation{
 }
 
 /* Apresentation > Text */
-.apresentation .apresentation-text{
+.apresentation .apresentation-text {
     padding: 70px 0;
     color: var(--global-default-color);
 }
 
-.apresentation-text h2, .apresentation-text p{
+.apresentation-text h2,
+.apresentation-text p {
     text-shadow: 0px 7px 8px var(--global-shadow-color);
 }
 
-.apresentation-text h2{
+.apresentation-text h2 {
     font-size: 34px;
 }
 
-.apresentation-text p{
+.apresentation-text p {
     font-size: 25px;
     font-weight: var(--section-text-font-weight);
 }
 
-.apresentation-text span{
+.apresentation-text span {
     color: var(--global-highlight-color);
     /* 
     #FF9000 
@@ -36,65 +37,64 @@ section.apresentation{
     */
 }
 
-.apresentation-text p span{
+.apresentation-text p span {
     font-weight: 400;
 }
 
 /* Apresentation > Social Media */
-.apresentation .apresentation-social_media{
+.apresentation .apresentation-social_media {
     padding: 20px 10px;
 }
 
-.apresentation .apresentation-social_media a{
+.apresentation .apresentation-social_media a {
     color: var(--global-default-color);
     font-size: 40px;
-    transition: none;
 }
 
-.apresentation .apresentation-social_media a i{
+.apresentation .apresentation-social_media a i {
     transition: color 0.25s ease-in-out;
 }
 
-.apresentation .apresentation-social_media a i:hover{
+.apresentation .apresentation-social_media a i:hover {
     color: var(--section-button-secondary-hover-color);
 }
 
 /* Apresentation > Image */
-.apresentation .apresentation-image{
+.apresentation .apresentation-image {
     align-items: center;
     justify-content: center;
 }
 
-.apresentation .apresentation-image img{
+.apresentation .apresentation-image img {
     max-width: 300px;
     border-radius: 50%;
     box-shadow: 0px 13px 17px 0px var(--global-shadow-background-color);
 }
 
-.apresentation .apresentation-image h3{
+.apresentation .apresentation-image h3 {
     margin-top: 15px;
     font-size: 25px;
     font-weight: 600;
     color: var(--global-highlight-color);
-    text-shadow: 0px 5px 5px var(--global-shadow-secondary-color);
+    text-shadow: 0px 2px 5px var(--global-shadow-secondary-color);
 }
 
 /*******************/
 /* End-To-End Applications */
-section.end-to-end-applications{
+section.end-to-end-applications {
     width: 100%;
     height: 450px;
     margin-top: -40px;
 }
 
-.end-to-end-applications_bg, 
-.end-to-end-applications_bg .app-bg_image, 
-.end-to-end-applications_bg .app-bg_opacity{
+.end-to-end-applications_bg,
+.end-to-end-applications_bg .app-bg_image,
+.end-to-end-applications_bg .app-bg_opacity {
     width: 100%;
     height: 100%;
 }
 
-.end-to-end-applications_bg .app-bg_image{
+.end-to-end-applications_bg .app-bg_image {
     object-fit: cover;
     background-image: url('../assets/end-to-end-applications-bg.jpg');
     background-position: center;
@@ -103,57 +103,57 @@ section.end-to-end-applications{
     background-repeat: no-repeat;
 }
 
-.end-to-end-applications_bg .app-bg_opacity{
+.end-to-end-applications_bg .app-bg_opacity {
     background-color: var(--global-shadow-background-color);
     position: absolute;
     left: 0;
     top: 0;
 }
 
-section.end-to-end-applications h2{
+section.end-to-end-applications h2 {
     font-weight: 200;
     font-size: 39px;
     text-shadow: 0px 7px 8px var(--global-shadow-color);
 }
 
-section.end-to-end-applications h2 span{
+section.end-to-end-applications h2 span {
     font-size: 45px;
     font-weight: 400;
     color: var(--global-secondary-highlight-color);
 }
 
 /* About Me */
-section.about-me{
+section.about-me {
     background: var(--section-background-custom-two);
     overflow: hidden;
     max-height: 390px;
 }
 
-section.about-me .container{
+section.about-me .container {
     display: flex;
     align-items: center;
 }
 
 /* About Me -> Image */
-section.about-me .about-me_image{
+section.about-me .about-me_image {
     width: 40%;
     margin-left: -50px;
     margin-right: 50px;
 }
 
-.about-me_image img{
+.about-me_image img {
     max-width: 400px;
     height: 100%;
 }
 
 /* About Me -> Text */
-section.about-me .about-me_text{
+section.about-me .about-me_text {
     max-width: 700px;
     text-align: left;
     color: var(--global-default-color);
 }
 
-.about-me_text h2{
+.about-me_text h2 {
     font-size: 28px;
     margin-bottom: 15px;
     display: inline-block;
@@ -161,25 +161,25 @@ section.about-me .about-me_text{
     border-bottom: 2px solid var(--global-default-color);
 }
 
-.about-me_text p{
+.about-me_text p {
     font-weight: var(--section-text-font-weight);
     letter-spacing: 1.2px;
     line-height: 22px;
 }
 
 /* Section Created Projects */
-section.projects{
+section.projects {
     background: var(--background-secondary);
 }
 
-section.projects .container > h2{
+section.projects .container>h2 {
     font-size: 30px;
     color: var(--global-default-color);
     text-align: center;
     padding-bottom: 40px;
 }
 
-.projects-wrapper{
+.projects-wrapper {
     background: var(--background-primary);
     border-radius: 12px;
     border: 25px solid var(--background-six);
@@ -189,17 +189,17 @@ section.projects .container > h2{
     transition: all 1.25s linear;
 }
 
-.projects-single{
+.projects-single {
     width: 100%;
     height: 300px;
     color: var(--global-default-color);
 }
 
-.projects-single:nth-child(+n+4){
+.projects-single:nth-child(+n+4) {
     display: none;
 }
 
-.projects-single .projects-single-image{
+.projects-single .projects-single-image {
     width: 45%;
     height: 100%;
     border-radius: 8px;
@@ -211,31 +211,35 @@ section.projects .container > h2{
     justify-content: center;
 }
 
-.projects-single-image img{
+.projects-single-image img {
     height: 105%;
     transition: all 0.5s ease-in-out;
 }
 
-.projects-single-image:hover img{
+.projects-single-image:hover img {
     transform: scale(1.07);
+    -webkit-transform: scale(1.07);
+    -moz-transform: scale(1.07);
+    -o-transform: scale(1.07);
+    -ms-transform: scale(1.07);
 }
 
-.projects-single-text{
+.projects-single-text {
     height: 100%;
     max-width: 55%;
     padding: 8px 20px !important;
     position: relative;
 }
 
-.projects-single-text h2{
+.projects-single-text h2 {
     margin-bottom: 5px;
 }
 
-.projects-single-text p{
+.projects-single-text p {
     font-weight: var(--section-text-font-weight);
 }
 
-.projects-single-text a{
+.projects-single-text a {
     color: var(--global-default-color);
     background: var(--section-background-custom-two);
     padding: 9px 16px;
@@ -246,20 +250,20 @@ section.projects .container > h2{
     bottom: 8px;
 }
 
-.projects-single-text a:not(.ahref-disabled):hover{
+.projects-single-text a:not(.ahref-disabled):hover {
     background: var(--section-button-hover-color);
     color: var(--global-default-secondary-color);
 }
 
-.projects-single:nth-child(even) .projects-single-text{
+.projects-single:nth-child(even) .projects-single-text {
     order: 1;
 }
 
-.projects-single:nth-child(even) .projects-single-image{
+.projects-single:nth-child(even) .projects-single-image {
     order: 2;
 }
 
-.projects-wrapper .projects-more-button{
+.projects-wrapper .projects-more-button {
     text-align: center;
     width: 100%;
     color: var(--global-default-color);
@@ -267,12 +271,12 @@ section.projects .container > h2{
     padding-bottom: 10px;
 }
 
-.projects-more-button h3{
+.projects-more-button h3 {
     margin-bottom: 15px;
     font-weight: 300;
 }
 
-.projects-more-button i{
+.projects-more-button i {
     padding: 13px;
     background: var(--background-quarter);
     border-radius: 50%;
@@ -281,13 +285,13 @@ section.projects .container > h2{
     transition: all 0.25s ease-in-out;
 }
 
-.projects-more-button i:hover{
+.projects-more-button i:hover {
     color: var(--global-default-secondary-color);
     background: var(--background-seven);
 }
 
-/* Knowledge Technologies Projects */
-section.technologies{
+/* Knowledge Section */
+section.knowledge {
     padding-top: 30px;
     background: var(--section-background-custom-two);
     border-bottom-left-radius: 30px;
@@ -297,56 +301,66 @@ section.technologies{
     box-shadow: 0px 15px 15px 0px var(--global-shadow-tertiary-color);
 }
 
-section.technologies > h2{
+section.knowledge>h2 {
     text-align: center;
     color: var(--global-default-color);
     font-size: 30px;
 }
 
-section.technologies .container{
+section.knowledge .container {
     padding-top: 0px;
+    overflow-x: hidden;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
 }
 
-/* Technologies > Single Container */
-.technologies-single-container{
+section.knowledge .container>div {
+    min-width: 100%;
+    padding: 0px 40px;
+}
+
+/***************/
+/* Knowledge Left Side > Technologies List Container */
+.technologies-list-container {
     padding-left: 0px;
     padding-right: 30px;
 }
 
 /* Technologies Animation Custom Color */
-.technologies-single-container .tech-single-box-nivel-current-text{
+.technologies-list-container .tech-single-box-nivel-current-text {
     font-weight: 600;
     color: var(--section-technologies-animation-color);
 }
 
-.technologies-single-container .tech-single-box-nivel-current-fill{
+.technologies-list-container .tech-single-box-nivel-current-fill {
     background: var(--section-technologies-animation-color);
 }
 
 /** Technologies Single Box **/
-.technologies-single-box{
+.technologies-single-box {
     width: 100%;
     color: var(--global-default-color);
     margin-bottom: 10px;
 }
 
-.technologies-single-box-title, .technologies-single-box-nivel{
+.technologies-single-box-title,
+.technologies-single-box-nivel {
     align-items: center;
     justify-content: center;
 }
 
-.technologies-single-box-title i{
+.technologies-single-box-title i {
     font-size: xx-large;
     margin-left: -15px;
     margin-right: 15px;
 }
 
-.technologies-single-box-title h2{
+.technologies-single-box-title h2 {
     font-size: 25px;
     font-weight: var(--section-text-font-weight);
 }
 
-.technologies-single-box-nivel{
+.technologies-single-box-nivel {
     position: relative;
     margin-top: 10px;
     background: var(--background-five);
@@ -354,12 +368,12 @@ section.technologies .container{
     box-shadow: 0px 5px 9px 0px var(--global-shadow-color);
 }
 
-.technologies-single-box-nivel p{
+.technologies-single-box-nivel p {
     font-weight: var(--section-text-secondary-font-weight);
     transition: color 0.25s ease;
 }
 
-.tech-single-box-nivel-custom_line{
+.tech-single-box-nivel-custom_line {
     width: 20%;
     height: 8px;
     background: white;
@@ -369,17 +383,18 @@ section.technologies .container{
 }
 
 /* Technologies More Button */
-.technologies-more-button, .technologies-more-button button{
+.technologies-more-button,
+.technologies-more-button button {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.technologies-more-button{
+.technologies-more-button {
     margin-top: 10px;
 }
 
-.technologies-more-button button{
+.technologies-more-button button {
     padding-top: 3px;
     padding-bottom: 3px;
     background: var(--background-quarter);
@@ -391,22 +406,28 @@ section.technologies .container{
     box-shadow: 0px 5px 9px 0px var(--global-shadow-color);
 }
 
-.technologies-more-button button i{
+.technologies-more-button button i {
     margin-left: 5px;
     transition: all 0.25s ease-in-out !important;
 }
 
-.technologies-more-button button:hover{
+.technologies-more-button button:hover {
     background: var(--section-button-quarter-hover-color);
     color: var(--section-button-text-hover-color);
 }
 
-/* Technologies > Dynamic Image */
-.technologies-dynamic-image{
-    margin-top: 40px;
-    margin-left: 40px;
+/* Technologies Right */
+.technologies-right {
+    padding-top: 60px;
+    align-items: center;
+}
+
+/* Technologies Right > Dynamic Icon */
+.technologies-dynamic-icon {
     align-items: center;
     justify-content: center;
+    width: 100%;
+    height: 550px;
     max-height: 650px;
     background: var(--background-secondary);
     border-radius: 15px;
@@ -414,7 +435,7 @@ section.technologies .container{
     transition: none;
 }
 
-.technologies-dynamic-image i{
+.technologies-dynamic-icon i {
     font-size: 300px;
     color: var(--global-default-color);
     width: 100%;
@@ -422,14 +443,121 @@ section.technologies .container{
     text-align: center;
 }
 
+/* Technologies Right > Swipe to Soft Skills */
+.technologies-right h3 {
+    color: var(--global-default-color);
+    margin-top: 100px;
+    margin-bottom: 10px;
+    font-size: 30px;
+    font-weight: var(--section-text-secondary-font-weight);
+}
+
+.technologies-right .swipe-to-soft-skills-button {
+    padding: 8px;
+    font-size: 28px;
+    font-weight: 600;
+    text-align: center;
+    width: 80%;
+    transition: all 0.25s ease-in-out;
+    background: var(--background-quarter);
+    color: var(--global-default-color);
+    box-shadow: 0px 5px 9px 0px var(--global-shadow-color);
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.swipe-to-soft-skills-button:hover {
+    background: var(--section-button-quarter-hover-color);
+    color: var(--section-button-text-hover-color);
+}
+
+/***************/
+/* Knowledge > Right Side */
+.knowledge-right-side {
+    padding-top: 15px !important;
+    text-align: center;
+    color: var(--global-default-color);
+    font-size: 23px;
+}
+
+/* Swipe To Technologies */
+.knowledge-swipe-to-technologies-button {
+    padding: 10px 15px;
+    position: absolute;
+    top: 10px;
+    left: 50px;
+    cursor: pointer;
+    font-size: 28px;
+    transition: all 0.25s ease-in-out;
+}
+
+.knowledge-swipe-to-technologies-button:hover {
+    color: var(--section-button-text-hover-color);
+}
+
+/* Soft Skills Wrapper */
+.knowledge-right-side div.soft-skills-wrapper {
+    padding-top: 20px;
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 300px;
+    /*220px*/
+}
+
+.knowledge-right-side .soft-skill-single {
+    min-height: 100px;
+    padding: 18px 15px;
+    text-align: center;
+    color: var(--global-default-color);
+    background-color: var(--background-quarter);
+    border-radius: 8px;
+    box-shadow: 0px 5px 7px 0px var(--global-shadow-color);
+    transition: none;
+    transition: all 0.22s linear;
+    overflow-y: auto;
+}
+
+.soft-skill-single i {
+    font-size: 50px;
+    color: var(--global-highlight-color);
+    transition: all 0.5s linear;
+}
+
+.soft-skill-single h3 {
+    font-weight: var(--section-text-font-weight);
+    margin: 10px 0;
+    margin-bottom: 7px;
+    font-size: 24px;
+}
+
+.soft-skill-single h3 b {
+    font-weight: 500;
+}
+
+.soft-skill-single p {
+    font-size: 15px;
+}
+
+.soft-skill-single:hover {
+    background-color: var(--background-five);
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    color: var(--global-default-secondary-color);
+}
+
+/***************/
 /* Contact */
-section.contact{
+section.contact {
     margin-top: -30px;
     max-width: 100%;
     color: var(--global-default-color);
 }
 
-section.contact .container{
+section.contact .container {
     max-width: 100%;
     padding-top: 135px;
     padding-bottom: 125px;
@@ -441,7 +569,7 @@ section.contact .container{
     position: relative;
 }
 
-section.contact .container .contact-bg_opacity{
+section.contact .container .contact-bg_opacity {
     position: absolute;
     top: 0;
     left: 0;
@@ -451,7 +579,7 @@ section.contact .container .contact-bg_opacity{
     background-color: var(--global-shadow-quarter-color);
 }
 
-section.contact .container > h2{
+section.contact .container>h2 {
     text-align: center;
     font-size: 32px;
     z-index: 2;
@@ -459,20 +587,20 @@ section.contact .container > h2{
     text-shadow: 0px 7px 8px var(--global-shadow-color);
 }
 
-section.contact .container > h2 a{
+section.contact .container>h2 a {
     text-decoration: underline;
     text-decoration-color: var(--global-tertiary-highlight-color);
     color: var(--global-tertiary-highlight-color);
     transition: color 0.35s ease-in-out;
 }
 
-section.contact .container > h2 a:hover{
+section.contact .container>h2 a:hover {
     color: var(--section-button-tertiary-hover-color);
 }
 
 /**********************************/
 /****** Modals ******/
-body .modal{
+body .modal {
     height: 100%;
     position: fixed;
     top: 0;
@@ -483,7 +611,7 @@ body .modal{
     transition: none;
 }
 
-.modal .container{
+.modal .container {
     align-items: center;
     height: 100%;
     padding: 0;
@@ -501,13 +629,13 @@ body .modal{
     overflow-y: auto;
 }
 
-.modal .modal-title{
+.modal .modal-title {
     font-size: 27px;
     font-weight: 500;
     margin-bottom: 15px;
 }
 
-.modal .modal-close{
+.modal .modal-close {
     position: absolute;
     top: 7px;
     right: 9px;
@@ -516,16 +644,15 @@ body .modal{
     color: var(--global-default-color);
 }
 
-.modal .modal-close i{
-    transition: none;
+.modal .modal-close i {
     transition: all 0.2s linear;
 }
 
-.modal .modal-close i:hover{
+.modal .modal-close i:hover {
     color: var(--section-button-secondary-hover-color);
 }
 
-.modal hr.hr-custom{
+.modal hr.hr-custom {
     background: var(--css-framework-hr-custom-color);
     width: 92%;
     padding: 1px;
@@ -534,27 +661,28 @@ body .modal{
 
 /****************************/
 /* Project Info Modal */
-#project-info-modal .modal-title{
+#project-info-modal .modal-title {
     margin-bottom: 20px;
 }
 
-.modal .project-info-modal-content{
+.modal .project-info-modal-content {
     height: 100%;
     flex-wrap: wrap;
 }
 
 /* Project Info Divs */
-.modal .project-info-modal-content .project-info-modal-div{
+.modal .project-info-modal-content .project-info-modal-div {
     color: var(--global-default-color);
 }
 
 /* Max Height */
-.modal .project-info-modal-image, .modal .project-info-modal-text{
+.modal .project-info-modal-image,
+.modal .project-info-modal-text {
     max-height: 30%;
 }
 
 /* Project Info Image */
-.modal .project-info-modal-image img{
+.modal .project-info-modal-image img {
     width: 100%;
     max-height: 100%;
     object-fit: cover;
@@ -562,18 +690,18 @@ body .modal{
 }
 
 /* Project Info Text */
-.modal .project-info-modal-text{
+.modal .project-info-modal-text {
     padding-left: 13px;
     text-align: left;
 }
 
-.modal .project-info-modal-text h2{
+.modal .project-info-modal-text h2 {
     margin-bottom: 10px;
     font-size: 20px;
     font-weight: 500;
 }
 
-.modal .project-info-modal-text p{
+.modal .project-info-modal-text p {
     padding-bottom: 5px;
     max-width: 95%;
     font-weight: var(--section-text-secondary-font-weight);
@@ -581,63 +709,61 @@ body .modal{
 }
 
 /* Project Info Technologies */
-.modal .project-info-modal-technologies{
+.modal .project-info-modal-technologies {
     align-items: flex-end;
     justify-content: center;
     height: 40%;
 }
 
-.modal .project-info-modal-technologies i{
+.modal .project-info-modal-technologies i {
     padding: 5px;
     font-size: 35px;
     border-top: 1.5px solid var(--css-framework-hr-custom-color);
-    transition: none;
     transition: 0.3s linear;
 }
 
-.modal .project-info-modal-technologies i:hover{
+.modal .project-info-modal-technologies i:hover {
     color: var(--section-button-secondary-hover-color);
 }
 
 /* Project Info Footer */
-.modal .project-info-modal-footer-buttons{
+.modal .project-info-modal-footer-buttons {
     align-items: flex-end;
     justify-content: center;
     padding-bottom: 10px;
 }
 
-.modal .project-info-modal-footer-buttons a{
+.modal .project-info-modal-footer-buttons a {
     border-radius: 7px;
     padding: 5px 15px;
     font-size: 17px;
     margin: 0 4px;
     background: var(--modal-project-info-button-background);
     color: var(--modal-project-info-button-color);
-    transition: none;
     transition: all 0.25s ease-in-out;
 }
 
-.modal .project-info-modal-footer-buttons a:not(.ahref-disabled):hover{
+.modal .project-info-modal-footer-buttons a:not(.ahref-disabled):hover {
     background: var(--modal-project-info-button-background-hover);
     color: var(--modal-project-info-button-color-hover);
 }
 
 /****************************/
 /* Knowledge Modal */
-.modal .modal-knowledge{
+.modal .modal-knowledge {
     width: 100%;
     padding: 5px;
     flex-wrap: wrap;
     justify-content: flex-start;
 }
 
-.modal .modal-knowledge-subtitle{
+.modal .modal-knowledge-subtitle {
     width: 100%;
     font-size: 22px;
     font-weight: var(--section-text-secondary-font-weight);
 }
 
-.modal .modal-knowledge-box-single{
+.modal .modal-knowledge-box-single {
     width: 31.8%;
     min-height: 380px;
     max-height: 400px;
@@ -650,59 +776,65 @@ body .modal{
     overflow: hidden;
 }
 
-.modal .modal-knowledge-box-single-image{
+.modal .modal-knowledge-box-single-image {
     height: 45%;
     display: flex;
     justify-content: center;
     overflow: hidden;
 }
 
-.modal .modal-knowledge-box-single img{
+.modal .modal-knowledge-box-single img {
     width: 100%;
     height: 100%;
     transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+    -ms-transform: scale(1);
     object-fit: cover;
 }
 
-.modal .modal-knowledge-box-single .modal-knowledge-box-single-text{
+.modal .modal-knowledge-box-single .modal-knowledge-box-single-text {
     height: 55%;
     padding: 10px;
     position: relative;
 }
 
-.modal .modal-knowledge-box-single-text h3, .modal .modal-knowledge-custom-box-single-text h3{
+.modal .modal-knowledge-box-single-text h3,
+.modal .modal-knowledge-custom-box-single-text h3 {
     font-size: 17px;
 }
 
-.modal .modal-knowledge-box-single-text hr, .modal .modal-knowledge-custom-box-single-text hr{
+.modal .modal-knowledge-box-single-text hr,
+.modal .modal-knowledge-custom-box-single-text hr {
     margin: 7px 0;
 }
 
-.modal .modal-knowledge-box-single-text p, .modal .modal-knowledge-custom-box-single-text p{
+.modal .modal-knowledge-box-single-text p,
+.modal .modal-knowledge-custom-box-single-text p {
     font-size: 15px;
 }
 
-.modal .modal-knowledge-box-single-text a{
+.modal .modal-knowledge-box-single-text a {
     color: var(--global-default-secondary-color);
     text-decoration: underline;
     position: absolute;
     bottom: 12px;
     left: 12px;
-    transition: none;
     transition: all 0.2s linear;
 }
 
-.modal .modal-knowledge-box-single-text a:hover{
+.modal .modal-knowledge-box-single-text a:hover {
     color: var(--section-button-text-hover-color);
 }
 
 /* Knowledge Modal Custom Background Box (Certificates) */
-.modal .modal-knowledge-certificates .modal-knowledge-box-single{
+.modal .modal-knowledge-certificates .modal-knowledge-box-single {
     background: var(--background-quarter);
 }
 
 /* Knowledge Modal Custom Box Single (Idioms) */
-.modal .modal-knowledge-custom-box-single{
+.modal .modal-knowledge-custom-box-single {
     height: 190px;
     margin: 14px 8px;
     background: var(--background-five);
@@ -712,42 +844,42 @@ body .modal{
     overflow: hidden;
 }
 
-.modal .modal-knowledge-custom-box-single-image{
+.modal .modal-knowledge-custom-box-single-image {
     display: flex;
     justify-content: center;
     overflow: hidden;
 }
 
-.modal .modal-knowledge-custom-box-single img{
+.modal .modal-knowledge-custom-box-single img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.modal .modal-knowledge-custom-box-single .modal-knowledge-custom-box-single-text{
+.modal .modal-knowledge-custom-box-single .modal-knowledge-custom-box-single-text {
     height: 100%;
     padding: 10px;
 }
 
 /* Knowledge Modal Idioms Custom Nivel */
-.modal .modal-knowledge-idioms-nivel{
+.modal .modal-knowledge-idioms-nivel {
     width: 100%;
     height: 100%;
     align-items: center;
     justify-content: center;
 }
 
-.modal .modal-knowledge-idioms-nivel p{
+.modal .modal-knowledge-idioms-nivel p {
     margin: 0 10px;
     font-size: 17px;
 }
 
-.modal .modal-knowledge-idioms-nivel p.modal-knowledge-idioms-nivel-fill{
+.modal .modal-knowledge-idioms-nivel p.modal-knowledge-idioms-nivel-fill {
     color: var(--section-technologies-animation-color);
     font-weight: 600;
 }
 
-.modal .modal-knowledge-idioms-nivel .modal-knowledge-idioms-nivel-custom_line{
+.modal .modal-knowledge-idioms-nivel .modal-knowledge-idioms-nivel-custom_line {
     border-radius: 8px;
     width: 21%;
     height: 9px;
@@ -755,34 +887,39 @@ body .modal{
     background: white;
 }
 
-.modal .modal-knowledge-idioms-nivel div.modal-knowledge-idioms-nivel-fill{
+.modal .modal-knowledge-idioms-nivel div.modal-knowledge-idioms-nivel-fill {
     background: var(--section-technologies-animation-color);
 }
 
-.modal .modal-knowledge-idioms-nivel div.modal-knowledge-idioms-nivel-midfill{
+.modal .modal-knowledge-idioms-nivel div.modal-knowledge-idioms-nivel-midfill {
     background: linear-gradient(90deg, var(--section-technologies-animation-color) 50%, white 50%);
 }
 
 /**********************************/
 /****** Responsive ******/
 /* Custom Responsive */
-@media screen and (max-width: 1308px){
+@media screen and (max-width: 1308px) {
 
     /* Knowledge Modal */
-    .modal .modal-knowledge-box-single{
+    .modal .modal-knowledge-box-single {
         width: 31.1%;
     }
 
-    .modal .modal-knowledge-box-single .modal-knowledge-box-single-text{
+    .modal .modal-knowledge-box-single .modal-knowledge-box-single-text {
         overflow: auto;
     }
 
-    .modal .modal-knowledge-box-single-text a{
-        position: static;
+    .modal .modal-knowledge-box-single-text p {
+        margin-bottom: 12px;
     }
 
-    .modal .modal-knowledge-box-single-text p{
-        margin-bottom: 12px;
+}
+
+/* Custom Responsive */
+@media screen and (max-width: 1150px) {
+
+    .modal .modal-knowledge-box-single-text a {
+        position: static;
     }
 
 }
@@ -790,7 +927,7 @@ body .modal{
 /* Custom Responsive */
 @media screen and (max-width: 1065px) {
 
-    .modal .modal-knowledge-box-single{
+    .modal .modal-knowledge-box-single {
         width: 31%;
     }
 
@@ -800,132 +937,156 @@ body .modal{
 @media screen and (max-width: 1024px) {
 
     /* About Me */
-    section.about-me{
+    section.about-me {
         max-height: none;
     }
 
     /* About Me -> Image */
-    section.about-me .about-me_image{
-        width: 42%;
+    section.about-me .about-me_image {
+        width: 100%;
         height: 100%;
+        margin-right: 25px;
     }
 
-    section.about-me .about-me_image img{
+    section.about-me .about-me_image img {
         max-width: 100%;
         object-fit: cover;
     }
 
     /* About Me -> Text */
-    section.about-me .about-me_text{
+    section.about-me .about-me_text {
         padding: 15px 0;
+        max-width: 600px;
     }
 
-    section.about-me .about-me_text h2{
+    section.about-me .about-me_text h2 {
         font-size: 20px;
     }
 
-    section.about-me .about-me_text p{
+    section.about-me .about-me_text p {
         font-size: 16px;
         max-width: none;
     }
 
     /* Projects -> Wrapper */
-    .projects-wrapper{
+    .projects-wrapper {
         padding: 3px;
     }
 
     /* Project -> Single */
-    .projects-single{
+    .projects-single {
         height: 375px;
     }
 
     /* Project -> Single -> Image */
-    .projects-single .projects-single-image{
+    .projects-single .projects-single-image {
         height: 100%;
     }
 
-    .projects-single .projects-single-image img{
+    .projects-single .projects-single-image img {
         width: 100%;
         height: 100%;
         object-fit: cover;
     }
 
     /* Technologies > Single */
-    .technologies-single-box-nivel{
+    .technologies-single-box-nivel {
         font-size: 16px;
     }
 
-    .tech-single-box-nivel-custom_line{
+    .tech-single-box-nivel-custom_line {
         margin: 0 4px;
         margin-top: 3px;
     }
 
     /* Technologies > Dynamic Image */
-    .technologies-dynamic-image{
+    .technologies-dynamic-icon {
         max-height: none;
         height: 400px;
     }
 
     /***************************/
     /* Project Info Modal */
-    .modal .project-info-modal-content .project-info-modal-image{
+    .modal .project-info-modal-content .project-info-modal-image {
         width: 35%;
     }
 
-    .modal .project-info-modal-content .project-info-modal-text{
+    .modal .project-info-modal-content .project-info-modal-text {
         width: 65%;
     }
 
     /* Knowledge Modal */
-    .modal .modal-knowledge-custom-box-single-image{
+    .modal .modal-knowledge-custom-box-single-image {
         width: 40%;
     }
 
-    .modal .modal-knowledge-custom-box-single .modal-knowledge-custom-box-single-text{
+    .modal .modal-knowledge-custom-box-single .modal-knowledge-custom-box-single-text {
         width: 60%;
     }
 
-    .modal .modal-knowledge-idioms-nivel p{
+    .modal .modal-knowledge-idioms-nivel p {
         margin: 0;
     }
 
 }
 
 /* Custom Responsive */
-@media screen and (max-width: 925px){
+@media screen and (max-width: 925px) {
 
     /* Technologies Dynamic Image */
-    .technologies-dynamic-image i{
+    .technologies-dynamic-icon i {
         font-size: 250px;
     }
 
 }
 
 /* Custom Responsive */
-@media screen and (max-width: 887px){
+@media screen and (max-width: 890px) {
+
+    /* About Me -> Text */
+    section.about-me .about-me_text {
+        max-width: 475px;
+    }
+
+    /* Knowledge */
+    section.knowledge .container > div{
+        padding: 0 20px;
+    }
+
+    /* Knowledge > Technologies > List Container */
+    .technologies-list-container{
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    /* Knowledge Right Side > Soft Skills */
+    .knowledge-right-side div.soft-skills-wrapper {
+        padding: 10px 25px;
+        grid-template-columns: repeat(2, 1fr);
+    }
 
     /* Knowledge Modal */
-    .modal .modal-knowledge-box-single{
+    .modal .modal-knowledge-box-single {
         width: 30%;
     }
 
 }
 
 /* Custom Responsive */
-@media screen and (max-width: 840px){
+@media screen and (max-width: 840px) {
 
     /* Project Info Modal */
-    .modal .project-info-modal-technologies{
+    .modal .project-info-modal-technologies {
         padding-top: 45%;
     }
 
 }
 
 /* Custom Responsive */
-@media screen and (max-width: 800px){
+@media screen and (max-width: 800px) {
 
     /* Technologies Dynamic Image */
-    .technologies-dynamic-image i{
+    .technologies-dynamic-icon i {
         font-size: 210px;
     }
 
@@ -935,62 +1096,62 @@ body .modal{
 @media screen and (max-width: 768px) {
 
     /* Apresentation */
-    section.apresentation .container{
+    section.apresentation .container {
         padding: 20px;
     }
 
     /* Apresentation > Text */
-    .apresentation .apresentation-text{
+    .apresentation .apresentation-text {
         padding-bottom: 30px;
     }
 
     /* Apresentation > Image */
-    .apresentation .apresentation-image{
+    .apresentation .apresentation-image {
         padding-bottom: 20px;
     }
 
-    .apresentation .apresentation-image img{
+    .apresentation .apresentation-image img {
         max-width: 240px;
     }
 
     /* End-To-End Applications */
-    section.end-to-end-applications h2{
+    section.end-to-end-applications h2 {
         position: absolute;
         top: 50%;
         left: 0;
         font-size: 28px;
     }
 
-    section.end-to-end-applications h2 span{
+    section.end-to-end-applications h2 span {
         font-size: 30px;
     }
 
     /* About Me */
-    section.about-me{
+    section.about-me {
         max-height: none;
     }
 
-    section.about-me .container{
+    section.about-me .container {
         flex-direction: column;
         justify-content: center;
         padding: 0;
     }
 
     /* About Me -> Image */
-    section.about-me .about-me_image{
+    section.about-me .about-me_image {
         margin: 0;
         margin-bottom: 10px;
         width: 100%;
     }
 
-    section.about-me .about-me_image img{
+    section.about-me .about-me_image img {
         max-width: 100%;
         border-bottom-left-radius: 8px;
         border-bottom-right-radius: 8px;
     }
 
     /* About Me -> Text */
-    section.about-me .about-me_text{
+    section.about-me .about-me_text {
         text-align: center;
         padding-bottom: 10px;
         display: flex;
@@ -999,22 +1160,22 @@ body .modal{
         justify-content: center;
     }
 
-    section.about-me .about-me_text h2{
+    section.about-me .about-me_text h2 {
         padding: 0 80px;
     }
 
-    section.about-me .about-me_text p{
+    section.about-me .about-me_text p {
         width: 95%;
         max-width: none;
     }
 
     /* Projects */
-    section.projects .container{
+    section.projects .container {
         padding: 15px;
     }
 
     /* Projects -> Wrapper */
-    .projects-wrapper{
+    .projects-wrapper {
         padding: 0;
         flex-direction: column;
         flex-wrap: nowrap;
@@ -1022,151 +1183,193 @@ body .modal{
     }
 
     /* Project -> Single */
-    .projects-single{
+    .projects-single {
         height: auto;
         padding: 8px;
         padding-bottom: 30px;
         margin-bottom: 5px;
         border-bottom: 2px solid var(--global-default-color);
     }
-    
+
     /* Project -> Single -> Image */
-    .projects-single .projects-single-image{
+    .projects-single .projects-single-image {
         width: 100%;
         height: 150px;
         margin-bottom: 5px;
     }
 
-    .projects-single .projects-single-image img{
+    .projects-single .projects-single-image img {
         width: 100%;
         height: 100%;
         object-fit: cover;
     }
 
     /* Project -> Single -> Text */
-    .projects-single-text{
+    .projects-single-text {
         width: 100%;
         max-width: none;
         height: auto;
     }
-    
-    .projects-single-text p{
+
+    .projects-single-text p {
         margin-bottom: 20px;
     }
 
-    .projects-single-text a{
+    .projects-single-text a {
         position: static;
     }
 
-    .projects-single .projects-single-image{
+    .projects-single .projects-single-image {
         order: unset !important;
     }
-    
-    .projects-single .projects-single-text{
+
+    .projects-single .projects-single-text {
         order: unset !important;
     }
 
     /* Knowledge Technologies Projects */
-    section.technologies{
+    section.knowledge {
         padding: 5px;
+        padding-top: 20px;
         padding-bottom: 40px;
     }
 
-    section.technologies .container{
+    section.knowledge .container {
         padding: 0;
     }
 
-    section.technologies > h2{
+    section.knowledge .container>div {
+        padding: 0;
+    }
+
+    section.knowledge>h2 {
         margin-bottom: 20px;
     }
 
-    .technologies-single-box-title i{
+    .technologies-single-box-title i {
         margin: 0;
         text-align: center;
     }
 
-    /* Technologies > Single Container */
-    .technologies-single-container{
+    /* Technologies > List Container */
+    .technologies-list-container {
         padding: 0;
     }
 
     /* Technologies > Single */
-    .technologies-single-box-nivel{
+    .technologies-single-box-nivel {
         flex-direction: row;
         flex-wrap: nowrap;
         font-size: 15px;
     }
 
-    .tech-single-box-nivel-custom_line{
+    .tech-single-box-nivel-custom_line {
         margin: 0 5px;
         margin-top: 3px;
     }
 
     /* Technologies > Modal Button */
-    .technologies-more-button button{
+    .technologies-more-button button {
         width: 90%;
         padding-bottom: 10px;
     }
 
-    /* Technologies > Dynamic Image */
-    .technologies-dynamic-image{
+    /* Technologies > Dynamic Icon */
+    .technologies-right {
+        padding: 0;
+        padding-top: 10px;
+    }
+
+    .technologies-dynamic-icon {
         display: none;
     }
 
+    .technologies-right h3 {
+        margin-top: 0;
+    }
+
+    /* Knowledge Right Side > Soft Skills */
+    .knowledge-right-side {
+        padding-top: 10px !important;
+        font-size: 20px;
+        display: none;
+    }
+
+    /* Knowledge Right Side > Swipe To Technologies */
+    .knowledge-swipe-to-technologies-button {
+        position: static;
+    }
+
+    .knowledge-right-side div.soft-skills-wrapper {
+        padding-top: 25px;
+        gap: 20px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .soft-skill-single i {
+        font-size: 45px;
+    }
+
+    .soft-skill-single h3 {
+        font-size: 22px;
+    }
+
     /* Contact */
-    section.contact .container > h2{
+    section.contact .container>h2 {
         font-size: 28px;
     }
 
     /****************************/
     /* Modals */
-    .modal .modal-title{
+    .modal .modal-title {
         font-size: 22px;
     }
 
-    div.modal#project-info-modal .container, div.modal#knowledge-modal .container{
+    div.modal#project-info-modal .container,
+    div.modal#knowledge-modal .container {
         flex-wrap: nowrap;
     }
 
     /* Project Info Modal */
-    .modal .project-info-modal-content{
+    .modal .project-info-modal-content {
         flex-direction: column;
         flex-wrap: nowrap;
         align-items: center;
     }
 
-    .modal .project-info-modal-content .project-info-modal-div{
+    .modal .project-info-modal-content .project-info-modal-div {
         flex-direction: row;
         flex-wrap: nowrap;
         text-align: center;
         align-items: center;
     }
 
-    .modal .project-info-modal-content .project-info-modal-image, .modal .project-info-modal-content .project-info-modal-text{
+    .modal .project-info-modal-content .project-info-modal-image,
+    .modal .project-info-modal-content .project-info-modal-text {
         width: 100%;
     }
 
-    .modal .project-info-modal-content .project-info-modal-image{
+    .modal .project-info-modal-content .project-info-modal-image {
         max-height: 20%;
         margin-bottom: 10px;
     }
 
-    .modal .project-info-modal-text{
+    .modal .project-info-modal-text {
         flex-direction: column !important;
         padding: 0;
         max-height: none;
     }
 
-    .modal .project-info-modal-text p{
+    .modal .project-info-modal-text p {
         border: 0;
     }
 
-    .modal .project-info-modal-technologies{
+    .modal .project-info-modal-technologies {
         padding-top: 0;
     }
 
     /* Knowledge Modal */
-    .modal .modal-knowledge{
+    .modal .modal-knowledge {
         width: 100%;
         padding: 5px;
         flex-direction: column;
@@ -1174,64 +1377,64 @@ body .modal{
         align-items: center;
     }
 
-    .modal .modal-knowledge-subtitle{
+    .modal .modal-knowledge-subtitle {
         font-size: 20px;
     }
 
-    .modal .modal-knowledge-box-single{
+    .modal .modal-knowledge-box-single {
         width: 90%;
         max-width: none;
         text-align: center;
     }
 
-    .modal .modal-knowledge-box-single-text a{
+    .modal .modal-knowledge-box-single-text a {
         width: 100%;
         text-align: center;
         left: 0;
     }
 
     /* Knowledge Custom Box */
-    .modal .modal-knowledge-custom-box-single{
+    .modal .modal-knowledge-custom-box-single {
         height: auto;
         flex-wrap: nowrap;
     }
 
-    .modal .modal-knowledge-custom-box-single-image{
+    .modal .modal-knowledge-custom-box-single-image {
         height: 100%;
     }
 
-    .modal .modal-knowledge-custom-box-single .modal-knowledge-custom-box-single-text{
+    .modal .modal-knowledge-custom-box-single .modal-knowledge-custom-box-single-text {
         flex-wrap: nowrap;
     }
 
-    .modal-knowledge-custom-box-single-text .hr-horizontal{
+    .modal-knowledge-custom-box-single-text .hr-horizontal {
         width: 100%;
     }
 
-    .modal .modal-knowledge-idioms-nivel{
+    .modal .modal-knowledge-idioms-nivel {
         flex-direction: column;
         flex-wrap: nowrap;
     }
 
-    .modal .modal-knowledge-custom-box-single-image, 
-    .modal .modal-knowledge-custom-box-single .modal-knowledge-custom-box-single-text{
+    .modal .modal-knowledge-custom-box-single-image,
+    .modal .modal-knowledge-custom-box-single .modal-knowledge-custom-box-single-text {
         width: 100%;
     }
 
-    .modal .modal-knowledge-idioms-nivel{
+    .modal .modal-knowledge-idioms-nivel {
         padding: 0;
     }
 
-    .modal .modal-knowledge-idioms-nivel p{
+    .modal .modal-knowledge-idioms-nivel p {
         margin: 10px 0;
     }
 
-    .modal .modal-knowledge-idioms-nivel .modal-knowledge-idioms-nivel-custom_line{
+    .modal .modal-knowledge-idioms-nivel .modal-knowledge-idioms-nivel-custom_line {
         width: 12px;
         height: 50px;
     }
 
-    .modal .modal-knowledge-idioms-nivel div.modal-knowledge-idioms-nivel-midfill{
+    .modal .modal-knowledge-idioms-nivel div.modal-knowledge-idioms-nivel-midfill {
         background: linear-gradient(180deg, var(--section-technologies-animation-color) 50%, white 50%);
     }
 
@@ -1241,84 +1444,84 @@ body .modal{
 @media screen and (max-width: 480px) {
 
     /* Apresentation */
-    section.apresentation .container{
+    section.apresentation .container {
         padding: 8px;
     }
 
     /* Apresentation > Image */
-    .apresentation .apresentation-image img{
+    .apresentation .apresentation-image img {
         max-width: 80%;
     }
-    
+
 
     /* End-To-End Applications */
-    section.end-to-end-applications h2{
+    section.end-to-end-applications h2 {
         top: 42%;
     }
 
     /* About Me > Text */
-    section.about-me .about-me_text{
+    section.about-me .about-me_text {
         padding: 0;
         padding-bottom: 30px;
     }
 
     /* Project > Single > Text */
-    .projects-single-text{
+    .projects-single-text {
         padding: 2px !important;
     }
 
     /* Project > Single > Text > Title */
-    .projects-single-text h2{
+    .projects-single-text h2 {
         font-size: 18px;
     }
-    
+
     /* Project > Single > Text > Description */
-    .projects-single-text p{
+    .projects-single-text p {
         font-size: 15px;
     }
 
     /* Technologies > Single */
-    .technologies-single-box-nivel{
+    .technologies-single-box-nivel {
         font-size: 14px;
     }
 
-    .tech-single-box-nivel-custom_line{
+    .tech-single-box-nivel-custom_line {
         margin: 0 5px;
         margin-top: 3px;
     }
 
     /* Contact */
-    section.contact .container{
-        padding: 15px; 
+    section.contact .container {
+        padding: 15px;
         padding-top: 135px;
         padding-bottom: 125px;
     }
 
     /* Project Info Modal */
-    #project-info-modal .modal-title{
+    #project-info-modal .modal-title {
         font-size: 19px;
         padding-right: 20px;
     }
 
-    .modal .project-info-modal-technologies{
+    .modal .project-info-modal-technologies {
         margin: 15% 0;
     }
 
 }
 
 /* Custom Responsive */
-@media screen and (max-width: 380px) and (max-height: 670px){
+@media screen and (max-width: 380px) and (max-height: 670px) {
 
     /* Project Info Modal */
-    .modal .modal-title{
+    .modal .modal-title {
         font-size: 19px;
     }
 
-    .modal .project-info-modal-content .project-info-modal-text{
+    .modal .project-info-modal-content .project-info-modal-text {
         margin-bottom: 10%;
     }
 
-    .modal .project-info-modal-content .project-info-modal-technologies{
+    .modal .project-info-modal-content .project-info-modal-technologies {
         padding-top: 100%;
         padding-bottom: 20%;
     }
@@ -1329,12 +1532,12 @@ body .modal{
 @media screen and (max-width: 290px) {
 
     /* Technologies/Knowledge */
-    .technologies-single-box-nivel{
+    .technologies-single-box-nivel {
         overflow-x: auto;
-        
+
     }
 
-    .technologies-single-box-nivel::-webkit-scrollbar{
+    .technologies-single-box-nivel::-webkit-scrollbar {
         height: 8px;
     }
 
@@ -1344,11 +1547,11 @@ body .modal{
 @media screen and (max-width: 250px) {
 
     /* Knowledge Technologies Projects */
-    section.technologies > h2{
+    section.knowledge>h2 {
         font-size: 18px;
     }
 
-    .technologies-single-box-nivel{
+    .technologies-single-box-nivel {
         padding-left: 110px;
     }
 

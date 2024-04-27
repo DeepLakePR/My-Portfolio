@@ -66,7 +66,59 @@
 
     "knowledge": {
         "knowledge-title": "Meu Conhecimento",
-        "knowledge-modal-button": "Mais Sobre Meu Conhecimento <i class='fa-solid fa-plus'></i>"
+        "knowledge-modal-button": "Mais Sobre Meu Conhecimento <i class='fa-solid fa-plus'></i>",
+
+        "knowledge-soft-skills": {
+
+            "soft-skills-title": "Soft Skills",
+
+
+            "soft-skills-fast_learning": {
+                "soft-skills-fast_learning-title": "Aprendizado <b>Rápido</b>",
+                "soft-skills-fast_learning-description": "Assim como tenho autonomia e fácil adaptação, minha curva de aprendizado é rápida, constante e exponencial."
+            },
+
+            "soft-skills-team_work": {
+                "soft-skills-team_work-title": "Trabalho em <b>Equipe</b>",
+                "soft-skills-team_work-description": "Amo trabalhar em equipe e aprender com os colegas, evoluir junto com eles e vê-los no sucesso junto comigo é uma missão e um sonho."
+            },
+
+            "soft-skills-clean_organized": {
+                "soft-skills-clean_organized-title": "Ambiente de Trabalho <b>Limpo e Organizado</b>",
+                "soft-skills-clean_organized-description": "Sou um homem extremamente organizado e que tem TOC ao ver algo fora do lugar ou alguma coisa suja, isso é uma regra para mim."
+            },
+
+            "soft-skills-autonomy": {
+                "soft-skills-autonomy-title": "<b>Autonomia</b> para resolver <b>Problemas</b>",
+                "soft-skills-autonomy-description": "Se necessário vou até as profundezas da internet para achar a solução de um problema nas aplicações que desenvolvo, não consigo dormir sem ter resolvido um bug antes e com certeza não dependo de outros desenvolvedores para fazer isso."
+            },
+
+            "soft-skills-respect_empathy": {
+                "soft-skills-respect_empathy-title": "<b>Empatia e Respeito</b>",
+                "soft-skills-respect_empathy-description": "Amar ao próximo e respeitá-lo independente das diferenças é um princípio para mim já que, “Respeito gera respeito“."
+            },
+
+            "soft-skills-communication": {
+                "soft-skills-communication-title": "<b>Comunicação</b>",
+                "soft-skills-communication-description": "Nos últimos anos venho focando em evoluir minha comunicação com as pessoas, e isso tem me dado resultados incríveis. A arte de se comunicar é linda."
+            },
+
+            "soft-skills-proactivity_focus": {
+                "soft-skills-proactivity_focus-title": "<b>Proatividade e Foco</b>",
+                "soft-skills-proactivity_focus-description": "Sempre estou me movimentando e fazendo algo, e quando estou parado me pergunto o por quê disso, e logo após isso volto ao foco."
+            },
+
+            "soft-skills-resilience": {
+                "soft-skills-resilience-title": "<b>Resiliência</b>",
+                "soft-skills-resilience-description": "A grande maioria das pessoas costuma desistir na primeira dificuldade que aparece no meio do caminho, mas eu vou além, desistir não é uma opção para mim. Isso me faz diferente, isso me faz melhor."
+            },
+
+            "soft-skills-flexibility_adaptation": {
+                "soft-skills-flexibility_adaptation-title": "<b>Flexibilidade e Capacidade de Adaptação</b>",
+                "soft-skills-flexibility_adaptation-description": "Sou flexível e costumo me adaptar facilmente às novas tecnologias e às novas tendências do mercado ao redor do mundo."
+            }
+
+        }
     },
 
     "contact": {
