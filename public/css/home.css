@@ -1277,8 +1277,7 @@ body .modal {
 
     /* Technologies > Dynamic Icon */
     .technologies-right {
-        padding: 0;
-        padding-top: 10px;
+        padding: 15px 0;
     }
 
     .technologies-dynamic-icon {

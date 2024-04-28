@@ -35,10 +35,10 @@ $(function () {
 
     /* Technologies */
     ScrollReveal().reveal('.technologies-single-box', { ...normalReveal, duration: 1500, afterReveal: technologiesSingleBoxAnimation });
-    ScrollReveal().reveal('button.knowledge-modal-toggle', { ...normalReveal, duration: 2500 });
+    ScrollReveal().reveal('button.knowledge-modal-toggle', { ...normalReveal, duration: 1100 });
 
-    ScrollReveal().reveal('h3.swipe-to-soft-skills-text', { ...normalReveal, duration: 2500 });
-    ScrollReveal().reveal('i.swipe-to-soft-skills-button', { ...normalReveal, duration: 2500 });
+    ScrollReveal().reveal('h3.swipe-to-soft-skills-text', { ...normalReveal, duration: 1100 });
+    ScrollReveal().reveal('i.swipe-to-soft-skills-button', { ...normalReveal, duration: 1100 });
 
     ////////////////
     // Projects Functions
