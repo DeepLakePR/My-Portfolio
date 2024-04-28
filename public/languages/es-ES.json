@@ -33,7 +33,7 @@
 
     "about-me": {
         "about-me-title": "Acerca de Mí",
-        "about-me-text": "Hola, mi nombre es Guilherme Fortunato Machado, actualmente tengo <b>16 años</b> y vivo en Paraná, desde los 9 años he tenido contacto con la programación y el desarrollo de juegos, a los 12 años creé mi primer sitio web, realicé el <b>curso Fullstack de Danki Code</b> y hoy tengo certificados como <b>Desarrollador de Juegos, Desarrollador Web y Programador de Aplicaciones</b>, tengo conocimientos en idiomas como <b>PHP, JavaScript y Lua</b> como lenguaje de programación para juegos. <b>Estoy interesado en trabajar o trabajar como freelance en el área Fullstack o Mobile</b>, y también estoy aprendiendo <b>Python</b> y en un futuro <b>Ruby</b>. Tengo conocimientos en tecnologías como <b>React JS, React Native y un poco NodeJS</b>, Front-End Frameworks como <b>Bootstrap, Materialize y SASS</b>, y en bases de datos lo que tengo más conocimientos de <b>MySQL</b>, también tengo algunos conocimientos de <b>MongoDB</b>."
+        "about-me-text": "Hola, mi nombre es Guilherme Fortunato Machado, actualmente tengo <b>16 años</b> y vivo en Brasil, desde los 9 años he tenido contacto con la programación y el desarrollo de juegos, a los 12 años creé mi primer sitio web, realicé el <b>curso Fullstack de Danki Code</b> y hoy tengo certificados como <b>Desarrollador de Juegos, Desarrollador Web y Programador de Aplicaciones</b>, tengo conocimientos en idiomas como <b>PHP, JavaScript y Lua</b> como lenguaje de programación para juegos. <b>Estoy interesado en trabajar o trabajar como freelance en el área Fullstack o Mobile</b>, y también estoy aprendiendo <b>Python</b> y en un futuro <b>Ruby</b>. Tengo conocimientos en tecnologías como <b>React JS, React Native y un poco NodeJS</b>, Front-End Frameworks como <b>Bootstrap, Materialize y SASS</b>, y en bases de datos lo que tengo más conocimientos de <b>MySQL</b>, también tengo algunos conocimientos de <b>MongoDB</b>."
     },
 
     "projects": {
@@ -58,7 +58,34 @@
             "projects-single-dentistry-description": "Un sitio web que muestra el trabajo de un dentista, creado con <b>Vanilla HTML 5 & CSS 3</b>.",
 
             "projects-single-concessionaire-title": "Concesionario de vehículos especiales - 2023",
-            "projects-single-concessionaire-description": "Desarrollé un sitio web para concesionarios usando <b>PHP y Front-End</b>, se puede adaptar y vender fácilmente a otros concesionarios."
+            "projects-single-concessionaire-description": "Desarrollé un sitio web para concesionarios usando <b>PHP y Front-End</b>, se puede adaptar y vender fácilmente a otros concesionarios.",
+
+            "projects-single-combat_game-title": "Juego de Lucha en JavaScript - 2024",
+            "projects-single-combat_game-description": "Un divertido juego para <b>2 personas</b> creado con los conceptos básicos de JavaScript orientado a objetos.",
+
+            "projects-single-o_corrector-title": "El Corredor - 2024",
+            "projects-single-o_corrector-description": "Este es un gran sitio para mostrar el <b>trabajo</b> de un <b>Agente Inmobiliario</b>, también sirve para que el cliente cree <b>Confianza</b> en el <b>broker</b>, dando lugar así a una posible <b>venta de la propiedad</b>.",
+
+            "projects-single-3d_three-title": "3D Tres JS - 2024",
+            "projects-single-3d_three-description": "Aprender a crear sitios web <b>multidimensionales</b>.",
+            
+            "projects-single-news_backend-title": "Periódico de Back-End - 2024",
+            "projects-single-news_backend-description": "Desarrollé este <b>sitio web de noticias extremadamente simple con filtro por categoría</b>, lo hice solo para practicar y mejorar mis conocimientos principalmente con <b>Querys</b> en la Base de Datos <b>MySQL</b>. .",
+
+            "projects-single-digital_agency-title": "Agencia Digital - 2022",
+            "projects-single-digital_agency-description": "Pequeño proyecto desarrollado como modelo para vender a otras <b>agencias digitales</b> que quieran llegar a más clientes.",
+
+            "projects-single-rbi_web-title": "RBI Web - 2023",
+            "projects-single-rbi_web-description": "<b>Landing Page</b> desarrollada para una barbería que frecuento, utilizada principalmente para publicitar los servicios que ofrece la barbería, el <b>cliente también puede ubicar y saber dónde se encuentran las unidades de la barbería</b>.",
+
+            "projects-single-weather_station-title": "Estación meteorológica - 2024",
+            "projects-single-weather_station-description": "Aplicación para <b>IOs y Android</b> donde puedes tomar <b>notas del clima actual de la región</b> y exportarlas a una <b>hoja de cálculo de excel</b>, todas las notas (Temperatura, Viento dirección, rayos UV) se almacenan en una base de datos <b>Firebase</b>, en el futuro será posible generar gráficos en Excel con los datos almacenados.",
+
+            "projects-single-node_openai_image-title": "Imagen de nodo OpenAI - 2024",
+            "projects-single-node_openai_image-description": "Un pequeño proyecto donde exploré el universo de la <b>inteligencia artificial</b> con generación de imágenes, utilizando la tecnología OpenAI <b>Dall-E</b>",
+
+            "projects-single-rbi_app-title": "RBI App - 2023",
+            "projects-single-rbi_app-description": "Aplicación móvil desarrollada como complemento a la <b>versión Web (RBI Web)</b>, realizada específicamente para <b>barberías</b>, donde se puede ver <b>horario del día, agenda, control de empleados</b> etcétera."
 
         }
 
@@ -66,7 +93,59 @@
 
     "knowledge": {
         "knowledge-title": "Mi Conocimiento",
-        "knowledge-modal-button": "Más Sobre Mis Conocimientos <i class='fa-solid fa-plus'></i>"
+        "knowledge-modal-button": "Más Sobre Mis Conocimientos <i class='fa-solid fa-plus'></i>",
+
+        "knowledge-soft-skills": {
+
+            "soft-skills-title": "Habilidades Blandas",
+
+
+            "soft-skills-fast_learning": {
+                "soft-skills-fast_learning-title": "Aprendizaje <b>rápido</b>",
+                "soft-skills-fast_learning-description": "Así como tengo autonomía y fácil adaptación, mi curva de aprendizaje es rápida, constante y exponencial."
+            },
+
+            "soft-skills-team_work": {
+                "soft-skills-team_work-title": "<b>Trabajo en equipo</b>",
+                "soft-skills-team_work-description": "Me encanta trabajar en equipo y aprender de mis compañeros, evolucionar junto a ellos y verlos triunfar junto a mí es una misión y un sueño."
+            },
+
+            "soft-skills-clean_organized": {
+                "soft-skills-clean_organized-title": "<b>Ambiente de trabajo limpio y organizado</b>",
+                "soft-skills-clean_organized-description": "Soy un hombre sumamente organizado que tiene TOC cuando ve algo fuera de lugar o algo sucio, esa es una regla para mí."
+            },
+
+            "soft-skills-autonomy": {
+                "soft-skills-autonomy-title": "<b>Autonomía</b> para resolver <b>Problemas</b>",
+                "soft-skills-autonomy-description": "Si es necesario, voy a lo más profundo de Internet para encontrar una solución a un problema en las aplicaciones que desarrollo, no puedo dormir sin haber solucionado un error primero y ciertamente no dependo de otros desarrolladores para hacerlo."
+            },
+
+            "soft-skills-respect_empathy": {
+                "soft-skills-respect_empathy-title": "<b>Empatía y Respeto</b>",
+                "soft-skills-respect_empathy-description": "Amar a los demás y respetarlos sin importar las diferencias es un principio para mí ya que “El respeto genera respeto”."
+            },
+
+            "soft-skills-communication": {
+                "soft-skills-communication-title": "<b>Comunicación</b>",
+                "soft-skills-communication-description": "En los últimos años me he centrado en evolucionar mi comunicación con las personas y esto me ha dado resultados increíbles. El arte de comunicar es hermoso."
+            },
+
+            "soft-skills-proactivity_focus": {
+                "soft-skills-proactivity_focus-title": "<b>Proactividad y Enfoque</b>",
+                "soft-skills-proactivity_focus-description": "Siempre estoy moviéndome y haciendo algo, y cuando estoy quieto me pregunto por qué, y poco después vuelvo a concentrarme."
+            },
+
+            "soft-skills-resilience": {
+                "soft-skills-resilience-title": "<b>Resiliencia</b>",
+                "soft-skills-resilience-description": "La gran mayoría de las personas suelen darse por vencidos ante la primera dificultad que aparece en el camino, pero yo voy más allá, rendirme no es una opción para mí. Me hace diferente, me hace mejor."
+            },
+
+            "soft-skills-flexibility_adaptation": {
+                "soft-skills-flexibility_adaptation-title": "<b>Flexibilidad y Adaptabilidad</b>",
+                "soft-skills-flexibility_adaptation-description": "I am flexible and tend to adapt easily to new technologies and new market trends around the world."
+            }
+
+        }
     },
 
     "contact": {
@@ -115,6 +194,60 @@
                 "projects-modal-single-title": "Concesionario de autos especiales",
                 "projects-modal-single-tags": "Sitio web - Varias páginas - Carga de página dinámica",
                 "projects-modal-single-description": "Este proyecto fue tomado del curso <b>Back-End</b> de <b>Danki Code</b>, un proyecto un poco más complejo que tomó el sitio web desarrollado en el <b>Front-End</b>. curso donde se mejoró e implementó <b>PHP</b>."
+            },
+            
+            "projects-modal-single-combat_game": {
+                "projects-modal-single-title": "Juego de Lucha",
+                "projects-modal-single-tags": "Juego - Orientado a Objetos - Animaciones",
+                "projects-modal-single-description": "Mi clase de secundaria necesitaba un juego para presentar en la <b>feria profesional</b> de este año, así que desarrollé este <b>juego en JavaScript</b>. Sencillo pero funcional."
+            },
+
+            "projects-modal-single-o_corrector": {
+                "projects-modal-single-title": "El Corredor",
+                "projects-modal-single-tags": "Marketing/Ventas - Sitio web - Estático",
+                "projects-modal-single-description": "Sitio web creado como freelance para un broker de mi ciudad, que es genial para marketing y ventas digitales, para que el <b>cliente</b> conozca más sobre el <b>broker</b> guiándolo a hacer un <b>comprar</b>."
+            },
+
+            "projects-modal-single-3d_three": {
+                "projects-modal-single-title": "3D Tres JavaScript",
+                "projects-modal-single-tags": "3D - Multidimensional",
+                "projects-modal-single-description": "Proyecto básico, explorando el multiverso de dimensiones en la web..."
+            },
+
+            "projects-modal-single-news_backend": {
+                "projects-modal-single-title": "Periódico de back-end",
+                "projects-modal-single-tags": "Back-End - Base de datos - Filtrar por categoría",
+                "projects-modal-single-description": "Proyecto básico, realizado solo para practicar mis conocimientos en <b>PHP y MySQL</b>."
+            },
+
+            "projects-modal-single-digital_agency": {
+                "projects-modal-single-title": "Agencia digital",
+                "projects-modal-single-tags": "Orientado a ventas - Estático",
+                "projects-modal-single-description": "Plantilla básica pero que funciona muy bien para <b>captar más clientes y empresas</b> para <b>cerrar un trato con tu agencia.</b>"
+            },
+
+            "projects-modal-single-rbi_web": {
+                "projects-modal-single-title": "RBI Web",
+                "projects-modal-single-tags": "Sitio Web - Barbería - Promoción de Servicios",
+                "projects-modal-single-description": "Sitio web estático, orientado a la venta y para que el <b>cliente conozca más sobre la barbería.</b>"
+            },
+
+            "projects-modal-single-weather_station": {
+                "projects-modal-single-title": "Estación meteorológica",
+                "projects-modal-single-tags": "Aplicación - React Native - Hojas de cálculo de Excel",
+                "projects-modal-single-description": "Un proyecto social en mi escuela llamado <b>Estación Meteorológica</b> necesitaba <b>más agilidad en el proceso de anotación</b> de los datos de la estación, por lo que me pidieron que <b>desarrollara esta aplicación</b> para que los estudiantes que formaron parte del proyecto pudieran tomar <b>notas y exportarlas</b> <b>100 veces más rápido.</b>"
+            },
+
+            "projects-modal-single-node_openai_image": {
+                "projects-modal-single-title": "Imagen de nodo OpenAI",
+                "projects-modal-single-tags": "Inteligencia artificial - Generación de imágenes - OpenAI",
+                "projects-modal-single-description": "Simple pero funcional, hecho sólo para pruebas, pero en el futuro tengo la intención de explorar más el universo de la <b>Inteligencia Artificial</b> que está en el <b>hype</b>."
+            },
+
+            "projects-modal-single-rbi_app": {
+                "projects-modal-single-title": "RBI App",
+                "projects-modal-single-tags": "Móvil - Barbería - Gestión Empresarial",
+                "projects-modal-single-description": "Desarrollado y creado con el potente <b>React Native</b> junto con la tecnología <b>Expo</b>, el proyecto actualmente ha sido <b>descontinuado</b> pero puede adaptarse fácilmente y venderse a otras barberías. ."
             }
             
         }

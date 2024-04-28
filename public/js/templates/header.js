@@ -12,14 +12,17 @@ $(()=>{
 
     HeaderNavigationButtons.click((e) =>{
         ScrollTarget(e);
-
     });
 
     FooterNavigationButtons.click((e) =>{
         ScrollTarget(e);
     })
 
+    // Scroll Target
     function ScrollTarget(e){
+
+        isHeaderNavigationScrolling = true;
+
         // Select Attribute
         let ButtonTarget = $(e.target).attr("js-scrolltarget");
         let ElementTarget = $("#" + ButtonTarget);
@@ -37,7 +40,6 @@ $(()=>{
         // Scroll
         scrollTo({ 'top': ElementTarget.position().top - offsetDebug, 'behavior': 'smooth' });
 
-        isHeaderNavigationScrolling = true;
 
         setTimeout(()=>{
             isHeaderNavigationScrolling = false;
@@ -45,6 +47,26 @@ $(()=>{
         }, 1000);
 
     }
+
+    // Scrolling Event
+    $(window).scroll(()=>{
+
+        if(!isHeaderNavigationScrolling){
+            HeaderNavigationButtons.each((_, navButton)=>{
+                
+                let sectionElement = $('#' + $(navButton).attr('js-scrolltarget'));
+
+                if($(window).scrollTop() >= sectionElement.offset().top - 300){
+                    HeaderNavigationButtons.parent().removeClass('navigation-selected');
+                    $(navButton).parent().addClass('navigation-selected');
+
+                }
+                
+            });
+
+        }
+
+    })
 
     ////////////////////////////////
     ////// Header Options Hide & Show Animation on Scroll
@@ -132,6 +154,14 @@ $(()=>{
     var translationsFolder = '/public/languages';
     var translateFrom = 'pt-BR';
 
+    const languagesSupported = [
+        'en-US',
+        'es-ES',
+        'fr-FR',
+        'pt-BR',
+        'zh-HK'
+    ]
+
     // Get Translation Key Function
     function getTranslationKey(translationObject, elTranslationKey, elementToTranslate, translateAttribute){
 
@@ -203,6 +233,7 @@ $(()=>{
     // Translate Page Function
     function translatePage(translateTo){
 
+        // Translate Elements
         $('h1, h2, h3, p, span, b, i, a, button, div.projects-single').each((_i, elementToTranslate)=>{
 
             let elementTranslationKey = $(elementToTranslate).attr('framework-language-element-key');
@@ -241,6 +272,26 @@ $(()=>{
             }
 
         })
+
+        // Set Cookie
+        Cookies.set("WebsiteLanguage", translateTo, {
+            expires: 90,
+            
+        });
+
+        translateFrom = translateTo;
+
+    }
+
+    // Init and First Translation
+    function initAndFirstTranslation(language){
+
+        translatePage(language);
+
+        languageSelected.empty();
+
+        let selectedChildren = $(`li[language=${language}]`).children()[0];
+        $(selectedChildren).clone().appendTo(languageSelected);
 
     }
 
@@ -282,13 +333,6 @@ $(()=>{
             // h1, h2, h3, p, span, b, i, a, button
             translatePage(translateTo);
 
-            Cookies.set("WebsiteLanguage", translateTo, {
-                expires: 90,
-                
-            });
-
-            translateFrom = translateTo;
-
         }
 
         $(languageOption).on("keyup", languagesOptionsHandler);
@@ -297,16 +341,23 @@ $(()=>{
     });
 
     setTimeout(()=>{
-        if(Cookies.get("WebsiteLanguage")){ 
 
-            let getWebsiteLanguageCookie = Cookies.get("WebsiteLanguage");
+        let webSiteLanguageCookie = Cookies.get("WebsiteLanguage");
 
-            translatePage(getWebsiteLanguageCookie);
+        if(webSiteLanguageCookie){ 
+            initAndFirstTranslation(webSiteLanguageCookie);
+            
+        }else if(webSiteLanguageCookie === undefined || webSiteLanguageCookie === null){
+            
+            let clientBrowserLanguage = navigator.language.split('-')[0];
 
-            languageSelected.empty();
+            languagesSupported.map((language)=>{
+                if(language.match(clientBrowserLanguage)){
+                    initAndFirstTranslation(language);
 
-            let selectedChildren = $(`li[language=${getWebsiteLanguageCookie}]`).children()[0];
-            $(selectedChildren).clone().appendTo(languageSelected);
+                };
+
+            })
 
         }
 
@@ -362,46 +413,78 @@ $(()=>{
 
         //////////// Hidding Icon
         HideIcon.animate({
-            top: '50px', 
-            opacity: 0,
+            'top': '50px',
+            'opacity': '0',
             'font-size': '0px'
         }, 1000, ()=>{
-            HideIcon.css('display', 'none').css('top', '50%').css('left', '50%').css('transform', 'translate(-50%, -50%)');
+            HideIcon.css({
+                'display': 'none',
+                'top': '50%',
+                'left': '50%',
+                'transform': 'translate(-50%, -50%)',
+                '-webkit-transform': 'translate(-50%, -50%)',
+                '-moz-transform': 'translate(-50%, -50%)',
+                '-o-transform': 'translate(-50%, -50%)',
+                '-ms-transform': 'translate(-50%, -50%)'
 
+            })
         });
 
         //////////// Showing Icon
-        ShowingIcon.css('bottom', '-80px').css('display', 'block').css('opacity', '0').css('font-size', '0');
+        ShowingIcon.css({
+            'bottom': '-80px',
+            'display': 'block',
+            'opacity': '0',
+            'font-size': '0',
+        })
 
         ShowingIcon.animate({
-            bottom: '0', 
-            opacity: 1,
+            'bottom': '0', 
+            'opacity': '1',
             'font-size': '19px'
         }, 1000);
 
+        // Change Class In Body
         $('body').toggleClass(ThemeClass);
 
-        Cookies.set("CookiesCurrentTheme", ThemeToSetCookie, {
+        // Set Cookie
+        Cookies.set("currentTheme", ThemeToSetCookie, {
             expires: 90,
             
         });
 
-
     }
 
     // Get Theme Cookie
-    var CookiesCurrentTheme = Cookies.get("CookiesCurrentTheme");
+    var currentThemeCookie = Cookies.get("currentTheme");
 
-    if(CookiesCurrentTheme == "light-theme"){
-        CurrentTheme = 'light';
-        LightThemeBtn.css('display', 'block');
+    if(currentThemeCookie == "light-theme"){
+        CurrentTheme = "light";
+        LightThemeBtn.css("display", "block");
         
-        $('body').addClass(ThemeClass);
+        $("body").addClass(ThemeClass);
         
         //////
-    }else if(CookiesCurrentTheme == "dark-theme" || CookiesCurrentTheme == undefined || CookiesCurrentTheme == null){
-        CurrentTheme = 'dark';
-        DarkThemeBtn.css('display', 'block');
+    }else if(currentThemeCookie == "dark-theme"){
+        CurrentTheme = "dark";
+        DarkThemeBtn.css("display", "block");
+
+    }else if(currentThemeCookie === undefined || currentThemeCookie === null){
+        
+        // Check if browser is on light theme
+        let clientBrowserTheme = window.matchMedia("(prefers-color-scheme: light)");
+
+        if(clientBrowserTheme.matches && CurrentTheme == 'dark'){
+            CurrentTheme = "light";
+            LightThemeBtn.css("display", "block");
+            
+            $("body").addClass(ThemeClass);
+
+        }else{
+            CurrentTheme = "dark";
+            DarkThemeBtn.css("display", "block");
+
+        }
 
     }
 

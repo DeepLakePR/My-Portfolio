@@ -57,7 +57,7 @@
 
 	<!-- Scripts -->
 	<script src="https://code.jquery.com/jquery-3.7.0.min.js"
-	integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+		integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.5/dist/js.cookie.min.js"></script>
 
 	<!-- Scripts > Fontawesome -->
@@ -130,7 +130,7 @@
 						aria-haspopup="listbox" aria-expanded="false" aria-controls="select-dropdown">
 
 						<span class="languages-selected-language">
-							<img src="/public/assets/languages-icons/pt-BR.jpeg"
+							<img src="/public/assets/languages-icons/pt-BR.webp"
 								alt="Guilherme Fortunato Developer Português BR"
 								title="Guilherme Fortunato Developer Português BR" loading="lazy" />
 						</span>
@@ -141,24 +141,29 @@
 					<ul class="languages-select-dropdown">
 
 						<li language="en-US">
-							<img src="/public/assets/languages-icons/en-US.jpeg"
+							<img src="/public/assets/languages-icons/en-US.webp"
 								alt="Guilherme Fortunato Developer English USA"
 								title="Guilherme Fortunato Developer English USA" loading="lazy" />
 						</li>
 
 						<li language="es-ES">
-							<img src="/public/assets/languages-icons/es-ES.jpeg" alt="Guilherme Fortunato Español ES"
+							<img src="/public/assets/languages-icons/es-ES.webp" alt="Guilherme Fortunato Español ES"
 								title="Guilherme Fortunato Developer Español ES" loading="lazy" />
 						</li>
 
+						<li language="fr-FR">
+							<img src="/public/assets/languages-icons/fr-FR.webp" alt="Guilherme Fortunato Français FR"
+								title="Guilherme Fortunato Developer Français FR" loading="lazy" />
+						</li>
+
 						<li language="pt-BR">
-							<img src="/public/assets/languages-icons/pt-BR.jpeg"
+							<img src="/public/assets/languages-icons/pt-BR.webp"
 								alt="Guilherme Fortunato Developer Português BR"
 								title="Guilherme Fortunato Developer Português BR" loading="lazy" />
 						</li>
 
 						<li language="zh-HK">
-							<img src="/public/assets/languages-icons/zh-HK.jpeg"
+							<img src="/public/assets/languages-icons/zh-HK.webp"
 								alt="Guilherme Fortunato Developer 國語 HK" title="Guilherme Fortunato Developer 國語 HK"
 								loading="lazy" />
 						</li>
@@ -294,8 +299,9 @@
 			<div class="projects-wrapper flex-column pad30">
 
 
+
 				<div class="projects-single flex pad20" data-project-info-title="Prime Assessoria Imobiliária"
-					data-project-info-image="/public/assets/projects-images/prime_assessoria_desktop_2.jpg"
+					data-project-info-image="/public/assets/projects-images/prime_assessoria/image2.webp"
 					data-project-info-tags="Website - Dashboard - Geração de PDF"
 					data-project-info-description="Desenvolvido um site complexo com <b>Painel de Controle</b> e entre outras funcionalidades que agilizaram em até <b>100%</b> os processos e resultados da empresa, as principais tecnologias e bibliotecas utilizadas foram <b>Front-End</b> usando <b>JQuery e Bootstrap</b> como bibliotecas, <b>Back-End</b> usando <b>FPDF (Gerador de PDF) e PHPMailer (Envia E-mails)</b> como bibliotecas e <b>Banco de Dados MySQL</b> para armazenar todas as informações de clientes, processos e etc.
 					<br/>
@@ -311,7 +317,7 @@
 					framework-language-element-key="projects-modal-single-prime_consultancy">
 
 					<div class="projects-single-image w45">
-						<img src="/public/assets/projects-images/prime_assessoria_desktop.jpg" alt="Project Image"
+						<img src="/public/assets/projects-images/prime_assessoria/image1.webp" alt="Project Image"
 							title="Project Image" loading="lazy" />
 					</div>
 
@@ -336,6 +342,43 @@
 
 				</div> <!-- Projects Single -->
 
+				<div class="projects-single flex pad20" data-project-info-title="Estação Meteorológica"
+					data-project-info-image="/public/assets/projects-images/estacao_meteorologica/image2.webp"
+					data-project-info-tags="Aplicativo - React Native - Planilhas no Excel"
+					data-project-info-description="Um projeto social da minha escola que se chamava <b>Estação Meteorológica</b> precisava ter <b>mais agilidade no processo de anotação</b> dos dados da estação, e então fui chamado para <b>desenvolver esse aplicativo</b> para que os alunos que fizessem parte do projeto pudessem fazer as <b>anotações e exportá-las</b> de forma <b>100x mais rápida.</b>"
+					data-project-info-technologies="
+					fa-brands fa-react|
+					fa-brands fa-square-js
+				" data-project-info-deploy-link="null"
+					data-project-info-repository-link="https://github.com/DeepLakePR/Estacao-Meteorologica-App"
+					framework-language-element-key="projects-modal-single-weather_station">
+
+					<div class="projects-single-image w45">
+						<img src="/public/assets/projects-images/estacao_meteorologica/image1.webp" alt="Project Image"
+							title="Project Image" loading="lazy" />
+					</div>
+
+					<div class="projects-single-text w55 pad20">
+
+						<h2 framework-language-element-key="projects-single-weather_station-title">
+							Estação Meteorológica - 2024
+						</h2>
+						<p framework-language-element-key="projects-single-weather_station-description">
+							Aplicativo para <b>IOs e Android</b> onde é possível fazer <b>anotações do clima atual da
+								região</b> e exportá-lo para uma <b>planilha no excel</b>, todas as anotações
+							(Temperatura, Direção do vento, Raios UV) são armazenados em um banco de dados do
+							<b>Firebase</b>, futuramente será possível gerar gráficos no excel com os dados armazenados.
+						</p>
+
+						<a href="#project-info" class="modal-toggle" modal-target="#project-info-modal"
+							framework-language-element-key="more-about-text">
+							Saiba Mais
+						</a>
+
+					</div>
+
+				</div> <!-- Projects Single -->
+
 				<div class="projects-single flex pad20" data-project-info-title="Igreja IBCA App"
 					data-project-info-image="null"
 					data-project-info-tags="Aplicativo - Controle de Informações - Datas e Anotações Dinâmicas"
@@ -347,7 +390,7 @@
 					framework-language-element-key="projects-modal-single-ibca_church">
 
 					<div class="projects-single-image w45">
-						<img src="/public/assets/projects-images/ibca_church_app.png" alt="Project Image"
+						<img src="/public/assets/projects-images/ibca_church_app/image1.webp" alt="Project Image"
 							title="Project Image" loading="lazy" />
 					</div>
 
@@ -370,8 +413,83 @@
 
 				</div> <!-- Projects Single -->
 
+
+
+				<div class="projects-single flex pad20" data-project-info-title="Jogo de Luta"
+					data-project-info-image="/public/assets/projects-images/combat_game/image2.webp"
+					data-project-info-tags="Jogo - Orientado a Objetos - Animações"
+					data-project-info-description="Minha turma do colégio precisava de um jogo para ser apresentado na <b>feira de profissões</b> desse ano, e então desenvolvi esse <b>jogo em JavaScript</b>. Simples mas funcional."
+					data-project-info-technologies="
+						fa-brands fa-square-js|
+						fa-brands fa-html5
+					" data-project-info-deploy-link="null"
+					data-project-info-repository-link="https://github.com/DeepLakePR/szymanski-desenvolvimento-sistemas-2024"
+					framework-language-element-key="projects-modal-single-combat_game">
+
+					<div class="projects-single-image w45">
+						<img src="/public/assets/projects-images/combat_game/image1.webp" alt="Project Image"
+							title="Project Image" loading="lazy" />
+					</div>
+
+					<div class="projects-single-text w55 pad20">
+
+						<h2 framework-language-element-key="projects-single-combat_game-title">
+							Jogo de Luta JavaScript - 2024
+						</h2>
+						<p framework-language-element-key="projects-single-combat_game-description">
+							Um jogo divertido para <b>2 pessoas</b> feito com o básico de JavaScript orientado a
+							objetos.
+						</p>
+
+						<a href="#project-info" class="modal-toggle" modal-target="#project-info-modal"
+							framework-language-element-key="more-about-text">
+							Saiba Mais
+						</a>
+
+					</div>
+
+				</div> <!-- Projects Single -->
+
+				<div class="projects-single flex pad20" data-project-info-title="Jornal Back-End"
+					data-project-info-image="/public/assets/projects-images/noticias_backend/image2.webp"
+					data-project-info-tags="Back-End - Banco de Dados - Filtro por Categoria"
+					data-project-info-description="Projeto básico, feito apenas para praticar meus conhecimentos em <b>PHP e MySQL</b>."
+					data-project-info-technologies="
+						fa-brands fa-php|
+						fa-solid fa-database|
+						fa-brands fa-html5|
+						fa-brands fa-css3
+					" data-project-info-deploy-link="null"
+					data-project-info-repository-link="https://github.com/DeepLakePR/backend_daily_news"
+					framework-language-element-key="projects-modal-single-news_backend">
+
+					<div class="projects-single-image w45">
+						<img src="/public/assets/projects-images/noticias_backend/image1.webp" alt="Project Image"
+							title="Project Image" loading="lazy" />
+					</div>
+
+					<div class="projects-single-text w55 pad20">
+
+						<h2 framework-language-element-key="projects-single-news_backend-title">
+							Jornal Back-End - 2024
+						</h2>
+						<p framework-language-element-key="projects-single-news_backend-description">
+							Desenvolvi esse site extremamente simples de <b>notícias com filtro por categoria</b>, fiz
+							apenas para praticar e melhorar meus conhecimentos principalmentes com <b>Querys</b> no
+							Banco de Dados <b>MySQL</b>.
+						</p>
+
+						<a href="#project-info" class="modal-toggle" modal-target="#project-info-modal"
+							framework-language-element-key="more-about-text">
+							Saiba Mais
+						</a>
+
+					</div>
+
+				</div> <!-- Projects Single -->
+
 				<div class="projects-single flex pad20" data-project-info-title="Meu Portfólio"
-					data-project-info-image="/public/assets/projects-images/portfolio_desktop_2.jpg"
+					data-project-info-image="/public/assets/projects-images/portfolio/image2.webp"
 					data-project-info-tags="Website - Animações - Modal Dinâmica"
 					data-project-info-description="Este é o projeto em que você está atualmente, desenvolvido usando <b>Vanilla HTML5 e CSS3</b> e usando <b>JQuery</b> para se facilitar a parte do <b>Javascript</b>, também foi criado um tipo de '<b>Framework</b>' CSS próprio e 100% original e junto com isso foi criado os <b>Temas</b>. Usado a biblioteca <b>Scroll Reveal</b> para se fazer a maioria das animações que estão no portfólio."
 					data-project-info-technologies="
@@ -383,7 +501,7 @@
 					framework-language-element-key="projects-modal-single-my_portfolio">
 
 					<div class="projects-single-image w45">
-						<img src="/public/assets/projects-images/portfolio_desktop.jpg" alt="Project Image"
+						<img src="/public/assets/projects-images/portfolio/image1.webp" alt="Project Image"
 							title="Project Image" loading="lazy" />
 					</div>
 
@@ -407,8 +525,226 @@
 
 				</div> <!-- Projects Single -->
 
+
+
+				<div class="projects-single flex pad20" data-project-info-title="Agência Digital"
+					data-project-info-image="/public/assets/projects-images/agencia_digital/image2.webp"
+					data-project-info-tags="Voltado Para Vendas - Estático"
+					data-project-info-description="Template básico mas que funciona muito bem para <b>captar mais clientes e empresas</b> para <b>fecharem negócio com sua agência.</b>"
+					data-project-info-technologies="
+						fa-brands fa-html5|
+						fa-brands fa-css3
+					" data-project-info-deploy-link="null"
+					data-project-info-repository-link="https://github.com/DeepLakePR/Projeto_11_Agencia"
+					framework-language-element-key="projects-modal-single-digital_agency">
+
+					<div class="projects-single-image w45">
+						<img src="/public/assets/projects-images/agencia_digital/image1.webp" alt="Project Image"
+							title="Project Image" loading="lazy" />
+					</div>
+
+					<div class="projects-single-text w55 pad20">
+
+						<h2 framework-language-element-key="projects-single-digital_agency-title">
+							Agência Digital - 2022
+						</h2>
+						<p framework-language-element-key="projects-single-digital_agency-description">
+							Pequeno projeto desenvolvido como modelo para ser vendido para outras <b>agências
+								digitais</b> que queiram atingir mais clientes.
+						</p>
+
+						<a href="#project-info" class="modal-toggle" modal-target="#project-info-modal"
+							framework-language-element-key="more-about-text">
+							Saiba Mais
+						</a>
+
+					</div>
+
+				</div> <!-- Projects Single -->
+
+				<div class="projects-single flex pad20" data-project-info-title="RBI Web"
+					data-project-info-image="/public/assets/projects-images/rbi_web/image2.webp"
+					data-project-info-tags="Website - Barbearia - Divulgação de Serviços"
+					data-project-info-description="Site estático, voltado para vendas e para que o <b>cliente conheça mais sobre a barbearia.</b>"
+					data-project-info-technologies="
+					fa-brands fa-html5|
+					fa-brands fa-css3|
+					fa-brands fa-square-js
+				" data-project-info-deploy-link="null" data-project-info-repository-link="https://github.com/DeepLakePR/RBI-Web"
+					framework-language-element-key="projects-modal-single-rbi_web">
+
+					<div class="projects-single-image w45">
+						<img src="/public/assets/projects-images/rbi_web/image1.webp" alt="Project Image"
+							title="Project Image" loading="lazy" />
+					</div>
+
+					<div class="projects-single-text w55 pad20">
+
+						<h2 framework-language-element-key="projects-single-rbi_web-title">
+							RBI Web - 2023
+						</h2>
+						<p framework-language-element-key="projects-single-rbi_web-description">
+							<b>Landing Page</b> desenvolvida para uma barbearia que frequento, usada principalmente para
+							divulgar os serviços que a barbearia oferece, o <b>cliente também pode localizar e saber
+								onde ficam as unidades</b> da barbearia.
+						</p>
+
+						<a href="#project-info" class="modal-toggle" modal-target="#project-info-modal"
+							framework-language-element-key="more-about-text">
+							Saiba Mais
+						</a>
+
+					</div>
+
+				</div> <!-- Projects Single -->
+
+				<div class="projects-single flex pad20" data-project-info-title="RBI App"
+					data-project-info-image="/public/assets/projects-images/rbi_app/image2.webp"
+					data-project-info-tags="Mobile - Barbearia - Gestão de Negócio"
+					data-project-info-description="Desenvolvido e criado com o poderoso <b>React Native</b> juntamente com a tecnologia do <b>Expo</b>, atualmente o projeto foi <b>descontinuado</b> mas pode ser facilmente adaptado e vendido para outras barbearias."
+					data-project-info-technologies="
+						fa-brands fa-react|
+						fa-brands fa-square-js
+					" data-project-info-deploy-link="null" data-project-info-repository-link="https://github.com/DeepLakePR/RBI-App"
+					framework-language-element-key="projects-modal-single-rbi_app">
+
+					<div class="projects-single-image w45">
+						<img src="/public/assets/projects-images/rbi_app/image1.webp" alt="Project Image"
+							title="Project Image" loading="lazy" />
+					</div>
+
+					<div class="projects-single-text w55 pad20">
+
+						<h2 framework-language-element-key="projects-single-rbi_app-title">
+							RBI App - 2023
+						</h2>
+						<p framework-language-element-key="projects-single-rbi_app-description">
+							Aplicativo mobile desenvolvido para complementar a <b>versão Web (RBI Web)</b>, feito
+							especificamente para <b>barbearias</b>, onde é possível ver os <b>horários de hoje, agenda,
+								controle de funcionários</b> e etc.
+						</p>
+
+						<a href="#project-info" class="modal-toggle" modal-target="#project-info-modal"
+							framework-language-element-key="more-about-text">
+							Saiba Mais
+						</a>
+
+					</div>
+
+				</div> <!-- Projects Single -->
+
+
+
+				<div class="projects-single flex pad20" data-project-info-title="Node OpenAI Image"
+					data-project-info-image="/public/assets/projects-images/node_openai_image/image2.webp"
+					data-project-info-tags="Inteligência Artificial - Geração de Imagens - OpenAI"
+					data-project-info-description="Simples mas funcional, feito apenas para testes, mas futuramente pretendo explorar mais o universo da <b>Inteligência Artificial</b> que está no <b>hype</b>."
+					data-project-info-technologies="
+						fa-brands fa-node|
+						fa-brands fa-square-js
+					" data-project-info-deploy-link="null"
+					data-project-info-repository-link="https://github.com/DeepLakePR/Node_OpenAI_Generate_Image"
+					framework-language-element-key="projects-modal-single-node_openai_image">
+
+					<div class="projects-single-image w45">
+						<img src="/public/assets/projects-images/node_openai_image/image1.webp" alt="Project Image"
+							title="Project Image" loading="lazy" />
+					</div>
+
+					<div class="projects-single-text w55 pad20">
+
+						<h2 framework-language-element-key="projects-single-node_openai_image-title">
+							Node OpenAI Image - 2024
+						</h2>
+						<p framework-language-element-key="projects-single-node_openai_image-description">
+							Um pequeno projeto onde eu explorava o universo da <b>inteligência artificial</b> com
+							geração de imagens, usando a tecnologia da OpenAI <b>Dall-E</b>
+						</p>
+
+						<a href="#project-info" class="modal-toggle" modal-target="#project-info-modal"
+							framework-language-element-key="more-about-text">
+							Saiba Mais
+						</a>
+
+					</div>
+
+				</div> <!-- Projects Single -->
+
+				<div class="projects-single flex pad20" data-project-info-title="O Corretor"
+					data-project-info-image="/public/assets/projects-images/corretor/image2.webp"
+					data-project-info-tags="Marketing/Vendas - Website - Estático"
+					data-project-info-description="Site feito como freelancer para um corretor da minha cidade, sendo ótimo para marketing digital e vendas, para que o <b>cliente</b> conheça mais sobre o <b>corretor</b> levando o cliente a fazer uma <b>compra</b>."
+					data-project-info-technologies="
+						fa-brands fa-html5|
+						fa-brands fa-css3|
+						fa-brands fa-square-js
+					" data-project-info-deploy-link="null"
+					data-project-info-repository-link="https://github.com/DeepLakePR/David-Portfolio-Demo"
+					framework-language-element-key="projects-modal-single-o_corrector">
+
+					<div class="projects-single-image w45">
+						<img src="/public/assets/projects-images/corretor/image1.webp" alt="Project Image"
+							title="Project Image" loading="lazy" />
+					</div>
+
+					<div class="projects-single-text w55 pad20">
+
+						<h2 framework-language-element-key="projects-single-o_corrector-title">
+							O Corretor - 2024
+						</h2>
+						<p framework-language-element-key="projects-single-o_corrector-description">
+							Esse é um ótimo site para mostrar o <b>trabalho</b> de um <b>Corretor de Imóveis</b>, serve
+							também para fazer com que o cliente crie <b>Confiança</b> no <b>corretor</b>, levando assim
+							a uma possível <b>venda de imóvel</b>.
+						</p>
+
+						<a href="#project-info" class="modal-toggle" modal-target="#project-info-modal"
+							framework-language-element-key="more-about-text">
+							Saiba Mais
+						</a>
+
+					</div>
+
+				</div> <!-- Projects Single -->
+
+				<div class="projects-single flex pad20" data-project-info-title="Odontologia"
+					data-project-info-image="/public/assets/projects-images/dentista_odontologia/image2.webp"
+					data-project-info-tags="Website - Estático"
+					data-project-info-description="Outro projeto que também foi desenvolvido e veio do curso de <b>Front-End Webmaster</b> da <b>Danki Code</b> mas que também pode ser facilmente adaptado e criado novas variações do site que podem ser vendidas para <b>Odontologias</b>, criado usando <b>Vanilla HTML5 e CSS3</b>."
+					data-project-info-technologies="
+						fa-brands fa-html5|
+						fa-brands fa-css3
+					" data-project-info-deploy-link="null"
+					data-project-info-repository-link="https://github.com/DeepLakePR/Projeto_10_Dentista_2"
+					framework-language-element-key="projects-modal-single-dentistry">
+
+					<div class="projects-single-image w45">
+						<img src="/public/assets/projects-images/dentista_odontologia/image1.webp" alt="Project Image"
+							title="Project Image" loading="lazy" />
+					</div>
+
+					<div class="projects-single-text w55 pad20">
+
+						<h2 framework-language-element-key="projects-single-dentistry-title">
+							Dentista/Odontologia - 2023
+						</h2>
+						<p framework-language-element-key="projects-single-dentistry-description">
+							Um site mostrando o trabalho de uma odontologia, criado com <b>Vanilla HTML 5 & CSS 3</b>.
+						</p>
+
+						<a href="#project-info" class="modal-toggle" modal-target="#project-info-modal"
+							framework-language-element-key="more-about-text">
+							Saiba Mais
+						</a>
+
+					</div>
+
+				</div> <!-- Projects Single -->
+
+
+
 				<div class="projects-single flex pad20" data-project-info-title="Instagram Clone"
-					data-project-info-image="/public/assets/projects-images/instagram_clone_desktop_2.jpg"
+					data-project-info-image="/public/assets/projects-images/instagram_clone/image2.webp"
 					data-project-info-tags="Website - React JS - Posts - Criação de Contas"
 					data-project-info-description="Um projeto que veio do curso de <b>Javascript</b> em que eu estava fazendo na <b>Danki Code</b>, algo bem simples mas que funciona e que já está a anos no ar."
 					data-project-info-technologies="
@@ -418,7 +754,7 @@
 					framework-language-element-key="projects-modal-single-instagram_clone">
 
 					<div class="projects-single-image w45">
-						<img src="/public/assets/projects-images/instagram_clone_desktop.jpg" alt="Project Image"
+						<img src="/public/assets/projects-images/instagram_clone/image1.webp" alt="Project Image"
 							title="Project Image" loading="lazy" />
 					</div>
 
@@ -441,29 +777,28 @@
 
 				</div> <!-- Projects Single -->
 
-				<div class="projects-single flex pad20" data-project-info-title="Odontologia"
-					data-project-info-image="/public/assets/projects-images/dentista_odontologia_desktop_2.png"
-					data-project-info-tags="Website - Estático"
-					data-project-info-description="Outro projeto que também foi desenvolvido e veio do curso de <b>Front-End Webmaster</b> da <b>Danki Code</b> mas que também pode ser facilmente adaptado e criado novas variações do site que podem ser vendidas para <b>Odontologias</b>, criado usando <b>Vanilla HTML5 e CSS3</b>."
+				<div class="projects-single flex pad20" data-project-info-title="3D Three JavaScript"
+					data-project-info-image="/public/assets/projects-images/3d_three/image2.webp"
+					data-project-info-tags="3D - Multi Dimensional"
+					data-project-info-description="Projeto básico, explorando o multiverso das dimensões na web..."
 					data-project-info-technologies="
-						fa-brands fa-html5|
-						fa-brands fa-css3
+						fa-brands fa-square-js
 					" data-project-info-deploy-link="null"
-					data-project-info-repository-link="https://github.com/DeepLakePR/Projeto_10_Dentista_2"
-					framework-language-element-key="projects-modal-single-dentistry">
+					data-project-info-repository-link="https://github.com/DeepLakePR/3D-Three-JS"
+					framework-language-element-key="projects-modal-single-3d_three">
 
 					<div class="projects-single-image w45">
-						<img src="/public/assets/projects-images/dentista_odontologia_desktop.png" alt="Project Image"
+						<img src="/public/assets/projects-images/3d_three/image1.webp" alt="Project Image"
 							title="Project Image" loading="lazy" />
 					</div>
 
 					<div class="projects-single-text w55 pad20">
 
-						<h2 framework-language-element-key="projects-single-dentistry-title">
-							Dentista/Odontologia - 2023
+						<h2 framework-language-element-key="projects-single-3d_three-title">
+							3D Three JS - 2024
 						</h2>
-						<p framework-language-element-key="projects-single-dentistry-description">
-							Um site mostrando o trabalho de uma odontologia, criado com <b>Vanilla HTML 5 & CSS 3</b>.
+						<p framework-language-element-key="projects-single-3d_three-description">
+							Aprendendo a criar sites com <b>multi-dimensões</b>.
 						</p>
 
 						<a href="#project-info" class="modal-toggle" modal-target="#project-info-modal"
@@ -476,7 +811,7 @@
 				</div> <!-- Projects Single -->
 
 				<div class="projects-single flex pad20" data-project-info-title="Concessionária de Carros Especiais"
-					data-project-info-image="/public/assets/projects-images/concessionaria_desktop_2.jpg"
+					data-project-info-image="/public/assets/projects-images/concessionaria/image2.webp"
 					data-project-info-tags="Website - Multi-Páginas - Carregamento Dinâmico de Páginas"
 					data-project-info-description="Esse projeto foi tirado do curso de <b>Back-End</b> da <b>Danki Code</b>, um projeto um pouco mais complexo que pegou o site desenvolvido no curso de <b>Front-End</b> onde foi melhorado e implantando o <b>PHP</b>."
 					data-project-info-technologies="
@@ -489,7 +824,7 @@
 					framework-language-element-key="projects-modal-single-concessionaire">
 
 					<div class="projects-single-image w45">
-						<img src="/public/assets/projects-images/concessionaria_desktop.jpg" alt="Project Image"
+						<img src="/public/assets/projects-images/concessionaria/image1.webp" alt="Project Image"
 							title="Project Image" loading="lazy" />
 					</div>
 
@@ -516,7 +851,7 @@
 				<div class="projects-more-button">
 					<h3 framework-language-element-key="projects-more-button">Mais Projetos</h3>
 
-					<i id="script_projects-more-button" class="fa-solid fa-chevron-down"></i>
+					<i id="projects-more-button" class="fa-solid fa-chevron-down"></i>
 				</div>
 
 			</div> <!-- Projects Wrapper -->
@@ -524,202 +859,379 @@
 		</div> <!-- Container -->
 	</section> <!-- Projects -->
 
-	<!-- Technologies Section -->
-	<section class="technologies pad20"> <!-- Technologies -->
+	<!-- Knowledge Section -->
+	<section class="knowledge pad20"> <!-- Knowledge -->
 
 		<h2 id="js-scroll-knowledge-text" framework-language-element-key="knowledge-title">
 			Meu Conhecimento
 		</h2>
 
-		<div class="container flex pad20">
+		<div class="container flex pad20" id="knowledge-container">
 
-			<div class="technologies-single-container w50 flex-column pad20">
+			<div class="knowledge-left-side flex">
 
-				<div class="technologies-single-box pad10">
-					<div class="technologies-single-box-title flex">
-						<i class="fa-brands fa-html5"></i>
-						<h2>HTML 5</h2>
-					</div> <!-- Technologies Single Box Title -->
+				<div class="technologies-list-container w50 flex-column pad20">
 
-					<div class="technologies-single-box-nivel flex pad15">
+					<div class="technologies-single-box pad10">
+						<div class="technologies-single-box-title flex">
+							<i class="fa-brands fa-html5"></i>
+							<h2>HTML 5</h2>
+						</div> <!-- Technologies Single Box Title -->
 
-						<p framework-language-element-key="beginner-text">Iniciante</p>
+						<div class="technologies-single-box-nivel flex pad15">
 
-						<div class="tech-single-box-nivel-custom_line"></div>
+							<p framework-language-element-key="beginner-text">Iniciante</p>
 
-						<p framework-language-element-key="intermediate-text">Intermediário</p>
+							<div class="tech-single-box-nivel-custom_line"></div>
 
-						<div class="tech-single-box-nivel-custom_line tech-single-box-nivel-current"></div>
+							<p framework-language-element-key="intermediate-text">Intermediário</p>
 
-						<p framework-language-element-key="advanced-text">Experiente</p>
+							<div class="tech-single-box-nivel-custom_line tech-single-box-nivel-current"></div>
 
-					</div> <!-- Technologies Single Box Nivel -->
-				</div> <!-- Technologies Single Box -->
+							<p framework-language-element-key="advanced-text">Experiente</p>
 
-				<div class="technologies-single-box pad10">
-					<div class="technologies-single-box-title flex">
-						<i class="fa-brands fa-css3"></i>
-						<h2>CSS 3</h2>
-					</div> <!-- Technologies Single Box Title -->
+						</div> <!-- Technologies Single Box Nivel -->
+					</div> <!-- Technologies Single Box -->
 
-					<div class="technologies-single-box-nivel flex pad15">
+					<div class="technologies-single-box pad10">
+						<div class="technologies-single-box-title flex">
+							<i class="fa-brands fa-css3"></i>
+							<h2>CSS 3</h2>
+						</div> <!-- Technologies Single Box Title -->
 
-						<p framework-language-element-key="beginner-text">Iniciante</p>
+						<div class="technologies-single-box-nivel flex pad15">
 
-						<div class="tech-single-box-nivel-custom_line"></div>
+							<p framework-language-element-key="beginner-text">Iniciante</p>
 
-						<p framework-language-element-key="intermediate-text">Intermediário</p>
+							<div class="tech-single-box-nivel-custom_line"></div>
 
-						<div class="tech-single-box-nivel-custom_line tech-single-box-nivel-current"></div>
+							<p framework-language-element-key="intermediate-text">Intermediário</p>
 
-						<p framework-language-element-key="advanced-text">Experiente</p>
+							<div class="tech-single-box-nivel-custom_line tech-single-box-nivel-current"></div>
 
-					</div> <!-- Technologies Single Box Nivel -->
-				</div> <!-- Technologies Single Box -->
+							<p framework-language-element-key="advanced-text">Experiente</p>
 
-				<div class="technologies-single-box pad10">
-					<div class="technologies-single-box-title flex">
-						<i class="fa-brands fa-square-js"></i>
-						<h2>JavaScript</h2>
-					</div> <!-- Technologies Single Box Title -->
+						</div> <!-- Technologies Single Box Nivel -->
+					</div> <!-- Technologies Single Box -->
 
-					<div class="technologies-single-box-nivel flex pad15">
+					<div class="technologies-single-box pad10">
+						<div class="technologies-single-box-title flex">
+							<i class="fa-brands fa-square-js"></i>
+							<h2>JavaScript</h2>
+						</div> <!-- Technologies Single Box Title -->
 
-						<p framework-language-element-key="beginner-text">Iniciante</p>
+						<div class="technologies-single-box-nivel flex pad15">
 
-						<div class="tech-single-box-nivel-custom_line tech-single-box-nivel-current"></div>
+							<p framework-language-element-key="beginner-text">Iniciante</p>
 
-						<p framework-language-element-key="intermediate-text">Intermediário</p>
+							<div class="tech-single-box-nivel-custom_line"></div>
 
-						<div class="tech-single-box-nivel-custom_line"></div>
+							<p framework-language-element-key="intermediate-text">Intermediário</p>
 
-						<p framework-language-element-key="advanced-text">Experiente</p>
+							<div class="tech-single-box-nivel-custom_line tech-single-box-nivel-current"></div>
 
-					</div> <!-- Technologies Single Box Nivel -->
-				</div> <!-- Technologies Single Box -->
+							<p framework-language-element-key="advanced-text">Experiente</p>
 
-				<div class="technologies-single-box pad10">
-					<div class="technologies-single-box-title flex">
-						<i class="fa-brands fa-react"></i>
-						<h2>React JS</h2>
-					</div> <!-- Technologies Single Box Title -->
+						</div> <!-- Technologies Single Box Nivel -->
+					</div> <!-- Technologies Single Box -->
 
-					<div class="technologies-single-box-nivel flex pad15">
+					<div class="technologies-single-box pad10">
+						<div class="technologies-single-box-title flex">
+							<i class="fa-brands fa-react"></i>
+							<h2>React JS</h2>
+						</div> <!-- Technologies Single Box Title -->
 
-						<p framework-language-element-key="beginner-text">Iniciante</p>
+						<div class="technologies-single-box-nivel flex pad15">
 
-						<div class="tech-single-box-nivel-custom_line"></div>
+							<p framework-language-element-key="beginner-text">Iniciante</p>
 
-						<p framework-language-element-key="intermediate-text">Intermediário</p>
+							<div class="tech-single-box-nivel-custom_line"></div>
 
-						<div class="tech-single-box-nivel-custom_line"></div>
+							<p framework-language-element-key="intermediate-text">Intermediário</p>
 
-						<p framework-language-element-key="advanced-text">Experiente</p>
+							<div class="tech-single-box-nivel-custom_line"></div>
 
-					</div> <!-- Technologies Single Box Nivel -->
-				</div> <!-- Technologies Single Box -->
+							<p framework-language-element-key="advanced-text">Experiente</p>
 
-				<div class="technologies-single-box pad10">
-					<div class="technologies-single-box-title flex">
-						<i class="fa-brands fa-react"></i>
-						<h2>React Native</h2>
-					</div> <!-- Technologies Single Box Title -->
+						</div> <!-- Technologies Single Box Nivel -->
+					</div> <!-- Technologies Single Box -->
 
-					<div class="technologies-single-box-nivel flex pad15">
+					<div class="technologies-single-box pad10">
+						<div class="technologies-single-box-title flex">
+							<i class="fa-brands fa-react"></i>
+							<h2>React Native</h2>
+						</div> <!-- Technologies Single Box Title -->
 
-						<p framework-language-element-key="beginner-text">Iniciante</p>
+						<div class="technologies-single-box-nivel flex pad15">
 
-						<div class="tech-single-box-nivel-custom_line"></div>
+							<p framework-language-element-key="beginner-text">Iniciante</p>
 
-						<p framework-language-element-key="intermediate-text">Intermediário</p>
+							<div class="tech-single-box-nivel-custom_line tech-single-box-nivel-current"></div>
 
-						<div class="tech-single-box-nivel-custom_line"></div>
+							<p framework-language-element-key="intermediate-text">Intermediário</p>
 
-						<p framework-language-element-key="advanced-text">Experiente</p>
+							<div class="tech-single-box-nivel-custom_line"></div>
 
-					</div> <!-- Technologies Single Box Nivel -->
-				</div> <!-- Technologies Single Box -->
+							<p framework-language-element-key="advanced-text">Experiente</p>
 
-				<div class="technologies-single-box pad10">
-					<div class="technologies-single-box-title flex">
-						<i class="fa-brands fa-php"></i>
-						<h2>PHP</h2>
-					</div> <!-- Technologies Single Box Title -->
+						</div> <!-- Technologies Single Box Nivel -->
+					</div> <!-- Technologies Single Box -->
 
-					<div class="technologies-single-box-nivel flex pad15">
+					<div class="technologies-single-box pad10">
+						<div class="technologies-single-box-title flex">
+							<i class="fa-brands fa-php"></i>
+							<h2>PHP</h2>
+						</div> <!-- Technologies Single Box Title -->
 
-						<p framework-language-element-key="beginner-text">Iniciante</p>
+						<div class="technologies-single-box-nivel flex pad15">
 
-						<div class="tech-single-box-nivel-custom_line tech-single-box-nivel-current"></div>
+							<p framework-language-element-key="beginner-text">Iniciante</p>
 
-						<p framework-language-element-key="intermediate-text">Intermediário</p>
+							<div class="tech-single-box-nivel-custom_line tech-single-box-nivel-current"></div>
 
-						<div class="tech-single-box-nivel-custom_line"></div>
+							<p framework-language-element-key="intermediate-text">Intermediário</p>
 
-						<p framework-language-element-key="advanced-text">Experiente</p>
+							<div class="tech-single-box-nivel-custom_line"></div>
 
-					</div> <!-- Technologies Single Box Nivel -->
-				</div> <!-- Technologies Single Box -->
+							<p framework-language-element-key="advanced-text">Experiente</p>
 
-				<div class="technologies-single-box pad10">
-					<div class="technologies-single-box-title flex">
-						<i class="fa-solid fa-database" style="font-size: 28px;"></i>
-						<h2>MySQL</h2>
-					</div> <!-- Technologies Single Box Title -->
+						</div> <!-- Technologies Single Box Nivel -->
+					</div> <!-- Technologies Single Box -->
 
-					<div class="technologies-single-box-nivel flex pad15">
+					<div class="technologies-single-box pad10">
+						<div class="technologies-single-box-title flex">
+							<i class="fa-solid fa-database" style="font-size: 28px;"></i>
+							<h2>MySQL</h2>
+						</div> <!-- Technologies Single Box Title -->
 
-						<p framework-language-element-key="beginner-text">Iniciante</p>
+						<div class="technologies-single-box-nivel flex pad15">
 
-						<div class="tech-single-box-nivel-custom_line tech-single-box-nivel-current"></div>
+							<p framework-language-element-key="beginner-text">Iniciante</p>
 
-						<p framework-language-element-key="intermediate-text">Intermediário</p>
+							<div class="tech-single-box-nivel-custom_line tech-single-box-nivel-current"></div>
 
-						<div class="tech-single-box-nivel-custom_line"></div>
+							<p framework-language-element-key="intermediate-text">Intermediário</p>
 
-						<p framework-language-element-key="advanced-text">Experiente</p>
+							<div class="tech-single-box-nivel-custom_line"></div>
 
-					</div> <!-- Technologies Single Box Nivel -->
-				</div> <!-- Technologies Single Box -->
+							<p framework-language-element-key="advanced-text">Experiente</p>
 
-				<div class="technologies-single-box pad10">
-					<div class="technologies-single-box-title flex">
-						<i class="fa-solid fa-database" style="font-size: 28px;"></i>
-						<h2>MongoDB</h2>
-					</div> <!-- Technologies Single Box Title -->
+						</div> <!-- Technologies Single Box Nivel -->
+					</div> <!-- Technologies Single Box -->
 
-					<div class="technologies-single-box-nivel flex pad15">
+					<div class="technologies-single-box pad10">
+						<div class="technologies-single-box-title flex">
+							<i class="fa-solid fa-database" style="font-size: 28px;"></i>
+							<h2>MongoDB</h2>
+						</div> <!-- Technologies Single Box Title -->
 
-						<p framework-language-element-key="beginner-text">Iniciante</p>
+						<div class="technologies-single-box-nivel flex pad15">
 
-						<div class="tech-single-box-nivel-custom_line"></div>
+							<p framework-language-element-key="beginner-text">Iniciante</p>
 
-						<p framework-language-element-key="intermediate-text">Intermediário</p>
+							<div class="tech-single-box-nivel-custom_line"></div>
 
-						<div class="tech-single-box-nivel-custom_line"></div>
+							<p framework-language-element-key="intermediate-text">Intermediário</p>
 
-						<p framework-language-element-key="advanced-text">Experiente</p>
+							<div class="tech-single-box-nivel-custom_line"></div>
 
-					</div> <!-- Technologies Single Box Nivel -->
-				</div> <!-- Technologies Single Box -->
+							<p framework-language-element-key="advanced-text">Experiente</p>
 
-				<div class="technologies-more-button">
-					<button class="button flex pad10 knowledge-modal-toggle" id="modal-toggle"
-						modal-target="#knowledge-modal" framework-language-element-key="knowledge-modal-button">
-						Mais Sobre Meu Conhecimento
-						<i class="fa-solid fa-plus"></i>
-					</button>
-				</div>
+						</div> <!-- Technologies Single Box Nivel -->
+					</div> <!-- Technologies Single Box -->
 
-			</div> <!-- Technologies Single Container -->
+					<div class="technologies-more-button">
+						<button class="button flex pad10 knowledge-modal-toggle" id="modal-toggle"
+							modal-target="#knowledge-modal" framework-language-element-key="knowledge-modal-button">
+							Mais Sobre Meu Conhecimento
+							<i class="fa-solid fa-plus"></i>
+						</button>
+					</div>
 
-			<div class="technologies-dynamic-image flex w50 pad40">
-				<i id="technologies-dynamic-image-element" class="fa-brands fa-html5"></i>
-			</div> <!-- Technologies Dynamic Images-->
+				</div> <!-- Technologies List Container -->
+
+				<div class="technologies-right flex-column w50 pad20">
+
+					<div class="technologies-dynamic-icon flex pad40">
+						<i id="technologies-dynamic-icon-element" class="fa-brands fa-html5"></i>
+					</div> <!-- Technologies Dynamic Icon -->
+
+					<h3 framework-language-element-key="soft-skills-title" class="swipe-to-soft-skills-text">
+						Soft Skills
+					</h3>
+
+					<i id="knowledge-swipe-to-soft-skills"
+						class="fa-solid fa-arrow-right-long swipe-to-soft-skills-button">
+					</i>
+
+				</div> <!-- Technologies Right -->
+
+			</div> <!-- Knowledge Left Side -->
+
+			<div class="knowledge-right-side pos-relative">
+
+				<i id="knowledge-swipe-to-technologies"
+					class="fa-solid fa-arrow-left-long knowledge-swipe-to-technologies-button"></i>
+
+				<h3 framework-language-element-key="soft-skills-title">
+					Soft Skills
+				</h3>
+
+				<div class="soft-skills-wrapper">
+
+					<!-- Fast Learning -->
+					<div class="soft-skill-single">
+
+						<i class="fa-solid fa-book"></i>
+
+						<h3 framework-language-element-key="soft-skills-fast_learning-title">
+							Aprendizado <b>Rápido</b>
+						</h3>
+
+						<p framework-language-element-key="soft-skills-fast_learning-description">
+							Assim como tenho autonomia e fácil adaptação, minha curva de aprendizado é rápida, constante
+							e exponencial.
+						</p>
+
+					</div>
+
+					<!-- Team Work -->
+					<div class="soft-skill-single">
+
+						<i class="fa-solid fa-people-group"></i>
+
+						<h3 framework-language-element-key="soft-skills-team_work-title">
+							Trabalho em <b>Equipe</b>
+						</h3>
+
+						<p framework-language-element-key="soft-skills-team_work-description">
+							Amo trabalhar em equipe e aprender com os colegas, evoluir junto com eles e vê-los no
+							sucesso junto comigo é uma missão e um sonho.
+						</p>
+
+					</div>
+
+					<!-- Clean and Organized -->
+					<div class="soft-skill-single">
+
+						<i class="fa-solid fa-leaf"></i>
+
+						<h3 framework-language-element-key="soft-skills-clean_organized-title">
+							Ambiente de Trabalho <b>Limpo e Organizado</b>
+						</h3>
+
+						<p framework-language-element-key="soft-skills-clean_organized-description">
+							Sou um homem extremamente organizado e que tem TOC ao ver algo fora do lugar ou alguma coisa
+							suja, isso é uma regra para mim.
+						</p>
+
+					</div>
+
+					<!-- Autonomy -->
+					<div class="soft-skill-single">
+
+						<i class="fa-solid fa-rocket"></i>
+
+						<h3 framework-language-element-key="soft-skills-autonomy-title">
+							<b>Autonomia</b> para resolver <b>Problemas</b>
+						</h3>
+
+						<p framework-language-element-key="soft-skills-autonomy-description">
+							Se necessário vou até as profundezas da internet para achar a solução de um problema nas
+							aplicações que desenvolvo, não consigo dormir sem ter resolvido um bug antes e com certeza
+							não dependo de outros desenvolvedores para fazer isso.
+						</p>
+
+					</div>
+
+					<!-- Respect & Empathy -->
+					<div class="soft-skill-single">
+
+						<i class="fa-solid fa-face-smile"></i>
+
+						<h3 framework-language-element-key="soft-skills-respect_empathy-title">
+							<b>Empatia e Respeito</b>
+						</h3>
+
+						<p framework-language-element-key="soft-skills-respect_empathy-description">
+							Amar ao próximo e respeitá-lo independente das diferenças é um princípio para mim já que,
+							“Respeito gera respeito“.
+						</p>
+
+					</div>
+
+					<!-- Communication -->
+					<div class="soft-skill-single">
+
+						<i class="fa-regular fa-comments"></i>
+
+						<h3 framework-language-element-key="soft-skills-communication-title">
+							<b>Comunicação</b>
+						</h3>
+
+						<p framework-language-element-key="soft-skills-communication-description">
+							Nos últimos anos venho focando em evoluir minha comunicação com as pessoas, e isso tem me
+							dado resultados incríveis. A arte de se comunicar é linda.
+						</p>
+
+					</div>
+
+					<!-- Proactivity & Focus -->
+					<div class="soft-skill-single">
+
+						<i class="fa-solid fa-location-crosshairs"></i>
+
+						<h3 framework-language-element-key="soft-skills-proactivity_focus-title">
+							<b>Proatividade e Foco</b>
+						</h3>
+
+						<p framework-language-element-key="soft-skills-proactivity_focus-description">
+							Sempre estou me movimentando e fazendo algo, e quando estou parado me pergunto o por quê
+							disso, e logo após isso volto ao foco.
+						</p>
+
+					</div>
+
+					<!-- Resilience -->
+					<div class="soft-skill-single">
+
+						<i class="fa-solid fa-shield-halved"></i>
+
+						<h3 framework-language-element-key="soft-skills-resilience-title">
+							<b>Resiliência</b>
+						</h3>
+
+						<p framework-language-element-key="soft-skills-resilience-description">
+							A grande maioria das pessoas costuma desistir na primeira dificuldade que aparece no meio do
+							caminho, mas eu vou além, desistir não é uma opção para mim. Isso me faz diferente, isso me
+							faz melhor.
+						</p>
+
+					</div>
+
+					<!-- Flexibility & Adaptation -->
+					<div class="soft-skill-single">
+
+						<i class="fa-solid fa-sitemap"></i>
+
+						<h3 framework-language-element-key="soft-skills-flexibility_adaptation-title">
+							<b>Flexibilidade e Capacidade de Adaptação</b>
+						</h3>
+
+						<p framework-language-element-key="soft-skills-flexibility_adaptation-description">
+							Sou flexível e costumo me adaptar facilmente às novas tecnologias e às novas tendências do
+							mercado ao redor do mundo.
+						</p>
+
+					</div>
+
+				</div> <!-- Soft Skills Wrapper -->
+
+			</div> <!-- Knowledge Right Side -->
 
 		</div> <!-- Container -->
 
-	</section> <!-- Technologies -->
+	</section> <!-- Knowledge -->
 
 	<!-- Contact Section -->
 	<section class="contact"> <!-- Contact -->
@@ -738,7 +1250,8 @@
 		</div> <!-- Container -->
 	</section> <!-- Contact -->
 
-	<!------------------------>
+	<!----------------------------------------->
+	<!----------------------------------------->
 	<!-- Modals -->
 
 	<!-- Project Info Modal -->
@@ -1449,7 +1962,8 @@
 	</div> <!-- Knowledge Modal -->
 
 	<!-- End Modals -->
-	<!------------------------>
+	<!----------------------------------------->
+	<!----------------------------------------->
 
 	<!-- Cookies Wrapper -->
 	<div class="cookies-privay-wrapper">
@@ -1591,8 +2105,6 @@
 
 	TODO:
 	+ Next Updates:
-		+ Soft Skills Section
-		+ Update Created Projects
-		+ Add More Created Projects
+		+ Modal Project Info -> When click on the image (desktop_2), can view the image with better resolution (100% Width and 100% Height)
 
 -->

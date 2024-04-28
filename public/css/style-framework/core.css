@@ -8,8 +8,10 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
+}
+
+*:not(i, b) {
     transition: all 0.6s linear;
-    /*font-family: 'Montserrat', sans-serif;*/
 }
 
 /* HTML, Body */
@@ -21,6 +23,11 @@ body {
 body {
     min-height: 100vh;
     overflow: overlay;
+}
+
+/* Modal Prevent Scroll */
+.modal-prevent-scroll {
+    overflow: hidden;
 }
 
 /***********************/
@@ -38,8 +45,6 @@ body {
     height: 0;
 }
 
-
-
 ::-webkit-scrollbar-track {
     background: var(--background-scrollbar-track);
 }
@@ -51,11 +56,6 @@ body {
 
 ::-webkit-scrollbar-thumb:hover {
     background: var(--background-scrollbar-thumb-hover);
-}
-
-/* Modal Prevent Scroll */
-.modal-prevent-scroll {
-    overflow: hidden;
 }
 
 /***********************/

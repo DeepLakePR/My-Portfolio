@@ -1,0 +1,332 @@
+{
+
+    "global-translations": {
+        "email-contact-link": "<a href='mailto:guilhermefortunato2008@gmail.com?subject=Parlons%20About%20Business&body=Bonjour%20Guilherme...' target='_blank'><i class='fa-solid fa-envelope'></i></a>",
+
+        "more-about-text": "Savoir plus",
+
+        "beginner-text": "Débutant",
+        "intermediate-text": "Intermédiaire",
+        "advanced-text": "Avancé",
+
+        "certified-link": "Lien Certifié"
+    },
+
+    "navigation" : {
+        "navigation-home": "Maison",
+        "navigation-about-me": "Sur moi",
+        "navigation-projects": "Projets",
+        "navigation-knowledge": "Connaissance",
+        "navigation-contact": "Contact"
+    },
+
+    "apresentation": {
+        "apresentation-text-h2": "Bonjour, je m'appelle <span>Guilherme Fortunato</span>",
+        "apresentation-text-p": "Un homme qui <span>transforme</span> des lignes de code en <span>solutions innovantes.</span>",
+        
+        "apresentation-fullstack": "Développeur FullStack"
+    },
+
+    "end-to-end-applications": {
+        "end-to-end-applications-text": "Applications créées et développées de<br /><span>De Bout en Bout</span>"
+    },
+
+    "about-me": {
+        "about-me-title": "Sur moi",
+        "about-me-text": "Bonjour, je m'appelle Guilherme Fortunato Machado, j'ai actuellement <b>16 ans</b> et j'habite au Brésil, depuis l'âge de 9 ans j'ai eu des contacts avec la programmation et le développement de jeux, à 12 ans j'ai créé mon premier site Web, j'ai fait le <b>cours Fullstack de Danki Code</b> et aujourd'hui j'ai des certificats de <b>développeur de jeux, développeur Web et programmeur d'applications</b>, j'ai des connaissances dans des langages tels que <b >PHP, JavaScript et Lua</b> comme langage de programmation pour les jeux. <b>Je suis intéressé par un travail ou un travail indépendant dans le domaine Fullstack ou Mobile</b>, et j'apprends également <b>Python</b> et à l'avenir <b>Ruby</b>. J'ai des connaissances dans les technologies telles que <b>React JS, React Native et un peu NodeJS</b>, les frameworks front-end tels que <b>Bootstrap, Materialise et SASS</b>, et dans les bases de données ce que j'ai. J'ai plus de connaissances sur <b>MySQL</b>, j'ai également quelques connaissances sur <b>MongoDB</b>."
+    },
+
+    "projects": {
+        "projects-title": "Projets",
+        "projects-more-button": "Plus de Projets",
+
+        "projects-single": {
+            
+            "projects-single-prime_consultancy-title": "Conseil Immobilier de Premier Ordre - 2022",
+            "projects-single-prime_consultancy-description": "Développement d'un site Web d'entreprise, avec un système de panneau de contrôle pour les employés, générant des rapports PDF et enregistrant des documents dans la base de données. Les technologies utilisées étaient <b>Front-End (HTML5, CSS3, JavaScript), Bootstrap, PHP et MySQL Database</b>.",
+
+            "projects-single-ibca_church-title": "Application de l'Église IBCA - 2022",
+            "projects-single-ibca_church-description": "J'ai créé une application pour mon église, en utilisant <b>React Native et la plateforme Expo</b> pour exporter l'application vers <b>IOS et Android</b>.",
+
+            "projects-single-my_portfolio-title": "Mon Portfolio - 2023",
+            "projects-single-my_portfolio-description": "Le site Web que vous voyez maintenant a été développé avec du <b>Front-End</b> pur et également avec son propre framework CSS, <b>J'ai créé un framework CSS de base, style bootstrap</b>, mais il fonctionne et enregistre plusieurs lignes de code CSS.",
+
+            "projects-single-instagram_clone-title": "Cloner Instagram - 2023",
+            "projects-single-instagram_clone-description": "Un clone très basique et très générique d'Instagram de 2019, développé en <b>React</b> et hébergé sur la plateforme Google <b>Firebase</b>.",
+
+            "projects-single-dentistry-title": "Dentiste/Dentisterie - 2023",
+            "projects-single-dentistry-description": "Un site Web montrant le travail d'un dentiste, créé avec <b>Vanilla HTML 5 & CSS 3</b>.",
+
+            "projects-single-concessionaire-title": "Concessionnaire de véhicules spéciaux - 2023",
+            "projects-single-concessionaire-description": "Développement d'un site Web pour les concessionnaires en utilisant <b>PHP et Front-End</b>, il peut être facilement adapté et vendu à d'autres concessionnaires.",
+
+            "projects-single-combat_game-title": "Jeu de Combat JavaScript - 2024",
+            "projects-single-combat_game-description": "Un jeu amusant pour <b>2 personnes</b> réalisé avec les bases du JavaScript orienté objet.",
+
+            "projects-single-o_corrector-title": "Le Courtier - 2024",
+            "projects-single-o_corrector-description": "C'est un excellent site pour montrer le <b>travail</b> d'un <b>agent immobilier</b>, il sert également à inciter le client à créer une <b>confiance</b> dans le <b> courtier</b>, conduisant ainsi à une éventuelle <b>vente de propriété</b>.",
+
+            "projects-single-3d_three-title": "3D Trois JS - 2024",
+            "projects-single-3d_three-description": "Apprendre à créer des sites Web <b>multidimensionnels</b>.",
+            
+            "projects-single-news_backend-title": "Journal Back-End - 2024",
+            "projects-single-news_backend-description": "J'ai développé ce <b>site d'actualités extrêmement simple avec filtre par catégorie</b>, je l'ai fait juste pour pratiquer et améliorer mes connaissances principalement avec des <b>Requêtes</b> dans la base de données <b>MySQL</b> .",
+
+            "projects-single-digital_agency-title": "Agence Digitale - 2022",
+            "projects-single-digital_agency-description": "Petit projet développé comme modèle à vendre à d'autres <b>agences numériques</b> qui souhaitent toucher plus de clients.",
+
+            "projects-single-rbi_web-title": "RBI Web - 2023",
+            "projects-single-rbi_web-description": "<b>Page de destination</b> développée pour un salon de coiffure que je fréquente, utilisée principalement pour annoncer les services proposés par le salon de coiffure, le <b>client peut également localiser et savoir où se trouvent les unités du salon de coiffure</b>.",
+
+            "projects-single-weather_station-title": "Station Météo - 2024",
+            "projects-single-weather_station-description": "Application pour <b>IOs et Android</b> où vous pouvez prendre des <b>notes du climat actuel de la région</b> et l'exporter vers une <b>feuille de calcul Excel</b>, toutes les notes (température, vent direction, rayons UV) sont stockés dans une base de données <b>Firebase</b>, à l'avenir il sera possible de générer des graphiques dans Excel avec les données stockées.",
+
+            "projects-single-node_openai_image-title": "Image OpenAI du nœud - 2024",
+            "projects-single-node_openai_image-description": "Un petit projet où j'ai exploré l'univers de l'<b>intelligence artificielle</b> avec génération d'images, en utilisant la technologie OpenAI <b>Dall-E</b>",
+
+            "projects-single-rbi_app-title": "RBI App - 2023",
+            "projects-single-rbi_app-description": "Application mobile développée pour compléter la <b>version Web (RBI Web)</b>, spécialement conçue pour les <b>salons de coiffure</b>, où vous pouvez voir <b>le calendrier, l'agenda et le contrôle des employés du jour</b> et ainsi de suite."
+
+
+        }
+
+    },
+
+    "knowledge": {
+        "knowledge-title": "Ma Connaissance",
+        "knowledge-modal-button": "En savoir plus sur mes connaissances <i class='fa-solid fa-plus'></i>",
+
+        "knowledge-soft-skills": {
+
+            "soft-skills-title": "Compétences Générales",
+
+
+            "soft-skills-fast_learning": {
+                "soft-skills-fast_learning-title": "Apprentissage <b>rapide</b>",
+                "soft-skills-fast_learning-description": "Tout comme j'ai de l'autonomie et une facilité d'adaptation, ma courbe d'apprentissage est rapide, constante et exponentielle."
+            },
+
+            "soft-skills-team_work": {
+                "soft-skills-team_work-title": "<b>Travail d'équipe</b>",
+                "soft-skills-team_work-description": "J'aime travailler en équipe et apprendre de mes collègues, évoluer avec eux et les voir réussir avec moi est une mission et un rêve."
+            },
+
+            "soft-skills-clean_organized": {
+                "soft-skills-clean_organized-title": "<b>Environnement de travail propre et organisé</b>",
+                "soft-skills-clean_organized-description": "Je suis un homme extrêmement organisé qui souffre de TOC lorsqu'il voit quelque chose de déplacé ou quelque chose de sale, c'est une règle pour moi."
+            },
+
+            "soft-skills-autonomy": {
+                "soft-skills-autonomy-title": "<b>Autonomie</b> pour résoudre les <b>Problèmes</b>",
+                "soft-skills-autonomy-description": "Si nécessaire, je fouille dans les profondeurs d'Internet pour trouver une solution à un problème dans les applications que je développe, je ne peux pas dormir sans avoir résolu un bug au préalable et je ne dépends certainement pas des autres développeurs pour ce faire."
+            },
+
+            "soft-skills-respect_empathy": {
+                "soft-skills-respect_empathy-title": "<b>Empathie et Respect</b>",
+                "soft-skills-respect_empathy-description": "Aimer les autres et les respecter au-delà des différences est pour moi un principe puisque « le respect engendre le respect »."
+            },
+
+            "soft-skills-communication": {
+                "soft-skills-communication-title": "<b>Communication</b>",
+                "soft-skills-communication-description": "Ces dernières années, je me suis concentré sur l'évolution de ma communication avec les gens, et cela m'a donné des résultats incroyables. L'art de communiquer est magnifique."
+            },
+
+            "soft-skills-proactivity_focus": {
+                "soft-skills-proactivity_focus-title": "<b>Proactivité et Concentration</b>",
+                "soft-skills-proactivity_focus-description": "Je bouge toujours et je fais quelque chose, et quand je suis immobile, je me demande pourquoi, et peu de temps après, je me concentre à nouveau."
+            },
+
+            "soft-skills-resilience": {
+                "soft-skills-resilience-title": "<b>Résilience</b>",
+                "soft-skills-resilience-description": "La grande majorité des gens ont tendance à abandonner dès la première difficulté qui apparaît en cours de route, mais je vais plus loin, abandonner n'est pas une option pour moi. Cela me rend différent, cela me rend meilleur."
+            },
+
+            "soft-skills-flexibility_adaptation": {
+                "soft-skills-flexibility_adaptation-title": "<b>Flexibilité et adaptabilité</b>",
+                "soft-skills-flexibility_adaptation-description": "Je suis flexible et j'ai tendance à m'adapter facilement aux nouvelles technologies et aux nouvelles tendances du marché à travers le monde."
+            }
+
+        }
+    },
+
+    "contact": {
+        "contact-call-to-action-text": "Parlons?<br />Envoyez-moi un e-mail et<br /><a href='mailto:guilhermefortunato2008@gmail.com?subject=Parlons%20About%20Business&body=Bonjour%20Guilherme...' target='_blank'>Entrez dans Contactez-moi.</a>"
+    },
+
+    "projects-modal": {
+        "projects-modal-pre-title": "Projet",
+
+        "projects-modal-button-deployed": "Projet Déployé",
+        "projects-modal-button-repository": "Dépôt sur Github",
+
+        "projects-modal-single": {
+
+            "projects-modal-single-prime_consultancy": {
+                "projects-modal-single-title": "Conseil Immobilier de Premier Ordre",
+                "projects-modal-single-tags": "Site Web - Tableau de bord - Génération PDF",
+                "projects-modal-single-description": "Développement d'un site Web complexe avec <b>Panneau de configuration</b> et d'autres fonctionnalités qui ont rationalisé les processus et les résultats de l'entreprise jusqu'à <b>100%</b>, les principales technologies et bibliothèques utilisées étaient <b>Front-End</b> en utilisant <b>JQuery et Bootstrap</b> comme bibliothèques, <b>Back-End</b> en utilisant <b>FPDF (PDF Generator) et PHPMailer (envoie des e-mails)</b> comme bibliothèques et <b>Base de données MySQL</b> pour stocker toutes les informations sur les clients, les processus, etc.  Un <b>Système de sauvegarde</b> a également été développé pour la base de données pour des raisons de sécurité en cas de problème. affectant les données."
+            },
+
+            "projects-modal-single-ibca_church": {
+                "projects-modal-single-title": "Église de l'application IBCA",
+                "projects-modal-single-tags": "Application - Contrôle de l'information - Dates et notes dynamiques",
+                "projects-modal-single-description": "Une application créée pour l'église que je fréquente, développée principalement pour enregistrer les dates et les événements de l'église, et les membres qui participent au <b>Groupe de jeunes</b> de l'église peuvent également s'inscrire, le tout développé dans <b>React Native</ b> en utilisant la plateforme <b>Expo</b> pour exporter l'application vers <b>Android et IOS</b>."
+            },
+
+            "projects-modal-single-my_portfolio": {
+                "projects-modal-single-title": "Mon portfolio",
+                "projects-modal-single-tags": "Site Web - Animations - Modal Dynamique",
+                "projects-modal-single-description": "C'est le projet dans lequel vous vous trouvez actuellement, développé en utilisant <b>Vanilla HTML5 et CSS3</b> et en utilisant <b>JQuery</b> pour faciliter la partie <b>Javascript</b>, c'était aussi de type A de '<b>Framework</b>' propre et 100% original CSS a été créé et avec cela les <b>Thèmes</b> ont été créés. Utilisation de la bibliothèque <b>Scroll Reveal</b> pour créer la plupart des animations du portfolio."
+            },
+
+            "projects-modal-single-instagram_clone": {
+                "projects-modal-single-title": "Cloner Instagram",
+                "projects-modal-single-tags": "Site Web - React JS - Publications - Création de compte",
+                "projects-modal-single-description": "Un projet issu du cours <b>Javascript</b> que je suivais chez <b>Danki Code</b>, quelque chose de très simple mais qui fonctionne et qui est dans l'air depuis des années."
+            },
+
+            "projects-modal-single-dentistry": {
+                "projects-modal-single-title": "Dentisterie",
+                "projects-modal-single-tags": "Site Web - Statique",
+                "projects-modal-single-description": "Un autre projet qui a également été développé et issu du cours <b>Front-End Webmaster</b> chez <b>Danki Code</b> mais qui peut également être facilement adapté et créé de nouvelles variantes du site Web pouvant être vendues. à <b>Dentisterie</b>, créé en utilisant <b>Vanilla HTML5 et CSS3</b>."
+            },
+
+            "projects-modal-single-concessionaire": {
+                "projects-modal-single-title": "Concessionnaire automobile spécial",
+                "projects-modal-single-tags": "Site Web - Multipage - Chargement dynamique des pages",
+                "projects-modal-single-description": "Ce projet est issu du cours <b>Back-End</b> de <b>Danki Code</b>, un projet légèrement plus complexe qui utilisait le site Web développé dans le <b>Front-End</b>. cours où il a été amélioré et implémentant <b>PHP</b>."
+            },
+            
+            "projects-modal-single-combat_game": {
+                "projects-modal-single-title": "Jeu de Combat",
+                "projects-modal-single-tags": "Jeu - Orienté vers les Objets - Animations",
+                "projects-modal-single-description": "Ma classe de lycée avait besoin d'un jeu à présenter au <b>salon de l'emploi</b> de cette année. J'ai donc développé ce <b>jeu en JavaScript</b>. Simple mais fonctionnel."
+            },
+
+            "projects-modal-single-o_corrector": {
+                "projects-modal-single-title": "Le courtier",
+                "projects-modal-single-tags": "Marketing/Ventes - Site Web - Statique",
+                "projects-modal-single-description": "Site Web créé en tant que travailleur indépendant pour un courtier de ma ville, idéal pour le marketing et les ventes numériques, afin que le <b>client</b> en apprenne davantage sur le <b>courtier</b> et l'amène à faire un <b>achat</b>."
+            },
+
+            "projects-modal-single-3d_three": {
+                "projects-modal-single-title": "3D Trois JavaScript",
+                "projects-modal-single-tags": "3D - Multidimensionnel",
+                "projects-modal-single-description": "Projet de base, explorant le multivers des dimensions sur le web..."
+            },
+
+            "projects-modal-single-news_backend": {
+                "projects-modal-single-title": "Journal Back-End",
+                "projects-modal-single-tags": "Back-End - Base de données - Filtrer par catégorie",
+                "projects-modal-single-description": "Projet de base, réalisé juste pour mettre en pratique mes connaissances en <b>PHP et MySQL</b>."
+            },
+
+            "projects-modal-single-digital_agency": {
+                "projects-modal-single-title": "Agence Digitale",
+                "projects-modal-single-tags": "Orienté Ventes - Statique",
+                "projects-modal-single-description": "Modèle de base, mais il fonctionne très bien pour <b>capter plus de clients et d'entreprises</b> afin de <b>conclure un accord avec votre agence.</b>"
+            },
+
+            "projects-modal-single-rbi_web": {
+                "projects-modal-single-title": "RBI Web",
+                "projects-modal-single-tags": "Site Web - Salon de coiffure - Promotion des services",
+                "projects-modal-single-description": "Site Web statique, destiné aux ventes et permettant au <b>client d'en savoir plus sur le salon de coiffure.</b>"
+            },
+
+            "projects-modal-single-weather_station": {
+                "projects-modal-single-title": "Station Météo",
+                "projects-modal-single-tags": "Application - React Native - Feuilles de calcul Excel",
+                "projects-modal-single-description": "Un projet social de mon école appelé <b>Station météorologique</b> avait besoin de <b>plus d'agilité dans le processus d'annotation</b> des données de la station, et on m'a donc demandé de <b>développer cette application</b> afin que les étudiants qui faisaient partie du projet puissent prendre <b>des notes et les exporter</b> <b>100 fois plus rapidement.</b>"
+            },
+
+            "projects-modal-single-node_openai_image": {
+                "projects-modal-single-title": "Image OpenAI du nœud",
+                "projects-modal-single-tags": "Intelligence artificielle - Génération d'images - OpenAI",
+                "projects-modal-single-description": "Simple mais fonctionnel, conçu uniquement pour les tests, mais à l'avenir, j'ai l'intention d'explorer davantage l'univers de l'<b>Intelligence artificielle</b> qui est à la mode</b>."
+            },
+
+            "projects-modal-single-rbi_app": {
+                "projects-modal-single-title": "RBI App",
+                "projects-modal-single-tags": "Mobile - Salon de coiffure - Gestion d'entreprise",
+                "projects-modal-single-description": "Développé et créé avec le puissant <b>React Native</b> et la technologie <b>Expo</b>, le projet a actuellement été <b>abandonné</b> mais peut être facilement adapté et vendu à d'autres salons de coiffure. ."
+            }
+            
+        }
+    },
+
+    "knowledge-modal": {
+        "knowledge-modal-subtitle-courses": "Cours et écoles",
+        "knowledge-modal-courses":{
+
+            "knowledge-modal-courses-dankicode-title": "Danki Code - FullStack Master",
+            "knowledge-modal-courses-dankicode-description": "Le package FullStack Master de Danki Code, qui contient <b>plus de 25 cours</b> vous préparant à devenir un véritable développeur web, une grande partie de mes connaissances web sont venues de là.",
+
+            "knowledge-modal-courses-alura1-title": "Alura - Analyse et développement de systèmes",
+            "knowledge-modal-courses-alura1-description": "Un cours proposé par le gouvernement du Paraná à travers le <b>Nouvel enseignement secondaire</b>, j'ai appris un peu sur la demande de données, le modèle en cascade, etc.",
+
+            "knowledge-modal-courses-alura2-title": "Alura - Développement de jeux pour débutants",
+            "knowledge-modal-courses-alura2-description": "Grâce au programme <b>Edutech</b> qui a eu lieu en 2021, j'ai participé et eu accès aux cours Alura qui enseignaient comment développer des jeux de base en utilisant <b>Scratch, JavaScript & GameMaker Studio</b>.",
+
+            "knowledge-modal-courses-high_school-title": "Analyse et Développement de Systèmes - Nouveau Lycée 2ème Année - Paraná",
+            "knowledge-modal-courses-high_school-description": "Je suis actuellement en 2ème année du New High School où j'étudie <b>Analyse et Développement de Systèmes</b> qui dure au total 3 ans."
+
+        },
+
+        "knowledge-modal-subtitle-certificates": "Certificats",
+        "knowledge-modal-certificates":{
+
+            "knowledge-modal-certificates-programming_logic-title": "Logique de programmation - Danki Code",
+            "knowledge-modal-certificates-programming_logic-description": "La logique de programmation est la base de tout dans le monde de la programmation.",
+
+            "knowledge-modal-certificates-front_end-title": "Front-End - Danki Code",
+            "knowledge-modal-certificates-front_end-description": "Enseigner tout, des bases et principes fondamentaux du Front-End aux concepts plus avancés.",
+
+            "knowledge-modal-certificates-front_end2-title": "Front-End 2.0 - Danki Code",
+            "knowledge-modal-certificates-front_end2-description": "Le cours a enseigné le Front-End d'une manière plus moderne, en utilisant les dernières balises <b>HTML 5</b> telles que <b>en-tête, section, pied de page, etc</b> et en utilisant également <b>flexbox</b> laissant <b>flotter</b> dans le passé.",
+
+            "knowledge-modal-certificates-web_design-title": "Création de sites web - Danki Code",
+            "knowledge-modal-certificates-web_design-description": "J'ai enseigné l'<b>Expérience utilisateur (UX)</b> et les meilleures façons de créer un design beau, accrocheur et sain pour votre entreprise.",
+
+            "knowledge-modal-certificates-javascript-title": "JavaScript - Danki Code",
+            "knowledge-modal-certificates-javascript-description": "Un langage de programmation célèbre et puissant principalement utilisé dans le <b>Développement Web</b>.",
+
+            "knowledge-modal-certificates-app_development-title": "Développement Mobile - Danki Code",
+            "knowledge-modal-certificates-app_development-description": "J'ai appris à développer des applications en utilisant la plus célèbre <b>Bibliothèque JavaScript</b> pour développer des applications pour <b>Android</b> et <b>IOS</b> qui seraient <b>React Native</b>.",
+
+            "knowledge-modal-certificates-firebase-title": "Firebase - Danki Code",
+            "knowledge-modal-certificates-firebase-description": "Le cours vous a appris à héberger vos applications à l'aide de la puissante plate-forme cloud de <b>Google</b>.",
+
+            "knowledge-modal-certificates-php-title": "PHP - Danki Code",
+            "knowledge-modal-certificates-php-description": "Enseignement de PHP, de ses fondamentaux et connaissance approfondie du langage.",
+
+            "knowledge-modal-certificates-database-title": "Base de données - Code Danki",
+            "knowledge-modal-certificates-database-description": "Un cours qui enseigne les principales bases de données relationnelles et non relationnelles utilisées, qui seraient respectivement <b>MySQL</b> et <b>MongoDB</b>.",
+
+            "knowledge-modal-certificates-english_for_programmers-title": "Anglais pour les programmeurs - Danki Code",
+            "knowledge-modal-certificates-english_for_programmers-description": "J'ai appris un peu d'anglais plus destiné aux programmeurs et à leurs concepts techniques.",
+
+            "knowledge-modal-certificates-alura_all_certificates-title": "Tous les certificats - Alura",
+            "knowledge-modal-certificates-alura_all_certificates-description": "Tous les cours suivis et leurs charges de travail respectives tout au long de mon parcours étudiant à <b>Alura</b>."
+
+        },
+
+        "knowledge-modal-subtitle-idioms": "Expressions idiomatiques/langues",
+        "knowledge-modal-idioms":{
+            "idioms-brazilian-portuguese": "Portugais brésilien (langue maternelle)",
+            "idioms-english-united-states": "États Unis Anglais",
+            "idioms-spanish": "Espagnol",
+            "idioms-italian": "Italien"
+        }
+    },
+
+    "cookies": {
+        "cookies-text": "<b>Gui Dev</b> utilise des cookies pour améliorer votre expérience sur notre site Web.",
+
+        "cookies-accept-button": "J'accepte"
+    },
+
+    "footer": {
+        "footer-all-rights-reserved": "&copy; 2024 - Développé et créé par Guilherme Fortunato Machado"
+    }
+
+}
