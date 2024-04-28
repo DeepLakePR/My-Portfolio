@@ -637,18 +637,19 @@ body .modal {
 
 .modal .modal-close {
     position: absolute;
-    top: 7px;
-    right: 9px;
+    top: 2px;
+    right: 7px;
     background: none;
     font-size: 17px;
     color: var(--global-default-color);
+    padding: 9px;
 }
 
 .modal .modal-close i {
     transition: all 0.2s linear;
 }
 
-.modal .modal-close i:hover {
+.modal .modal-close:hover i{
     color: var(--section-button-secondary-hover-color);
 }
 

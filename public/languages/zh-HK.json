@@ -58,7 +58,34 @@
             "projects-single-dentistry-description": "一個展示牙醫工作的網站，使用 <b>Vanilla HTML 5 和 CSS 3</b> 創建。",
 
             "projects-single-concessionaire-title": "特種車輛經銷店 - 2023",
-            "projects-single-concessionaire-description": "使用<b>PHP和前端</b>為經銷商開發了一個網站，可以輕鬆調整並出售給其他經銷商。"
+            "projects-single-concessionaire-description": "使用<b>PHP和前端</b>為經銷商開發了一個網站，可以輕鬆調整並出售給其他經銷商。",
+
+            "projects-single-combat_game-title": "JavaScript 格鬥遊戲 - 2024",
+            "projects-single-combat_game-description": "這是一款適合 <b>2 人</b>的有趣遊戲，使用物件導向的 JavaScript 基礎知識製作。",
+
+            "projects-single-o_corrector-title": "經紀人 - 2024",
+            "projects-single-o_corrector-description": "這是一個很好的網站，可以展示<b>房地產經紀人</b>的<b>工作</b>，它還可以讓客戶在<b>經紀人中建立<b>信任</b >< /b>，從而導致可能的<b>財產出售</b>。",
+
+            "projects-single-3d_three-title": "3D三JS - 2024",
+            "projects-single-3d_three-description": "學習創建<b>多維</b>網站。",
+            
+            "projects-single-news_backend-title": "後端報紙 - 2024",
+            "projects-single-news_backend-description": "我開發了這個極其簡單的<b>新聞網站，按類別過濾</b>，我這樣做只是為了練習和提高我的知識，主要是使用<b>MySQL</b>資料庫中的<b>查詢</b> 。",
+
+            "projects-single-digital_agency-title": "數位代理 - 2022",
+            "projects-single-digital_agency-description": "作為模型開發的小型項目，出售給其他想要吸引更多客戶的<b>數位機構</b>。",
+
+            "projects-single-rbi_web-title": "打點網 - 2023",
+            "projects-single-rbi_web-description": "為我常去的一家理髮店開發的<b>登陸頁</b>，主要用於宣傳理髮店提供的服務，<b>客戶還可以定位並了解理髮店的單位</b>位於何處。",
+
+            "projects-single-weather_station-title": "氣象站 - 2024",
+            "projects-single-weather_station-description": "適用於<b>IO 和Android</b> 的應用程序，您可以在其中<b>記錄該地區當前的氣候</b>並將其匯出到<b>Excel 電子表格</b>，所有記錄（溫度、風）方向、紫外線）儲存在 <b>Firebase</b> 資料庫中，將來可以使用儲存的資料在 Excel 中產生圖表。",
+
+            "projects-single-node_openai_image-title": "節點 OpenAI 影像 - 2024",
+            "projects-single-node_openai_image-description": "我在一個小專案中使用 OpenAI 技術 <b>Dall-E</b> 透過影像生成探索了<b>人工智慧</b>的世界",
+
+            "projects-single-rbi_app-title": "打點應用程式 - 2023",
+            "projects-single-rbi_app-description": "為補充<b>網頁版本 (RBI Web) </b>而開發的行動應用程序，專為<b>理髮店</b>製作，您可以在其中查看<b>今天的日程安排、議程、員工控制</b>等等。"
 
         }
 
@@ -167,6 +194,60 @@
                 "projects-modal-single-title": "特種車經銷店",
                 "projects-modal-single-tags": "網站 - 多頁面 - 動態頁面加載",
                 "projects-modal-single-description": "該項目取自 <b>Danki Code</b> 的<b>後端</b>課程，這是一個稍微複雜的項目，採用了<b>前端</b>中開發的網站課程。 b> 進行了改進並實現了 <b>PHP</b>。"
+            },
+            
+            "projects-modal-single-combat_game": {
+                "projects-modal-single-title": "格鬥遊戲",
+                "projects-modal-single-tags": "遊戲 - 物件導向 - 動畫",
+                "projects-modal-single-description": "我的高中班級需要一款遊戲在今年的<b>招聘會</b>上展示，因此我<b>用 JavaScript 開發了這個遊戲</b>。簡單但實用。"
+            },
+
+            "projects-modal-single-o_corrector": {
+                "projects-modal-single-title": "經紀人",
+                "projects-modal-single-tags": "行銷/銷售 - 網站 - 靜態",
+                "projects-modal-single-description": "作為我所在城市的經紀人的自由工作者創建的網站，這對於數位行銷和銷售非常有用，以便<b>客戶</b>了解有關<b>經紀人</b>的更多信息，引導客戶製作<b>購買</b>。"
+            },
+
+            "projects-modal-single-3d_three": {
+                "projects-modal-single-title": "3D 三 JavaScript",
+                "projects-modal-single-tags": "3D - 多維",
+                "projects-modal-single-description": "基本項目，探索網路上的多元維度..."
+            },
+            
+            "projects-modal-single-news_backend": {
+                "projects-modal-single-title": "後端報紙",
+                "projects-modal-single-tags": "後端 - 資料庫 - 按類別過濾",
+                "projects-modal-single-description": "基本項目，只是為了練習我在 <b>PHP 和 MySQL</b> 方面的知識。"
+            },
+
+            "projects-modal-single-digital_agency": {
+                "projects-modal-single-title": "數位代理",
+                "projects-modal-single-tags": "銷售導向 - 靜態",
+                "projects-modal-single-description": "基本模板，但它非常適合<b>吸引更多客戶和公司</b><b>與您的代理商達成交易。"
+            },
+
+            "projects-modal-single-rbi_web": {
+                "projects-modal-single-title": "打點網",
+                "projects-modal-single-tags": "網址 - 理髮店 - 服務推廣",
+                "projects-modal-single-description": "靜態網站，旨在銷售和供<b>客戶了解有關理髮店的更多資訊。"
+            },
+
+            "projects-modal-single-weather_station": {
+                "projects-modal-single-title": "氣象站",
+                "projects-modal-single-tags": "應用程式 - React Native - Excel 電子表格",
+                "projects-modal-single-description": "我學校的一個名為<b>氣象站</b>的社會專案需要<b>氣象站資料的註釋過程更加敏捷</b>，因此我被要求<b>開發此應用程式</b>這樣參與計畫的學生就可以<b>做筆記並匯出</b><b>速度提高100 倍。"
+            },
+
+            "projects-modal-single-node_openai_image": {
+                "projects-modal-single-title": "節點 OpenAI 影像",
+                "projects-modal-single-tags": "人工智慧 - 圖像生成 - OpenAI",
+                "projects-modal-single-description": "簡單但實用，只是為了測試而設計，但在未來，我打算探索更多<b>炒作</b>中的<b>人工智慧</b>宇宙。"
+            },
+
+            "projects-modal-single-rbi_app": {
+                "projects-modal-single-title": "打點應用程式",
+                "projects-modal-single-tags": "移動 - 理髮店 - 業務管理",
+                "projects-modal-single-description": "該項目使用強大的 <b>React Native</b> 和 <b>Expo</b> 技術開發和創建，目前已<b>停止</b>，但可以輕鬆改編並出售給其他理髮店。"
             }
             
         }

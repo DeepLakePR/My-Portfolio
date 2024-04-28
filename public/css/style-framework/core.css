@@ -25,6 +25,11 @@ body {
     overflow: overlay;
 }
 
+/* Modal Prevent Scroll */
+.modal-prevent-scroll {
+    overflow: hidden;
+}
+
 /***********************/
 /* Custom Scrollbar */
 ::-webkit-scrollbar {
