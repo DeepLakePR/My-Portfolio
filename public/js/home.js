@@ -98,6 +98,8 @@ $(function () {
 
         Body.addClass('modal-prevent-scroll');
 
+        $('head meta[name="viewport"]').attr('content', 'width=device-width, initial-scale=1.0');
+
         ExpandImageContainer.fadeIn();
         ExpandImageContainer.css('display', 'flex');
         ExpandImageElement.attr('src', image);
@@ -113,6 +115,8 @@ $(function () {
             Body.removeClass('modal-prevent-scroll');
 
         }
+
+        $('head meta[name="viewport"]').attr('content', 'width=device-width, initial-scale=1.0, maximum-scale=1.0');
 
         ExpandImageContainer.fadeOut();
         ExpandImageElement.attr('src', '/public/assets/logo-2.png');

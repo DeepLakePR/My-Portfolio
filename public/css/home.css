@@ -1375,6 +1375,12 @@ body .modal {
         font-size: 28px;
     }
 
+    /**********************************/
+    /****** Project Image Expanded ******/
+    .project-image-expanded-wrapper{
+        height: 50%;
+    }
+
     /****************************/
     /* Modals */
     .modal .modal-title {
