@@ -1,6 +1,8 @@
 $(function () {
 
     // Variables
+    const Body = $('body');
+
     const isMobile = window.matchMedia('(max-width: 768px)').matches;
 
     ////////////////
@@ -43,20 +45,22 @@ $(function () {
     ////////////////
     // Projects Functions
     const ProjectsWrapper = $('section.projects .projects-wrapper');
+    const ProjectsSingle = $('section.projects div.projects-single');
 
     const ProjectsMoreDiv = $('section.projects .projects-more-button');
     const ProjectsMoreButton = $('#projects-more-button');
     var ShowingProjects = 3;
 
+    // Show More Projects Button
     ProjectsMoreButton.click((e) => {
 
-        let ProjectsSingle = [...$('section.projects div.projects-single')];
+        let ProjectsSingleToShow = [...$('section.projects div.projects-single')];
 
         for (let i = ShowingProjects; i < ShowingProjects + 3; i++) {
-            $(ProjectsSingle[i]).css('display', 'flex');
+            $(ProjectsSingleToShow[i]).css('display', 'flex');
 
-            ScrollReveal().clean($(ProjectsSingle[i]));
-            ScrollReveal().reveal($(ProjectsSingle[i]));
+            ScrollReveal().clean($(ProjectsSingleToShow[i]));
+            ScrollReveal().reveal($(ProjectsSingleToShow[i]));
 
         }
 
@@ -64,7 +68,7 @@ $(function () {
 
         ProjectsWrapper.css('max-height', parseInt(ProjectsWrapper.css('max-height'), 10) + 1125 + 'px');
 
-        if (ShowingProjects >= ProjectsSingle.length) {
+        if (ShowingProjects >= ProjectsSingleToShow.length) {
             ProjectsMoreDiv.fadeOut(() => {
                 ProjectsMoreDiv.css('display', 'none');
 
@@ -74,7 +78,48 @@ $(function () {
 
     })
 
-    ////////////////
+    // (Not Modal) Project Single Expand Image Click
+    ProjectsSingle.find('div.projects-single-image').click((e)=>{
+
+        let imageToExpand = $(e.currentTarget).find('img'); 
+
+        if(imageToExpand){
+            ExpandImage(imageToExpand.attr('src'))
+
+        };
+
+    });
+
+    // Expand Image (Project Image Click) - Custom Modal
+    const ExpandImageContainer = $('body div.project-image-expanded-container');
+    const ExpandImageElement = $('#projectImageExpanded');
+
+    function ExpandImage(image){
+
+        Body.addClass('modal-prevent-scroll');
+
+        ExpandImageContainer.fadeIn();
+        ExpandImageContainer.css('display', 'flex');
+        ExpandImageElement.attr('src', image);
+
+    }
+
+    $('.project-image-expanded-close').click(CloseExpandImage);
+
+    // Expand Image - Custom Modal
+    function CloseExpandImage(){
+        
+        if(!CurrentModal){
+            Body.removeClass('modal-prevent-scroll');
+
+        }
+
+        ExpandImageContainer.fadeOut();
+        ExpandImageElement.attr('src', '/public/assets/logo-2.png');
+
+    }
+
+    ////////////////////////////////////////////////
     // Knowledge/Technologies Functions 
     const IClassList = [
         'fa-brands fa-html5',
@@ -248,7 +293,7 @@ $(function () {
             let ModalTarget = $(e.currentTarget).attr('modal-target');
 
             CurrentModal = $(ModalTarget).fadeIn();
-            $('body').toggleClass('modal-prevent-scroll');
+            Body.toggleClass('modal-prevent-scroll');
 
             if (ModalTarget == '#project-info-modal') {
                 ProjectInfoModalInit($(e.currentTarget));
@@ -270,6 +315,11 @@ $(function () {
 
         }
 
+        if ($(e.target).is('body div.project-image-expanded-container')) {
+            CloseExpandImage();
+
+        }
+
     })
 
     /* Close Modal Button */
@@ -278,7 +328,7 @@ $(function () {
     /* Close Modal Function */
     function CloseModal() {
 
-        $('body').toggleClass('modal-prevent-scroll');
+        Body.toggleClass('modal-prevent-scroll');
 
         CurrentModal.fadeOut(300, () => {
             CurrentModal.css('display', 'none');
@@ -287,6 +337,8 @@ $(function () {
                 ProjectInfoModalReset();
 
             }
+
+            CurrentModal = undefined;
 
         });
 
@@ -307,26 +359,42 @@ $(function () {
     const ModalProjectInfoDeployButton = ModalProjectInfo.find('a.project-info-modal-button-deployed');
     const ModalProjectInfoRepositoryButton = ModalProjectInfo.find('a.project-info-modal-button-repository');
 
+    // Variables -> Modal Project Info
+    let ProjectInfoDiv;
+
+    let ProjectInfoTitle;
+
+    let ProjectInfoImage;
+    let ModalProjectImageConnectClick;
+
+    let ProjectInfoTags;
+    let ProjectInfoDescription;
+
+    let ProjectInfoTechnologies;
+
+    let ProjectInfoDeployLink;
+    let ProjectInfoRepositoryLink;
+
     // Project Info Modal -> Init
     function ProjectInfoModalInit(ModalButtonCaller) {
 
         // Project Info Div
-        let ProjectInfoDiv = $(ModalButtonCaller).parent().parent();
+        ProjectInfoDiv = $(ModalButtonCaller).parent().parent();
 
         if (ProjectInfoDiv.hasClass('projects-single')) {
 
             //// Project Info
-            let ProjectInfoTitle = ProjectInfoDiv.data('project-info-title');
+            ProjectInfoTitle = ProjectInfoDiv.data('project-info-title');
 
-            let ProjectInfoImage = ProjectInfoDiv.data('project-info-image') !== null ? ProjectInfoDiv.data('project-info-image') : ProjectInfoDiv.find('.projects-single-image img').attr('src');
+            ProjectInfoImage = ProjectInfoDiv.data('project-info-image') !== null ? ProjectInfoDiv.data('project-info-image') : ProjectInfoDiv.find('.projects-single-image img').attr('src');
 
-            let ProjectInfoTags = ProjectInfoDiv.data('project-info-tags');
-            let ProjectInfoDescription = ProjectInfoDiv.data('project-info-description');
+            ProjectInfoTags = ProjectInfoDiv.data('project-info-tags');
+            ProjectInfoDescription = ProjectInfoDiv.data('project-info-description');
 
-            let ProjectInfoTechnologies = ProjectInfoDiv.data('project-info-technologies');
+            ProjectInfoTechnologies = ProjectInfoDiv.data('project-info-technologies');
 
-            let ProjectInfoDeployLink = ProjectInfoDiv.data('project-info-deploy-link');
-            let ProjectInfoRepositoryLink = ProjectInfoDiv.data('project-info-repository-link');
+            ProjectInfoDeployLink = ProjectInfoDiv.data('project-info-deploy-link');
+            ProjectInfoRepositoryLink = ProjectInfoDiv.data('project-info-repository-link');
 
             //// Modal
             // Modal -> Title
@@ -339,6 +407,12 @@ $(function () {
                 ModalProjectInfoImage.parent().css('background', 'black').css('border-radius', '8px').css('overflow', 'hidden');
                 ModalProjectInfoImage.css('transform', 'scale(1.6)').css('object-fit', 'contain');
             }
+
+            // Modal -> Image Expand
+            ModalProjectImageConnectClick = ModalProjectInfoImage.click(()=>{
+                ExpandImage(ProjectInfoImage)
+
+            })
 
             // Modal -> Text
             ModalProjectInfoTags.text(ProjectInfoTags);
@@ -372,6 +446,25 @@ $(function () {
     // Project Info Modal -> Reset
     function ProjectInfoModalReset() {
 
+        // Modal -> Reset Variables
+        ProjectInfoDiv = null;
+
+        ProjectInfoTitle = null;
+    
+        ProjectInfoImage = null;
+
+        ModalProjectImageConnectClick.unbind('click');
+        ModalProjectImageConnectClick = null;
+    
+        ProjectInfoTags = null;
+        ProjectInfoDescription = null;
+    
+        ProjectInfoTechnologies = null;
+    
+        ProjectInfoDeployLink = null;
+        ProjectInfoRepositoryLink = null;
+
+        // Modal -> Title
         ModalProjectInfoTitle.text(`${projectsModalPreTitle} \${PROJECT_TITLE}`);
 
         // Modal -> Image

@@ -599,6 +599,61 @@ section.contact .container>h2 a:hover {
 }
 
 /**********************************/
+/****** Project Image Expanded ******/
+body .project-image-expanded-container{
+    display: none;
+    transition: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 999999;
+    
+}
+
+body .project-image-expanded-container, .project-image-expanded-wrapper{
+    justify-content: center;
+    align-items: center;
+}
+
+.project-image-expanded-wrapper{
+    background: var(--background-six);
+    border-radius: 8px;
+    width: 90%;
+    height: 95%;
+    position: relative;
+}
+
+.project-image-expanded-close{
+    top: 6px;
+    right: 8px;
+    padding: 7px 9px;
+    font-size: 21px;
+    background: var(--background-secondary);
+    color: var(--global-default-color);
+    border-radius: 5px;
+}
+
+.project-image-expanded-close i{
+    transition: all 0.2s linear;
+}
+
+.project-image-expanded-close:hover{
+    background: var(--section-button-quarter-hover-color);
+}
+
+.project-image-expanded-close:hover i{
+    color: var(--section-button-secondary-hover-color);
+}
+
+.project-image-expanded-wrapper img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/**********************************/
 /****** Modals ******/
 body .modal {
     height: 100%;
@@ -687,7 +742,8 @@ body .modal {
     width: 100%;
     max-height: 100%;
     object-fit: cover;
-    border-radius: 8px;
+    border-radius: 7px;
+    cursor: pointer;
 }
 
 /* Project Info Text */
