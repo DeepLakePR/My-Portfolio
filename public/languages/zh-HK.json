@@ -48,12 +48,6 @@
             "projects-single-ibca_church-title": "IBCA 教會應用程式 - 2022",
             "projects-single-ibca_church-description": "為我的教會創建了一個應用程序，使用 <b>React Native 和 Expo 平台</b> 將應用程式匯出到 <b>IOS 和 Android</b>。",
 
-            "projects-single-my_portfolio-title": "我的投資組合 - 2023",
-            "projects-single-my_portfolio-description": "你現在看到的網站是用純<b>前端</b>開發的, 也有自己的CSS框架, <b>我創建了一個基本的CSS框架, bootstrap風格</b>，但它可以工作並儲存很多行 CSS 程式碼。",
-
-            "projects-single-instagram_clone-title": "Instagram 複製 - 2023",
-            "projects-single-instagram_clone-description": "2019 年 Instagram 的一個非常基本且非常通用的克隆，在 <b>React</b> 中開發並託管在 Google 平台 <b>Firebase</b> 上。",
-
             "projects-single-dentistry-title": "牙醫/牙科 - 2023",
             "projects-single-dentistry-description": "一個展示牙醫工作的網站，使用 <b>Vanilla HTML 5 和 CSS 3</b> 創建。",
 
@@ -62,15 +56,6 @@
 
             "projects-single-combat_game-title": "JavaScript 格鬥遊戲 - 2024",
             "projects-single-combat_game-description": "這是一款適合 <b>2 人</b>的有趣遊戲，使用物件導向的 JavaScript 基礎知識製作。",
-
-            "projects-single-o_corrector-title": "經紀人 - 2024",
-            "projects-single-o_corrector-description": "這是一個很好的網站，可以展示<b>房地產經紀人</b>的<b>工作</b>，它還可以讓客戶在<b>經紀人中建立<b>信任</b >< /b>，從而導致可能的<b>財產出售</b>。",
-
-            "projects-single-3d_three-title": "3D三JS - 2024",
-            "projects-single-3d_three-description": "學習創建<b>多維</b>網站。",
-            
-            "projects-single-news_backend-title": "後端報紙 - 2024",
-            "projects-single-news_backend-description": "我開發了這個極其簡單的<b>新聞網站，按類別過濾</b>，我這樣做只是為了練習和提高我的知識，主要是使用<b>MySQL</b>資料庫中的<b>查詢</b> 。",
 
             "projects-single-digital_agency-title": "數位代理 - 2022",
             "projects-single-digital_agency-description": "作為模型開發的小型項目，出售給其他想要吸引更多客戶的<b>數位機構</b>。",
@@ -172,18 +157,6 @@
                 "projects-modal-single-description": "為我參加的教會創建的一個應用，主要是為了記錄教會的日期和活動而開發的，參加教會<b>青年團</b>的成員也可以註冊，全部用<b>React Native</開發b> 使用<b>Expo</b>平台將應用程式匯出到<b>Android和IOS</b>。"
             },
 
-            "projects-modal-single-my_portfolio": {
-                "projects-modal-single-title": "我的投資組合",
-                "projects-modal-single-tags": "網址 - 動畫 - 動態模態",
-                "projects-modal-single-description": "這是您目前所在的項目，使用 <b>Vanilla HTML5 和 CSS3</b> 開發，並使用 <b>JQuery</b> 來促進 <b>Javascript</b> 部分，它也是 A 類型創建了自己的“<b>框架</b>”和100% 原始CSS, 並創建了<b>主題</b>。使用 <b>Scroll Reveal</b> 庫創建了組合中的大部分動畫。"
-            },
-
-            "projects-modal-single-instagram_clone": {
-                "projects-modal-single-title": "Instagram 複製",
-                "projects-modal-single-tags": "網站 - React JS - 貼文 - 帳戶創建",
-                "projects-modal-single-description": "這個專案來自我在 <b>Danki Code</b> 上學習的 <b>Javascript</b> 課程，它非常簡單，但很有效，並且已經流傳了很多年。"
-            },
-
             "projects-modal-single-dentistry": {
                 "projects-modal-single-title": "牙科",
                 "projects-modal-single-tags": "網站 - 靜態",
@@ -202,24 +175,6 @@
                 "projects-modal-single-description": "我的高中班級需要一款遊戲在今年的<b>招聘會</b>上展示，因此我<b>用 JavaScript 開發了這個遊戲</b>。簡單但實用。"
             },
 
-            "projects-modal-single-o_corrector": {
-                "projects-modal-single-title": "經紀人",
-                "projects-modal-single-tags": "行銷/銷售 - 網站 - 靜態",
-                "projects-modal-single-description": "作為我所在城市的經紀人的自由工作者創建的網站，這對於數位行銷和銷售非常有用，以便<b>客戶</b>了解有關<b>經紀人</b>的更多信息，引導客戶製作<b>購買</b>。"
-            },
-
-            "projects-modal-single-3d_three": {
-                "projects-modal-single-title": "3D 三 JavaScript",
-                "projects-modal-single-tags": "3D - 多維",
-                "projects-modal-single-description": "基本項目，探索網路上的多元維度..."
-            },
-            
-            "projects-modal-single-news_backend": {
-                "projects-modal-single-title": "後端報紙",
-                "projects-modal-single-tags": "後端 - 資料庫 - 按類別過濾",
-                "projects-modal-single-description": "基本項目，只是為了練習我在 <b>PHP 和 MySQL</b> 方面的知識。"
-            },
-
             "projects-modal-single-digital_agency": {
                 "projects-modal-single-title": "數位代理",
                 "projects-modal-single-tags": "銷售導向 - 靜態",
@@ -236,12 +191,6 @@
                 "projects-modal-single-title": "氣象站",
                 "projects-modal-single-tags": "應用程式 - React Native - Excel 電子表格",
                 "projects-modal-single-description": "我學校的一個名為<b>氣象站</b>的社會專案需要<b>氣象站資料的註釋過程更加敏捷</b>，因此我被要求<b>開發此應用程式</b>這樣參與計畫的學生就可以<b>做筆記並匯出</b><b>速度提高100 倍。"
-            },
-
-            "projects-modal-single-node_openai_image": {
-                "projects-modal-single-title": "節點 OpenAI 影像",
-                "projects-modal-single-tags": "人工智慧 - 圖像生成 - OpenAI",
-                "projects-modal-single-description": "簡單但實用，只是為了測試而設計，但在未來，我打算探索更多<b>炒作</b>中的<b>人工智慧</b>宇宙。"
             },
 
             "projects-modal-single-rbi_app": {

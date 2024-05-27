@@ -36,7 +36,7 @@ $(function () {
     ScrollReveal().reveal('.projects-more-button', { ...normalReveal });
 
     /* Technologies */
-    ScrollReveal().reveal('.technologies-single-box', { ...normalReveal, duration: 1500, afterReveal: technologiesSingleBoxAnimation });
+    ScrollReveal().reveal('.technologies-single-box', { ...normalReveal, duration: 1500 });
     ScrollReveal().reveal('button.knowledge-modal-toggle', { ...normalReveal, duration: 1100 });
 
     ScrollReveal().reveal('h3.swipe-to-soft-skills-text', { ...normalReveal, duration: 1100 });
@@ -134,7 +134,6 @@ $(function () {
         'fa-solid fa-database'
     ]
     var CurrentIClass = 1;
-    var LastIClass = null;
 
     var DynamicIconElement = $('#technologies-dynamic-icon-element');
     DynamicIconElement.hide();
@@ -164,7 +163,6 @@ $(function () {
 
                     // Variables Set
                     CurrentIClass++;
-                    LastIClass = IClassList[CurrentIClass];
 
                 });
 
@@ -177,6 +175,7 @@ $(function () {
     }
 
     ////////////////////////////////////////////////////////////////////////
+    /*
     function technologiesSingleBoxAnimation(element) {
 
         let CurrentTechBoxNivel = $(element).find('.tech-single-box-nivel-current').append("<div class='tech-single-box-nivel-current-fill'></div>");
@@ -234,6 +233,7 @@ $(function () {
         element.addClass('tech-single-box-nivel-current');
 
     }
+    */
 
     ////// Knowledge Swipe Between Technologies and Soft Skills
     const KnowledgeContainer = $('#knowledge-container');

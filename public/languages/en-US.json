@@ -48,12 +48,6 @@
             "projects-single-ibca_church-title": "IBCA Church App - 2022",
             "projects-single-ibca_church-description": "Created an application for my church, using <b>React Native and the Expo platform</b> to export the application to <b>IOS & Android</b>.",
 
-            "projects-single-my_portfolio-title": "My Portfolio - 2023",
-            "projects-single-my_portfolio-description": "The website you are seeing now was developed with pure <b>Front-End</b> and also with its own CSS framework, <b>I created a basic CSS framework, bootstrap style</b>, but it works and saves many lines of CSS code.",
-
-            "projects-single-instagram_clone-title": "Instagram Clone - 2023",
-            "projects-single-instagram_clone-description": "A very basic and very generic clone of Instagram from 2019, developed in <b>React</b> and hosted on the Google platform <b>Firebase</b>.",
-
             "projects-single-dentistry-title": "Dentist/Dentistry - 2023",
             "projects-single-dentistry-description": "A website showing the work of a dentist, created with <b>Vanilla HTML 5 & CSS 3</b>.",
 
@@ -63,15 +57,6 @@
             "projects-single-combat_game-title": "JavaScript Fighting Game - 2024",
             "projects-single-combat_game-description": "A fun game for <b>2 people</b> made with the basics of object-oriented JavaScript.",
 
-            "projects-single-o_corrector-title": "The Broker - 2024",
-            "projects-single-o_corrector-description": "This is a great site to show the <b>work</b> of a <b>Realtor</b>, it also serves to make the client create <b>Trust</b> in the <b> broker</b>, thus leading to a possible <b>property sale</b>.",
-
-            "projects-single-3d_three-title": "3D Three JS - 2024",
-            "projects-single-3d_three-description": "Learning to create <b>multi-dimensional</b> websites.",
-
-            "projects-single-news_backend-title": "Back-End Newspaper - 2024",
-            "projects-single-news_backend-description": "I developed this extremely simple <b>news website with filter by category</b>, I did it just to practice and improve my knowledge mainly with <b>Querys</b> in the <b>MySQL</b> Database.",
-
             "projects-single-digital_agency-title": "Digital Agency - 2022",
             "projects-single-digital_agency-description": "Small project developed as a model to be sold to other <b>digital agencies</b> that want to reach more customers.",
 
@@ -80,9 +65,6 @@
 
             "projects-single-weather_station-title": "Weather Station - 2024",
             "projects-single-weather_station-description": "Application for <b>IOs and Android</b> where you can make <b>notes of the region's current climate</b> and export it to an <b>excel spreadsheet</b>, all notes (Temperature, Wind direction, UV rays) are stored in a <b>Firebase</b> database, in the future it will be possible to generate graphs in Excel with the stored data.",
-
-            "projects-single-node_openai_image-title": "Node OpenAI Image - 2024",
-            "projects-single-node_openai_image-description": "A small project where I explored the universe of <b>artificial intelligence</b> with image generation, using OpenAI technology <b>Dall-E</b>",
 
             "projects-single-rbi_app-title": "RBI App - 2023",
             "projects-single-rbi_app-description": "Mobile application developed to complement the <b>Web version (RBI Web)</b>, made specifically for <b>barbershops</b>, where you can see <b>today's schedule, agenda, employee control< /b> and so on."
@@ -172,18 +154,6 @@
                 "projects-modal-single-description": "An application created for the church I attend, developed mainly to record the church's dates and events, and members who are participating in the church's <b>Youth Group</b> can also register, developed all in <b>React Native</b> using the <b>Expo</b> platform to export the application to <b>Android and IOS</b>."
             },
 
-            "projects-modal-single-my_portfolio": {
-                "projects-modal-single-title": "My Portfolio",
-                "projects-modal-single-tags": "Website - Animations - Dynamic Modal",
-                "projects-modal-single-description": "This is the project you are currently in, developed using <b>Vanilla HTML5 and CSS3</b> and using <b>JQuery</b> to facilitate the <b>Javascript</b> part, it was also A type of '<b>Framework</b>' own and 100% original CSS was created and along with this the <b>Themes</b> were created. Used the <b>Scroll Reveal</b> library to create most of the animations in the portfolio."
-            },
-
-            "projects-modal-single-instagram_clone": {
-                "projects-modal-single-title": "Instagram Clone",
-                "projects-modal-single-tags": "Website - React JS - Posts - Account Creation",
-                "projects-modal-single-description": "A project that came from the <b>Javascript</b> course I was taking at <b>Danki Code</b>, something very simple but that works and has been in the air for years."
-            },
-
             "projects-modal-single-dentistry": {
                 "projects-modal-single-title": "Dentistry",
                 "projects-modal-single-tags": "Website - Static",
@@ -202,24 +172,6 @@
                 "projects-modal-single-description": "My high school class needed a game to present at this year's <b>career fair</b>, so I developed this <b>game in JavaScript</b>. Simple but functional."
             },
 
-            "projects-modal-single-o_corrector": {
-                "projects-modal-single-title": "The Broker",
-                "projects-modal-single-tags": "Marketing/Sales - Website - Static",
-                "projects-modal-single-description": "Website created as a freelancer for a broker in my city, which is great for digital marketing and sales, so that the <b>client</b> learns more about the <b>broker</b> leading the client to make a <b>purchase</b>."
-            },
-
-            "projects-modal-single-3d_three": {
-                "projects-modal-single-title": "3D Three JavaScript",
-                "projects-modal-single-tags": "3D - Multidimensional",
-                "projects-modal-single-description": "Basic project, exploring the multiverse of dimensions on the web..."
-            },
-
-            "projects-modal-single-news_backend": {
-                "projects-modal-single-title": "Back-End Newspaper",
-                "projects-modal-single-tags": "Back-End - Database - Filter by Category",
-                "projects-modal-single-description": "Basic project, made just to practice my knowledge in <b>PHP and MySQL</b>."
-            },
-
             "projects-modal-single-digital_agency": {
                 "projects-modal-single-title": "Digital Agency",
                 "projects-modal-single-tags": "Sales Oriented - Static",
@@ -236,12 +188,6 @@
                 "projects-modal-single-title": "Weather Station",
                 "projects-modal-single-tags": "Application - React Native - Excel Spreadsheets",
                 "projects-modal-single-description": "A social project at my school called <b>Meteorological Station</b> needed <b>more agility in the annotation process</b> of station data, and so I was asked to <b>develop this application</b> so that students who were part of the project could make <b>notes and export them</b> <b>100x faster.</b>"
-            },
-
-            "projects-modal-single-node_openai_image": {
-                "projects-modal-single-title": "Node OpenAI Image",
-                "projects-modal-single-tags": "Artificial Intelligence - Image Generation - OpenAI",
-                "projects-modal-single-description": "Simple but functional, made just for testing, but in the future I intend to explore more the universe of <b>Artificial Intelligence</b> that is in the <b>hype</b>."
             },
 
             "projects-modal-single-rbi_app": {

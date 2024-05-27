@@ -324,62 +324,37 @@ section.knowledge .container>div {
 .technologies-list-container {
     padding-left: 0px;
     padding-right: 30px;
-}
-
-/* Technologies Animation Custom Color */
-.technologies-list-container .tech-single-box-nivel-current-text {
-    font-weight: 600;
-    color: var(--section-technologies-animation-color);
-}
-
-.technologies-list-container .tech-single-box-nivel-current-fill {
-    background: var(--section-technologies-animation-color);
+    align-items: center;
 }
 
 /** Technologies Single Box **/
 .technologies-single-box {
-    width: 100%;
-    color: var(--global-default-color);
-    margin-bottom: 10px;
-}
-
-.technologies-single-box-title,
-.technologies-single-box-nivel {
+    width: 85%;
+    margin: 22px 0;
+    padding-top: 6px;
+    padding-bottom: 6px;
     align-items: center;
     justify-content: center;
-}
-
-.technologies-single-box-title i {
-    font-size: xx-large;
-    margin-left: -15px;
-    margin-right: 15px;
-}
-
-.technologies-single-box-title h2 {
-    font-size: 25px;
-    font-weight: var(--section-text-font-weight);
-}
-
-.technologies-single-box-nivel {
-    position: relative;
-    margin-top: 10px;
+    color: var(--global-default-color);
+    margin-bottom: 10px;
     background: var(--background-five);
     border-radius: 8px;
     box-shadow: 0px 5px 9px 0px var(--global-shadow-color);
 }
 
-.technologies-single-box-nivel p {
-    font-weight: var(--section-text-secondary-font-weight);
-    transition: color 0.25s ease;
+.technologies-single-box i {
+    font-size: 43px;
+    margin-left: -15px;
+    margin-right: 15px;
 }
 
-.tech-single-box-nivel-custom_line {
-    width: 20%;
-    height: 8px;
-    background: white;
-    border-radius: 8px;
-    margin: 2px 10px 0 10px;
-    position: relative;
+.technologies-single-box i.fa-database{
+    font-size: 38px;
+}
+
+.technologies-single-box h2 {
+    font-size: 25px;
+    font-weight: var(--section-text-font-weight);
 }
 
 /* Technologies More Button */
@@ -391,7 +366,7 @@ section.knowledge .container>div {
 }
 
 .technologies-more-button {
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 .technologies-more-button button {
@@ -1046,16 +1021,6 @@ body .modal {
         object-fit: cover;
     }
 
-    /* Technologies > Single */
-    .technologies-single-box-nivel {
-        font-size: 16px;
-    }
-
-    .tech-single-box-nivel-custom_line {
-        margin: 0 4px;
-        margin-top: 3px;
-    }
-
     /* Technologies > Dynamic Image */
     .technologies-dynamic-icon {
         max-height: none;
@@ -1303,7 +1268,7 @@ body .modal {
         margin-bottom: 20px;
     }
 
-    .technologies-single-box-title i {
+    .technologies-single-box i {
         margin: 0;
         text-align: center;
     }
@@ -1311,18 +1276,6 @@ body .modal {
     /* Technologies > List Container */
     .technologies-list-container {
         padding: 0;
-    }
-
-    /* Technologies > Single */
-    .technologies-single-box-nivel {
-        flex-direction: row;
-        flex-wrap: nowrap;
-        font-size: 15px;
-    }
-
-    .tech-single-box-nivel-custom_line {
-        margin: 0 5px;
-        margin-top: 3px;
     }
 
     /* Technologies > Modal Button */
@@ -1542,16 +1495,6 @@ body .modal {
         font-size: 15px;
     }
 
-    /* Technologies > Single */
-    .technologies-single-box-nivel {
-        font-size: 14px;
-    }
-
-    .tech-single-box-nivel-custom_line {
-        margin: 0 5px;
-        margin-top: 3px;
-    }
-
     /* Contact */
     section.contact .container {
         padding: 15px;
@@ -1591,30 +1534,11 @@ body .modal {
 }
 
 /* Custom Responsive */
-@media screen and (max-width: 290px) {
-
-    /* Technologies/Knowledge */
-    .technologies-single-box-nivel {
-        overflow-x: auto;
-
-    }
-
-    .technologies-single-box-nivel::-webkit-scrollbar {
-        height: 8px;
-    }
-
-}
-
-/* Custom Responsive */
 @media screen and (max-width: 250px) {
 
     /* Knowledge Technologies Projects */
     section.knowledge>h2 {
         font-size: 18px;
-    }
-
-    .technologies-single-box-nivel {
-        padding-left: 110px;
     }
 
 }

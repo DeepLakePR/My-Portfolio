@@ -48,12 +48,6 @@
             "projects-single-ibca_church-title": "Igreja IBCA App - 2022",
             "projects-single-ibca_church-description": "Criado um aplicativo para a minha igreja, usando <b>React Native e a plataforma do Expo</b> para exportação do aplicativo para <b>IOS & Android</b>.",
 
-            "projects-single-my_portfolio-title": "Meu Portfólio - 2023",
-            "projects-single-my_portfolio-description": "O site que você está vendo agora foi desenvolvido com o puro <b>Front-End</b> e também com framework CSS próprio, <b>criei um framework CSS básico, estilo bootstrap</b>, mas que funciona e que economiza muitas linhas de código CSS.",
-
-            "projects-single-instagram_clone-title": "Instagram Clone - 2023",
-            "projects-single-instagram_clone-description": "Um clone bem básico e bem genérico do Instagram de 2019, desenvolvido em <b>React</b> e hospedado na plataforma do Google <b>Firebase</b>.",
-
             "projects-single-dentistry-title": "Dentista/Odontologia - 2023",
             "projects-single-dentistry-description": "Um site mostrando o trabalho de uma odontologia, criado com <b>Vanilla HTML 5 & CSS 3</b>.",
 
@@ -63,15 +57,6 @@
             "projects-single-combat_game-title": "Jogo de Luta JavaScript - 2024",
             "projects-single-combat_game-description": "Um jogo divertido para <b>2 pessoas</b> feito com o básico de JavaScript orientado a objetos.",
 
-            "projects-single-o_corrector-title": "O Corretor - 2024",
-            "projects-single-o_corrector-description": "Esse é um ótimo site para mostrar o <b>trabalho</b> de um <b>Corretor de Imóveis</b>, serve também para fazer com que o cliente crie <b>Confiança</b> no <b>corretor</b>, levando assim a uma possível <b>venda de imóvel</b>.",
-
-            "projects-single-3d_three-title": "3D Three JS - 2024",
-            "projects-single-3d_three-description": "Aprendendo a criar sites com <b>multi-dimensões</b>.",
-
-            "projects-single-news_backend-title": "Jornal Back-End - 2024",
-            "projects-single-news_backend-description": "Desenvolvi esse site extremamente simples de <b>notícias com filtro por categoria</b>, fiz apenas para praticar e melhorar meus conhecimentos principalmentes com <b>Querys</b> no Banco de Dados <b>MySQL</b>.",
-
             "projects-single-digital_agency-title": "Agência Digital - 2022",
             "projects-single-digital_agency-description": "Pequeno projeto desenvolvido como modelo para ser vendido para outras <b>agências digitais</b> que queiram atingir mais clientes.",
 
@@ -80,9 +65,6 @@
 
             "projects-single-weather_station-title": "Estação Meteorológica - 2024",
             "projects-single-weather_station-description": "Aplicativo para <b>IOs e Android</b> onde é possível fazer <b>anotações do clima atual da região</b> e exportá-lo para uma <b>planilha no excel</b>, todas as anotações (Temperatura, Direção do vento, Raios UV) são armazenados em um banco de dados do <b>Firebase</b>, futuramente será possível gerar gráficos no excel com os dados armazenados.",
-
-            "projects-single-node_openai_image-title": "Node OpenAI Image - 2024",
-            "projects-single-node_openai_image-description": "Um pequeno projeto onde eu explorava o universo da <b>inteligência artificial</b> com geração de imagens, usando a tecnologia da OpenAI <b>Dall-E</b>",
 
             "projects-single-rbi_app-title": "RBI App - 2023",
             "projects-single-rbi_app-description": "Aplicativo mobile desenvolvido para complementar a <b>versão Web (RBI Web)</b>, feito especificamente para <b>barbearias</b>, onde é possível ver os <b>horários de hoje, agenda, controle de funcionários</b> e etc."
@@ -172,18 +154,6 @@
                 "projects-modal-single-description": "Um aplicativo criado para a igreja em que frequento, desenvolvido principalmente para ter como anotação as datas e eventos da igreja, também podendo se registrar membros que estão participando do <b>Grupo de Jovens</b> da igreja, desenvolvido tudo em <b>React Native</b> utilizando a plataforma do <b>Expo</b> para se exportar o aplicativo para <b>Android e IOS</b>."
             },
 
-            "projects-modal-single-my_portfolio": {
-                "projects-modal-single-title": "Meu Portfólio",
-                "projects-modal-single-tags": "Website - Animações - Modal Dinâmica",
-                "projects-modal-single-description": "Este é o projeto em que você está atualmente, desenvolvido usando <b>Vanilla HTML5 e CSS3</b> e usando <b>JQuery</b> para se facilitar a parte do <b>Javascript</b>, também foi criado um tipo de '<b>Framework</b>' CSS próprio e 100% original e junto com isso foi criado os <b>Temas</b>. Usado a biblioteca <b>Scroll Reveal</b> para se fazer a maioria das animações que estão no portfólio."
-            },
-
-            "projects-modal-single-instagram_clone": {
-                "projects-modal-single-title": "Instagram Clone",
-                "projects-modal-single-tags": "Website - React JS - Posts - Criação de Contas",
-                "projects-modal-single-description": "Um projeto que veio do curso de <b>Javascript</b> em que eu estava fazendo na <b>Danki Code</b>, algo bem simples mas que funciona e que já está a anos no ar."
-            },
-
             "projects-modal-single-dentistry": {
                 "projects-modal-single-title": "Odontologia",
                 "projects-modal-single-tags": "Website - Estático",
@@ -202,24 +172,6 @@
                 "projects-modal-single-description": "Minha turma do colégio precisava de um jogo para ser apresentado na <b>feira de profissões</b> desse ano, e então desenvolvi esse <b>jogo em JavaScript</b>. Simples mas funcional."
             },
 
-            "projects-modal-single-o_corrector": {
-                "projects-modal-single-title": "O Corretor",
-                "projects-modal-single-tags": "Marketing/Vendas - Website - Estático",
-                "projects-modal-single-description": "Site feito como freelancer para um corretor da minha cidade, sendo ótimo para marketing digital e vendas, para que o <b>cliente</b> conheça mais sobre o <b>corretor</b> levando o cliente a fazer uma <b>compra</b>."
-            },
-
-            "projects-modal-single-3d_three": {
-                "projects-modal-single-title": "3D Three JavaScript",
-                "projects-modal-single-tags": "3D - Multi Dimensional",
-                "projects-modal-single-description": "Projeto básico, explorando o multiverso das dimensões na web..."
-            },
-
-            "projects-modal-single-news_backend": {
-                "projects-modal-single-title": "Jornal Back-End",
-                "projects-modal-single-tags": "Back-End - Banco de Dados - Filtro por Categoria",
-                "projects-modal-single-description": "Projeto básico, feito apenas para praticar meus conhecimentos em <b>PHP e MySQL</b>."
-            },
-
             "projects-modal-single-digital_agency": {
                 "projects-modal-single-title": "Agência Digital",
                 "projects-modal-single-tags": "Voltado Para Vendas - Estático",
@@ -236,12 +188,6 @@
                 "projects-modal-single-title": "Estação Meteorológica",
                 "projects-modal-single-tags": "Aplicativo - React Native - Planilhas no Excel",
                 "projects-modal-single-description": "Um projeto social da minha escola que se chamava <b>Estação Meteorológica</b> precisava ter <b>mais agilidade no processo de anotação</b> dos dados da estação, e então fui chamado para <b>desenvolver esse aplicativo</b> para que os alunos que fizessem parte do projeto pudessem fazer as <b>anotações e exportá-las</b> de forma <b>100x mais rápida.</b>"
-            },
-
-            "projects-modal-single-node_openai_image": {
-                "projects-modal-single-title": "Node OpenAI Image",
-                "projects-modal-single-tags": "Inteligência Artificial - Geração de Imagens - OpenAI",
-                "projects-modal-single-description": "Simples mas funcional, feito apenas para testes, mas futuramente pretendo explorar mais o universo da <b>Inteligência Artificial</b> que está no <b>hype</b>."
             },
 
             "projects-modal-single-rbi_app": {

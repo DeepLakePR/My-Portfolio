@@ -275,8 +275,8 @@ $(()=>{
 
         // Set Cookie
         Cookies.set("WebsiteLanguage", translateTo, {
-            expires: 90,
-            
+            expires: 14,
+            secure: true
         });
 
         translateFrom = translateTo;
@@ -449,8 +449,8 @@ $(()=>{
 
         // Set Cookie
         Cookies.set("currentTheme", ThemeToSetCookie, {
-            expires: 90,
-            
+            expires: 14,
+            secure: true
         });
 
     }

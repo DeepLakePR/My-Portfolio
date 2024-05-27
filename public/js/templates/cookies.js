@@ -9,8 +9,8 @@ $(()=>{
         
         // Cookie Setted for 3 Months, after this the cookie expires automatically;
         Cookies.set("CookiesAgreed", "true", {
-            expires: 90,
-            
+            expires: 14,
+            secure: true
         });
 
         if(Cookies.get("CookiesAgreed") !== undefined){
