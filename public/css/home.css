@@ -49,13 +49,14 @@ section.apresentation {
 .apresentation .apresentation-social_media a {
     color: var(--global-default-color);
     font-size: 40px;
+    padding: 2px;
 }
 
 .apresentation .apresentation-social_media a i {
     transition: color 0.25s ease-in-out;
 }
 
-.apresentation .apresentation-social_media a i:hover {
+.apresentation .apresentation-social_media a:hover i{
     color: var(--section-button-secondary-hover-color);
 }
 
