@@ -152,7 +152,6 @@ $(()=>{
 
     // Variables
     var translationsFolder = '/public/languages';
-    var translateFrom = 'pt-BR';
 
     const languagesSupported = [
         'en-US',
@@ -167,18 +166,38 @@ $(()=>{
 
         for (const [key, value] of Object.entries(translationObject)) {
 
-            if(translationObject['projects-modal']){
+            let isAHref = false;
+
+            if(translationObject['projects-modal']){ // Custom Translate for Projects Modal
                 projectsModalPreTitle = translationObject['projects-modal']['projects-modal-pre-title']
+
+            }
+
+            if(elementToTranslate.is('a')){
+                isAHref = true;
+            //     if(elementToTranslate.attr('title') == key || elementToTranslate.attr('title') == value){
+            //         console.log(elementToTranslate.attr('title'));
+            //         console.log(key);
+            //         console.log(value)
+
+            //     };
 
             }
 
             if(!translateAttribute){ // Not Translate attribute
 
-                if(key == elTranslationKey){
+                if(key == elTranslationKey){ // Translate via Key
                     elementToTranslate.html(value);
 
-                }else if(value[elTranslationKey]){
+                    if(isAHref && (elementToTranslate.attr('framework-language-contact-link') != 'true'))
+                        elementToTranslate.attr('title', value);
+
+                    /////////////////////////////////
+                }else if(value[elTranslationKey]){ // Translate via Value Translation Key
                     elementToTranslate.html(value[elTranslationKey]);
+
+                    if(isAHref && (elementToTranslate.attr('framework-language-contact-link') != 'true'))
+                        elementToTranslate.attr('title', value[elTranslationKey]);
                 
                 }else if(typeof(value) === 'object'){
 
@@ -278,8 +297,6 @@ $(()=>{
             expires: 14,
             secure: true
         });
-
-        translateFrom = translateTo;
 
     }
 
