@@ -128,10 +128,16 @@ $(function () {
     const IClassList = [
         'fa-brands fa-html5',
         'fa-brands fa-css3',
+        'fa-brands fa-sass',
+        'fa-brands fa-bootstrap',
         'fa-brands fa-square-js',
         'fa-brands fa-react',
+        'fa-brands fa-angular',
+        'fa-brands fa-vuejs',
         'fa-brands fa-php',
-        'fa-solid fa-database'
+        'fa-solid fa-database',
+        'fa-solid fa-moon',
+        'fa-brands fa-wordpress',
     ]
     var CurrentIClass = 1;
 
