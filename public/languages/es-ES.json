@@ -157,13 +157,13 @@
             "projects-modal-single-dentistry": {
                 "projects-modal-single-title": "Odontología",
                 "projects-modal-single-tags": "Sitio web - Estático",
-                "projects-modal-single-description": "Otro proyecto que también se desarrolló y surgió del curso de <b>Webmaster Front-End</b> de <b>Danki Code</b> pero que también se puede adaptar fácilmente y crear nuevas variaciones del sitio web que se pueden vender. para <b>Odontología</b>, creado usando <b>Vanilla HTML5 y CSS3</b>."
+                "projects-modal-single-description": "Otro proyecto que también se desarrolló y surgió del curso de <b>Webmaster Front-End</b> de <b>Danki Code</b> pero que también se puede adaptar fácilmente y crear nuevas variaciones del sitio web que se pueden vender. para <b>Odontología</b>, creado usando <b>Vanilla HTML5 y CSS3</b>.<br/>El sitio web sirve para <b>mostrar el trabajo de la Odontología</b>, <b>se puede actualizar y se puede implementar un panel que muestre las citas del día para los dentistas.</b>"
             },
 
             "projects-modal-single-concessionaire": {
                 "projects-modal-single-title": "Concesionario de autos especiales",
                 "projects-modal-single-tags": "Sitio web - Varias páginas - Carga de página dinámica",
-                "projects-modal-single-description": "Este proyecto fue tomado del curso <b>Back-End</b> de <b>Danki Code</b>, un proyecto un poco más complejo que tomó el sitio web desarrollado en el <b>Front-End</b>. curso donde se mejoró e implementó <b>PHP</b>."
+                "projects-modal-single-description": "Este proyecto fue tomado del curso <b>Back-End</b> de <b>Danki Code</b>, un proyecto un poco más complejo que tomó el sitio web desarrollado en el <b>Front-End</b>. curso donde se mejoró e implementó <b>PHP</b>.<br/>El cliente puede contactar con el concesionario a través del sitio web, <b>Puede ver de cerca los vehículos que vende el concesionario, con las especificaciones y valor del coche</b> esto acelera hasta <b>9 tiempos</b> los procesos del concesionario, <b>aportando productividad, agilidad y rapidez de resultados al concesionario</b>."
             },
             
             "projects-modal-single-combat_game": {
@@ -181,7 +181,7 @@
             "projects-modal-single-rbi_web": {
                 "projects-modal-single-title": "RBI Web",
                 "projects-modal-single-tags": "Sitio Web - Barbería - Promoción de Servicios",
-                "projects-modal-single-description": "Sitio web estático, orientado a la venta y para que el <b>cliente conozca más sobre la barbería.</b>"
+                "projects-modal-single-description": "Sitio web estático, orientado a la venta y para que el <b>cliente conozca más sobre la barbería.</b><br/>El propietario de la barbería logró tener <b>siete veces</b> más control sobre los clientes que programaban citas, y también informó al cliente sobre el trabajo del barbero, <b>lo que llevó a concertar una cita.</b>"
             },
 
             "projects-modal-single-weather_station": {
@@ -193,7 +193,7 @@
             "projects-modal-single-rbi_app": {
                 "projects-modal-single-title": "RBI App",
                 "projects-modal-single-tags": "Móvil - Barbería - Gestión Empresarial",
-                "projects-modal-single-description": "Desarrollado y creado con el potente <b>React Native</b> junto con la tecnología <b>Expo</b>, el proyecto actualmente ha sido <b>descontinuado</b> pero puede adaptarse fácilmente y venderse a otras barberías. ."
+                "projects-modal-single-description": "Desarrollado y creado con el potente <b>React Native</b> junto con la tecnología <b>Expo</b>, el proyecto actualmente ha sido <b>descontinuado</b> pero puede adaptarse fácilmente y venderse a otras barberías.<br/>A través de la aplicación, el dueño de la barbería tenía control sobre sus establecimientos, <b>aumentando la productividad hasta 21 veces</b>, además de que todas las citas realizadas a través del sitio web aparecen en la aplicación, <b>Estos y otros problemas se resolvieron a través de la aplicación y el sitio web.</b>"
             }
             
         }

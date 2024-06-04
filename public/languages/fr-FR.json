@@ -158,13 +158,13 @@
             "projects-modal-single-dentistry": {
                 "projects-modal-single-title": "Dentisterie",
                 "projects-modal-single-tags": "Site Web - Statique",
-                "projects-modal-single-description": "Un autre projet qui a également été développé et issu du cours <b>Front-End Webmaster</b> chez <b>Danki Code</b> mais qui peut également être facilement adapté et créé de nouvelles variantes du site Web pouvant être vendues. à <b>Dentisterie</b>, créé en utilisant <b>Vanilla HTML5 et CSS3</b>."
+                "projects-modal-single-description": "Un autre projet qui a également été développé et issu du cours <b>Front-End Webmaster</b> chez <b>Danki Code</b> mais qui peut également être facilement adapté et créé de nouvelles variantes du site Web pouvant être vendues. à <b>Dentisterie</b>, créé en utilisant <b>Vanilla HTML5 et CSS3</b>.<br/>Le site Web sert à <b>démontrer le travail de la dentisterie</b>, il <b>peut être mis à jour et un panneau peut être mis en place pour afficher les rendez-vous de la journée pour les dentistes.</b>"
             },
 
             "projects-modal-single-concessionaire": {
                 "projects-modal-single-title": "Concessionnaire automobile spécial",
                 "projects-modal-single-tags": "Site Web - Multipage - Chargement dynamique des pages",
-                "projects-modal-single-description": "Ce projet est issu du cours <b>Back-End</b> de <b>Danki Code</b>, un projet légèrement plus complexe qui utilisait le site Web développé dans le <b>Front-End</b>. cours où il a été amélioré et implémentant <b>PHP</b>."
+                "projects-modal-single-description": "Ce projet est issu du cours <b>Back-End</b> de <b>Danki Code</b>, un projet légèrement plus complexe qui utilisait le site Web développé dans le <b>Front-End</b>. cours où il a été amélioré et implémentant <b>PHP</b>.<br/>Le client peut contacter le concessionnaire via le site Web, <b>Il peut voir de près les véhicules que le concessionnaire vend, avec les spécifications et la valeur de la voiture</b> cela accélère jusqu'à <b>9 fois</b> les processus de la concession, <b>apportant productivité, agilité et résultats rapides à la concession</b>."
             },
             
             "projects-modal-single-combat_game": {
@@ -182,7 +182,7 @@
             "projects-modal-single-rbi_web": {
                 "projects-modal-single-title": "RBI Web",
                 "projects-modal-single-tags": "Site Web - Salon de coiffure - Promotion des services",
-                "projects-modal-single-description": "Site Web statique, destiné aux ventes et permettant au <b>client d'en savoir plus sur le salon de coiffure.</b>"
+                "projects-modal-single-description": "Site Web statique, destiné aux ventes et permettant au <b>client d'en savoir plus sur le salon de coiffure.</b><br/>Le propriétaire du salon de coiffure a réussi à avoir <b>7 fois</b> plus de contrôle sur les clients qui prenaient rendez-vous, il a également sensibilisé le client au travail du barbier, <b>amenant ainsi à un rendez-vous.</b>"
             },
 
             "projects-modal-single-weather_station": {
@@ -194,7 +194,7 @@
             "projects-modal-single-rbi_app": {
                 "projects-modal-single-title": "RBI App",
                 "projects-modal-single-tags": "Mobile - Salon de coiffure - Gestion d'entreprise",
-                "projects-modal-single-description": "Développé et créé avec le puissant <b>React Native</b> et la technologie <b>Expo</b>, le projet a actuellement été <b>abandonné</b> mais peut être facilement adapté et vendu à d'autres salons de coiffure. ."
+                "projects-modal-single-description": "Développé et créé avec le puissant <b>React Native</b> et la technologie <b>Expo</b>, le projet a actuellement été <b>abandonné</b> mais peut être facilement adapté et vendu à d'autres salons de coiffure.<br/>Grâce à l'application, le propriétaire du salon de coiffure avait le contrôle de ses établissements, <b>augmentant la productivité jusqu'à 21x</b>, en plus du fait que tous les rendez-vous pris via le site Web apparaissent dans l'application, <b>ces problèmes et divers autres ont été résolus via l'application et le site Web.</b>"
             }
             
         }

@@ -138,6 +138,8 @@ $(function () {
         'fa-solid fa-database',
         'fa-solid fa-moon',
         'fa-brands fa-wordpress',
+        'fa-brands fa-git-alt',
+        'fa-brands fa-docker',
     ]
     var CurrentIClass = 1;
 

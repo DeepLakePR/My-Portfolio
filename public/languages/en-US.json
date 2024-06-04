@@ -157,13 +157,13 @@
             "projects-modal-single-dentistry": {
                 "projects-modal-single-title": "Dentistry",
                 "projects-modal-single-tags": "Website - Static",
-                "projects-modal-single-description": "Another project that was also developed and came from the <b>Front-End Webmaster</b> course at <b>Danki Code</b> but which can also be easily adapted and created new variations of the website that can be sold to <b>Dentistry</b>, created using <b>Vanilla HTML5 and CSS3</b>."
+                "projects-modal-single-description": "Another project that was also developed and came from the <b>Front-End Webmaster</b> course at <b>Danki Code</b> but which can also be easily adapted and created new variations of the website that can be sold to <b>Dentistry</b>, created using <b>Vanilla HTML5 and CSS3</b>.<br/>The website serves to <b>demonstrate the work of Dentistry</b>, it <b>can be updated and a panel can be implemented that shows the day's appointments for dentists.</b>"
             },
 
             "projects-modal-single-concessionaire": {
                 "projects-modal-single-title": "Special Car Dealership",
                 "projects-modal-single-tags": "Website - Multi-Page - Dynamic Page Loading",
-                "projects-modal-single-description": "This project was taken from the <b>Back-End</b> course at <b>Danki Code</b>, a slightly more complex project that took the website developed in the <b>Front-End</b> course where it was improved and implementing <b>PHP</b>."
+                "projects-modal-single-description": "This project was taken from the <b>Back-End</b> course at <b>Danki Code</b>, a slightly more complex project that took the website developed in the <b>Front-End</b> course where it was improved and implementing <b>PHP</b>.<br/>The customer can contact the dealership through the website, <b>He can see up close the vehicles that the dealership sells, with the specification and value of the car</b> this speeds up up to <b>9 times</b> the dealership's processes, <b>bringing productivity, agility and quick results to the dealership</b>."
             },
             
             "projects-modal-single-combat_game": {
@@ -181,7 +181,7 @@
             "projects-modal-single-rbi_web": {
                 "projects-modal-single-title": "RBI Web",
                 "projects-modal-single-tags": "Website - Barbershop - Promotion of Services",
-                "projects-modal-single-description": "Static website, aimed at sales and for the <b>customer to learn more about the barbershop.</b>"
+                "projects-modal-single-description": "Static website, aimed at sales and for the <b>customer to learn more about the barbershop.</b><br/>The owner of the barbershop managed to have <b>7x</b> greater control over customers who made appointments, he also made the customer aware of the barber's work, <b>thus leading to an appointment.</b>"
             },
 
             "projects-modal-single-weather_station": {
@@ -193,7 +193,7 @@
             "projects-modal-single-rbi_app": {
                 "projects-modal-single-title": "RBI App",
                 "projects-modal-single-tags": "Mobile - Barbershop - Business Management",
-                "projects-modal-single-description": "Developed and created with the powerful <b>React Native</b> together with <b>Expo</b> technology, the project has currently been <b>discontinued</b> but can be easily adapted and sold to others barbershops."
+                "projects-modal-single-description": "Developed and created with the powerful <b>React Native</b> together with <b>Expo</b> technology, the project has currently been <b>discontinued</b> but can be easily adapted and sold to others barbershops.<br/>Through the application, the barbershop owner had control over his establishments, <b>increasing productivity by up to 21x</b>, in addition to the fact that all appointments made through the website appear in the application, <b>these and various other issues were resolved through the app and website.</b>"
             }
             
         }

@@ -157,13 +157,13 @@
             "projects-modal-single-dentistry": {
                 "projects-modal-single-title": "Odontologia",
                 "projects-modal-single-tags": "Website - Estático",
-                "projects-modal-single-description": "Outro projeto que também foi desenvolvido e veio do curso de <b>Front-End Webmaster</b> da <b>Danki Code</b> mas que também pode ser facilmente adaptado e criado novas variações do site que podem ser vendidas para <b>Odontologias</b>, criado usando <b>Vanilla HTML5 e CSS3</b>."
+                "projects-modal-single-description": "Outro projeto que também foi desenvolvido e veio do curso de <b>Front-End Webmaster</b> da <b>Danki Code</b> mas que também pode ser facilmente adaptado e criado novas variações do site que podem ser vendidas para <b>Odontologias</b>, criado usando <b>Vanilla HTML5 e CSS3</b>.<br/>O site serve para <b>demonstrar o trabalho da Odontologia</b>, ele <b>pode ser atualizado e implementado um painel que mostra as consultas do dia para os dentistas.</b>"
             },
 
             "projects-modal-single-concessionaire": {
                 "projects-modal-single-title": "Concessionária de Carros Especiais",
                 "projects-modal-single-tags": "Website - Multi-Páginas - Carregamento Dinâmico de Páginas",
-                "projects-modal-single-description": "Esse projeto foi tirado do curso de <b>Back-End</b> da <b>Danki Code</b>, um projeto um pouco mais complexo que pegou o site desenvolvido no curso de <b>Front-End</b> onde foi melhorado e implantando o <b>PHP</b>."
+                "projects-modal-single-description": "Esse projeto foi tirado do curso de <b>Back-End</b> da <b>Danki Code</b>, um projeto um pouco mais complexo que pegou o site desenvolvido no curso de <b>Front-End</b> onde foi melhorado e implantando o <b>PHP</b>.<br/>O cliente pode entrar em contato com a concessionária através do site, <b>Ele pode ver de perto os veículos que a concessionária vende, com especificação e valor do carro</b> isso agilizou em até <b>9 vezes</b> os processos da concessionária, <b>trazendo produtividade, agilidade e resultados rápidos para a concessionária</b>."
             },
 
             "projects-modal-single-combat_game": {
@@ -181,7 +181,7 @@
             "projects-modal-single-rbi_web": {
                 "projects-modal-single-title": "RBI Web",
                 "projects-modal-single-tags": "Website - Barbearia - Divulgação de Serviços",
-                "projects-modal-single-description": "Site estático, voltado para vendas e para que o <b>cliente conheça mais sobre a barbearia.</b>"
+                "projects-modal-single-description": "Site estático, voltado para vendas e para que o <b>cliente conheça mais sobre a barbearia.</b><br/>O dono da barbearia conseguiu ter um controle <b>7x</b> maior dos clientes que faziam agendamentos, também fez com que o cliente conhecesse o trabalho do barbeiro, <b>levando assim a um agendamento.</b>"
             },
 
             "projects-modal-single-weather_station": {
@@ -193,7 +193,7 @@
             "projects-modal-single-rbi_app": {
                 "projects-modal-single-title": "RBI App",
                 "projects-modal-single-tags": "Mobile - Barbearia - Gestão de Negócio",
-                "projects-modal-single-description": "Desenvolvido e criado com o poderoso <b>React Native</b> juntamente com a tecnologia do <b>Expo</b>, atualmente o projeto foi <b>descontinuado</b> mas pode ser facilmente adaptado e vendido para outras barbearias."
+                "projects-modal-single-description": "Desenvolvido e criado com o poderoso <b>React Native</b> juntamente com a tecnologia do <b>Expo</b>, atualmente o projeto foi <b>descontinuado</b> mas pode ser facilmente adaptado e vendido para outras barbearias.<br/>Através do aplicativo o dono da barbearia tinha o controle dos seus estabelecimentos, <b>aumentando a produtividade em até 21x</b>, além de que todo agendamento feito pelo site aparece no aplicativo, <b>esses e diversos outros problemas foram resolvidos através do aplicativo e do site.</b>"
             }
             
         }

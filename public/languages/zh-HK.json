@@ -160,13 +160,13 @@
             "projects-modal-single-dentistry": {
                 "projects-modal-single-title": "牙科",
                 "projects-modal-single-tags": "網站 - 靜態",
-                "projects-modal-single-description": "另一個專案也是開發的，來自 <b>Danki Code</b> 的<b>前端網站管理員</b>課程，但也可以輕鬆調整併創建可以出售的網站的新變體<b>牙科</b>，使用<b>Vanilla HTML5 和CSS3</b> 建立。"
+                "projects-modal-single-description": "另一個專案也是開發的，來自 <b>Danki Code</b> 的<b>前端網站管理員</b>課程，但也可以輕鬆調整併創建可以出售的網站的新變體<b>牙科</b>，使用<b>Vanilla HTML5 和CSS3</b> 建立。<br/>該網站用於<b>展示牙科工作</b>，它<b>可以更新，並且可以實現一個面板來顯示當天的牙醫預約。"
             },
 
             "projects-modal-single-concessionaire": {
                 "projects-modal-single-title": "特種車經銷店",
                 "projects-modal-single-tags": "網站 - 多頁面 - 動態頁面加載",
-                "projects-modal-single-description": "該項目取自 <b>Danki Code</b> 的<b>後端</b>課程，這是一個稍微複雜的項目，採用了<b>前端</b>中開發的網站課程。 b> 進行了改進並實現了 <b>PHP</b>。"
+                "projects-modal-single-description": "該項目取自 <b>Danki Code</b> 的<b>後端</b>課程，這是一個稍微複雜的項目，採用了<b>前端</b>中開發的網站課程。 b> 進行了改進並實現了 <b>PHP</b>。<br/>客戶可以透過網站聯繫經銷店，<b>他可以近距離看到經銷店銷售的車輛，以及汽車的規格和價值</b>，這加快了<b>9倍</b>經銷商的流程，<b>為經銷商帶來生產力、敏捷性和快速結果</b>。"
             },
             
             "projects-modal-single-combat_game": {
@@ -184,7 +184,7 @@
             "projects-modal-single-rbi_web": {
                 "projects-modal-single-title": "打點網",
                 "projects-modal-single-tags": "網址 - 理髮店 - 服務推廣",
-                "projects-modal-single-description": "靜態網站，旨在銷售和供<b>客戶了解有關理髮店的更多資訊。"
+                "projects-modal-single-description": "靜態網站，旨在銷售和供<b>客戶了解有關理髮店的更多資訊。<br/>理髮店的老闆成功地對預約的顧客進行了<b>7倍</b>的控制，他還讓顧客了解了理髮師的工作，<b>從而促成了預約。 >"
             },
 
             "projects-modal-single-weather_station": {
@@ -196,7 +196,7 @@
             "projects-modal-single-rbi_app": {
                 "projects-modal-single-title": "打點應用程式",
                 "projects-modal-single-tags": "移動 - 理髮店 - 業務管理",
-                "projects-modal-single-description": "該項目使用強大的 <b>React Native</b> 和 <b>Expo</b> 技術開發和創建，目前已<b>停止</b>，但可以輕鬆改編並出售給其他理髮店。"
+                "projects-modal-single-description": "該項目使用強大的 <b>React Native</b> 和 <b>Expo</b> 技術開發和創建，目前已<b>停止</b>，但可以輕鬆改編並出售給其他理髮店。<br/>透過該應用程序，理髮店老闆可以控制他的企業，<b>將生產力提高高達 21 倍</b>，此外，透過網站進行的所有預約都會顯示在應用程式中，<b>這些問題和其他各種問題已透過應用程式和網站解決。"
             }
             
         }
