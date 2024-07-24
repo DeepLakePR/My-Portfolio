@@ -367,10 +367,12 @@ section.knowledge .container>div {
 }
 
 .technologies-more-button {
+    width: 70%;
     margin-top: 20px;
 }
 
 .technologies-more-button button {
+    width: 100%;
     padding-top: 3px;
     padding-bottom: 3px;
     background: var(--background-quarter);
@@ -1280,8 +1282,11 @@ body .modal {
     }
 
     /* Technologies > Modal Button */
+    .technologies-more-button{
+        width: 60%;
+    }
+
     .technologies-more-button button {
-        width: 90%;
         padding-bottom: 10px;
     }
 
