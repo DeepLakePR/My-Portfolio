@@ -33,7 +33,7 @@
 
     "about-me": {
         "about-me-title": "關於我",
-        "about-me-text": "您好，我叫 Guilherme Fortunato Machado，我目前 <b>16 歲</b>，我住在巴西，從 9 歲起我就開始接觸程式設計和遊戲開發，12 歲時我創建了我的第一個網站，我從Danki Code 製作了<b>全端課程</b>，今天我擁有了<b>遊戲開發人員、Web 開發人員和應用程式程式設計師</b>的證書，我擁有諸如<b >等語言的知識>PHP、JavaScript 和 Lua</b> 作為遊戲程式語言。 <b>我對 Fullstack 或行動領域的工作或自由職業感興趣</b>，我也在學習 <b>Python</b> 以及未來的 <b>Ruby</b>。我擁有 <b>React JS、React Native 和一點 NodeJS</b> 等技術知識，以及 <b>Bootstrap、Materialize 和 SASS</b> 等前端框架，以及我所擁有的資料庫知識對<b>MySQL </b>有更多的了解，我對<b>MongoDB</b>也有一些了解。"
+        "about-me-text": "您好，我叫 Guilherme Fortunato Machado，我目前 <b>17 歲</b>，我住在巴西，從 9 歲起我就開始接觸程式設計和遊戲開發，12 歲時我創建了我的第一個網站，我從Danki Code 製作了<b>全端課程</b>，今天我擁有了<b>遊戲開發人員、Web 開發人員和應用程式程式設計師</b>的證書，我擁有諸如<b >等語言的知識>PHP、JavaScript 和 Lua</b> 作為遊戲程式語言。 <b>我對 Fullstack 或行動領域的工作或自由職業感興趣</b>，我也在學習 <b>Python</b> 以及未來的 <b>Ruby</b>。我擁有 <b>React JS、React Native 和一點 NodeJS</b> 等技術知識，以及 <b>Bootstrap、Materialize 和 SASS</b> 等前端框架，以及我所擁有的資料庫知識對<b>MySQL </b>有更多的了解，我對<b>MongoDB</b>也有一些了解。"
     },
 
     "projects": {
@@ -44,6 +44,9 @@
             
             "projects-single-prime_consultancy-title": "優質房地產諮詢 - 2022",
             "projects-single-prime_consultancy-description": "開發了一個企業網站，為員工提供控制面板系統，產生 PDF 報告並將文件保存在資料庫中。使用的技術是<b>前端(HTML5、CSS3、JavaScript)、Bootstrap、PHP 和 MySQL 資料庫</b>。",
+
+            "projects-single-my_job-title": "My Job - 2024",
+            "projects-single-my_job-description": "受聘開發一個服務提供網站的前端，客戶可以通過該網站<b>創建賬戶</b>並申請不同類型的服務。<br/>客戶還可以<b>選擇將提供服務的專業人員</b>，顯示其照片、位置和反饋。該網站<b>支持超過15種語言</b>，使用簡單方便。",
 
             "projects-single-ibca_church-title": "IBCA 教會應用程式 - 2022",
             "projects-single-ibca_church-description": "為我的教會創建了一個應用程序，使用 <b>React Native 和 Expo 平台</b> 將應用程式匯出到 <b>IOS 和 Android</b>。",
@@ -149,6 +152,12 @@
                 "projects-modal-single-title": "優質房地產諮詢",
                 "projects-modal-single-tags": "網站 - 儀表板 - PDF 生成",
                 "projects-modal-single-description": "開發了一個具有<b>控制面板</b>和其他功能的複雜網站，將公司的流程和結果簡化了<b>100%</b>，使用的主要技術和庫是<b>前端</b>使用<b>JQuery和Bootstrap</b>作為庫，<b>後端</b>使用<b>FPDF (PDF生成器) 和PHPMailer (發送電子郵件) </b> 作為函式庫和<b>MySQL 資料庫</b>來儲存所有關於客戶、流程等的資訊。數據的問題。"
+            },
+
+            "projects-modal-single-my_job": {
+                "projects-modal-single-title": "My Job",
+                "projects-modal-single-tags": "網站 - API - 服務聘用",
+                "projects-modal-single-description": "該網站使用<b>原生 HTML5、CSS3 和 jQuery</b>開發，設計在<b>Figma</b>中完成，並且<b>使用 Firebase</b>作為項目的主要服務器。我的工作是<b>開發前端並將其連接到已準備好使用的 API</b>。<br/>通過該網站，客戶還可以訪問顯示正在進行的服務和其他信息的客戶頁面。<br/>還使用了 Google Maps API 來搜索地址（城市和街區）。<br/>該網站沒有使用任何框架或類似工具，<b>所有內容均手工製作。</b>"
             },
 
             "projects-modal-single-ibca_church": {
@@ -275,7 +284,7 @@
     },
 
     "footer": {
-        "footer-all-rights-reserved": "&copy; 2024 - 由 吉列爾梅·福圖納托·馬查多 開發和創建"
+        "footer-all-rights-reserved": "&copy; 2025 - 由 吉列爾梅·福圖納托·馬查多 開發和創建"
     }
 
 }

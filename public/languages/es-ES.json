@@ -33,7 +33,7 @@
 
     "about-me": {
         "about-me-title": "Acerca de Mí",
-        "about-me-text": "Hola, mi nombre es Guilherme Fortunato Machado, actualmente tengo <b>16 años</b> y vivo en Brasil, desde los 9 años he tenido contacto con la programación y el desarrollo de juegos, a los 12 años creé mi primer sitio web, realicé el <b>curso Fullstack de Danki Code</b> y hoy tengo certificados como <b>Desarrollador de Juegos, Desarrollador Web y Programador de Aplicaciones</b>, tengo conocimientos en idiomas como <b>PHP, JavaScript y Lua</b> como lenguaje de programación para juegos. <b>Estoy interesado en trabajar o trabajar como freelance en el área Fullstack o Mobile</b>, y también estoy aprendiendo <b>Python</b> y en un futuro <b>Ruby</b>. Tengo conocimientos en tecnologías como <b>React JS, React Native y un poco NodeJS</b>, Front-End Frameworks como <b>Bootstrap, Materialize y SASS</b>, y en bases de datos lo que tengo más conocimientos de <b>MySQL</b>, también tengo algunos conocimientos de <b>MongoDB</b>."
+        "about-me-text": "Hola, mi nombre es Guilherme Fortunato Machado, actualmente tengo <b>17 años</b> y vivo en Brasil, desde los 9 años he tenido contacto con la programación y el desarrollo de juegos, a los 12 años creé mi primer sitio web, realicé el <b>curso Fullstack de Danki Code</b> y hoy tengo certificados como <b>Desarrollador de Juegos, Desarrollador Web y Programador de Aplicaciones</b>, tengo conocimientos en idiomas como <b>PHP, JavaScript y Lua</b> como lenguaje de programación para juegos. <b>Estoy interesado en trabajar o trabajar como freelance en el área Fullstack o Mobile</b>, y también estoy aprendiendo <b>Python</b> y en un futuro <b>Ruby</b>. Tengo conocimientos en tecnologías como <b>React JS, React Native y un poco NodeJS</b>, Front-End Frameworks como <b>Bootstrap, Materialize y SASS</b>, y en bases de datos lo que tengo más conocimientos de <b>MySQL</b>, también tengo algunos conocimientos de <b>MongoDB</b>."
     },
 
     "projects": {
@@ -44,6 +44,9 @@
             
             "projects-single-prime_consultancy-title": "Asesoría Inmobiliaria Prime - 2022",
             "projects-single-prime_consultancy-description": "Desarrollé un sitio web Corporativo, con un sistema de panel de control para los empleados, generando informes en PDF y guardando documentos en la base de datos. Las tecnologías utilizadas fueron <b>Front-End (HTML5, CSS3, JavaScript), Bootstrap, PHP y Base de Datos MySQL</b>.",
+
+            "projects-single-my_job-title": "My Job - 2024",
+            "projects-single-my_job-description": "Contratado para desarrollar el Front-End de un sitio web de prestación de servicios, donde el cliente puede acceder, <b>crear su cuenta</b> y solicitar diferentes tipos de servicios.<br/>El cliente también puede <b>elegir qué profesional realizará el servicio</b>, mostrando su foto, ubicación y comentarios. El sitio web está <b>disponible en más de 15 idiomas</b> y es simple y fácil de usar.",
 
             "projects-single-ibca_church-title": "App de la Iglesia IBCA - 2022",
             "projects-single-ibca_church-description": "Creé una aplicación para mi iglesia, usando <b>React Native y la plataforma Expo</b> para exportar la aplicación a <b>IOS y Android</b>.",
@@ -146,6 +149,12 @@
                 "projects-modal-single-title": "Asesoría Inmobiliaria Prime",
                 "projects-modal-single-tags": "Sitio web - Panel de control - Generación de PDF",
                 "projects-modal-single-description": "Desarrollé un sitio web complejo con <b>Panel de Control</b> y otras funcionalidades que agilizaron los procesos y resultados de la empresa hasta en un <b>100%</b>, las principales tecnologías y librerías utilizadas fueron el <b>Front -End </b> usando <b>JQuery y Bootstrap</b> como bibliotecas, <b>Back-End</b> usando <b>FPDF (Generador de PDF) y PHPMailer (Envía correos electrónicos)</b> como bibliotecas y <b>Base de Datos MySQL</b> para almacenar toda la información sobre clientes, procesos, etc. <br/> También se desarrolló un <b>Sistema de Respaldo</b> para la Base de Datos por seguridad en caso de que haya un problema que afecta los datos."
+            },
+
+            "projects-modal-single-my_job": {
+                "projects-modal-single-title": "My Job",
+                "projects-modal-single-tags": "Sitio web - API - Contratación de servicios",
+                "projects-modal-single-description": "El sitio fue desarrollado utilizando <b>HTML5, CSS3 y jQuery Vanilla</b>. El diseño se creó en <b>Figma</b> y <b>Firebase se utilizó</b> como el servidor principal del proyecto. Mi tarea fue <b>desarrollar el Front-End y conectarlo a la API que ya estaba lista para usarse</b>.<br/>A través del sitio web, el cliente también puede acceder a la página del cliente que muestra los servicios en curso y otra información.<br/>También se utilizó la API de Google Maps para buscar direcciones (ciudad y barrio).<br/>El sitio no utiliza ningún tipo de marco o algo similar, <b>todo hecho a mano.</b>"
             },
 
             "projects-modal-single-ibca_church": {
@@ -271,7 +280,7 @@
     },
 
     "footer": {
-        "footer-all-rights-reserved": "&copy; 2024 - Desarrollado y creado por Guilherme Fortunato Machado."
+        "footer-all-rights-reserved": "&copy; 2025 - Desarrollado y creado por Guilherme Fortunato Machado."
     }
 
 }
