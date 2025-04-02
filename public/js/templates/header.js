@@ -53,10 +53,18 @@ $(()=>{
 
         if(!isHeaderNavigationScrolling){
             HeaderNavigationButtons.each((_, navButton)=>{
+
+                let t_offset = 300;
                 
                 let sectionElement = $('#' + $(navButton).attr('js-scrolltarget'));
 
-                if($(window).scrollTop() >= sectionElement.offset().top - 300){
+                if($(sectionElement).attr('id') === 'js-scroll-contact-text'){
+                    
+                    t_offset = 800;
+
+                }
+
+                if($(window).scrollTop() >= sectionElement.offset().top - t_offset){
                     HeaderNavigationButtons.parent().removeClass('navigation-selected');
                     $(navButton).parent().addClass('navigation-selected');
 

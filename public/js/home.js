@@ -132,7 +132,7 @@ $(function () {
         'fa-brands fa-bootstrap',
         'fa-brands fa-square-js',
         'fa-brands fa-react',
-        // 'fa-brands fa-angular',
+        'fa-brands fa-angular',
         // 'fa-brands fa-vuejs',
         'fa-brands fa-php',
         'fa-solid fa-database',
