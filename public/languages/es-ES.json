@@ -1,7 +1,7 @@
 {
 
     "global-translations": {
-        "email-contact-link": "<a href='mailto:guilhermefortunato2008@gmail.com?subject=Hablemos%20de%20Negocios&body=Hola%20Guilherme...' target='_blank'><i class='fa-solid fa-envelope'></i></a>",
+        "email-contact-link": "<a href='mailto:guilhermefortunatopr@gmail.com?subject=Hablemos%20de%20Negocios&body=Hola%20Guilherme...' target='_blank'><i class='fa-solid fa-envelope'></i></a>",
 
         "more-about-text": "Saber más",
 
@@ -134,7 +134,7 @@
     },
 
     "contact": {
-        "contact-call-to-action-text": "¿Hablemos?<br />Envíame un correo electrónico y<br /><a href='mailto:guilhermefortunato2008@gmail.com?subject=Hablemos%20de%20Negocios&body=Hola%20Guilherme...' target='_blank' title='Entra en Contacto Yo'>Entra en Contacto Yo.</a>"
+        "contact-call-to-action-text": "¿Hablemos?<br />Envíame un correo electrónico y<br /><a href='mailto:guilhermefortunatopr@gmail.com?subject=Hablemos%20de%20Negocios&body=Hola%20Guilherme...' target='_blank' title='Entra en Contacto Yo'>Entra en Contacto Yo.</a>"
     },
 
     "projects-modal": {

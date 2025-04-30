@@ -1,7 +1,7 @@
 {
 
     "global-translations": {
-        "email-contact-link": "<a href='mailto:guilhermefortunato2008@gmail.com?subject=%E6%88%91%E5%80%91%E4%BE%86%E8%AB%87%E8%AB%87%E7%94%9F%E6%84%8F%E5%90%A7&body=你好%20吉列爾梅...' target='_blank'><i class='fa-solid fa-envelope'></i></a>",
+        "email-contact-link": "<a href='mailto:guilhermefortunatopr@gmail.com?subject=%E6%88%91%E5%80%91%E4%BE%86%E8%AB%87%E8%AB%87%E7%94%9F%E6%84%8F%E5%90%A7&body=你好%20吉列爾梅...' target='_blank'><i class='fa-solid fa-envelope'></i></a>",
 
         "more-about-text": "了解更多",
 
@@ -137,7 +137,7 @@
     },
 
     "contact": {
-        "contact-call-to-action-text": "讓我們來聊聊吧？<br />給我發送電子郵件並<br /><a href='mailto:guilhermefortunato2008@gmail.com?subject=%E6%88%91%E5%80%91%E4%BE%86%E8%AB%87%E8%AB%87%E7%94%9F%E6%84%8F%E5%90%A7&body=你好%20吉列爾梅...' target='_blank' title='輸入聯絡方式我'>輸入聯絡方式我。</a>"
+        "contact-call-to-action-text": "讓我們來聊聊吧？<br />給我發送電子郵件並<br /><a href='mailto:guilhermefortunatopr@gmail.com?subject=%E6%88%91%E5%80%91%E4%BE%86%E8%AB%87%E8%AB%87%E7%94%9F%E6%84%8F%E5%90%A7&body=你好%20吉列爾梅...' target='_blank' title='輸入聯絡方式我'>輸入聯絡方式我。</a>"
     },
 
     "projects-modal": {
