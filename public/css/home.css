@@ -43,7 +43,7 @@ section.apresentation {
 
 /* Apresentation > Social Media */
 .apresentation .apresentation-social_media {
-    padding: 20px 10px;
+    padding: 20px 0;
 }
 
 .apresentation .apresentation-social_media a {
@@ -503,17 +503,14 @@ section.knowledge .container>div {
 }
 
 .soft-skill-single h3 {
-    font-weight: var(--section-text-font-weight);
+    font-weight: 500; /* var(--section-text-font-weight) */
     margin: 10px 0;
     margin-bottom: 7px;
     font-size: 24px;
 }
 
-.soft-skill-single h3 b {
-    font-weight: 500;
-}
-
 .soft-skill-single p {
+    font-weight: 300;
     font-size: 15px;
 }
 
@@ -560,12 +557,14 @@ section.contact .container .contact-bg_opacity {
 section.contact .container>h2 {
     text-align: center;
     font-size: 32px;
+    font-weight: 300;
     z-index: 2;
     color: white;
     text-shadow: 0px 7px 8px var(--global-shadow-color);
 }
 
 section.contact .container>h2 a {
+    font-weight: 700;
     text-decoration: underline;
     text-decoration-color: var(--global-tertiary-highlight-color);
     color: var(--global-tertiary-highlight-color);
