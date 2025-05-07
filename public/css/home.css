@@ -510,7 +510,7 @@ section.knowledge .container>div {
 }
 
 .soft-skill-single p {
-    font-weight: 300;
+    font-weight: var(--section-text-font-weight);
     font-size: 15px;
 }
 
