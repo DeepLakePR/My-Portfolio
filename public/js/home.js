@@ -1,5 +1,24 @@
 $(function () {
 
+    ///////////////////////////
+    // Smooth Scrolling
+    const lenis = new Lenis({
+        autoRaf: true,
+        prevent: true,
+        anchors: true,
+        duration: 2,
+        easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+        smoothWheel: true,
+        smoothTouch: true,
+    });
+
+    function lenis_raf(time) {
+        lenis.raf(time);
+        requestAnimationFrame(lenis_raf);
+    }
+
+    requestAnimationFrame(lenis_raf);
+
     // Variables
     const Body = $('body');
 
@@ -134,12 +153,15 @@ $(function () {
         'fa-brands fa-react',
         'fa-brands fa-angular',
         // 'fa-brands fa-vuejs',
+        'fa-brands fa-node-js',
         'fa-brands fa-php',
         'fa-solid fa-database',
         'fa-solid fa-moon',
+        'fa-brands fa-java',
         'fa-brands fa-wordpress',
         'fa-brands fa-git-alt',
         'fa-brands fa-docker',
+        'fa-brands fa-aws',
     ]
     var CurrentIClass = 1;
 

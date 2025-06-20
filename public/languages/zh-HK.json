@@ -21,8 +21,8 @@
     },
 
     "apresentation": {
-        "apresentation-text-h2": "嗨，我是<span>吉列爾梅·福爾圖納托</span>",
-        "apresentation-text-p": "一個<span>將</span>行程式碼轉化為<span>創新解決方案的男孩。</span>",
+        "apresentation-text-h2": "嗨，我是<strong>吉列爾梅·福爾圖納托</strong>",
+        "apresentation-text-p": "一個<span>將</span>行程式碼轉化為<strong>創新解決方案的男孩。</strong>",
         
         "apresentation-fullstack": "全端 PHP 開發人員"
     },
@@ -33,7 +33,7 @@
 
     "about-me": {
         "about-me-title": "關於我",
-        "about-me-text": "您好，我叫 Guilherme Fortunato Machado，我目前 <b>17 歲</b>，我住在巴西，從 9 歲起我就開始接觸程式設計和遊戲開發，12 歲時我創建了我的第一個網站，我從Danki Code 製作了<b>全端課程</b>，今天我擁有了<b>遊戲開發人員、Web 開發人員和應用程式程式設計師</b>的證書，我擁有諸如<b >等語言的知識>PHP、JavaScript 和 Lua</b> 作為遊戲程式語言。 <b>我對 Fullstack 或行動領域的工作或自由職業感興趣</b>，我也在學習 <b>Python</b> 以及未來的 <b>Ruby</b>。我擁有 <b>React JS、React Native 和一點 NodeJS</b> 等技術知識，以及 <b>Bootstrap、Materialize 和 SASS</b> 等前端框架，以及我所擁有的資料庫知識對<b>MySQL </b>有更多的了解，我對<b>MongoDB</b>也有一些了解。"
+        "about-me-text": "您好，我叫 Guilherme Fortunato Machado，我目前 <strong>17 歲</strong>，我住在巴西，從 9 歲起我就開始接觸程式設計和遊戲開發，12 歲時我創建了我的第一個網站，我從Danki Code 製作了<strong>全端課程</strong>，今天我擁有了<strong>遊戲開發人員、Web 開發人員和應用程式程式設計師</strong>的證書，我擁有諸如等語言的知識>PHP、JavaScript 和 Lua</strong> 作為遊戲程式語言。 <strong>我對 Fullstack 或行動領域的工作或自由職業感興趣</strong>，我也在學習 <strong>Python</strong> 以及未來的 <strong>Ruby</strong>。我擁有 <strong>React JS、React Native 和一點 NodeJS</strong> 等技術知識，以及 <strong>Bootstrap、Materialize 和 SASS</strong> 等前端框架，以及我所擁有的資料庫知識對<strong>MySQL </strong>有更多的了解，我對<strong>MongoDB</strong>也有一些了解。"
     },
 
     "projects": {
@@ -137,7 +137,7 @@
     },
 
     "contact": {
-        "contact-call-to-action-text": "讓我們來聊聊吧？<br />給我發送電子郵件並<br /><a href='mailto:guilhermefortunatopr@gmail.com?subject=%E6%88%91%E5%80%91%E4%BE%86%E8%AB%87%E8%AB%87%E7%94%9F%E6%84%8F%E5%90%A7&body=你好%20吉列爾梅...' target='_blank' title='輸入聯絡方式我'>輸入聯絡方式我。</a>"
+        "contact-call-to-action-text": "讓我們來聊聊吧？<br />給我發送電子郵件並<br /><strong><a href='mailto:guilhermefortunatopr@gmail.com?subject=%E6%88%91%E5%80%91%E4%BE%86%E8%AB%87%E8%AB%87%E7%94%9F%E6%84%8F%E5%90%A7&body=你好%20吉列爾梅...' target='_blank' title='輸入聯絡方式我'>輸入聯絡方式我。</a></strong>"
     },
 
     "projects-modal": {
@@ -278,7 +278,7 @@
     },
 
     "cookies": {
-        "cookies-text": "<b>Gui Dev</b> 使用 餅乾 來改善您在我們網站上的體驗。",
+        "cookies-text": "<strong>Gui Dev</strong> 使用 餅乾 來改善您在我們網站上的體驗。",
 
         "cookies-accept-button": "我接受"
     },

@@ -21,8 +21,8 @@
     },
 
     "apresentation": {
-        "apresentation-text-h2": "Hi, I'm <span>Guilherme Fortunato</span>",
-        "apresentation-text-p": "A boy who <span>transforms</span> lines of code into <span>innovative solutions.</span>",
+        "apresentation-text-h2": "Hi, I'm <strong>Guilherme Fortunato</strong>",
+        "apresentation-text-p": "A boy who <span>transforms</span> lines of code into <strong>innovative solutions.</strong>",
         
         "apresentation-fullstack": "FullStack PHP Developer"
     },
@@ -33,7 +33,7 @@
 
     "about-me": {
         "about-me-title": "About Me",
-        "about-me-text": "Hello, my name is Guilherme Fortunato Machado, I am currently <b>17 years old</b> and I live in Brazil, since I was 9 years old I have had contact with programming and game development, at 12 years old I created my first website, I made the <b>Fullstack course from Danki Code</b> and today I have certificates as <b>Game Developer, Web Developer and Application Programmer</b>, I have knowledge in languages such as <b>PHP, JavaScript and Lua</b> as a programming language for games. <b>I'm interested in work or freelance work in the Fullstack or Mobile area</b>, and I'm also learning <b>Python</b> and in the future <b>Ruby</b>. I have knowledge in technologies such as <b>React JS, React Native and a little NodeJS</b>, Front-End Frameworks such as <b>Bootstrap, Materialize and SASS</b>, and in databases what I have I have more knowledge of <b>MySQL</b>, I also have some knowledge of <b>MongoDB</b>."
+        "about-me-text": "Hello, my name is Guilherme Fortunato Machado, I am currently <strong>17 years old</strong> and I live in Brazil, since I was 9 years old I have had contact with programming and game development, at 12 years old I created my first website, I made the <strong>Fullstack course from Danki Code</strong> and today I have certificates as <strong>Game Developer, Web Developer and Application Programmer</strong>, I have knowledge in languages such as <strong>PHP, JavaScript and Lua</strong> as a programming language for games. <strong>I'm interested in work or freelance work in the Fullstack or Mobile area</strong>, and I'm also learning <strong>Python</strong> and in the future <strong>Ruby</strong>. I have knowledge in technologies such as <strong>React JS, React Native and a little NodeJS</strong>, Front-End Frameworks such as <strong>Bootstrap, Materialize and SASS</strong>, and in databases what I have I have more knowledge of <strong>MySQL</strong>, I also have some knowledge of <strong>MongoDB</strong>."
     },
 
     "projects": {
@@ -134,7 +134,7 @@
     },
 
     "contact": {
-        "contact-call-to-action-text": "Let's Talk?<br />Send me an email and<br /><a href='mailto:guilhermefortunatopr@gmail.com?subject=Lets%20Talk%20About%20Business&body=Hello%20Guilherme...' target='_blank' title='Enter In Contact Me'>Enter In Contact Me.</a>"
+        "contact-call-to-action-text": "Let's Talk?<br />Send me an email and<br /><strong><a href='mailto:guilhermefortunatopr@gmail.com?subject=Lets%20Talk%20About%20Business&body=Hello%20Guilherme...' target='_blank' title='Enter In Contact Me'>Enter In Contact Me.</a></strong>"
     },
 
     "projects-modal": {
@@ -274,7 +274,7 @@
     },
 
     "cookies": {
-        "cookies-text": "<b>Gui Dev</b> uses cookies to improve your experience on our website.",
+        "cookies-text": "<strong>Gui Dev</strong> uses cookies to improve your experience on our website.",
 
         "cookies-accept-button": "I Accept"
     },

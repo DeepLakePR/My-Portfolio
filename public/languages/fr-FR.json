@@ -21,8 +21,8 @@
     },
 
     "apresentation": {
-        "apresentation-text-h2": "Bonjour, je m'appelle <span>Guilherme Fortunato</span>",
-        "apresentation-text-p": "Un homme qui <span>transforme</span> des lignes de code en <span>solutions innovantes.</span>",
+        "apresentation-text-h2": "Bonjour, je m'appelle <strong>Guilherme Fortunato</strong>",
+        "apresentation-text-p": "Un homme qui <span>transforme</span> des lignes de code en <strong>solutions innovantes.</strong>",
         
         "apresentation-fullstack": "Développeur PHP FullStack"
     },
@@ -33,7 +33,7 @@
 
     "about-me": {
         "about-me-title": "Sur moi",
-        "about-me-text": "Bonjour, je m'appelle Guilherme Fortunato Machado, j'ai actuellement <b>17 ans</b> et j'habite au Brésil, depuis l'âge de 9 ans j'ai eu des contacts avec la programmation et le développement de jeux, à 12 ans j'ai créé mon premier site Web, j'ai fait le <b>cours Fullstack de Danki Code</b> et aujourd'hui j'ai des certificats de <b>développeur de jeux, développeur Web et programmeur d'applications</b>, j'ai des connaissances dans des langages tels que <b >PHP, JavaScript et Lua</b> comme langage de programmation pour les jeux. <b>Je suis intéressé par un travail ou un travail indépendant dans le domaine Fullstack ou Mobile</b>, et j'apprends également <b>Python</b> et à l'avenir <b>Ruby</b>. J'ai des connaissances dans les technologies telles que <b>React JS, React Native et un peu NodeJS</b>, les frameworks front-end tels que <b>Bootstrap, Materialise et SASS</b>, et dans les bases de données ce que j'ai. J'ai plus de connaissances sur <b>MySQL</b>, j'ai également quelques connaissances sur <b>MongoDB</b>."
+        "about-me-text": "Bonjour, je m'appelle Guilherme Fortunato Machado, j'ai actuellement <strong>17 ans</strong> et j'habite au Brésil, depuis l'âge de 9 ans j'ai eu des contacts avec la programmation et le développement de jeux, à 12 ans j'ai créé mon premier site Web, j'ai fait le <strong>cours Fullstack de Danki Code</strong> et aujourd'hui j'ai des certificats de <strong>développeur de jeux, développeur Web et programmeur d'applications</strong>, j'ai des connaissances dans des langages tels que PHP, JavaScript et Lua</strong> comme langage de programmation pour les jeux. <strong>Je suis intéressé par un travail ou un travail indépendant dans le domaine Fullstack ou Mobile</strong>, et j'apprends également <strong>Python</strong> et à l'avenir <strong>Ruby</strong>. J'ai des connaissances dans les technologies telles que <strong>React JS, React Native et un peu NodeJS</strong>, les frameworks front-end tels que <strong>Bootstrap, Materialise et SASS</strong>, et dans les bases de données ce que j'ai. J'ai plus de connaissances sur <strong>MySQL</strong>, j'ai également quelques connaissances sur <strong>MongoDB</strong>."
     },
 
     "projects": {
@@ -135,7 +135,7 @@
     },
 
     "contact": {
-        "contact-call-to-action-text": "Parlons?<br />Envoyez-moi un e-mail et<br /><a href='mailto:guilhermefortunatopr@gmail.com?subject=Parlons%20About%20Business&body=Bonjour%20Guilherme...' target='_blank' title='Entrez dans Contactez-moi'>Entrez dans Contactez-moi.</a>"
+        "contact-call-to-action-text": "Parlons?<br />Envoyez-moi un e-mail et<br /><strong><a href='mailto:guilhermefortunatopr@gmail.com?subject=Parlons%20About%20Business&body=Bonjour%20Guilherme...' target='_blank' title='Entrez dans Contactez-moi'>Entrez dans Contactez-moi.</a></strong>"
     },
 
     "projects-modal": {
@@ -275,7 +275,7 @@
     },
 
     "cookies": {
-        "cookies-text": "<b>Gui Dev</b> utilise des cookies pour améliorer votre expérience sur notre site Web.",
+        "cookies-text": "<strong>Gui Dev</strong> utilise des cookies pour améliorer votre expérience sur notre site Web.",
 
         "cookies-accept-button": "J'accepte"
     },

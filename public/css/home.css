@@ -29,7 +29,7 @@ section.apresentation {
     font-weight: var(--section-text-font-weight);
 }
 
-.apresentation-text span {
+.apresentation-text span, .apresentation-text strong {
     color: var(--global-highlight-color);
     /* 
     #FF9000 
@@ -37,7 +37,7 @@ section.apresentation {
     */
 }
 
-.apresentation-text p span {
+.apresentation-text p span, .apresentation-text p strong {
     font-weight: 400;
 }
 
@@ -633,6 +633,7 @@ body .project-image-expanded-container, .project-image-expanded-wrapper{
 /**********************************/
 /****** Modals ******/
 body .modal {
+    overscroll-behavior: contain;
     height: 100%;
     position: fixed;
     top: 0;

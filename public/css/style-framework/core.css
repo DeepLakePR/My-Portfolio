@@ -15,11 +15,6 @@
 }
 
 /* HTML, Body */
-html,
-body {
-    scroll-behavior: smooth;
-}
-
 body {
     min-height: 100vh;
     overflow: overlay;
