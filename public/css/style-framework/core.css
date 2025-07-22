@@ -252,7 +252,7 @@ hr {
 }
 
 /* Bold & Span */
-b, span{
+b, span, strong{
     font-weight: 700;
 }
 
