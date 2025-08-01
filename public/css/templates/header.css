@@ -120,7 +120,7 @@ header .languages-select-button {
     justify-content: space-between;
     align-items: center;
     color: white;
-    box-shadow: 0px 7px 7px 0px var(--global-shadow-color);
+    box-shadow: var(--header-shadow-secondary);
 }
 
 header .languages-selected-language, .languages-selected-language img{
@@ -160,7 +160,7 @@ header .languages-select-dropdown {
     position: absolute;
     list-style: none;
     width: 100%;
-    box-shadow: 0px 6px 7px 0px var(--global-shadow-color);
+    box-shadow: var(--header-shadow-secondary);
     background-color: #383838;
     border: 1px solid #313131;
     border-radius: 4px;
@@ -249,7 +249,7 @@ header .header-options button#theme-changer {
     background: #383838;
     color: #ddd;
     transition: all 0.2s ease-in-out;
-    box-shadow: 0px 7px 7px 0px var(--global-shadow-color);
+    box-shadow: var(--header-shadow-secondary);
     text-align: center;
 }
 
@@ -273,8 +273,8 @@ header .header-options button#theme-changer i {
 
 /* Light Theme Button */
 #header-opt-light-theme {
-    color: #d1bc34;
-    text-shadow: 0px 1px 5px rgba(194, 175, 52, 0.5);
+    color: #e9d23c;
+    text-shadow: 0px 1px 5px rgba(194, 175, 52, 0.8);
 }
 
 header .header-options button#theme-changer:hover #header-opt-light-theme {
@@ -283,8 +283,8 @@ header .header-options button#theme-changer:hover #header-opt-light-theme {
 
 /* Dark Theme Button */
 #header-opt-dark-theme {
-    color: #17598f;
-    text-shadow: 0px 1px 5px rgba(20, 75, 121, 0.5);
+    color: #2373b5;
+    text-shadow: 0px 1px 5px rgba(20, 75, 121, 0.8);
 }
 
 header .header-options button#theme-changer:hover #header-opt-dark-theme {

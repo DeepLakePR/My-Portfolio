@@ -14,21 +14,30 @@
     --global-default-color: white;
     --global-default-secondary-color: #ccc;
 
-    --global-shadow-background-color: rgba(0, 0, 0, 0.45);
-    --global-shadow-color: rgba(0, 0, 0, 0.6);
+    --global-shadow-background-color: rgba(0, 0, 0, 0.3);
+    --global-shadow-color: rgba(0, 0, 0, 0.2);
     --global-shadow-secondary-color: rgba(0, 0, 0, 0.5);
-    --global-shadow-tertiary-color: rgba(0, 0, 0, 0.4);
+    --global-shadow-tertiary-color: rgba(0, 0, 0, 0.3);
     --global-shadow-quarter-color: rgba(34, 34, 34, 0.45);
 
     --global-highlight-color: #6bddec;
     --global-secondary-highlight-color: #4195da;
     --global-tertiary-highlight-color: #66dae9;
 
+    --box-shadow: 0px 8px 10px 0px var(--global-shadow-color);
+    --box-shadow-secondary: 0px 4px 8px 0px var(--global-shadow-color);
+    --box-shadow-tertiary: 0px 8px 10px 0px var(--global-shadow-tertiary-color);
+    --box-shadow-background: 0px 8px 10px 0px var(--global-shadow-background-color);
+
+    --text-shadow: 0px 4px 6px var(--global-shadow-color);
+    --text-shadow-secondary: 0px 2px 4px var(--global-shadow-secondary-color);
+
     /* Header */
     --header-background: #1f1f1f;
     --header-primary-color: #ffffff;
     --header-navigation-color: #b9b9b9;
-    --header-shadow: 0px 5px 7px 0px rgba(0, 0, 0, 0.1);
+    --header-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.1);
+    --header-shadow-secondary: 0px 2px 4px 0px var(--global-shadow-color);
     ;
 
     --header-logo-color: 1;
@@ -63,8 +72,8 @@
     --cookies-background: linear-gradient(135deg, #333333, #181818 80%);
     --cookies-color: #dddddd;
     --cookies-secondary-color: white;
-    --cookies-shadow: 0px 5px 6px 1px rgba(0, 0, 0, 0.2);
-    --cookies-secondary-shadow: 0px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    --cookies-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.1);
+    --cookies-secondary-shadow: 0px 2px 2px 1px rgba(0, 0, 0, 0.1);
 
     --cookies-button: rgb(45, 56, 88);
 
@@ -108,21 +117,29 @@
     --global-default-color: black;
     --global-default-secondary-color: #383838;
 
-    --global-shadow-background-color: rgba(0, 0, 0, 0.45);
-    --global-shadow-color: rgba(0, 0, 0, 0.3);
-    --global-shadow-secondary-color: rgba(0, 0, 0, 0.35);
+    --global-shadow-background-color: rgba(0, 0, 0, 0.2);
+    --global-shadow-color: rgba(0, 0, 0, 0.2);
+    --global-shadow-secondary-color: rgba(0, 0, 0, 0.2);
     --global-shadow-tertiary-color: rgba(0, 0, 0, 0.4);
-    --global-shadow-quarter-color: rgba(34, 34, 34, 0.45);
+    --global-shadow-quarter-color: rgba(34, 34, 34, 0.4);
 
     --global-highlight-color: #2385d6;
     --global-secondary-highlight-color: #3880bb;
     --global-tertiary-highlight-color: #66dae9;
 
+    --box-shadow: 0px 6px 8px 0px var(--global-shadow-color);
+    --box-shadow-secondary: 0px 4px 8px 0px var(--global-shadow-color);
+    --box-shadow-tertiary: 0px 6px 8px 0px var(--global-shadow-tertiary-color);
+    --box-shadow-background: 0px 6px 8px 0px var(--global-shadow-background-color);
+
+    --text-shadow: 0px 2px 4px var(--global-shadow-color);
+    --text-shadow-secondary: 0px 2px 4px var(--global-shadow-secondary-color);
+
     /* Header */
     --header-background: #dadada;
     --header-primary-color: #2b2b2b;
     --header-navigation-color: #6b6b6b;
-    --header-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.1);
+    --header-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.1);
 
     --header-logo-color: 0;
 

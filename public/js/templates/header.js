@@ -84,6 +84,24 @@ $(()=>{
 
     function MobileHeaderExpand(){
 
+        function ToggleMobileHeader(type){
+
+            if(type === 'show'){
+                HeaderOptions.css('max-height', '75px')
+                .css('overflow', 'visible')
+                .css('padding-bottom', '11px')
+                .css('margin', '10px 0');
+
+            }else{
+                HeaderOptions.css('max-height', '0')
+                .css('overflow', 'hidden')
+                .css('padding-bottom', '0')
+                .css('margin', '0');
+
+            }
+
+        }
+
         const MobileMediaQuery = window.matchMedia('(max-width: 768px)');
 
         if(MobileMediaQuery.matches){
@@ -95,37 +113,29 @@ $(()=>{
                 
                 if(isMediaQueryMatches){
 
-                    if(!isHeaderNavigationScrolling){
+                    if(!isHeaderNavigationScrolling && !HeaderHideScrollingDebugger){
 
-                        if(!HeaderHideScrollingDebugger){
+                        let ScrollTop = window.scrollY || document.documentElement.scrollTop;
+                        ScrollTop = ScrollTop - TopOffset;
 
-                            let ScrollTop = window.scrollY || document.documentElement.scrollTop;
-                            ScrollTop = ScrollTop - TopOffset;
+                        if(ScrollTop < 185){
+                            ToggleMobileHeader('show');
 
-                            if(ScrollTop > lastScrollTop){
-                                HeaderOptions.css('max-height', '0')
-                                .css('overflow', 'hidden')
-                                .css('padding-bottom', '0')
-                                .css('margin', '0');
-                                
-                            }else{
-                                HeaderOptions.css('max-height', '75px')
-                                .css('overflow', 'visible')
-                                .css('padding-bottom', '11px')
-                                .css('margin', '10px 0');;
+                        }else if(ScrollTop > lastScrollTop){
+                            ToggleMobileHeader('hide');
 
-                            }
-
-                            lastScrollTop = ScrollTop;
-                            HeaderHideScrollingDebugger = true
-
-                            setTimeout(()=>{
-                                HeaderHideScrollingDebugger = false;
-
-                            }, 1000);
-
+                        }else{
+                            ToggleMobileHeader('show');
 
                         }
+
+                        lastScrollTop = ScrollTop;
+                        HeaderHideScrollingDebugger = true
+
+                        setTimeout(()=>{
+                            HeaderHideScrollingDebugger = false;
+
+                        }, 1000);
 
                     }
 
