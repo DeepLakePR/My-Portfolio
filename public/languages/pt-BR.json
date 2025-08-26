@@ -45,7 +45,7 @@
             "projects-single-prime_consultancy-title": "Prime Assessoria Imobiliária - 2022",
             "projects-single-prime_consultancy-description": "Desenvolvido um site Corporativo, com sistema de painel de controle para os funcionários, geração de relatórios em PDF e salvamento de documentos no banco de dados. As tecnologias usadas foram <b>Front-End (HTML5, CSS3, JavaScript), Bootstrap, PHP e Banco de Dados MySQL</b>.",
 
-            "projects-single-my_job-title": "My Job - 2024",
+            "projects-single-my_job-title": "Work No Break - 2024",
             "projects-single-my_job-description": "Contratado para desenvolver o Front-End de um site de prestação de serviços, onde o cliente pode acessá-lo, <b>criar sua conta</b> e solicitar diversos tipos de serviços.<br/>O cliente também pode <b>escolher qual profissional irá realizar o serviço</b>, mostrando foto, localização e feedback do mesmo, o site está <b>disponível para mais de 15 idiomas</b> e é simples e fácil de usar.",
 
             "projects-single-ibca_church-title": "Igreja IBCA App - 2022",
@@ -152,7 +152,7 @@
             },
 
             "projects-modal-single-my_job": {
-                "projects-modal-single-title": "My Job",
+                "projects-modal-single-title": "Work No Break",
                 "projects-modal-single-tags": "Website - API - Contratação de Serviços",
                 "projects-modal-single-description": "O site foi desenvolvido usando <b>Vanilla HTML5, CSS3 e jQuery</b>, o design foi criado no <b>Figma</b> e foi utilizado <b>Firebase</b> como servidor principal do projeto, meu trabalho foi <b>desenvolver o Front-End e conectá-lo à API que já estava pronta para ser utilizada</b>.<br/>Através do site o cliente também consegue acessar a página do cliente que mostra os serviços em andamento e outras informações.<br/>Também foi utilizada a API do Google Maps para busca de endereço (cidade e bairro).<br/>O site não utiliza nenhum tipo de framework ou coisa do tipo, <b>tudo feito à mão.</b>"
             },

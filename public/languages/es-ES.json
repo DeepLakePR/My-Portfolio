@@ -45,7 +45,7 @@
             "projects-single-prime_consultancy-title": "Asesoría Inmobiliaria Prime - 2022",
             "projects-single-prime_consultancy-description": "Desarrollé un sitio web Corporativo, con un sistema de panel de control para los empleados, generando informes en PDF y guardando documentos en la base de datos. Las tecnologías utilizadas fueron <b>Front-End (HTML5, CSS3, JavaScript), Bootstrap, PHP y Base de Datos MySQL</b>.",
 
-            "projects-single-my_job-title": "My Job - 2024",
+            "projects-single-my_job-title": "Work No Break - 2024",
             "projects-single-my_job-description": "Contratado para desarrollar el Front-End de un sitio web de prestación de servicios, donde el cliente puede acceder, <b>crear su cuenta</b> y solicitar diferentes tipos de servicios.<br/>El cliente también puede <b>elegir qué profesional realizará el servicio</b>, mostrando su foto, ubicación y comentarios. El sitio web está <b>disponible en más de 15 idiomas</b> y es simple y fácil de usar.",
 
             "projects-single-ibca_church-title": "App de la Iglesia IBCA - 2022",
@@ -152,7 +152,7 @@
             },
 
             "projects-modal-single-my_job": {
-                "projects-modal-single-title": "My Job",
+                "projects-modal-single-title": "Work No Break",
                 "projects-modal-single-tags": "Sitio web - API - Contratación de servicios",
                 "projects-modal-single-description": "El sitio fue desarrollado utilizando <b>HTML5, CSS3 y jQuery Vanilla</b>. El diseño se creó en <b>Figma</b> y <b>Firebase se utilizó</b> como el servidor principal del proyecto. Mi tarea fue <b>desarrollar el Front-End y conectarlo a la API que ya estaba lista para usarse</b>.<br/>A través del sitio web, el cliente también puede acceder a la página del cliente que muestra los servicios en curso y otra información.<br/>También se utilizó la API de Google Maps para buscar direcciones (ciudad y barrio).<br/>El sitio no utiliza ningún tipo de marco o algo similar, <b>todo hecho a mano.</b>"
             },

@@ -45,7 +45,7 @@
             "projects-single-prime_consultancy-title": "Conseil Immobilier de Premier Ordre - 2022",
             "projects-single-prime_consultancy-description": "Développement d'un site Web d'entreprise, avec un système de panneau de contrôle pour les employés, générant des rapports PDF et enregistrant des documents dans la base de données. Les technologies utilisées étaient <b>Front-End (HTML5, CSS3, JavaScript), Bootstrap, PHP et MySQL Database</b>.",
 
-            "projects-single-my_job-title": "My Job - 2024",
+            "projects-single-my_job-title": "Work No Break - 2024",
             "projects-single-my_job-description": "Engagé pour développer le Front-End d'un site de prestation de services, où le client peut accéder, <b>créer son compte</b> et demander différents types de services.<br/>Le client peut également <b>choisir le professionnel qui effectuera le service</b>, en affichant sa photo, sa localisation et ses commentaires. Le site web est <b>disponible en plus de 15 langues</b> et est simple et facile à utiliser.",
 
             "projects-single-ibca_church-title": "Application de l'Église IBCA - 2022",
@@ -153,7 +153,7 @@
             },
 
             "projects-modal-single-my_job": {
-                "projects-modal-single-title": "My Job",
+                "projects-modal-single-title": "Work No Break",
                 "projects-modal-single-tags": "Site web - API - Prestations de service",
                 "projects-modal-single-description": "Le site a été développé en utilisant <b>Vanilla HTML5, CSS3 et jQuery</b>. Le design a été créé dans <b>Figma</b>, et <b>Firebase a été utilisé</b> comme serveur principal du projet. Mon travail consistait à <b>développer le Front-End et à le connecter à l'API qui était déjà prête à être utilisée</b>.<br/>Grâce au site web, le client peut également accéder à la page client qui montre les services en cours et d'autres informations.<br/>L'API Google Maps a également été utilisée pour rechercher des adresses (ville et quartier).<br/>Le site n'utilise aucun framework ou quelque chose de similaire, <b>tout a été fait à la main.</b>"
             },

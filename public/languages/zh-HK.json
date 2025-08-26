@@ -45,7 +45,7 @@
             "projects-single-prime_consultancy-title": "優質房地產諮詢 - 2022",
             "projects-single-prime_consultancy-description": "開發了一個企業網站，為員工提供控制面板系統，產生 PDF 報告並將文件保存在資料庫中。使用的技術是<b>前端(HTML5、CSS3、JavaScript)、Bootstrap、PHP 和 MySQL 資料庫</b>。",
 
-            "projects-single-my_job-title": "My Job - 2024",
+            "projects-single-my_job-title": "Work No Break - 2024",
             "projects-single-my_job-description": "受聘開發一個服務提供網站的前端，客戶可以通過該網站<b>創建賬戶</b>並申請不同類型的服務。<br/>客戶還可以<b>選擇將提供服務的專業人員</b>，顯示其照片、位置和反饋。該網站<b>支持超過15種語言</b>，使用簡單方便。",
 
             "projects-single-ibca_church-title": "IBCA 教會應用程式 - 2022",
@@ -155,7 +155,7 @@
             },
 
             "projects-modal-single-my_job": {
-                "projects-modal-single-title": "My Job",
+                "projects-modal-single-title": "Work No Break",
                 "projects-modal-single-tags": "網站 - API - 服務聘用",
                 "projects-modal-single-description": "該網站使用<b>原生 HTML5、CSS3 和 jQuery</b>開發，設計在<b>Figma</b>中完成，並且<b>使用 Firebase</b>作為項目的主要服務器。我的工作是<b>開發前端並將其連接到已準備好使用的 API</b>。<br/>通過該網站，客戶還可以訪問顯示正在進行的服務和其他信息的客戶頁面。<br/>還使用了 Google Maps API 來搜索地址（城市和街區）。<br/>該網站沒有使用任何框架或類似工具，<b>所有內容均手工製作。</b>"
             },
