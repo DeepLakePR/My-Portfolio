@@ -5,11 +5,14 @@
 
 :root {
   color: #13233a;
-  background: radial-gradient(circle at top, #eef5ff 0%, #f7f9fc 50%, #ffffff 100%);
   font-family: "Inter", Tahoma; /* Inter, Outfit, Plus Jakarta Sans */
   font-optical-sizing: auto;
   font-weight: 300;
   font-style: normal;
   letter-spacing: 0.1px;
   user-select: none;
+}
+
+:root {
+  background-color: #d8e9fd;
 }

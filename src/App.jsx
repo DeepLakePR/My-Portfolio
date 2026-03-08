@@ -73,7 +73,7 @@ function App() {
   }, [isTransition]);
 
   return (
-    <div className="relative min-h-screen w-screen overflow-hidden bg-[#eaf2fb] text-[#1f2937]">
+    <div className="relative w-screen overflow-hidden bg-[#eaf2fb] text-[#1f2937]">
       <motion.div
         className="absolute inset-0"
         animate={{ backgroundColor: isTransition ? "#8ea5c2" : "#eaf2fb" }}
@@ -125,7 +125,7 @@ function App() {
       )}
 
       <motion.main
-        className="relative z-10 mx-auto flex min-h-screen max-w-6xl flex-col justify-center px-6 py-12"
+        className="relative z-10 mx-auto flex sm:min-h-screen max-w-6xl flex-col justify-center px-6 py-12"
         animate={{
           opacity: isTransition ? 0 : 1,
           scale: isTransition ? 0.95 : 1,
