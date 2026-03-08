@@ -2,15 +2,16 @@
 div.cookies-privay-wrapper{
     opacity: 0;
     display: block !important;
-    position: fixed;
     inset: 15px;
     top: initial;
     background: var(--cookies-background);
     border-radius: 10px;
     max-width: 35%;
-    z-index: 999;
     box-shadow: var(--cookies-shadow);
+    position: fixed;
+    z-index: 9999;
     transition: none;
+    overscroll-behavior: contain;
 }
 
 /* Container */

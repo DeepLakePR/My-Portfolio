@@ -139,7 +139,7 @@ function App() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.9, ease: "easeOut" }}
         >
-          <div className="grid items-center gap-0 px-4 py-8 text-center sm:text-left lg:grid-cols-[1.05fr_0.95fr] lg:px-12 lg:py-12">
+          <div className="grid items-center justify-center gap-0 px-4 py-8 text-center sm:text-left lg:grid-cols-[1.05fr_0.95fr] lg:px-12 lg:py-12">
             <motion.div
               className="space-y-4 sm:space-y-6"
               initial={{ opacity: 0, y: 18 }}

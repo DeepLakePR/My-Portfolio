@@ -99,6 +99,7 @@
 
     --modal-knowledge-courses: #252525;
 
+    --background-transition: 54, 68, 107;
 }
 
 /*********************************/
@@ -194,4 +195,5 @@
 
     --modal-knowledge-courses: #dcdedf;
 
+    --background-transition: 212, 212, 212;
 }

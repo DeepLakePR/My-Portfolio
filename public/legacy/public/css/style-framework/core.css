@@ -15,8 +15,33 @@
 }
 
 /* HTML, Body */
-html, body {
+html,
+body {
     min-height: 100vh;
+    background-color: var(--section-background-custom);
+}
+
+@keyframes fadeOutCurtain {
+    from {
+        backdrop-filter: blur(15px);
+        background-color: rgba(var(--background-transition), 1);
+    }
+
+    to {
+        backdrop-filter: blur(0px);
+        background-color: rgba(var(--background-transition), 0);
+    }
+}
+
+.transition-curtain {
+    animation: fadeOutCurtain 2s ease-out forwards;
+    background-color: rgba(var(--background-transition), 1);
+    position: fixed;
+    inset: 0;
+    z-index: 999999;
+    transition: none;
+    backdrop-filter: blur(15px);
+    pointer-events: none;
 }
 
 /* Modal Prevent Scroll */
@@ -254,7 +279,9 @@ hr {
 }
 
 /* Bold & Span */
-b, span, strong{
+b,
+span,
+strong {
     font-weight: 700;
 }
 
