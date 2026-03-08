@@ -532,7 +532,7 @@ section.contact .container {
     max-width: 100%;
     padding-top: 135px;
     padding-bottom: 125px;
-    background-image: url('/public/assets/contact-bg.jpg');
+    background-image: url('../assets/contact-bg.jpg');
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
@@ -576,13 +576,15 @@ section.contact .container>h2 a:hover {
 body .project-image-expanded-container{
     display: none;
     transition: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
+    position: sticky;
     background-color: rgba(0, 0, 0, 0.4);
     z-index: 999999;
-    
+    inset: 0;
+    width: 100vw;
+    height: 100vh;
+    height: 100dvh;
+    overflow-y: auto;
+    overscroll-behavior: contain;
 }
 
 body .project-image-expanded-container, .project-image-expanded-wrapper{
@@ -629,20 +631,24 @@ body .project-image-expanded-container, .project-image-expanded-wrapper{
 /**********************************/
 /****** Modals ******/
 body .modal {
-    overscroll-behavior: contain;
-    height: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
     display: none;
+    position: sticky;
+    inset: 0;
+    width: 100vw;
+    height: 100vh;
+    height: 100dvh;
     background: rgba(0, 0, 0, 0.4);
     z-index: 9999;
     transition: none;
+    overflow-y: auto;
+    overscroll-behavior: contain;
 }
 
 .modal .container {
     align-items: center;
     height: 100%;
+    max-height: calc(100vh - 20px);
+    max-height: calc(100dvh - 20px);
     padding: 0;
 
     color: var(--global-default-color);

@@ -15,14 +15,16 @@
 }
 
 /* HTML, Body */
-body {
+html, body {
     min-height: 100vh;
-    overflow: overlay;
 }
 
 /* Modal Prevent Scroll */
 .modal-prevent-scroll {
     overflow: hidden;
+    height: 100vh !important;
+    height: 100dvh !important;
+    max-height: 100dvh !important;
 }
 
 /***********************/

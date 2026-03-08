@@ -24,7 +24,7 @@
         "apresentation-text-h2": "Bonjour, je m'appelle <strong>Guilherme Fortunato</strong>",
         "apresentation-text-p": "Un homme qui <span>transforme</span> des lignes de code en <strong>solutions innovantes.</strong>",
         
-        "apresentation-fullstack": "Développeur PHP FullStack"
+        "apresentation-fullstack": "Développeur Web FullStack"
     },
 
     "end-to-end-applications": {
@@ -33,7 +33,7 @@
 
     "about-me": {
         "about-me-title": "Sur moi",
-        "about-me-text": "Bonjour, je m'appelle Guilherme Fortunato Machado, j'ai actuellement <strong>17 ans</strong> et j'habite au Brésil, depuis l'âge de 9 ans j'ai eu des contacts avec la programmation et le développement de jeux, à 12 ans j'ai créé mon premier site Web, j'ai fait le <strong>cours Fullstack de Danki Code</strong> et aujourd'hui j'ai des certificats de <strong>développeur de jeux, développeur Web et programmeur d'applications</strong>, j'ai des connaissances dans des langages tels que PHP, JavaScript et Lua</strong> comme langage de programmation pour les jeux. <strong>Je suis intéressé par un travail ou un travail indépendant dans le domaine Fullstack ou Mobile</strong>, et j'apprends également <strong>Python</strong> et à l'avenir <strong>Ruby</strong>. J'ai des connaissances dans les technologies telles que <strong>React JS, React Native et un peu NodeJS</strong>, les frameworks front-end tels que <strong>Bootstrap, Materialise et SASS</strong>, et dans les bases de données ce que j'ai. J'ai plus de connaissances sur <strong>MySQL</strong>, j'ai également quelques connaissances sur <strong>MongoDB</strong>."
+        "about-me-text": "Bonjour, je m'appelle Guilherme Fortunato Machado, j'ai actuellement <strong>18 ans</strong> et j'habite au Brésil, depuis l'âge de 9 ans j'ai eu des contacts avec la programmation et le développement de jeux, à 12 ans j'ai créé mon premier site Web, j'ai fait le <strong>cours Fullstack de Danki Code</strong> et aujourd'hui j'ai des certificats de <strong>développeur de jeux, développeur Web et programmeur d'applications</strong>, j'ai des connaissances dans des langages tels que PHP, JavaScript et Lua</strong> comme langage de programmation pour les jeux. <strong>Je suis intéressé par un travail ou un travail indépendant dans le domaine Fullstack ou Mobile</strong>, et j'apprends également <strong>Python</strong> et à l'avenir <strong>Ruby</strong>. J'ai des connaissances dans les technologies telles que <strong>React JS, React Native et un peu NodeJS</strong>, les frameworks front-end tels que <strong>Bootstrap, Materialise et SASS</strong>, et dans les bases de données ce que j'ai. J'ai plus de connaissances sur <strong>MySQL</strong>, j'ai également quelques connaissances sur <strong>MongoDB</strong>."
     },
 
     "projects": {
@@ -275,13 +275,13 @@
     },
 
     "cookies": {
-        "cookies-text": "<strong>Gui Dev</strong> utilise des cookies pour améliorer votre expérience sur notre site Web.",
+        "cookies-text": "J'utilise des <strong>cookies</strong> pour rendre votre expérience ici plus fluide et plus personnalisée.",
 
         "cookies-accept-button": "J'accepte"
     },
 
     "footer": {
-        "footer-all-rights-reserved": "&copy; 2025 - Développé et créé par Guilherme Fortunato Machado"
+        "footer-all-rights-reserved": "&copy; 2026 - Développé et créé par Guilherme Fortunato Machado"
     }
 
 }

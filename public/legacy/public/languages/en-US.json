@@ -24,7 +24,7 @@
         "apresentation-text-h2": "Hi, I'm <strong>Guilherme Fortunato</strong>",
         "apresentation-text-p": "A boy who <span>transforms</span> lines of code into <strong>innovative solutions.</strong>",
         
-        "apresentation-fullstack": "FullStack PHP Developer"
+        "apresentation-fullstack": "FullStack Web Developer"
     },
 
     "end-to-end-applications": {
@@ -33,7 +33,7 @@
 
     "about-me": {
         "about-me-title": "About Me",
-        "about-me-text": "Hello, my name is Guilherme Fortunato Machado, I am currently <strong>17 years old</strong> and I live in Brazil, since I was 9 years old I have had contact with programming and game development, at 12 years old I created my first website, I made the <strong>Fullstack course from Danki Code</strong> and today I have certificates as <strong>Game Developer, Web Developer and Application Programmer</strong>, I have knowledge in languages such as <strong>PHP, JavaScript and Lua</strong> as a programming language for games. <strong>I'm interested in work or freelance work in the Fullstack or Mobile area</strong>, and I'm also learning <strong>Python</strong> and in the future <strong>Ruby</strong>. I have knowledge in technologies such as <strong>React JS, React Native and a little NodeJS</strong>, Front-End Frameworks such as <strong>Bootstrap, Materialize and SASS</strong>, and in databases what I have I have more knowledge of <strong>MySQL</strong>, I also have some knowledge of <strong>MongoDB</strong>."
+        "about-me-text": "Hello, my name is Guilherme Fortunato Machado, I am currently <strong>18 years old</strong> and I live in Brazil, since I was 9 years old I have had contact with programming and game development, at 12 years old I created my first website, I made the <strong>Fullstack course from Danki Code</strong> and today I have certificates as <strong>Game Developer, Web Developer and Application Programmer</strong>, I have knowledge in languages such as <strong>PHP, JavaScript and Lua</strong> as a programming language for games. <strong>I'm interested in work or freelance work in the Fullstack or Mobile area</strong>, and I'm also learning <strong>Python</strong> and in the future <strong>Ruby</strong>. I have knowledge in technologies such as <strong>React JS, React Native and a little NodeJS</strong>, Front-End Frameworks such as <strong>Bootstrap, Materialize and SASS</strong>, and in databases what I have I have more knowledge of <strong>MySQL</strong>, I also have some knowledge of <strong>MongoDB</strong>."
     },
 
     "projects": {
@@ -274,13 +274,13 @@
     },
 
     "cookies": {
-        "cookies-text": "<strong>Gui Dev</strong> uses cookies to improve your experience on our website.",
+        "cookies-text": "I use <strong>cookies</strong> to make your experience here smoother and more personalized.",
 
         "cookies-accept-button": "I Accept"
     },
 
     "footer": {
-        "footer-all-rights-reserved": "&copy; 2025 - Developed and created by Guilherme Fortunato Machado"
+        "footer-all-rights-reserved": "&copy; 2026 - Developed and created by Guilherme Fortunato Machado"
     }
 
 }

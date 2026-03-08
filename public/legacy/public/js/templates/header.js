@@ -169,7 +169,7 @@ $(()=>{
     const languagesOptions = $(".languages-select-dropdown li");
 
     // Variables
-    var translationsFolder = '/public/languages';
+    var translationsFolder = './public/languages';
 
     const languagesSupported = [
         'en-US',
@@ -284,7 +284,14 @@ $(()=>{
             // Translate Direct Elements
             if(elementTranslationKey){
 
-                fetch(`${translationsFolder}/${translateTo}.json`).then(response => response.json()).then(translationData => {
+                fetch(`${translationsFolder}/${translateTo}.json`)
+                .then((response) => {
+                    if (!response.ok) {
+                        throw new Error(`Translation file not found: ${translateTo}.json`);
+                    }
+                    return response.json();
+                })
+                .then(translationData => {
                     
                     setTimeout(()=> {
 
@@ -312,7 +319,7 @@ $(()=>{
 
         // Set Cookie
         Cookies.set("WebsiteLanguage", translateTo, {
-            expires: 30,
+            expires: 300,
             secure: true
         });
 
@@ -484,7 +491,7 @@ $(()=>{
 
         // Set Cookie
         Cookies.set("currentTheme", ThemeToSetCookie, {
-            expires: 30,
+            expires: 300,
             secure: true
         });
 

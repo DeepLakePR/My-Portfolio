@@ -138,7 +138,7 @@ $(function () {
         $('head meta[name="viewport"]').attr('content', 'width=device-width, initial-scale=1.0, maximum-scale=1.0');
 
         ExpandImageContainer.fadeOut();
-        ExpandImageElement.attr('src', '/public/assets/logo-2.png');
+        ExpandImageElement.attr('src', './public/assets/logo-2.png');
 
     }
 
@@ -152,7 +152,6 @@ $(function () {
         'fa-brands fa-square-js',
         'fa-brands fa-react',
         'fa-brands fa-angular',
-        // 'fa-brands fa-vuejs',
         'fa-brands fa-node-js',
         'fa-brands fa-php',
         'fa-solid fa-database',
@@ -203,67 +202,6 @@ $(function () {
         )
 
     }
-
-    ////////////////////////////////////////////////////////////////////////
-    /*
-    function technologiesSingleBoxAnimation(element) {
-
-        let CurrentTechBoxNivel = $(element).find('.tech-single-box-nivel-current').append("<div class='tech-single-box-nivel-current-fill'></div>");
-
-        let CurrentTechBoxNivelAnimation = $(CurrentTechBoxNivel).find('.tech-single-box-nivel-current-fill');
-
-        let TechSingleBoxNivel = $(element).find('.technologies-single-box-nivel');
-        let TechSingleCustomLine = $(element).find('.tech-single-box-nivel-custom_line');
-
-        if ($(TechSingleCustomLine[0]).hasClass('tech-single-box-nivel-current')) {
-            techAddAbsolutePositionLine(CurrentTechBoxNivelAnimation)
-
-            CurrentTechBoxNivelAnimation.animate({ 'width': '100%' }, 1, () => {
-
-                setTimeout(() => {
-                    $(TechSingleBoxNivel.find('p')[1]).addClass('tech-single-box-nivel-current-text');
-
-                }, 1500);
-
-            });
-
-        } else if ($(TechSingleCustomLine[1]).hasClass('tech-single-box-nivel-current')) {
-            $(TechSingleCustomLine[0]).append("<div class='tech-single-box-nivel-current-fill'></div>");
-
-            let CurrentFill = $(TechSingleCustomLine[0]).find('.tech-single-box-nivel-current-fill')
-
-            techAddAbsolutePositionLine(CurrentFill)
-
-            CurrentFill.animate({ 'width': '100%' }, 1, () => {
-
-                setTimeout(() => {
-                    techAddAbsolutePositionLine(CurrentTechBoxNivelAnimation)
-
-                    CurrentTechBoxNivelAnimation.animate({ 'width': '100%' }, 1, () => {
-
-                        setTimeout(() => {
-                            $(TechSingleBoxNivel.find('p')[2]).addClass('tech-single-box-nivel-current-text');;
-
-                        }, 1500);
-
-                    });
-                }, 1500)
-
-            });
-
-        } else {
-            $(TechSingleBoxNivel.find('p')[0]).addClass('tech-single-box-nivel-current-text');;
-
-        }
-
-    }
-
-    function techAddAbsolutePositionLine(element) {
-        element.css('position', 'absolute').css('top', '0').css('left', '0').css('height', '100%').css('width', '0').css('border-radius', '8px').css('transition', 'width 2s ease');
-        element.addClass('tech-single-box-nivel-current');
-
-    }
-    */
 
     ////// Knowledge Swipe Between Technologies and Soft Skills
     const KnowledgeContainer = $('#knowledge-container');
@@ -413,22 +351,28 @@ $(function () {
     function ProjectInfoModalInit(ModalButtonCaller) {
 
         // Project Info Div
-        ProjectInfoDiv = $(ModalButtonCaller).parent().parent();
+        ProjectInfoDiv = $(ModalButtonCaller).closest('.projects-single');
 
         if (ProjectInfoDiv.hasClass('projects-single')) {
 
             //// Project Info
-            ProjectInfoTitle = ProjectInfoDiv.data('project-info-title');
+            const getProjectAttr = (key) => {
+                const dataValue = ProjectInfoDiv.data(key);
+                if (dataValue !== undefined && dataValue !== null && dataValue !== '') return dataValue;
+                return ProjectInfoDiv.attr(`data-${key}`) ?? '';
+            };
 
-            ProjectInfoImage = ProjectInfoDiv.data('project-info-image') !== null ? ProjectInfoDiv.data('project-info-image') : ProjectInfoDiv.find('.projects-single-image img').attr('src');
+            ProjectInfoTitle = getProjectAttr('project-info-title');
 
-            ProjectInfoTags = ProjectInfoDiv.data('project-info-tags');
-            ProjectInfoDescription = ProjectInfoDiv.data('project-info-description');
+            ProjectInfoImage = getProjectAttr('project-info-image') || ProjectInfoDiv.find('.projects-single-image img').attr('src');
 
-            ProjectInfoTechnologies = ProjectInfoDiv.data('project-info-technologies');
+            ProjectInfoTags = getProjectAttr('project-info-tags');
+            ProjectInfoDescription = getProjectAttr('project-info-description');
 
-            ProjectInfoDeployLink = ProjectInfoDiv.data('project-info-deploy-link');
-            ProjectInfoRepositoryLink = ProjectInfoDiv.data('project-info-repository-link');
+            ProjectInfoTechnologies = getProjectAttr('project-info-technologies');
+
+            ProjectInfoDeployLink = getProjectAttr('project-info-deploy-link');
+            ProjectInfoRepositoryLink = getProjectAttr('project-info-repository-link');
 
             //// Modal
             // Modal -> Title
@@ -466,9 +410,9 @@ $(function () {
             }
 
             // Modal -> Buttons
-            ProjectInfoDeployLink !== null && ProjectInfoDeployLink !== undefined ? ModalProjectInfoDeployButton.removeClass('ahref-disabled').attr('href', ProjectInfoDeployLink).attr('target', '_blank') : ''
+            ProjectInfoDeployLink && ProjectInfoDeployLink !== 'null' ? ModalProjectInfoDeployButton.removeClass('ahref-disabled').attr('href', ProjectInfoDeployLink).attr('target', '_blank') : ''
 
-            ProjectInfoRepositoryLink !== null && ProjectInfoRepositoryLink !== undefined ? ModalProjectInfoRepositoryButton.removeClass('ahref-disabled').attr('href', ProjectInfoRepositoryLink).attr('target', '_blank') : ''
+            ProjectInfoRepositoryLink && ProjectInfoRepositoryLink !== 'null' ? ModalProjectInfoRepositoryButton.removeClass('ahref-disabled').attr('href', ProjectInfoRepositoryLink).attr('target', '_blank') : ''
 
         } else {
             CloseModal();
@@ -502,7 +446,7 @@ $(function () {
         ModalProjectInfoTitle.text(`${projectsModalPreTitle} \${PROJECT_TITLE}`);
 
         // Modal -> Image
-        ModalProjectInfoImage.attr('src', '/public/assets/logo-2.png');
+        ModalProjectInfoImage.attr('src', './public/assets/logo-2.png');
         ModalProjectInfoImage.css('transform', 'scale(1)').css('object-fit', 'cover');
         ModalProjectInfoImage.parent().css('background', 'transparent').css('border-radius', '8px').css('overflow', 'visible');
 
