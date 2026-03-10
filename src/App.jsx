@@ -176,7 +176,7 @@ function App() {
                 onClick={() => setIsTransition(true)}
                 disabled={isTransition}
                 className="bg-[#3888d7] px-6 py-3 text-sm text-[#FAF9F6] shadow-[inset_0_1px_0_rgba(255,255,255,0.5),0_10px_25px_-18px_rgba(84,123,170,0.85)] transition-colors duration-50 [clip-path:polygon(10px_0,100%_0,calc(100%_-_10px)_100%,0_100%)] disabled:pointer-events-none"
-                style={{ letterSpacing: 0.25 }}
+                style={{ letterSpacing: 0.25, cursor: 'none' }}
                 animate={{ opacity: isTransition ? 0 : 1, scale: isTransition ? 0.92 : 1 }}
                 transition={{ duration: isTransition ? 0.85 : 0.45, ease: "easeOut" }}
               >
