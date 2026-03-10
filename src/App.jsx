@@ -73,7 +73,7 @@ function App() {
   }, [isTransition]);
 
   return (
-    <div className="relative w-screen overflow-hidden bg-[#eaf2fb] text-[#1f2937]">
+    <div className="relative w-screen h-screen overflow-hidden bg-[#eaf2fb] text-[#1f2937]">
       <motion.div
         className="absolute inset-0"
         animate={{ backgroundColor: isTransition ? "#8ea5c2" : "#eaf2fb" }}
@@ -151,12 +151,12 @@ function App() {
                 animate={{ opacity: isTransition ? 0 : 1, y: isTransition ? 16 : 0 }}
                 transition={{ duration: isTransition ? 0.82 : 0.42, ease: "easeOut" }}
               >
-                <p className="text-lg leading-relaxed text-[#273244]/92">
+                <p className="text-lg text-[#273244]/92">
                   Calma, não deu erro! Haha. Eu só estou preparando algo bem mais moderno para te
                   mostrar. Enquanto a mágica acontece por aqui, deixei o meu portfólio antigo
                   disponível caso você queira dar aquela conferida no que eu já fiz.
                 </p>
-                <p className="text-sm leading-relaxed text-[#5f738b]/90" style={{ letterSpacing: 0.25 }}>
+                <p className="text-sm text-[#5f738b]/90" style={{ letterSpacing: 0.25 }}>
                   Algumas informações do portfólio antigo podem estar desatualizadas.
                 </p>
               </motion.div>
@@ -180,7 +180,7 @@ function App() {
                 animate={{ opacity: isTransition ? 0 : 1, scale: isTransition ? 0.92 : 1 }}
                 transition={{ duration: isTransition ? 0.85 : 0.45, ease: "easeOut" }}
               >
-                Versão antiga
+                Versão Antiga
               </motion.button>
             </motion.div>
 

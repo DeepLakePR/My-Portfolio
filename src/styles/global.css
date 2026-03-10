@@ -11,8 +11,9 @@
   font-style: normal;
   letter-spacing: 0.1px;
   user-select: none;
+  background-color: #d8e9fd;
 }
 
-:root {
-  background-color: #d8e9fd;
+p{
+  line-height: 130%;
 }
